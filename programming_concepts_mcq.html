@@ -168,49 +168,6 @@
             }
         }
 
-        /*
-        #topicSelect {
-            width: 100%;
-            padding: 8px 12px;
-            margin-bottom: 12px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background: #fff;
-            font-size: 14px;
-            font-weight: 500;
-            color: #2c3e50;
-            appearance: none;
-            
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            cursor: pointer;
-            transition: border 0.2s, box-shadow 0.2s;
-        }
-
-        
-        #topicSelect:hover,
-        #topicSelect:focus {
-            border-color: #3498db;
-            box-shadow: 0 0 4px rgba(52, 152, 219, 0.4);
-            outline: none;
-        }
-
-        
-        #topicSelect-wrapper {
-            position: relative;
-        }
-
-        #topicSelect-wrapper::after {
-            content: '▾';
-            position: absolute;
-            top: 50%;
-            right: 12px;
-            transform: translateY(-50%);
-            pointer-events: none;
-            color: #2c3e50;
-            font-size: 12px;
-        }
-        */
         /* ============ Custom Topic Dropdown ============ */
 
         #topicSelect-wrapper {
@@ -329,9 +286,6 @@
 
         <div id="sidebar">
             <h3>Topics</h3>
-            <!-- <div id="topicSelect-wrapper">
-                <select id="topicSelect"></select>
-            </div> -->
             <div id="topicSelect-wrapper">
                 <div class="custom-select" id="topicDropdown">
                     <div class="selected">Select Topic</div>
@@ -361,22 +315,7 @@
             "SQL": "sql.json"
         };
 
-        // ================= Populate Dropdown =================
-        // const topicSelect = document.getElementById("topicSelect");
-        // topicSelect.innerHTML = `<option value="">-- Select Topic --</option>`;
-        // for (const [name, file] of Object.entries(topics)) {
-        //     const opt = document.createElement("option");
-        //     opt.value = file;
-        //     opt.textContent = name;
-        //     topicSelect.appendChild(opt);
-        // }
-
-        // ================= Topic Selection =================
-        // topicSelect.addEventListener("change", function () {
-        //     const file = this.value;
-        //     if (!file) return;
-        //     fetchTopic(file);
-        // });
+        // ================= Custom Dropdown =================
 
         const dropdown = document.getElementById("topicDropdown");
         const selected = dropdown.querySelector(".selected");
@@ -595,12 +534,7 @@
             document.getElementById("sidebar").classList.toggle("open");
         };
 
-        // ================= Auto-load first topic =================
-        // window.addEventListener("DOMContentLoaded", () => {
-        //     const firstTopicFile = Object.values(topics)[0];
-        //     topicSelect.value = firstTopicFile;
-        //     fetchTopic(firstTopicFile);
-        // });
+        // ================= Initial Load =================
         window.addEventListener("DOMContentLoaded", () => {
             const firstTopicName = Object.keys(topics)[0];
             const firstTopicFile = topics[firstTopicName];
