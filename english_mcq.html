@@ -345,13 +345,15 @@
 
         // ================= Fetch and Load Topic =================
         function fetchTopic(file) {
-            fetch("questions/english/" + file)
+            fetch("questions/computer_science/" + file)
                 .then(res => res.json())
                 .then(json => {
                     data = json.data;
                     extraQs = data.extra_qs || [];
                     delete data.extra_qs;
                     loadTopic();
+
+                    document.getElementById("scoreSummary").style.display = "none";
                 })
                 .catch(err => console.error("Failed to load JSON:", err));
         }
@@ -474,6 +476,8 @@
             document.querySelectorAll(".section").forEach(s => s.style.display = "none");
             document.getElementById(section.replace(/\s+/g, '')).style.display = "block";
             document.getElementById("sidebar").classList.remove("open");
+
+            document.getElementById("scoreSummary").style.display = "none";
         }
 
         function checkAnswer(section, idx, q, radio) {
@@ -507,17 +511,22 @@
             if (document.getElementById("scoreSummary").style.display === "block") showScore();
         }
 
+
         function showScore() {
             let total = 0, correct = 0, wrong = 0;
 
-            document.querySelectorAll(".question").forEach(q => {
-                if (q.closest("#AllQuestions") && !q.dataset.isExtra) return;
+            // Get currently visible section
+            const visibleSection = document.querySelector(".section[style*='display: block']");
+            if (!visibleSection) return;
+
+            // Count questions only inside this section
+            visibleSection.querySelectorAll(".question").forEach(q => {
                 total++;
                 if (q.dataset.status === "correct") correct++;
                 if (q.dataset.status === "wrong") wrong++;
             });
 
-            let s = document.getElementById("scoreSummary");
+            const s = document.getElementById("scoreSummary");
             s.style.display = "block";
             s.innerHTML = `
         Total: ${total}<br>
@@ -526,6 +535,7 @@
         Unanswered: ${total - correct - wrong}
     `;
         }
+
 
         document.getElementById("menuBtn").onclick = () => {
             document.getElementById("sidebar").classList.toggle("open");
@@ -540,7 +550,6 @@
         });
 
     </script>
-
 
 
 

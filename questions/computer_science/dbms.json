@@ -1,55 +1,2295 @@
 {
     "data": {
-        "ABC": [
+        "ER‐Model": [
             {
-                "id": "PC001",
-                "question": "Which of the following is a primitive type in Java?",
+                "id": "DBMS_ER001",
+                "question": "What does ER in ER model stand for?",
                 "options": [
-                    "String",
-                    "int",
-                    "Array",
-                    "Object"
+                    "Entity-Relationship",
+                    "Entity-Record",
+                    "Entity-Relation",
+                    "Entity-Registry"
                 ],
-                "answer": 1,
-                "explanation": "int is a primitive type in Java."
+                "answer": 0,
+                "explanation": "ER stands for Entity-Relationship, used to model database structure conceptually."
             },
             {
-                "id": "PC002",
-                "question": "Which language is platform independent?",
+                "id": "DBMS_ER002",
+                "question": "Which of the following is represented by a rectangle in an ER diagram?",
                 "options": [
-                    "C++",
-                    "Java",
-                    "C",
-                    "Assembly"
+                    "Entity",
+                    "Attribute",
+                    "Relationship",
+                    "Weak Entity"
                 ],
-                "answer": 1,
-                "explanation": "Java bytecode runs on JVM which makes it platform independent."
+                "answer": 0,
+                "explanation": "Rectangles represent entities in an ER diagram."
+            },
+            {
+                "id": "DBMS_ER003",
+                "question": "In ER modeling, how is a relationship represented?",
+                "options": [
+                    "Diamond",
+                    "Rectangle",
+                    "Oval",
+                    "Triangle"
+                ],
+                "answer": 0,
+                "explanation": "Relationships are represented by diamonds connecting entities."
+            },
+            {
+                "id": "DBMS_ER004",
+                "question": "Which symbol is used to represent an attribute in an ER diagram?",
+                "options": [
+                    "Oval",
+                    "Rectangle",
+                    "Diamond",
+                    "Double Rectangle"
+                ],
+                "answer": 0,
+                "explanation": "Attributes are shown as ovals connected to entities or relationships."
+            },
+            {
+                "id": "DBMS_ER005",
+                "question": "A weak entity is represented by:",
+                "options": [
+                    "Double rectangle",
+                    "Single rectangle",
+                    "Double diamond",
+                    "Dashed oval"
+                ],
+                "answer": 0,
+                "explanation": "Weak entities are represented with double rectangles and depend on owner entities."
+            },
+            {
+                "id": "DBMS_ER006",
+                "question": "Which attribute uniquely identifies an entity?",
+                "options": [
+                    "Primary key",
+                    "Foreign key",
+                    "Derived attribute",
+                    "Composite attribute"
+                ],
+                "answer": 0,
+                "explanation": "Primary key uniquely identifies each entity instance."
+            },
+            {
+                "id": "DBMS_ER007",
+                "question": "Which type of attribute can be derived from other attributes?",
+                "options": [
+                    "Derived attribute",
+                    "Multivalued attribute",
+                    "Composite attribute",
+                    "Simple attribute"
+                ],
+                "answer": 0,
+                "explanation": "Derived attributes are calculated from other attributes."
+            },
+            {
+                "id": "DBMS_ER008",
+                "question": "A multivalued attribute is represented by:",
+                "options": [
+                    "Double oval",
+                    "Oval",
+                    "Diamond",
+                    "Rectangle"
+                ],
+                "answer": 0,
+                "explanation": "Multivalued attributes are shown as double ovals connected to entities."
+            },
+            {
+                "id": "DBMS_ER009",
+                "question": "Cardinality in ER model defines:",
+                "options": [
+                    "Number of instances of one entity associated with instances of another entity",
+                    "Number of attributes in an entity",
+                    "Number of relationships an attribute participates in",
+                    "Number of keys in an entity"
+                ],
+                "answer": 0,
+                "explanation": "Cardinality defines the number of entity instances that can participate in a relationship."
+            },
+            {
+                "id": "DBMS_ER010",
+                "question": "Participation constraint defines:",
+                "options": [
+                    "Whether all or some entity instances participate in a relationship",
+                    "Number of attributes in a relationship",
+                    "Whether an entity is strong or weak",
+                    "Whether a relationship has a primary key"
+                ],
+                "answer": 0,
+                "explanation": "Participation constraint specifies total or partial participation of entities in a relationship."
+            },
+            {
+                "id": "DBMS_ER011",
+                "question": "Which is an example of a binary relationship?",
+                "options": [
+                    "Student enrolls in Course",
+                    "Employee name",
+                    "Department budget",
+                    "Invoice total"
+                ],
+                "answer": 0,
+                "explanation": "Binary relationships involve exactly two entity types, e.g., Student and Course."
+            },
+            {
+                "id": "DBMS_ER012",
+                "question": "Ternary relationship involves:",
+                "options": [
+                    "Three entity types",
+                    "Two entity types",
+                    "One entity type",
+                    "Multiple attributes"
+                ],
+                "answer": 0,
+                "explanation": "Ternary relationships connect three different entity types."
+            },
+            {
+                "id": "DBMS_ER013",
+                "question": "An identifying relationship is associated with:",
+                "options": [
+                    "Weak entity",
+                    "Strong entity",
+                    "Derived attribute",
+                    "Multivalued attribute"
+                ],
+                "answer": 0,
+                "explanation": "Identifying relationship links a weak entity to its owner entity."
+            },
+            {
+                "id": "DBMS_ER014",
+                "question": "Composite attribute is:",
+                "options": [
+                    "An attribute that can be divided into sub-attributes",
+                    "An attribute derived from other attributes",
+                    "A multivalued attribute",
+                    "A primary key attribute"
+                ],
+                "answer": 0,
+                "explanation": "Composite attributes can be split into smaller sub-attributes."
+            },
+            {
+                "id": "DBMS_ER015",
+                "question": "Which of the following is TRUE for weak entities?",
+                "options": [
+                    "Cannot exist without a strong entity",
+                    "Has a primary key on its own",
+                    "Does not participate in any relationship",
+                    "Always has derived attributes only"
+                ],
+                "answer": 0,
+                "explanation": "Weak entities depend on strong entities and have no standalone primary key."
+            },
+            {
+                "id": "DBMS_ER016",
+                "question": "Which symbol represents total participation in ER diagram?",
+                "options": [
+                    "Double line",
+                    "Single line",
+                    "Dashed line",
+                    "Arrow line"
+                ],
+                "answer": 0,
+                "explanation": "Double line from entity to relationship indicates total participation."
+            },
+            {
+                "id": "DBMS_ER017",
+                "question": "Which type of attribute can hold multiple values for a single entity?",
+                "options": [
+                    "Multivalued attribute",
+                    "Simple attribute",
+                    "Derived attribute",
+                    "Primary key attribute"
+                ],
+                "answer": 0,
+                "explanation": "Multivalued attributes can store more than one value for the same entity."
+            },
+            {
+                "id": "DBMS_ER018",
+                "question": "ER diagrams are used primarily for:",
+                "options": [
+                    "Conceptual database design",
+                    "Physical storage optimization",
+                    "Query execution",
+                    "Transaction management"
+                ],
+                "answer": 0,
+                "explanation": "ER diagrams are used to design database schema conceptually."
+            },
+            {
+                "id": "DBMS_ER019",
+                "question": "In ER model, a relationship set is:",
+                "options": [
+                    "A set of similar relationships",
+                    "A set of entities",
+                    "A set of attributes",
+                    "A set of keys"
+                ],
+                "answer": 0,
+                "explanation": "A relationship set is a collection of similar relationships between entities."
+            },
+            {
+                "id": "DBMS_ER020",
+                "question": "Which ER model concept is used to convert to relational schema easily?",
+                "options": [
+                    "Entity, relationship, and attributes",
+                    "Transaction, concurrency, and locks",
+                    "File and index structure",
+                    "Normalization forms"
+                ],
+                "answer": 0,
+                "explanation": "Entities, relationships, and attributes in ER model map directly to tables and columns in relational schema."
+            }
+        ],
+        "Relational Model: Relational Algebra, Tuple Calculus, Integrity Constraints, Normal Forms": [
+            {
+                "id": "DBMS_RM001",
+                "question": "Which of the following is a basic operation in relational algebra?",
+                "options": [
+                    "Selection (σ)",
+                    "Encryption",
+                    "Transaction commit",
+                    "Indexing"
+                ],
+                "answer": 0,
+                "explanation": "Selection (σ) is a fundamental relational algebra operation."
+            },
+            {
+                "id": "DBMS_RM002",
+                "question": "The projection operation in relational algebra is represented by:",
+                "options": [
+                    "π",
+                    "σ",
+                    "∪",
+                    "×"
+                ],
+                "answer": 0,
+                "explanation": "Projection is represented by π and selects certain columns from a relation."
+            },
+            {
+                "id": "DBMS_RM003",
+                "question": "Which relational algebra operation combines two relations by matching common attributes?",
+                "options": [
+                    "Join",
+                    "Union",
+                    "Difference",
+                    "Intersection"
+                ],
+                "answer": 0,
+                "explanation": "Join combines tuples from two relations based on a condition on common attributes."
+            },
+            {
+                "id": "DBMS_RM004",
+                "question": "Which operator is used to select tuples satisfying a condition?",
+                "options": [
+                    "Selection (σ)",
+                    "Projection (π)",
+                    "Union (∪)",
+                    "Cartesian product (×)"
+                ],
+                "answer": 0,
+                "explanation": "Selection (σ) filters tuples based on a specified predicate."
+            },
+            {
+                "id": "DBMS_RM005",
+                "question": "Tuple relational calculus is based on:",
+                "options": [
+                    "Specifying properties of tuples",
+                    "Specifying SQL queries",
+                    "Updating tables",
+                    "Designing indexes"
+                ],
+                "answer": 0,
+                "explanation": "Tuple calculus expresses queries by describing desired tuple properties."
+            },
+            {
+                "id": "DBMS_RM006",
+                "question": "Which of the following is TRUE about relational algebra?",
+                "options": [
+                    "It is procedural",
+                    "It is non-procedural",
+                    "It modifies the database",
+                    "It cannot express joins"
+                ],
+                "answer": 0,
+                "explanation": "Relational algebra is procedural; it specifies how to compute results."
+            },
+            {
+                "id": "DBMS_RM007",
+                "question": "In tuple relational calculus, variables represent:",
+                "options": [
+                    "Tuples",
+                    "Attributes",
+                    "Tables",
+                    "Indexes"
+                ],
+                "answer": 0,
+                "explanation": "Variables in tuple relational calculus represent entire tuples of a relation."
+            },
+            {
+                "id": "DBMS_RM008",
+                "question": "Which of the following is a relational algebra set operation?",
+                "options": [
+                    "Union",
+                    "Join",
+                    "Selection",
+                    "Projection"
+                ],
+                "answer": 0,
+                "explanation": "Union is a set operation combining tuples from two relations."
+            },
+            {
+                "id": "DBMS_RM009",
+                "question": "Which of the following ensures entity integrity in a relational table?",
+                "options": [
+                    "Primary key constraint",
+                    "Foreign key constraint",
+                    "Check constraint",
+                    "Default constraint"
+                ],
+                "answer": 0,
+                "explanation": "Primary key constraint ensures no NULLs and uniqueness in a table."
+            },
+            {
+                "id": "DBMS_RM010",
+                "question": "Referential integrity is enforced using:",
+                "options": [
+                    "Foreign key",
+                    "Primary key",
+                    "Unique key",
+                    "Check constraint"
+                ],
+                "answer": 0,
+                "explanation": "Foreign key ensures that values in one relation match primary key values in another relation."
+            },
+            {
+                "id": "DBMS_RM011",
+                "question": "Which normal form removes partial dependency?",
+                "options": [
+                    "Second Normal Form (2NF)",
+                    "First Normal Form (1NF)",
+                    "Third Normal Form (3NF)",
+                    "Boyce-Codd Normal Form (BCNF)"
+                ],
+                "answer": 0,
+                "explanation": "2NF removes partial dependencies on a composite primary key."
+            },
+            {
+                "id": "DBMS_RM012",
+                "question": "Which normal form removes transitive dependency?",
+                "options": [
+                    "Third Normal Form (3NF)",
+                    "First Normal Form (1NF)",
+                    "Second Normal Form (2NF)",
+                    "BCNF"
+                ],
+                "answer": 0,
+                "explanation": "3NF eliminates transitive dependencies."
+            },
+            {
+                "id": "DBMS_RM013",
+                "question": "What is a candidate key?",
+                "options": [
+                    "A minimal set of attributes that uniquely identifies a tuple",
+                    "A foreign key",
+                    "An attribute with NULLs allowed",
+                    "An index"
+                ],
+                "answer": 0,
+                "explanation": "A candidate key uniquely identifies tuples and is minimal (no subset can do so)."
+            },
+            {
+                "id": "DBMS_RM014",
+                "question": "Which normal form is considered stricter than 3NF?",
+                "options": [
+                    "Boyce-Codd Normal Form (BCNF)",
+                    "1NF",
+                    "2NF",
+                    "4NF"
+                ],
+                "answer": 0,
+                "explanation": "BCNF handles certain anomalies not addressed by 3NF."
+            },
+            {
+                "id": "DBMS_RM015",
+                "question": "The Cartesian product of two relations R and S is:",
+                "options": [
+                    "All possible combinations of tuples from R and S",
+                    "Tuples common to R and S",
+                    "Tuples in R but not in S",
+                    "Tuples in S but not in R"
+                ],
+                "answer": 0,
+                "explanation": "Cartesian product pairs every tuple of R with every tuple of S."
+            },
+            {
+                "id": "DBMS_RM016",
+                "question": "Which relational algebra operation finds tuples present in R but not in S?",
+                "options": [
+                    "Set difference (−)",
+                    "Union (∪)",
+                    "Intersection (∩)",
+                    "Join (⨝)"
+                ],
+                "answer": 0,
+                "explanation": "Set difference (R − S) returns tuples in R that are not in S."
+            },
+            {
+                "id": "DBMS_RM017",
+                "question": "Intersection operation in relational algebra is:",
+                "options": [
+                    "Tuples common to two relations",
+                    "Tuples in R but not in S",
+                    "All tuples from R and S",
+                    "Tuples resulting from join condition"
+                ],
+                "answer": 0,
+                "explanation": "Intersection returns tuples present in both relations."
+            },
+            {
+                "id": "DBMS_RM018",
+                "question": "Tuple relational calculus can be categorized as:",
+                "options": [
+                    "Non-procedural",
+                    "Procedural",
+                    "Transactional",
+                    "Physical design tool"
+                ],
+                "answer": 0,
+                "explanation": "Tuple relational calculus is non-procedural; it specifies what to retrieve."
+            },
+            {
+                "id": "DBMS_RM019",
+                "question": "Integrity constraints prevent:",
+                "options": [
+                    "Inconsistent or invalid data",
+                    "Faster queries",
+                    "Index creation",
+                    "Duplicate indexes"
+                ],
+                "answer": 0,
+                "explanation": "Integrity constraints ensure data validity and consistency."
+            },
+            {
+                "id": "DBMS_RM020",
+                "question": "A table in 1NF must not have:",
+                "options": [
+                    "Repeating groups",
+                    "Primary key",
+                    "Foreign key",
+                    "Index"
+                ],
+                "answer": 0,
+                "explanation": "1NF eliminates repeating groups and ensures atomic attributes."
+            },
+            {
+                "id": "DBMS_RM021",
+                "question": "A relation is in 2NF if it is in 1NF and:",
+                "options": [
+                    "Every non-prime attribute is fully functionally dependent on the primary key",
+                    "No foreign key exists",
+                    "There are no candidate keys",
+                    "There are no indexes"
+                ],
+                "answer": 0,
+                "explanation": "2NF removes partial dependency of non-prime attributes on part of a composite key."
+            },
+            {
+                "id": "DBMS_RM022",
+                "question": "Which of the following is a unary relational algebra operation?",
+                "options": [
+                    "Selection (σ)",
+                    "Union (∪)",
+                    "Cartesian product (×)",
+                    "Join (⨝)"
+                ],
+                "answer": 0,
+                "explanation": "Unary operations operate on a single relation; selection is unary."
+            },
+            {
+                "id": "DBMS_RM023",
+                "question": "Which relational algebra operation is used to combine all tuples from two relations and remove duplicates?",
+                "options": [
+                    "Union (∪)",
+                    "Intersection (∩)",
+                    "Set difference (−)",
+                    "Join (⨝)"
+                ],
+                "answer": 0,
+                "explanation": "Union combines tuples from two relations and eliminates duplicates."
+            },
+            {
+                "id": "DBMS_RM024",
+                "question": "Foreign key ensures:",
+                "options": [
+                    "Referential integrity",
+                    "Entity integrity",
+                    "No NULLs in table",
+                    "Removal of duplicates"
+                ],
+                "answer": 0,
+                "explanation": "Foreign key enforces referential integrity between tables."
+            },
+            {
+                "id": "DBMS_RM025",
+                "question": "Which normal form removes multi-valued dependencies?",
+                "options": [
+                    "Fourth Normal Form (4NF)",
+                    "3NF",
+                    "2NF",
+                    "1NF"
+                ],
+                "answer": 0,
+                "explanation": "4NF removes multi-valued dependencies in a table."
+            },
+            {
+                "id": "DBMS_RM026",
+                "question": "Which normal form deals with join dependency?",
+                "options": [
+                    "Fifth Normal Form (5NF)",
+                    "BCNF",
+                    "3NF",
+                    "2NF"
+                ],
+                "answer": 0,
+                "explanation": "5NF addresses join dependency to avoid redundancy."
+            },
+            {
+                "id": "DBMS_RM027",
+                "question": "What is a super key?",
+                "options": [
+                    "A set of attributes that uniquely identifies a tuple",
+                    "A non-key attribute",
+                    "An attribute with NULL",
+                    "Derived attribute"
+                ],
+                "answer": 0,
+                "explanation": "A super key uniquely identifies tuples; it may contain extra attributes."
+            },
+            {
+                "id": "DBMS_RM028",
+                "question": "Relational algebra is:",
+                "options": [
+                    "Closed under relations",
+                    "Open system",
+                    "Database transaction",
+                    "Physical storage technique"
+                ],
+                "answer": 0,
+                "explanation": "Relational algebra is closed: results of operations are also relations."
+            },
+            {
+                "id": "DBMS_RM029",
+                "question": "Tuple calculus is different from relational algebra in that it is:",
+                "options": [
+                    "Non-procedural",
+                    "Procedural",
+                    "Physical storage dependent",
+                    "Transaction based"
+                ],
+                "answer": 0,
+                "explanation": "Tuple calculus specifies what to retrieve rather than how to retrieve."
+            },
+            {
+                "id": "DBMS_RM030",
+                "question": "A relation in BCNF must satisfy:",
+                "options": [
+                    "For every functional dependency X → Y, X is a super key",
+                    "It must be in 2NF only",
+                    "It must have no primary key",
+                    "It must have multivalued dependencies"
+                ],
+                "answer": 0,
+                "explanation": "BCNF ensures every determinant is a super key."
+            },
+            {
+                "id": "DBMS_RM031",
+                "question": "Which of the following is NOT a relational algebra operation?",
+                "options": [
+                    "Encryption",
+                    "Selection",
+                    "Projection",
+                    "Union"
+                ],
+                "answer": 0,
+                "explanation": "Encryption is not part of relational algebra operations."
+            },
+            {
+                "id": "DBMS_RM032",
+                "question": "Intersection operation can be expressed using:",
+                "options": [
+                    "Set difference and union",
+                    "Selection only",
+                    "Projection only",
+                    "Cartesian product only"
+                ],
+                "answer": 0,
+                "explanation": "Intersection can be expressed as R ∩ S = R − (R − S)."
+            },
+            {
+                "id": "DBMS_RM033",
+                "question": "A functional dependency X → Y means:",
+                "options": [
+                    "Value of X determines value of Y",
+                    "Value of Y determines value of X",
+                    "X and Y are keys",
+                    "X and Y are indexes"
+                ],
+                "answer": 0,
+                "explanation": "Functional dependency X → Y indicates that Y is determined by X."
+            },
+            {
+                "id": "DBMS_RM034",
+                "question": "Which constraint ensures that primary key values are unique and not NULL?",
+                "options": [
+                    "Entity integrity constraint",
+                    "Referential integrity constraint",
+                    "Check constraint",
+                    "Unique constraint only"
+                ],
+                "answer": 0,
+                "explanation": "Entity integrity ensures primary key uniqueness and non-null."
+            },
+            {
+                "id": "DBMS_RM035",
+                "question": "Which relational algebra operation combines tuples from two relations on a condition?",
+                "options": [
+                    "Theta join (θ-join)",
+                    "Union",
+                    "Projection",
+                    "Selection"
+                ],
+                "answer": 0,
+                "explanation": "Theta join uses a condition to combine tuples from two relations."
+            },
+            {
+                "id": "DBMS_RM036",
+                "question": "Which relational algebra operation is commutative?",
+                "options": [
+                    "Union",
+                    "Selection",
+                    "Projection",
+                    "Difference"
+                ],
+                "answer": 0,
+                "explanation": "Union operation is commutative: R ∪ S = S ∪ R."
+            },
+            {
+                "id": "DBMS_RM037",
+                "question": "Which relational algebra operation is not commutative?",
+                "options": [
+                    "Difference",
+                    "Union",
+                    "Intersection",
+                    "Selection"
+                ],
+                "answer": 0,
+                "explanation": "Set difference is not commutative: R − S ≠ S − R."
+            },
+            {
+                "id": "DBMS_RM038",
+                "question": "Relational algebra expressions are used to:",
+                "options": [
+                    "Retrieve data from relations",
+                    "Update disk storage",
+                    "Encrypt tables",
+                    "Manage transactions"
+                ],
+                "answer": 0,
+                "explanation": "Relational algebra is used to query and retrieve data."
+            },
+            {
+                "id": "DBMS_RM039",
+                "question": "Which relational algebra operation is binary?",
+                "options": [
+                    "Union",
+                    "Selection",
+                    "Projection",
+                    "Rename"
+                ],
+                "answer": 0,
+                "explanation": "Union operates on two relations and returns a relation."
+            },
+            {
+                "id": "DBMS_RM040",
+                "question": "Tuple calculus queries do not specify:",
+                "options": [
+                    "How to retrieve data",
+                    "What to retrieve",
+                    "Attributes of tuples",
+                    "Relation names"
+                ],
+                "answer": 0,
+                "explanation": "Tuple calculus specifies what to retrieve but not the procedure."
+            },
+            {
+                "id": "DBMS_RM041",
+                "question": "Which normal form removes anomalies caused by functional dependency?",
+                "options": [
+                    "3NF",
+                    "1NF",
+                    "2NF",
+                    "4NF"
+                ],
+                "answer": 0,
+                "explanation": "3NF removes anomalies caused by transitive functional dependencies."
+            },
+            {
+                "id": "DBMS_RM042",
+                "question": "Which key ensures that one table references valid rows of another table?",
+                "options": [
+                    "Foreign key",
+                    "Primary key",
+                    "Candidate key",
+                    "Super key"
+                ],
+                "answer": 0,
+                "explanation": "Foreign key ensures referential integrity."
+            },
+            {
+                "id": "DBMS_RM043",
+                "question": "In 1NF, each attribute must be:",
+                "options": [
+                    "Atomic",
+                    "Multivalued",
+                    "Derived",
+                    "Composite"
+                ],
+                "answer": 0,
+                "explanation": "1NF requires all attributes to be atomic (indivisible)."
+            },
+            {
+                "id": "DBMS_RM044",
+                "question": "A relation is in 2NF if it is in 1NF and has no:",
+                "options": [
+                    "Partial dependency",
+                    "Transitive dependency",
+                    "Candidate key",
+                    "Foreign key"
+                ],
+                "answer": 0,
+                "explanation": "2NF removes partial dependency on part of a composite primary key."
+            },
+            {
+                "id": "DBMS_RM045",
+                "question": "A relation in 3NF must be in 2NF and have no:",
+                "options": [
+                    "Transitive dependency",
+                    "Partial dependency",
+                    "Foreign key",
+                    "Candidate key"
+                ],
+                "answer": 0,
+                "explanation": "3NF removes transitive dependency of non-prime attributes on primary key."
+            },
+            {
+                "id": "DBMS_RM046",
+                "question": "Tuple relational calculus is closely related to:",
+                "options": [
+                    "Predicate logic",
+                    "Relational algebra",
+                    "Transaction management",
+                    "Indexing"
+                ],
+                "answer": 0,
+                "explanation": "Tuple calculus is based on predicate logic to specify desired tuples."
+            },
+            {
+                "id": "DBMS_RM047",
+                "question": "Which of the following ensures data consistency in relational databases?",
+                "options": [
+                    "Integrity constraints",
+                    "Indexes",
+                    "Views",
+                    "Stored procedures"
+                ],
+                "answer": 0,
+                "explanation": "Integrity constraints enforce rules to maintain data correctness."
+            },
+            {
+                "id": "DBMS_RM048",
+                "question": "Relational algebra can be classified as:",
+                "options": [
+                    "Procedural query language",
+                    "Non-procedural",
+                    "Declarative",
+                    "Transaction control language"
+                ],
+                "answer": 0,
+                "explanation": "Relational algebra is procedural, specifying how to compute results."
+            },
+            {
+                "id": "DBMS_RM049",
+                "question": "The operation R ÷ S (division) is used when:",
+                "options": [
+                    "Finding tuples in R related to all tuples in S",
+                    "Union of two relations",
+                    "Finding difference of relations",
+                    "Intersection of relations"
+                ],
+                "answer": 0,
+                "explanation": "Division identifies tuples in R associated with all tuples in S."
+            },
+            {
+                "id": "DBMS_RM050",
+                "question": "Which constraint prevents duplicate rows in a relation?",
+                "options": [
+                    "Unique constraint",
+                    "Foreign key",
+                    "Check constraint",
+                    "Default constraint"
+                ],
+                "answer": 0,
+                "explanation": "Unique constraint ensures that a set of attributes has unique values in a table."
+            }
+        ],
+        "File Organization": [
+            {
+                "id": "DBMS_FO001",
+                "question": "Which of the following is the simplest file organization method?",
+                "options": [
+                    "Heap file (unordered file)",
+                    "Sequential file",
+                    "Hashed file",
+                    "Indexed file"
+                ],
+                "answer": 0,
+                "explanation": "Heap file is the simplest, where records are stored in no particular order."
+            },
+            {
+                "id": "DBMS_FO002",
+                "question": "Sequential file organization is best suited for:",
+                "options": [
+                    "Range queries and sorted access",
+                    "Random access only",
+                    "Hash-based queries",
+                    "Transaction logging"
+                ],
+                "answer": 0,
+                "explanation": "Sequential files store records sorted by key, facilitating range queries and sequential access."
+            },
+            {
+                "id": "DBMS_FO003",
+                "question": "In which file organization is direct access fastest?",
+                "options": [
+                    "Hashed file",
+                    "Sequential file",
+                    "Heap file",
+                    "Clustered file"
+                ],
+                "answer": 0,
+                "explanation": "Hashed file organization allows direct access via hash function."
+            },
+            {
+                "id": "DBMS_FO004",
+                "question": "Which of the following is a disadvantage of sequential file organization?",
+                "options": [
+                    "Insertion and deletion are expensive",
+                    "Range queries are slow",
+                    "Sorting is impossible",
+                    "Cannot store large files"
+                ],
+                "answer": 0,
+                "explanation": "Insertion and deletion may require shifting records, making them expensive in sequential files."
+            },
+            {
+                "id": "DBMS_FO005",
+                "question": "In hashed file organization, collisions can be handled by:",
+                "options": [
+                    "Chaining or open addressing",
+                    "Sequential scanning",
+                    "Sorting the file",
+                    "Using B-trees only"
+                ],
+                "answer": 0,
+                "explanation": "Chaining or open addressing are standard methods to resolve hash collisions."
+            },
+            {
+                "id": "DBMS_FO006",
+                "question": "Which file organization method is most suitable for batch processing?",
+                "options": [
+                    "Sequential file",
+                    "Hashed file",
+                    "Heap file",
+                    "Indexed file"
+                ],
+                "answer": 0,
+                "explanation": "Sequential files are efficient for batch processing due to sorted access."
+            },
+            {
+                "id": "DBMS_FO007",
+                "question": "Primary key in a file is often used for:",
+                "options": [
+                    "Indexing and direct access",
+                    "Sorting only",
+                    "Deleting duplicates",
+                    "Storing records sequentially"
+                ],
+                "answer": 0,
+                "explanation": "Primary key values are used for indexing to enable fast direct access."
+            },
+            {
+                "id": "DBMS_FO008",
+                "question": "In indexed sequential file organization, the index is used to:",
+                "options": [
+                    "Locate the approximate position of a record",
+                    "Sort records only",
+                    "Store duplicate keys",
+                    "Handle transactions"
+                ],
+                "answer": 0,
+                "explanation": "Index helps to quickly locate the approximate position in the sequential file."
+            },
+            {
+                "id": "DBMS_FO009",
+                "question": "A cluster in file organization refers to:",
+                "options": [
+                    "Grouping of related records stored together",
+                    "A single block of memory",
+                    "Hash table entry",
+                    "Index entry only"
+                ],
+                "answer": 0,
+                "explanation": "Cluster stores related records physically close to improve access performance."
+            },
+            {
+                "id": "DBMS_FO010",
+                "question": "Direct or random access is most efficient in:",
+                "options": [
+                    "Hashed file",
+                    "Sequential file",
+                    "Heap file",
+                    "Clustered file"
+                ],
+                "answer": 0,
+                "explanation": "Hashing allows computing the address of a record directly for fast access."
+            },
+            {
+                "id": "DBMS_FO011",
+                "question": "Which organization reduces the number of disk accesses for search?",
+                "options": [
+                    "Indexed sequential",
+                    "Heap",
+                    "Unordered sequential",
+                    "Temporary files"
+                ],
+                "answer": 0,
+                "explanation": "Index reduces disk accesses by pointing directly to record locations."
+            },
+            {
+                "id": "DBMS_FO012",
+                "question": "Overflow in a hashed file occurs when:",
+                "options": [
+                    "Two records hash to the same address",
+                    "File is sorted",
+                    "Sequential scan is performed",
+                    "Record is deleted"
+                ],
+                "answer": 0,
+                "explanation": "Overflow happens due to hash collisions when multiple records map to same bucket."
+            },
+            {
+                "id": "DBMS_FO013",
+                "question": "Which file organization is suitable for online transaction processing (OLTP)?",
+                "options": [
+                    "Hashed file",
+                    "Sequential file",
+                    "Batch file",
+                    "Tape file"
+                ],
+                "answer": 0,
+                "explanation": "Hashed files provide fast random access required by OLTP systems."
+            },
+            {
+                "id": "DBMS_FO014",
+                "question": "In which file organization is maintaining sorted order mandatory?",
+                "options": [
+                    "Sequential file",
+                    "Heap file",
+                    "Hashed file",
+                    "Temporary file"
+                ],
+                "answer": 0,
+                "explanation": "Sequential files maintain sorted order by key."
+            },
+            {
+                "id": "DBMS_FO015",
+                "question": "Which file organization uses a secondary index to allow fast access without altering physical order?",
+                "options": [
+                    "Indexed sequential file",
+                    "Heap file",
+                    "Hashed file",
+                    "Sequential file"
+                ],
+                "answer": 0,
+                "explanation": "Indexed sequential files use secondary indexes for fast access."
+            },
+            {
+                "id": "DBMS_FO016",
+                "question": "Which method is best for frequent insertions and deletions?",
+                "options": [
+                    "Heap file",
+                    "Sequential file",
+                    "Indexed sequential file",
+                    "Tape file"
+                ],
+                "answer": 0,
+                "explanation": "Heap files allow fast insertions/deletions without maintaining order."
+            },
+            {
+                "id": "DBMS_FO017",
+                "question": "Primary disadvantage of hashed file organization is:",
+                "options": [
+                    "Handling range queries",
+                    "Direct access",
+                    "Fast insertion",
+                    "Deletion efficiency"
+                ],
+                "answer": 0,
+                "explanation": "Hashing is not suitable for range queries since records are unordered."
+            },
+            {
+                "id": "DBMS_FO018",
+                "question": "Clustered file organization stores:",
+                "options": [
+                    "Records physically close based on a key",
+                    "Records randomly",
+                    "Only indexes",
+                    "Records on separate disks only"
+                ],
+                "answer": 0,
+                "explanation": "Clustered organization stores related records close to minimize disk I/O."
+            },
+            {
+                "id": "DBMS_FO019",
+                "question": "Which file organization is preferred when retrieval of all records in order is common?",
+                "options": [
+                    "Sequential file",
+                    "Heap file",
+                    "Hashed file",
+                    "Temporary file"
+                ],
+                "answer": 0,
+                "explanation": "Sequential files provide fast retrieval in sorted order."
+            },
+            {
+                "id": "DBMS_FO020",
+                "question": "In which file organization are records stored wherever space is available?",
+                "options": [
+                    "Heap file",
+                    "Sequential file",
+                    "Indexed sequential file",
+                    "Clustered file"
+                ],
+                "answer": 0,
+                "explanation": "Heap files store records in the first available space without order."
+            }
+        ],
+        "Indexing (e.g., B and B+ trees)": [
+            {
+                "id": "DBMS_IDX001",
+                "question": "The main purpose of indexing in databases is:",
+                "options": [
+                    "To speed up data retrieval",
+                    "To store duplicate records",
+                    "To encrypt data",
+                    "To perform transactions"
+                ],
+                "answer": 0,
+                "explanation": "Indexing creates a data structure to allow faster access to records."
+            },
+            {
+                "id": "DBMS_IDX002",
+                "question": "A B-tree of order m can have a maximum of how many children per node?",
+                "options": [
+                    "m",
+                    "m-1",
+                    "2m",
+                    "2m-1"
+                ],
+                "answer": 0,
+                "explanation": "A B-tree node can have at most m children, where m is the order of the tree."
+            },
+            {
+                "id": "DBMS_IDX003",
+                "question": "Which of the following is TRUE about B+ trees compared to B-trees?",
+                "options": [
+                    "All records are stored at leaf nodes",
+                    "Internal nodes store records",
+                    "They cannot have more than 2 children",
+                    "They are unordered"
+                ],
+                "answer": 0,
+                "explanation": "In B+ trees, only leaf nodes store actual records; internal nodes store keys for navigation."
+            },
+            {
+                "id": "DBMS_IDX004",
+                "question": "The height of a B-tree affects:",
+                "options": [
+                    "Number of disk accesses for search",
+                    "Data encryption strength",
+                    "Transaction duration",
+                    "Number of attributes"
+                ],
+                "answer": 0,
+                "explanation": "Height determines how many nodes must be accessed to find a key; smaller height means faster search."
+            },
+            {
+                "id": "DBMS_IDX005",
+                "question": "Which operation is more efficient using a B+ tree index?",
+                "options": [
+                    "Range queries",
+                    "Full table scan",
+                    "Random insertion without order",
+                    "Data deletion from heap"
+                ],
+                "answer": 0,
+                "explanation": "B+ trees support efficient range queries because leaf nodes are linked."
+            },
+            {
+                "id": "DBMS_IDX006",
+                "question": "Which of the following is TRUE about B-tree leaf nodes?",
+                "options": [
+                    "They store pointers to records",
+                    "They only store keys",
+                    "They cannot split",
+                    "They are unordered"
+                ],
+                "answer": 0,
+                "explanation": "Leaf nodes contain pointers to actual records and are linked in B+ trees."
+            },
+            {
+                "id": "DBMS_IDX007",
+                "question": "In a B-tree, a node is said to be full if it contains:",
+                "options": [
+                    "Maximum number of keys",
+                    "Minimum number of keys",
+                    "No keys",
+                    "Only one key"
+                ],
+                "answer": 0,
+                "explanation": "A node is full when it reaches the maximum allowed number of keys."
+            },
+            {
+                "id": "DBMS_IDX008",
+                "question": "Which of the following is an advantage of B+ trees over B-trees?",
+                "options": [
+                    "Faster sequential access due to linked leaves",
+                    "Internal nodes store records",
+                    "Cannot handle range queries",
+                    "Random insertion is slower"
+                ],
+                "answer": 0,
+                "explanation": "B+ trees link leaf nodes, facilitating fast sequential and range access."
+            },
+            {
+                "id": "DBMS_IDX009",
+                "question": "Which of the following is a disadvantage of B-trees?",
+                "options": [
+                    "More space needed in internal nodes",
+                    "Sequential search is slow",
+                    "Cannot handle inserts",
+                    "Cannot handle deletions"
+                ],
+                "answer": 0,
+                "explanation": "Internal nodes in B-trees store both keys and records, which may use more space."
+            },
+            {
+                "id": "DBMS_IDX010",
+                "question": "Clustering index means:",
+                "options": [
+                    "Data is stored in the same order as index",
+                    "Index stores random pointers",
+                    "Index is hashed",
+                    "Index cannot be used for range queries"
+                ],
+                "answer": 0,
+                "explanation": "In clustering index, the physical order of data matches the index order."
+            },
+            {
+                "id": "DBMS_IDX011",
+                "question": "Non-clustering index means:",
+                "options": [
+                    "Data order differs from index order",
+                    "Index and data order are the same",
+                    "Only B-trees are used",
+                    "Only sequential files are allowed"
+                ],
+                "answer": 0,
+                "explanation": "Non-clustering index stores pointers, data is stored independently."
+            },
+            {
+                "id": "DBMS_IDX012",
+                "question": "Insertion in a B+ tree may require:",
+                "options": [
+                    "Node split",
+                    "Deleting root",
+                    "Reordering attributes",
+                    "Dropping the tree"
+                ],
+                "answer": 0,
+                "explanation": "If a node is full, insertion causes the node to split and propagate keys upward."
+            },
+            {
+                "id": "DBMS_IDX013",
+                "question": "B+ tree is especially preferred in:",
+                "options": [
+                    "Databases with range queries",
+                    "Small memory embedded systems",
+                    "Read-only files",
+                    "Temporary in-memory storage"
+                ],
+                "answer": 0,
+                "explanation": "Linked leaf nodes in B+ tree allow efficient range queries in databases."
+            },
+            {
+                "id": "DBMS_IDX014",
+                "question": "Which of the following is TRUE for a B-tree of order m?",
+                "options": [
+                    "Minimum keys per node is ceiling(m/2)-1",
+                    "Maximum keys per node is m-1",
+                    "Root may have minimum 1 key",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "B-tree rules: maximum keys = m-1, minimum = ceiling(m/2)-1, root may have fewer keys."
+            },
+            {
+                "id": "DBMS_IDX015",
+                "question": "Height of a B+ tree is generally:",
+                "options": [
+                    "Smaller than binary search tree for same number of keys",
+                    "Same as binary search tree",
+                    "Cannot be calculated",
+                    "Always 1"
+                ],
+                "answer": 0,
+                "explanation": "B+ trees are wider and shallower than BSTs, resulting in smaller height."
+            },
+            {
+                "id": "DBMS_IDX016",
+                "question": "Which is a valid index type in databases?",
+                "options": [
+                    "Primary index",
+                    "Secondary index",
+                    "Dense index",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "Databases support primary, secondary, sparse, and dense indexes."
+            },
+            {
+                "id": "DBMS_IDX017",
+                "question": "Dense index contains:",
+                "options": [
+                    "Index entry for every record",
+                    "Index entry for every block",
+                    "Index only for first record",
+                    "Index for every alternate record"
+                ],
+                "answer": 0,
+                "explanation": "Dense index has an entry for every record in the data file."
+            },
+            {
+                "id": "DBMS_IDX018",
+                "question": "Sparse index contains:",
+                "options": [
+                    "Index entries for some records, typically one per block",
+                    "All records",
+                    "Only keys without pointers",
+                    "Duplicate records"
+                ],
+                "answer": 0,
+                "explanation": "Sparse index stores entries for only some records, usually first record in each block."
+            },
+            {
+                "id": "DBMS_IDX019",
+                "question": "In B+ tree, internal nodes store:",
+                "options": [
+                    "Keys only",
+                    "Keys and records",
+                    "Pointers only",
+                    "Records only"
+                ],
+                "answer": 0,
+                "explanation": "Internal nodes in B+ trees store keys for navigation; records are in leaves."
+            },
+            {
+                "id": "DBMS_IDX020",
+                "question": "Which is a disadvantage of B+ tree?",
+                "options": [
+                    "More space in leaves due to pointers",
+                    "Cannot support range queries",
+                    "Slow sequential access",
+                    "Cannot insert records"
+                ],
+                "answer": 0,
+                "explanation": "B+ tree leaf nodes have pointers linking records, consuming extra space."
+            },
+            {
+                "id": "DBMS_IDX021",
+                "question": "Which indexing method is suitable for random access?",
+                "options": [
+                    "B+ tree index",
+                    "Sequential file",
+                    "Heap file",
+                    "Tape storage"
+                ],
+                "answer": 0,
+                "explanation": "B+ trees support fast random access through tree traversal."
+            },
+            {
+                "id": "DBMS_IDX022",
+                "question": "Which of the following operations is faster in a B+ tree than a binary search tree?",
+                "options": [
+                    "Disk-based search",
+                    "In-memory search",
+                    "Sorting small arrays",
+                    "Simple arithmetic"
+                ],
+                "answer": 0,
+                "explanation": "B+ tree reduces disk I/O by minimizing tree height."
+            },
+            {
+                "id": "DBMS_IDX023",
+                "question": "Which of the following statements is TRUE about B+ tree leaf nodes?",
+                "options": [
+                    "They are linked to allow sequential access",
+                    "They store only keys",
+                    "They cannot split",
+                    "They contain no pointers"
+                ],
+                "answer": 0,
+                "explanation": "Leaf nodes in B+ tree are linked to allow efficient sequential traversal."
+            },
+            {
+                "id": "DBMS_IDX024",
+                "question": "Insertion in a B+ tree may propagate to:",
+                "options": [
+                    "Parent nodes",
+                    "Leaf nodes only",
+                    "Root deletion",
+                    "Random block"
+                ],
+                "answer": 0,
+                "explanation": "Insertion causing split may propagate keys up to parent nodes."
+            },
+            {
+                "id": "DBMS_IDX025",
+                "question": "Indexing reduces:",
+                "options": [
+                    "Number of disk accesses",
+                    "Data redundancy",
+                    "Data integrity violations",
+                    "All attributes"
+                ],
+                "answer": 0,
+                "explanation": "Indexing primarily reduces the number of disk accesses for queries."
+            }
+        ],
+        "Transactions and Concurrency Control": [
+            {
+                "id": "DBMS_TC001",
+                "question": "Which of the following properties ensures that a transaction is completed fully or not at all?",
+                "options": [
+                    "Atomicity",
+                    "Consistency",
+                    "Isolation",
+                    "Durability"
+                ],
+                "answer": 0,
+                "explanation": "Atomicity ensures that all operations of a transaction are executed or none are."
+            },
+            {
+                "id": "DBMS_TC002",
+                "question": "Which property ensures that a transaction leaves the database in a valid state?",
+                "options": [
+                    "Consistency",
+                    "Atomicity",
+                    "Isolation",
+                    "Durability"
+                ],
+                "answer": 0,
+                "explanation": "Consistency ensures that database constraints are preserved after a transaction."
+            },
+            {
+                "id": "DBMS_TC003",
+                "question": "Isolation in transactions guarantees that:",
+                "options": [
+                    "Concurrent transactions do not interfere",
+                    "Transactions are atomic",
+                    "Transactions are durable",
+                    "Database constraints are ignored"
+                ],
+                "answer": 0,
+                "explanation": "Isolation ensures that intermediate states of a transaction are invisible to others."
+            },
+            {
+                "id": "DBMS_TC004",
+                "question": "Durability in a transaction means:",
+                "options": [
+                    "Changes are permanent once committed",
+                    "Transaction may be rolled back",
+                    "Intermediate states are hidden",
+                    "Consistency may be violated"
+                ],
+                "answer": 0,
+                "explanation": "Durability ensures that committed changes survive system failures."
+            },
+            {
+                "id": "DBMS_TC005",
+                "question": "Which of the following schedules is serializable?",
+                "options": [
+                    "Equivalent to some serial schedule",
+                    "Executed exactly one transaction",
+                    "Only read operations",
+                    "Executed in parallel without locks"
+                ],
+                "answer": 0,
+                "explanation": "A schedule is serializable if its outcome is equivalent to some serial execution."
+            },
+            {
+                "id": "DBMS_TC006",
+                "question": "Which concurrency control method uses timestamps to order transactions?",
+                "options": [
+                    "Timestamp ordering",
+                    "Two-phase locking",
+                    "Optimistic control",
+                    "Multiversion control"
+                ],
+                "answer": 0,
+                "explanation": "Timestamp ordering assigns a unique timestamp to each transaction to control conflicts."
+            },
+            {
+                "id": "DBMS_TC007",
+                "question": "Which of the following problems occurs due to concurrent transactions?",
+                "options": [
+                    "Lost update",
+                    "Data normalization",
+                    "Indexing overhead",
+                    "Transaction rollback only"
+                ],
+                "answer": 0,
+                "explanation": "Lost update happens when two transactions update the same data without proper synchronization."
+            },
+            {
+                "id": "DBMS_TC008",
+                "question": "In two-phase locking (2PL), which phases exist?",
+                "options": [
+                    "Growing phase and shrinking phase",
+                    "Locking phase and unlocking phase",
+                    "Reading phase and writing phase",
+                    "Start phase and commit phase"
+                ],
+                "answer": 0,
+                "explanation": "2PL consists of a growing phase (acquiring locks) and a shrinking phase (releasing locks)."
+            },
+            {
+                "id": "DBMS_TC009",
+                "question": "Deadlock occurs when:",
+                "options": [
+                    "Two or more transactions wait indefinitely for each other",
+                    "A transaction is rolled back",
+                    "Database crashes",
+                    "All transactions are committed simultaneously"
+                ],
+                "answer": 0,
+                "explanation": "Deadlock is a situation where transactions wait for each other's resources indefinitely."
+            },
+            {
+                "id": "DBMS_TC010",
+                "question": "Which of the following can be used to prevent deadlocks?",
+                "options": [
+                    "Timeouts, wait-die, wound-wait protocols",
+                    "Serial schedules only",
+                    "Single transaction execution",
+                    "Disabling commits"
+                ],
+                "answer": 0,
+                "explanation": "Protocols like wait-die or wound-wait and timeouts help prevent deadlocks."
+            },
+            {
+                "id": "DBMS_TC011",
+                "question": "Which isolation level allows reading uncommitted data?",
+                "options": [
+                    "Read uncommitted",
+                    "Read committed",
+                    "Repeatable read",
+                    "Serializable"
+                ],
+                "answer": 0,
+                "explanation": "Read uncommitted isolation allows dirty reads."
+            },
+            {
+                "id": "DBMS_TC012",
+                "question": "Which isolation level prevents dirty reads but allows non-repeatable reads?",
+                "options": [
+                    "Read committed",
+                    "Read uncommitted",
+                    "Serializable",
+                    "Repeatable read"
+                ],
+                "answer": 0,
+                "explanation": "Read committed prevents reading uncommitted changes but does not prevent changes by other transactions."
+            },
+            {
+                "id": "DBMS_TC013",
+                "question": "Which isolation level prevents both dirty and non-repeatable reads?",
+                "options": [
+                    "Repeatable read",
+                    "Read uncommitted",
+                    "Read committed",
+                    "Serializable"
+                ],
+                "answer": 0,
+                "explanation": "Repeatable read ensures consistent reads for the same transaction but may allow phantom reads."
+            },
+            {
+                "id": "DBMS_TC014",
+                "question": "Serializable isolation level ensures:",
+                "options": [
+                    "Complete isolation as if transactions executed serially",
+                    "Only dirty read prevention",
+                    "Partial concurrency",
+                    "No transaction commits"
+                ],
+                "answer": 0,
+                "explanation": "Serializable guarantees full isolation equivalent to some serial order."
+            },
+            {
+                "id": "DBMS_TC015",
+                "question": "Which of the following is an optimistic concurrency control method?",
+                "options": [
+                    "Validation-based concurrency",
+                    "Two-phase locking",
+                    "Timestamp ordering",
+                    "Wait-die protocol"
+                ],
+                "answer": 0,
+                "explanation": "Optimistic methods allow transactions to execute without locking and validate at commit."
+            },
+            {
+                "id": "DBMS_TC016",
+                "question": "Which of the following is a pessimistic concurrency control method?",
+                "options": [
+                    "Two-phase locking",
+                    "Optimistic validation",
+                    "Timestamp ordering",
+                    "Multiversion concurrency"
+                ],
+                "answer": 0,
+                "explanation": "Pessimistic methods prevent conflicts by locking resources during transaction execution."
+            },
+            {
+                "id": "DBMS_TC017",
+                "question": "Which problem occurs when a transaction reads data modified by another uncommitted transaction?",
+                "options": [
+                    "Dirty read",
+                    "Lost update",
+                    "Phantom read",
+                    "Deadlock"
+                ],
+                "answer": 0,
+                "explanation": "Dirty read occurs when uncommitted changes are read by another transaction."
+            },
+            {
+                "id": "DBMS_TC018",
+                "question": "Which problem occurs when a transaction reads the same data twice and gets different results?",
+                "options": [
+                    "Non-repeatable read",
+                    "Dirty read",
+                    "Lost update",
+                    "Deadlock"
+                ],
+                "answer": 0,
+                "explanation": "Non-repeatable read happens due to another transaction modifying the data in between reads."
+            },
+            {
+                "id": "DBMS_TC019",
+                "question": "Which problem occurs when a transaction reads new rows inserted by another transaction?",
+                "options": [
+                    "Phantom read",
+                    "Dirty read",
+                    "Lost update",
+                    "Deadlock"
+                ],
+                "answer": 0,
+                "explanation": "Phantom read occurs when new rows appear in the result of a repeated query."
+            },
+            {
+                "id": "DBMS_TC020",
+                "question": "Commit operation in a transaction ensures:",
+                "options": [
+                    "Durability",
+                    "Atomicity only",
+                    "Isolation only",
+                    "Rollback"
+                ],
+                "answer": 0,
+                "explanation": "Commit makes changes permanent, satisfying the durability property."
+            },
+            {
+                "id": "DBMS_TC021",
+                "question": "Rollback operation is used to:",
+                "options": [
+                    "Undo changes of a transaction",
+                    "Commit changes permanently",
+                    "Increase isolation level",
+                    "Create new index"
+                ],
+                "answer": 0,
+                "explanation": "Rollback undoes all operations of a transaction to maintain atomicity."
+            },
+            {
+                "id": "DBMS_TC022",
+                "question": "Two-phase commit protocol is used for:",
+                "options": [
+                    "Distributed transactions",
+                    "Single database transactions",
+                    "Indexing",
+                    "File organization"
+                ],
+                "answer": 0,
+                "explanation": "Two-phase commit ensures all nodes of a distributed transaction either commit or rollback together."
+            },
+            {
+                "id": "DBMS_TC023",
+                "question": "Which of the following is NOT a concurrency problem?",
+                "options": [
+                    "Data replication",
+                    "Dirty read",
+                    "Lost update",
+                    "Phantom read"
+                ],
+                "answer": 0,
+                "explanation": "Data replication is not a concurrency problem; the others arise due to concurrent transactions."
+            },
+            {
+                "id": "DBMS_TC024",
+                "question": "Which mechanism helps achieve isolation without locking?",
+                "options": [
+                    "Multiversion concurrency control (MVCC)",
+                    "Two-phase locking",
+                    "Timestamp ordering",
+                    "Serial schedule"
+                ],
+                "answer": 0,
+                "explanation": "MVCC allows transactions to read previous versions, avoiding locks while maintaining isolation."
+            },
+            {
+                "id": "DBMS_TC025",
+                "question": "Which of the following is TRUE about transaction log?",
+                "options": [
+                    "It is used to recover from crashes",
+                    "It stores indexes",
+                    "It stores only committed data",
+                    "It is optional"
+                ],
+                "answer": 0,
+                "explanation": "Transaction logs record all changes to help recover the database to a consistent state after failure."
             }
         ],
         "extra_qs": [
             {
-                "id": "PC001",
-                "question": "Which of the following is a primitive type in Java?",
+                "id": "DBMS_EXTRA001",
+                "question": "Which of the following represents a weak entity in ER model?",
                 "options": [
-                    "String",
-                    "int",
-                    "Array",
-                    "Object"
+                    "Dependent",
+                    "Employee",
+                    "Department",
+                    "Project"
                 ],
-                "answer": 1,
-                "explanation": "int is a primitive type in Java."
+                "answer": 0,
+                "explanation": "Weak entities cannot be uniquely identified without their owner entity."
             },
             {
-                "id": "PC002",
-                "question": "Which language is platform independent?",
+                "id": "DBMS_EXTRA002",
+                "question": "In an ER diagram, a many-to-many relationship is represented by:",
                 "options": [
-                    "C++",
-                    "Java",
-                    "C",
-                    "Assembly"
+                    "Diamond connecting entities",
+                    "Rectangle with key",
+                    "Oval",
+                    "Arrow from one entity"
                 ],
-                "answer": 1,
-                "explanation": "Java bytecode runs on JVM which makes it platform independent."
+                "answer": 0,
+                "explanation": "Diamonds are used to denote relationships; many-to-many relationships connect two entities via diamond."
+            },
+            {
+                "id": "DBMS_EXTRA003",
+                "question": "Which of the following relational algebra operations removes duplicates?",
+                "options": [
+                    "Projection (π)",
+                    "Selection (σ)",
+                    "Union (∪)",
+                    "Cartesian product (×)"
+                ],
+                "answer": 0,
+                "explanation": "Projection operation in relational algebra automatically removes duplicate tuples."
+            },
+            {
+                "id": "DBMS_EXTRA004",
+                "question": "Which of the following tuple calculus expression is valid for finding names of students?",
+                "options": [
+                    "{s.name | Student(s) ∧ s.marks > 50}",
+                    "{Student.name | marks > 50}",
+                    "{s | s in Student}",
+                    "{name | marks > 50}"
+                ],
+                "answer": 0,
+                "explanation": "Tuple relational calculus uses variables representing tuples; valid syntax includes variable and conditions."
+            },
+            {
+                "id": "DBMS_EXTRA005",
+                "question": "Which integrity constraint ensures that primary key cannot be NULL?",
+                "options": [
+                    "Entity integrity",
+                    "Referential integrity",
+                    "Domain constraint",
+                    "Key constraint"
+                ],
+                "answer": 0,
+                "explanation": "Entity integrity requires that primary key fields are not NULL."
+            },
+            {
+                "id": "DBMS_EXTRA006",
+                "question": "Referential integrity ensures that:",
+                "options": [
+                    "Foreign key matches primary key in parent table",
+                    "Primary key is unique",
+                    "Domain is valid",
+                    "Tuple calculus holds true"
+                ],
+                "answer": 0,
+                "explanation": "Referential integrity enforces that foreign key values match a valid primary key or are NULL."
+            },
+            {
+                "id": "DBMS_EXTRA007",
+                "question": "Which normal form removes partial dependencies?",
+                "options": [
+                    "2NF",
+                    "1NF",
+                    "3NF",
+                    "BCNF"
+                ],
+                "answer": 0,
+                "explanation": "2NF eliminates partial dependencies on a part of a composite primary key."
+            },
+            {
+                "id": "DBMS_EXTRA008",
+                "question": "Which normal form removes transitive dependencies?",
+                "options": [
+                    "3NF",
+                    "2NF",
+                    "BCNF",
+                    "4NF"
+                ],
+                "answer": 0,
+                "explanation": "3NF eliminates transitive dependencies where non-key attributes depend on other non-key attributes."
+            },
+            {
+                "id": "DBMS_EXTRA009",
+                "question": "BCNF is stricter than 3NF because:",
+                "options": [
+                    "Every determinant is a candidate key",
+                    "Partial dependencies exist",
+                    "Duplicates allowed",
+                    "Domain values can vary"
+                ],
+                "answer": 0,
+                "explanation": "BCNF ensures all determinants are candidate keys, stricter than 3NF."
+            },
+            {
+                "id": "DBMS_EXTRA010",
+                "question": "In heap file organization, the access time is:",
+                "options": [
+                    "Constant for insertion, linear for search",
+                    "Linear for insertion",
+                    "Constant for search",
+                    "Logarithmic"
+                ],
+                "answer": 0,
+                "explanation": "Insertion is fast as it goes to first free space; search requires scanning all records."
+            },
+            {
+                "id": "DBMS_EXTRA011",
+                "question": "Which file organization is most suitable for range queries?",
+                "options": [
+                    "Sequential",
+                    "Heap",
+                    "Hashed",
+                    "Temporary"
+                ],
+                "answer": 0,
+                "explanation": "Sequential files allow scanning records in order for range queries efficiently."
+            },
+            {
+                "id": "DBMS_EXTRA012",
+                "question": "In a B-tree of order 4, maximum number of keys in a node is:",
+                "options": [
+                    "3",
+                    "4",
+                    "2",
+                    "5"
+                ],
+                "answer": 0,
+                "explanation": "Maximum keys = order-1; for order 4, max keys = 3."
+            },
+            {
+                "id": "DBMS_EXTRA013",
+                "question": "In a B+ tree, which nodes store actual data records?",
+                "options": [
+                    "Leaf nodes",
+                    "Internal nodes",
+                    "Root only",
+                    "All nodes"
+                ],
+                "answer": 0,
+                "explanation": "B+ trees store actual data only in leaf nodes; internal nodes store keys for navigation."
+            },
+            {
+                "id": "DBMS_EXTRA014",
+                "question": "A dense index contains:",
+                "options": [
+                    "Index entry for every record",
+                    "Index entry per block only",
+                    "Index for alternate records",
+                    "No index for data"
+                ],
+                "answer": 0,
+                "explanation": "Dense index has entries for every record in the data file."
+            },
+            {
+                "id": "DBMS_EXTRA015",
+                "question": "Sparse index contains:",
+                "options": [
+                    "Index entries for only some records, typically first per block",
+                    "All records",
+                    "Only key values without pointers",
+                    "No pointers"
+                ],
+                "answer": 0,
+                "explanation": "Sparse index stores entries for first record in each block; not all records."
+            },
+            {
+                "id": "DBMS_EXTRA016",
+                "question": "Lost update problem occurs due to:",
+                "options": [
+                    "Concurrent transactions overwriting data",
+                    "Incorrect normalization",
+                    "Disk failure",
+                    "Hash collision"
+                ],
+                "answer": 0,
+                "explanation": "Two transactions updating same data without synchronization can lose updates."
+            },
+            {
+                "id": "DBMS_EXTRA017",
+                "question": "Dirty read problem happens when:",
+                "options": [
+                    "Transaction reads uncommitted data",
+                    "Transaction fails to commit",
+                    "Index is invalid",
+                    "Primary key is NULL"
+                ],
+                "answer": 0,
+                "explanation": "Reading data from uncommitted transaction can lead to dirty reads."
+            },
+            {
+                "id": "DBMS_EXTRA018",
+                "question": "Which isolation level allows phantom reads?",
+                "options": [
+                    "Repeatable read",
+                    "Read committed",
+                    "Serializable",
+                    "Read uncommitted"
+                ],
+                "answer": 0,
+                "explanation": "Repeatable read prevents non-repeatable reads but does not prevent phantom reads."
+            },
+            {
+                "id": "DBMS_EXTRA019",
+                "question": "In Two-phase locking, locks are released during:",
+                "options": [
+                    "Shrinking phase",
+                    "Growing phase",
+                    "Commit phase",
+                    "Rollback phase"
+                ],
+                "answer": 0,
+                "explanation": "In 2PL, locks are acquired during growing phase and released during shrinking phase."
+            },
+            {
+                "id": "DBMS_EXTRA020",
+                "question": "Deadlock can be resolved by:",
+                "options": [
+                    "Abort one or more transactions",
+                    "Increasing memory",
+                    "Deleting indexes",
+                    "Using B+ tree"
+                ],
+                "answer": 0,
+                "explanation": "One transaction can be aborted to break the deadlock cycle."
+            },
+            {
+                "id": "DBMS_EXTRA021",
+                "question": "Which operation in relational algebra combines tuples from two relations with common attributes?",
+                "options": [
+                    "Natural join",
+                    "Projection",
+                    "Selection",
+                    "Union"
+                ],
+                "answer": 0,
+                "explanation": "Natural join combines tuples sharing common attribute values."
+            },
+            {
+                "id": "DBMS_EXTRA022",
+                "question": "Which relational algebra operation is used to find tuples in one relation but not in another?",
+                "options": [
+                    "Set difference",
+                    "Union",
+                    "Intersection",
+                    "Cartesian product"
+                ],
+                "answer": 0,
+                "explanation": "Set difference returns tuples present in one relation but not in the other."
+            },
+            {
+                "id": "DBMS_EXTRA023",
+                "question": "Which of the following is a valid foreign key?",
+                "options": [
+                    "Employee.dept_id references Department.dept_id",
+                    "Employee.name references Department.name",
+                    "Department.id references Employee.id",
+                    "None of the above"
+                ],
+                "answer": 0,
+                "explanation": "Foreign key must reference primary key of another table."
+            },
+            {
+                "id": "DBMS_EXTRA024",
+                "question": "The minimum number of keys in a B-tree node of order 5 (except root) is:",
+                "options": [
+                    "2",
+                    "3",
+                    "1",
+                    "4"
+                ],
+                "answer": 0,
+                "explanation": "Minimum keys = ceiling(order/2)-1 = ceiling(5/2)-1 = 2."
+            },
+            {
+                "id": "DBMS_EXTRA025",
+                "question": "Which of the following is true for atomic transactions?",
+                "options": [
+                    "All operations succeed or none",
+                    "Some operations may succeed",
+                    "Durability is ignored",
+                    "Isolation is ignored"
+                ],
+                "answer": 0,
+                "explanation": "Atomicity ensures either all operations succeed or none at all."
+            },
+            {
+                "id": "DBMS_EXTRA026",
+                "question": "Which file organization is most suitable for online transaction processing?",
+                "options": [
+                    "Hashed file",
+                    "Sequential file",
+                    "Heap file",
+                    "Tape storage"
+                ],
+                "answer": 0,
+                "explanation": "Hashed files provide fast random access required by OLTP systems."
+            },
+            {
+                "id": "DBMS_EXTRA027",
+                "question": "Which of the following is an example of entity integrity violation?",
+                "options": [
+                    "Primary key is NULL",
+                    "Foreign key mismatch",
+                    "Duplicate values in non-key column",
+                    "Index missing"
+                ],
+                "answer": 0,
+                "explanation": "Entity integrity requires primary keys to be non-NULL."
+            },
+            {
+                "id": "DBMS_EXTRA028",
+                "question": "Which of the following is an example of referential integrity violation?",
+                "options": [
+                    "Foreign key points to non-existent primary key",
+                    "Primary key is NULL",
+                    "Duplicate primary keys",
+                    "Hash collision"
+                ],
+                "answer": 0,
+                "explanation": "Foreign key must reference a valid primary key; otherwise referential integrity is violated."
+            },
+            {
+                "id": "DBMS_EXTRA029",
+                "question": "In tuple relational calculus, variables represent:",
+                "options": [
+                    "Tuples",
+                    "Attributes only",
+                    "Database schema",
+                    "Indexes"
+                ],
+                "answer": 0,
+                "explanation": "Tuple variables represent entire tuples from relations."
+            },
+            {
+                "id": "DBMS_EXTRA030",
+                "question": "File organization that stores records in insertion order without sorting is called:",
+                "options": [
+                    "Heap file",
+                    "Sequential file",
+                    "Indexed file",
+                    "Clustered file"
+                ],
+                "answer": 0,
+                "explanation": "Heap files store records in arbitrary order; no sorting is maintained."
+            },
+            {
+                "id": "DBMS_EXTRA031",
+                "question": "Which B-tree property ensures balanced search time?",
+                "options": [
+                    "All leaf nodes are at same depth",
+                    "Internal nodes have only one key",
+                    "Only root stores data",
+                    "Keys can be NULL"
+                ],
+                "answer": 0,
+                "explanation": "Balanced height ensures O(log n) search time."
+            },
+            {
+                "id": "DBMS_EXTRA032",
+                "question": "Which of the following ensures durability in transactions?",
+                "options": [
+                    "Transaction log and commit",
+                    "Indexing only",
+                    "Heap organization",
+                    "Tuple calculus"
+                ],
+                "answer": 0,
+                "explanation": "Logs ensure committed changes are permanent even after crash."
+            },
+            {
+                "id": "DBMS_EXTRA033",
+                "question": "Which relational algebra operation returns all combinations of tuples from two relations?",
+                "options": [
+                    "Cartesian product",
+                    "Union",
+                    "Intersection",
+                    "Join"
+                ],
+                "answer": 0,
+                "explanation": "Cartesian product pairs every tuple of one relation with every tuple of the other."
+            },
+            {
+                "id": "DBMS_EXTRA034",
+                "question": "Which normal form addresses multi-valued dependencies?",
+                "options": [
+                    "4NF",
+                    "3NF",
+                    "BCNF",
+                    "1NF"
+                ],
+                "answer": 0,
+                "explanation": "Fourth normal form (4NF) removes multi-valued dependencies."
+            },
+            {
+                "id": "DBMS_EXTRA035",
+                "question": "In transactions, phantom read occurs when:",
+                "options": [
+                    "New rows appear between repeated reads",
+                    "Deleted records remain",
+                    "Old versions are read",
+                    "Data is lost"
+                ],
+                "answer": 0,
+                "explanation": "Phantom read happens when new tuples appear in the result of repeated query."
+            },
+            {
+                "id": "DBMS_EXTRA036",
+                "question": "Which of the following ensures serializability?",
+                "options": [
+                    "Two-phase locking",
+                    "Heap file",
+                    "Sparse index",
+                    "Tuple calculus"
+                ],
+                "answer": 0,
+                "explanation": "2PL is a common method to ensure conflict-serializable schedules."
+            },
+            {
+                "id": "DBMS_EXTRA037",
+                "question": "In a relation R(A,B,C), which violates 1NF?",
+                "options": [
+                    "Attribute C has multiple values per tuple",
+                    "Primary key A exists",
+                    "B is unique",
+                    "All attributes are atomic"
+                ],
+                "answer": 0,
+                "explanation": "1NF requires atomic values; multiple values in one field violate it."
+            },
+            {
+                "id": "DBMS_EXTRA038",
+                "question": "Which index type is best for range queries?",
+                "options": [
+                    "B+ tree index",
+                    "Hash index",
+                    "Heap",
+                    "Unordered sequential"
+                ],
+                "answer": 0,
+                "explanation": "B+ trees maintain sorted order, ideal for range queries."
+            },
+            {
+                "id": "DBMS_EXTRA039",
+                "question": "In tuple relational calculus, existential quantifier is represented by:",
+                "options": [
+                    "∃",
+                    "∀",
+                    "σ",
+                    "π"
+                ],
+                "answer": 0,
+                "explanation": "∃ denotes 'there exists' in relational calculus."
+            },
+            {
+                "id": "DBMS_EXTRA040",
+                "question": "In tuple relational calculus, universal quantifier is represented by:",
+                "options": [
+                    "∀",
+                    "∃",
+                    "σ",
+                    "π"
+                ],
+                "answer": 0,
+                "explanation": "∀ denotes 'for all' in relational calculus."
+            },
+            {
+                "id": "DBMS_EXTRA041",
+                "question": "In file organization, clustering helps by:",
+                "options": [
+                    "Storing related records together",
+                    "Increasing hash collisions",
+                    "Removing duplicates",
+                    "Sorting B-trees"
+                ],
+                "answer": 0,
+                "explanation": "Clustering places related records physically close to reduce I/O."
+            },
+            {
+                "id": "DBMS_EXTRA042",
+                "question": "Transaction T1 writes X and T2 reads X before T1 commits, this is an example of:",
+                "options": [
+                    "Dirty read",
+                    "Lost update",
+                    "Phantom read",
+                    "Non-repeatable read"
+                ],
+                "answer": 0,
+                "explanation": "T2 reads uncommitted data from T1, causing dirty read."
+            },
+            {
+                "id": "DBMS_EXTRA043",
+                "question": "Which schedule is conflict-serializable?",
+                "options": [
+                    "Equivalent to some serial schedule after swapping non-conflicting operations",
+                    "Executed sequentially only",
+                    "Executed concurrently without locks",
+                    "All schedules are serializable"
+                ],
+                "answer": 0,
+                "explanation": "Conflict-serializable schedule can be transformed into a serial schedule by swapping non-conflicting operations."
+            },
+            {
+                "id": "DBMS_EXTRA044",
+                "question": "Which of the following is true for multiversion concurrency control?",
+                "options": [
+                    "Read operations do not block writes",
+                    "Transactions are always blocked",
+                    "Deadlocks are guaranteed",
+                    "Indexes are ignored"
+                ],
+                "answer": 0,
+                "explanation": "MVCC allows reads to access old versions, avoiding blocking writes."
+            },
+            {
+                "id": "DBMS_EXTRA045",
+                "question": "Which of the following is a primary purpose of normalization?",
+                "options": [
+                    "Remove redundancy and anomalies",
+                    "Speed up indexing",
+                    "Increase transaction logs",
+                    "Reduce B-tree height"
+                ],
+                "answer": 0,
+                "explanation": "Normalization organizes tables to eliminate redundancy and update anomalies."
+            },
+            {
+                "id": "DBMS_EXTRA046",
+                "question": "Which relational algebra operation is used to combine tuples from two relations by union of common attributes?",
+                "options": [
+                    "Union",
+                    "Intersection",
+                    "Difference",
+                    "Cartesian product"
+                ],
+                "answer": 0,
+                "explanation": "Union combines tuples from two relations with the same set of attributes."
+            },
+            {
+                "id": "DBMS_EXTRA047",
+                "question": "In indexing, a primary index is created on:",
+                "options": [
+                    "Sorted file based on primary key",
+                    "Heap file",
+                    "Temporary files",
+                    "Unsorted secondary attributes"
+                ],
+                "answer": 0,
+                "explanation": "Primary index is on a sorted file using primary key for fast access."
+            },
+            {
+                "id": "DBMS_EXTRA048",
+                "question": "In B+ tree, after inserting a key in a full leaf node, what happens?",
+                "options": [
+                    "Node split occurs and may propagate upward",
+                    "Root is deleted",
+                    "All nodes are merged",
+                    "Data is lost"
+                ],
+                "answer": 0,
+                "explanation": "Insertion in a full node causes split; key may propagate to parent."
+            },
+            {
+                "id": "DBMS_EXTRA049",
+                "question": "Which of the following is an example of concurrency anomaly?",
+                "options": [
+                    "Lost update",
+                    "Primary key violation",
+                    "Foreign key violation",
+                    "Normalization violation"
+                ],
+                "answer": 0,
+                "explanation": "Lost update occurs when concurrent transactions overwrite each other's changes."
+            },
+            {
+                "id": "DBMS_EXTRA050",
+                "question": "Transaction commit ensures which ACID property?",
+                "options": [
+                    "Durability",
+                    "Atomicity only",
+                    "Isolation only",
+                    "Consistency only"
+                ],
+                "answer": 0,
+                "explanation": "Commit ensures that changes are permanent, satisfying the durability property."
             }
         ]
     }

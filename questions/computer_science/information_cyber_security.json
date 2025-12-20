@@ -1,0 +1,2180 @@
+{
+    "data": {
+        "Cyber Attacks": [
+            {
+                "id": "ICS_CA001",
+                "question": "Which of the following is an example of a passive cyber attack?",
+                "options": [
+                    "Eavesdropping",
+                    "Denial of Service",
+                    "Man-in-the-middle modification",
+                    "Malware injection"
+                ],
+                "answer": 0,
+                "explanation": "Passive attacks involve monitoring or listening to communication without altering it, such as eavesdropping."
+            },
+            {
+                "id": "ICS_CA002",
+                "question": "In which type of attack does the attacker overwhelm the target system with excessive traffic?",
+                "options": [
+                    "Denial of Service (DoS)",
+                    "Phishing",
+                    "Spoofing",
+                    "SQL Injection"
+                ],
+                "answer": 0,
+                "explanation": "DoS attacks aim to make a service unavailable by flooding it with requests."
+            },
+            {
+                "id": "ICS_CA003",
+                "question": "Which cyber attack involves sending fraudulent emails to trick users into revealing sensitive information?",
+                "options": [
+                    "Phishing",
+                    "Eavesdropping",
+                    "Brute Force",
+                    "ARP Spoofing"
+                ],
+                "answer": 0,
+                "explanation": "Phishing is the act of deceiving users via emails or messages to steal credentials."
+            },
+            {
+                "id": "ICS_CA004",
+                "question": "A worm differs from a virus because:",
+                "options": [
+                    "It can propagate without attaching to files",
+                    "It cannot self-replicate",
+                    "It only affects network devices",
+                    "It always requires human intervention to execute"
+                ],
+                "answer": 0,
+                "explanation": "Worms are self-replicating malware that spread over networks without needing a host file."
+            },
+            {
+                "id": "ICS_CA005",
+                "question": "Which attack modifies DNS records to redirect users to malicious sites?",
+                "options": [
+                    "DNS Spoofing",
+                    "Cross-site scripting",
+                    "SQL Injection",
+                    "ARP Poisoning"
+                ],
+                "answer": 0,
+                "explanation": "DNS spoofing changes DNS entries to redirect traffic to fake websites."
+            },
+            {
+                "id": "ICS_CA006",
+                "question": "Man-in-the-middle (MITM) attack primarily targets:",
+                "options": [
+                    "Data in transit",
+                    "Data at rest",
+                    "Authentication logs",
+                    "Software source code"
+                ],
+                "answer": 0,
+                "explanation": "MITM intercepts and may alter communication between two parties."
+            },
+            {
+                "id": "ICS_CA007",
+                "question": "Which attack exploits a website vulnerability to execute malicious scripts in users’ browsers?",
+                "options": [
+                    "Cross-site scripting (XSS)",
+                    "SQL Injection",
+                    "ARP Spoofing",
+                    "DoS"
+                ],
+                "answer": 0,
+                "explanation": "XSS allows attackers to inject scripts into web pages viewed by users."
+            },
+            {
+                "id": "ICS_CA008",
+                "question": "A brute force attack targets:",
+                "options": [
+                    "Passwords or encryption keys",
+                    "DNS servers",
+                    "Router firmware",
+                    "Software licenses"
+                ],
+                "answer": 0,
+                "explanation": "Brute force attacks systematically try all possible password or key combinations."
+            },
+            {
+                "id": "ICS_CA009",
+                "question": "Which type of cyber attack involves sending large volumes of junk messages to disrupt services?",
+                "options": [
+                    "Spam attack",
+                    "Phishing",
+                    "Malware infection",
+                    "Replay attack"
+                ],
+                "answer": 0,
+                "explanation": "Spam attacks overload communication channels with unsolicited messages."
+            },
+            {
+                "id": "ICS_CA010",
+                "question": "SQL Injection attack targets:",
+                "options": [
+                    "Database queries",
+                    "Network routers",
+                    "Antivirus software",
+                    "Encryption algorithms"
+                ],
+                "answer": 0,
+                "explanation": "SQL Injection exploits vulnerabilities in application queries to manipulate databases."
+            },
+            {
+                "id": "ICS_CA011",
+                "question": "Which attack impersonates a trusted device to intercept network traffic?",
+                "options": [
+                    "ARP Spoofing",
+                    "Phishing",
+                    "DoS",
+                    "Brute Force"
+                ],
+                "answer": 0,
+                "explanation": "ARP spoofing allows attackers to pretend to be another device on the network."
+            },
+            {
+                "id": "ICS_CA012",
+                "question": "Ransomware attacks primarily aim to:",
+                "options": [
+                    "Encrypt victim's data for ransom",
+                    "Steal network bandwidth",
+                    "Modify DNS entries",
+                    "Overload servers with traffic"
+                ],
+                "answer": 0,
+                "explanation": "Ransomware encrypts files and demands payment to restore access."
+            },
+            {
+                "id": "ICS_CA013",
+                "question": "Replay attacks involve:",
+                "options": [
+                    "Capturing and resending valid data packets",
+                    "Deleting logs",
+                    "Injecting SQL statements",
+                    "Overwriting DNS entries"
+                ],
+                "answer": 0,
+                "explanation": "Replay attacks intercept and retransmit data to gain unauthorized access."
+            },
+            {
+                "id": "ICS_CA014",
+                "question": "Which of the following is a social engineering attack?",
+                "options": [
+                    "Pretexting",
+                    "ARP Spoofing",
+                    "SQL Injection",
+                    "Buffer Overflow"
+                ],
+                "answer": 0,
+                "explanation": "Pretexting tricks individuals into revealing confidential information."
+            },
+            {
+                "id": "ICS_CA015",
+                "question": "Zero-day attack refers to:",
+                "options": [
+                    "Exploiting a vulnerability unknown to the vendor",
+                    "Attack on day one of the week",
+                    "Buffer overflow on a server",
+                    "Network sniffing attack"
+                ],
+                "answer": 0,
+                "explanation": "Zero-day attacks target unknown vulnerabilities before a patch is available."
+            }
+        ],
+        "Software Development Security": [
+            {
+                "id": "ICS_SDS001",
+                "question": "Which of the following is a primary goal of secure software development?",
+                "options": [
+                    "Prevent vulnerabilities in the software",
+                    "Improve user interface aesthetics",
+                    "Increase network bandwidth",
+                    "Reduce database size"
+                ],
+                "answer": 0,
+                "explanation": "Secure software development focuses on minimizing security vulnerabilities and ensuring resilience against attacks."
+            },
+            {
+                "id": "ICS_SDS002",
+                "question": "Which software development principle emphasizes limiting the exposure of sensitive data?",
+                "options": [
+                    "Least privilege",
+                    "Modular design",
+                    "Code reuse",
+                    "Agile methodology"
+                ],
+                "answer": 0,
+                "explanation": "The principle of least privilege ensures users and modules have only the minimum access necessary."
+            },
+            {
+                "id": "ICS_SDS003",
+                "question": "Input validation in software is important to prevent:",
+                "options": [
+                    "SQL Injection and buffer overflow",
+                    "UI errors",
+                    "Slow compilation",
+                    "Network latency"
+                ],
+                "answer": 0,
+                "explanation": "Proper input validation prevents injection attacks and memory-related vulnerabilities."
+            },
+            {
+                "id": "ICS_SDS004",
+                "question": "Which of the following is a secure coding practice?",
+                "options": [
+                    "Avoid hardcoding credentials",
+                    "Store passwords in plain text",
+                    "Use predictable session IDs",
+                    "Disable logging"
+                ],
+                "answer": 0,
+                "explanation": "Hardcoding credentials or weak session management can lead to security breaches."
+            },
+            {
+                "id": "ICS_SDS005",
+                "question": "During software development, threat modeling is performed to:",
+                "options": [
+                    "Identify and mitigate potential security risks",
+                    "Optimize database queries",
+                    "Reduce UI complexity",
+                    "Increase compile speed"
+                ],
+                "answer": 0,
+                "explanation": "Threat modeling helps developers anticipate and address security threats in design phase."
+            },
+            {
+                "id": "ICS_SDS006",
+                "question": "Which of the following is considered a secure authentication mechanism in software?",
+                "options": [
+                    "Multi-factor authentication",
+                    "Plain text passwords",
+                    "Single static token",
+                    "Default admin credentials"
+                ],
+                "answer": 0,
+                "explanation": "Multi-factor authentication significantly increases security compared to single-factor methods."
+            },
+            {
+                "id": "ICS_SDS007",
+                "question": "Static code analysis is used to:",
+                "options": [
+                    "Detect security vulnerabilities before runtime",
+                    "Measure software performance",
+                    "Reduce network traffic",
+                    "Generate reports for users"
+                ],
+                "answer": 0,
+                "explanation": "Static code analysis inspects code for security flaws without executing the program."
+            },
+            {
+                "id": "ICS_SDS008",
+                "question": "Which of the following is a common software vulnerability in web applications?",
+                "options": [
+                    "Cross-Site Request Forgery (CSRF)",
+                    "Ethernet frame collision",
+                    "ARP cache overflow",
+                    "TCP three-way handshake delay"
+                ],
+                "answer": 0,
+                "explanation": "CSRF is a web-specific vulnerability that tricks a user into executing unwanted actions."
+            },
+            {
+                "id": "ICS_SDS009",
+                "question": "Code review in software security is performed to:",
+                "options": [
+                    "Identify vulnerabilities and logic errors",
+                    "Optimize compilation time",
+                    "Enhance UI design",
+                    "Reduce file size"
+                ],
+                "answer": 0,
+                "explanation": "Manual or peer code review helps detect security and functional issues early."
+            },
+            {
+                "id": "ICS_SDS010",
+                "question": "Buffer overflow vulnerabilities occur when:",
+                "options": [
+                    "More data is written to a buffer than it can hold",
+                    "Memory is freed properly",
+                    "Input validation is enforced",
+                    "Encryption is applied correctly"
+                ],
+                "answer": 0,
+                "explanation": "Buffer overflow can allow attackers to overwrite memory and execute malicious code."
+            },
+            {
+                "id": "ICS_SDS011",
+                "question": "Which of the following is used to prevent unauthorized modification of software during development?",
+                "options": [
+                    "Version control with access restrictions",
+                    "Open access to all developers",
+                    "Plain FTP transfers",
+                    "Manual logging only"
+                ],
+                "answer": 0,
+                "explanation": "Access-controlled version control ensures integrity of code during development."
+            },
+            {
+                "id": "ICS_SDS012",
+                "question": "Sanitizing user inputs primarily protects against:",
+                "options": [
+                    "Injection attacks",
+                    "Hardware failures",
+                    "Compilation errors",
+                    "High memory usage"
+                ],
+                "answer": 0,
+                "explanation": "Input sanitization prevents malicious data from being executed or injected into code or queries."
+            },
+            {
+                "id": "ICS_SDS013",
+                "question": "Which secure software development lifecycle phase focuses on verifying security controls work as intended?",
+                "options": [
+                    "Testing phase",
+                    "Requirements gathering",
+                    "Deployment",
+                    "Maintenance"
+                ],
+                "answer": 0,
+                "explanation": "Testing phase includes security testing to ensure controls are effective."
+            },
+            {
+                "id": "ICS_SDS014",
+                "question": "Which of the following describes 'defense in depth' in software security?",
+                "options": [
+                    "Multiple layers of security controls",
+                    "Single firewall at perimeter",
+                    "Encryption only at database",
+                    "Antivirus on one server"
+                ],
+                "answer": 0,
+                "explanation": "Defense in depth uses multiple security layers to protect assets comprehensively."
+            },
+            {
+                "id": "ICS_SDS015",
+                "question": "Error handling and logging should be designed to:",
+                "options": [
+                    "Avoid exposing sensitive information",
+                    "Print stack trace to user",
+                    "Show passwords in logs",
+                    "Disable error messages entirely"
+                ],
+                "answer": 0,
+                "explanation": "Secure logging ensures errors are tracked without leaking sensitive information."
+            },
+            {
+                "id": "ICS_SDS016",
+                "question": "Threat modeling techniques include:",
+                "options": [
+                    "STRIDE and PASTA",
+                    "TCP/IP and UDP",
+                    "AES and RSA",
+                    "ARP and ICMP"
+                ],
+                "answer": 0,
+                "explanation": "STRIDE and PASTA are widely used threat modeling methodologies."
+            },
+            {
+                "id": "ICS_SDS017",
+                "question": "Which of the following coding practices prevents SQL Injection?",
+                "options": [
+                    "Using parameterized queries or prepared statements",
+                    "Concatenating user input directly into SQL",
+                    "Disabling input validation",
+                    "Storing passwords in plain text"
+                ],
+                "answer": 0,
+                "explanation": "Parameterized queries prevent user input from altering SQL command structure."
+            },
+            {
+                "id": "ICS_SDS018",
+                "question": "Which of the following security practices is recommended for software deployment?",
+                "options": [
+                    "Apply patches and updates regularly",
+                    "Ship untested code quickly",
+                    "Keep default credentials",
+                    "Disable encryption to improve speed"
+                ],
+                "answer": 0,
+                "explanation": "Applying patches and updates ensures that vulnerabilities are fixed before exploitation."
+            },
+            {
+                "id": "ICS_SDS019",
+                "question": "Secure session management in software involves:",
+                "options": [
+                    "Using unique, unpredictable session IDs",
+                    "Static session IDs",
+                    "Reusing cookies for all users",
+                    "Disabling session timeout"
+                ],
+                "answer": 0,
+                "explanation": "Unique and unpredictable session IDs reduce the risk of session hijacking."
+            },
+            {
+                "id": "ICS_SDS020",
+                "question": "Which of the following is a common cause of software vulnerabilities?",
+                "options": [
+                    "Improper input validation",
+                    "Well-defined interfaces",
+                    "Version control usage",
+                    "Unit testing coverage"
+                ],
+                "answer": 0,
+                "explanation": "Many vulnerabilities arise from lack of input validation, insecure coding, or unchecked errors."
+            }
+        ],
+        "Network Security": [
+            {
+                "id": "ICS_NS001",
+                "question": "Which of the following is a primary goal of network security?",
+                "options": [
+                    "Protect data and resources from unauthorized access",
+                    "Increase internet speed",
+                    "Reduce database size",
+                    "Improve UI design"
+                ],
+                "answer": 0,
+                "explanation": "Network security aims to safeguard data, prevent unauthorized access, and ensure service availability."
+            },
+            {
+                "id": "ICS_NS002",
+                "question": "Which protocol is widely used to secure web communication?",
+                "options": [
+                    "HTTPS",
+                    "HTTP",
+                    "FTP",
+                    "Telnet"
+                ],
+                "answer": 0,
+                "explanation": "HTTPS encrypts web traffic using SSL/TLS, ensuring confidentiality and integrity."
+            },
+            {
+                "id": "ICS_NS003",
+                "question": "A firewall primarily helps to:",
+                "options": [
+                    "Filter incoming and outgoing network traffic",
+                    "Increase RAM",
+                    "Encrypt hard drives",
+                    "Control software versions"
+                ],
+                "answer": 0,
+                "explanation": "Firewalls enforce network access policies and block unauthorized traffic."
+            },
+            {
+                "id": "ICS_NS004",
+                "question": "Which type of firewall examines each packet individually without context?",
+                "options": [
+                    "Packet-filtering firewall",
+                    "Stateful firewall",
+                    "Application firewall",
+                    "Proxy firewall"
+                ],
+                "answer": 0,
+                "explanation": "Packet-filtering firewalls check each packet against rules without considering connection state."
+            },
+            {
+                "id": "ICS_NS005",
+                "question": "VPNs (Virtual Private Networks) provide:",
+                "options": [
+                    "Encrypted communication over public networks",
+                    "Faster file transfer",
+                    "Antivirus scanning",
+                    "Firewall replacement"
+                ],
+                "answer": 0,
+                "explanation": "VPNs encrypt traffic, protecting data from interception over insecure networks."
+            },
+            {
+                "id": "ICS_NS006",
+                "question": "Which attack involves intercepting and modifying communication between two parties?",
+                "options": [
+                    "Man-in-the-middle attack",
+                    "ARP poisoning",
+                    "DoS attack",
+                    "SQL injection"
+                ],
+                "answer": 0,
+                "explanation": "MITM attacks intercept and potentially alter communication between endpoints."
+            },
+            {
+                "id": "ICS_NS007",
+                "question": "Intrusion Detection System (IDS) is used to:",
+                "options": [
+                    "Detect unauthorized or malicious activity on a network",
+                    "Store user passwords",
+                    "Optimize routing tables",
+                    "Encrypt emails"
+                ],
+                "answer": 0,
+                "explanation": "IDS monitors network traffic for signs of attacks or policy violations."
+            },
+            {
+                "id": "ICS_NS008",
+                "question": "Which type of IDS can actively block attacks?",
+                "options": [
+                    "Intrusion Prevention System (IPS)",
+                    "Network scanner",
+                    "Firewall only",
+                    "Honeypot"
+                ],
+                "answer": 0,
+                "explanation": "IPS can detect and prevent attacks in real-time by blocking malicious traffic."
+            },
+            {
+                "id": "ICS_NS009",
+                "question": "TLS/SSL protocols ensure which network security properties?",
+                "options": [
+                    "Confidentiality, integrity, and authentication",
+                    "Bandwidth optimization",
+                    "Firewall management",
+                    "IP addressing"
+                ],
+                "answer": 0,
+                "explanation": "TLS/SSL encrypts data, verifies sender/receiver, and ensures integrity of messages."
+            },
+            {
+                "id": "ICS_NS010",
+                "question": "Which security mechanism prevents replay attacks in network communication?",
+                "options": [
+                    "Timestamps and nonces",
+                    "Buffer overflow prevention",
+                    "Database normalization",
+                    "Firewall filtering"
+                ],
+                "answer": 0,
+                "explanation": "Timestamps and nonces ensure messages cannot be maliciously resent."
+            },
+            {
+                "id": "ICS_NS011",
+                "question": "A honeypot is used to:",
+                "options": [
+                    "Attract and analyze attackers",
+                    "Increase network speed",
+                    "Encrypt emails",
+                    "Store backups"
+                ],
+                "answer": 0,
+                "explanation": "Honeypots act as decoys to detect attack methods and gather threat intelligence."
+            },
+            {
+                "id": "ICS_NS012",
+                "question": "MAC (Media Access Control) filtering on a router:",
+                "options": [
+                    "Restricts devices based on hardware address",
+                    "Encrypts traffic",
+                    "Monitors bandwidth",
+                    "Prevents buffer overflow"
+                ],
+                "answer": 0,
+                "explanation": "MAC filtering allows only approved hardware addresses to access the network."
+            },
+            {
+                "id": "ICS_NS013",
+                "question": "Which protocol is used to securely transfer files over a network?",
+                "options": [
+                    "SFTP",
+                    "FTP",
+                    "Telnet",
+                    "SMTP"
+                ],
+                "answer": 0,
+                "explanation": "SFTP encrypts file transfers using SSH, providing confidentiality and integrity."
+            },
+            {
+                "id": "ICS_NS014",
+                "question": "Which attack floods a network with excessive traffic to make services unavailable?",
+                "options": [
+                    "Denial of Service (DoS)",
+                    "ARP spoofing",
+                    "SQL Injection",
+                    "Cross-site scripting"
+                ],
+                "answer": 0,
+                "explanation": "DoS attacks overwhelm a network or server to disrupt services."
+            },
+            {
+                "id": "ICS_NS015",
+                "question": "WEP, WPA, and WPA2 protocols are used to secure:",
+                "options": [
+                    "Wireless networks",
+                    "Email servers",
+                    "Databases",
+                    "DNS servers"
+                ],
+                "answer": 0,
+                "explanation": "These protocols encrypt Wi-Fi communication to prevent unauthorized access."
+            },
+            {
+                "id": "ICS_NS016",
+                "question": "Network segmentation enhances security by:",
+                "options": [
+                    "Dividing a network into isolated segments",
+                    "Combining VLANs into a single network",
+                    "Disabling firewalls",
+                    "Reducing encryption strength"
+                ],
+                "answer": 0,
+                "explanation": "Segmentation limits the spread of attacks and isolates sensitive data."
+            },
+            {
+                "id": "ICS_NS017",
+                "question": "Which type of attack can sniff packets on a switched network?",
+                "options": [
+                    "ARP spoofing or MAC flooding",
+                    "SQL Injection",
+                    "Buffer overflow",
+                    "Cross-site scripting"
+                ],
+                "answer": 0,
+                "explanation": "ARP spoofing or MAC flooding can force switches to send traffic to the attacker."
+            },
+            {
+                "id": "ICS_NS018",
+                "question": "Which authentication protocol uses a shared secret and challenge-response mechanism?",
+                "options": [
+                    "CHAP (Challenge Handshake Authentication Protocol)",
+                    "RADIUS",
+                    "HTTPS",
+                    "TLS"
+                ],
+                "answer": 0,
+                "explanation": "CHAP uses a challenge-response to verify identity without sending passwords in plaintext."
+            },
+            {
+                "id": "ICS_NS019",
+                "question": "Which tool can be used for monitoring and auditing network traffic for security purposes?",
+                "options": [
+                    "Wireshark",
+                    "Notepad",
+                    "Excel",
+                    "Paint"
+                ],
+                "answer": 0,
+                "explanation": "Wireshark captures and analyzes network packets to detect anomalies and attacks."
+            },
+            {
+                "id": "ICS_NS020",
+                "question": "Which method helps ensure integrity of messages sent over a network?",
+                "options": [
+                    "Digital signatures or checksums",
+                    "MAC filtering only",
+                    "Firewall only",
+                    "VPN without encryption"
+                ],
+                "answer": 0,
+                "explanation": "Digital signatures and checksums detect tampering, ensuring data integrity."
+            }
+        ],
+        "Authentication": [
+            {
+                "id": "ICS_AUTH001",
+                "question": "Which of the following is NOT a factor in multi-factor authentication (MFA)?",
+                "options": [
+                    "Database schema",
+                    "Something you know",
+                    "Something you have",
+                    "Something you are"
+                ],
+                "answer": 0,
+                "explanation": "MFA uses combinations of knowledge (password), possession (token), and inherence (biometrics), not database schemas."
+            },
+            {
+                "id": "ICS_AUTH002",
+                "question": "Which authentication method uses fingerprints, retina scans, or voice recognition?",
+                "options": [
+                    "Biometric authentication",
+                    "Password-based authentication",
+                    "Token-based authentication",
+                    "Certificate-based authentication"
+                ],
+                "answer": 0,
+                "explanation": "Biometric authentication relies on unique physiological or behavioral traits."
+            },
+            {
+                "id": "ICS_AUTH003",
+                "question": "Which protocol is commonly used for secure remote authentication over a network?",
+                "options": [
+                    "RADIUS",
+                    "SMTP",
+                    "FTP",
+                    "Telnet"
+                ],
+                "answer": 0,
+                "explanation": "RADIUS (Remote Authentication Dial-In User Service) provides centralized authentication for remote access."
+            },
+            {
+                "id": "ICS_AUTH004",
+                "question": "In token-based authentication, the token primarily serves to:",
+                "options": [
+                    "Prove user identity without transmitting passwords",
+                    "Encrypt files",
+                    "Scan for malware",
+                    "Route network packets"
+                ],
+                "answer": 0,
+                "explanation": "Tokens are temporary credentials that verify identity securely."
+            },
+            {
+                "id": "ICS_AUTH005",
+                "question": "Which attack targets passwords by systematically trying all possible combinations?",
+                "options": [
+                    "Brute force attack",
+                    "Replay attack",
+                    "ARP spoofing",
+                    "SQL injection"
+                ],
+                "answer": 0,
+                "explanation": "Brute force attacks attempt all password combinations to gain access."
+            },
+            {
+                "id": "ICS_AUTH006",
+                "question": "Which authentication standard is based on public key infrastructure (PKI)?",
+                "options": [
+                    "Certificate-based authentication",
+                    "Password-based authentication",
+                    "Token-based authentication",
+                    "Biometric authentication"
+                ],
+                "answer": 0,
+                "explanation": "Certificate-based authentication uses digital certificates issued by trusted CAs."
+            },
+            {
+                "id": "ICS_AUTH007",
+                "question": "Two-factor authentication (2FA) typically combines:",
+                "options": [
+                    "A password and a token or biometric factor",
+                    "Two passwords only",
+                    "Two biometric factors only",
+                    "A token and encryption algorithm only"
+                ],
+                "answer": 0,
+                "explanation": "2FA uses two different types of authentication factors for stronger security."
+            },
+            {
+                "id": "ICS_AUTH008",
+                "question": "Which of the following is a weakness of password-based authentication?",
+                "options": [
+                    "Susceptible to guessing, phishing, or brute force attacks",
+                    "Always encrypted by default",
+                    "Requires biometric devices",
+                    "Requires VPN"
+                ],
+                "answer": 0,
+                "explanation": "Passwords alone are prone to attacks if not strong or combined with additional factors."
+            },
+            {
+                "id": "ICS_AUTH009",
+                "question": "Time-based One-Time Password (TOTP) is an example of:",
+                "options": [
+                    "Token-based authentication",
+                    "Certificate-based authentication",
+                    "Password hashing",
+                    "Firewall configuration"
+                ],
+                "answer": 0,
+                "explanation": "TOTP generates time-sensitive tokens for secure authentication."
+            },
+            {
+                "id": "ICS_AUTH010",
+                "question": "Which attack can capture credentials and reuse them without knowing the password?",
+                "options": [
+                    "Replay attack",
+                    "ARP spoofing",
+                    "DoS attack",
+                    "XSS attack"
+                ],
+                "answer": 0,
+                "explanation": "Replay attacks intercept valid credentials and reuse them to gain unauthorized access."
+            },
+            {
+                "id": "ICS_AUTH011",
+                "question": "Which of the following ensures that passwords are not stored in plaintext?",
+                "options": [
+                    "Hashing with salt",
+                    "Open FTP transfer",
+                    "Plain text logs",
+                    "Unencrypted email storage"
+                ],
+                "answer": 0,
+                "explanation": "Hashing passwords with a salt prevents recovery of the original passwords even if storage is compromised."
+            },
+            {
+                "id": "ICS_AUTH012",
+                "question": "Single Sign-On (SSO) allows users to:",
+                "options": [
+                    "Access multiple applications with one set of credentials",
+                    "Use multiple passwords for one application",
+                    "Encrypt network traffic",
+                    "Monitor user activity"
+                ],
+                "answer": 0,
+                "explanation": "SSO centralizes authentication for multiple services to reduce login burden."
+            },
+            {
+                "id": "ICS_AUTH013",
+                "question": "Which protocol is often used for authentication in enterprise networks and integrates with Active Directory?",
+                "options": [
+                    "Kerberos",
+                    "SMTP",
+                    "FTP",
+                    "HTTP"
+                ],
+                "answer": 0,
+                "explanation": "Kerberos provides secure ticket-based authentication within enterprise environments."
+            },
+            {
+                "id": "ICS_AUTH014",
+                "question": "Adaptive authentication refers to:",
+                "options": [
+                    "Changing authentication requirements based on context or risk",
+                    "Using a fixed password always",
+                    "Single-factor login",
+                    "Bypassing authentication for VPNs"
+                ],
+                "answer": 0,
+                "explanation": "Adaptive authentication adjusts security measures according to risk level, device, or location."
+            },
+            {
+                "id": "ICS_AUTH015",
+                "question": "Which of the following prevents attackers from reusing stolen session credentials?",
+                "options": [
+                    "Session expiration and token invalidation",
+                    "Password hints",
+                    "Open Wi-Fi networks",
+                    "Plain FTP usage"
+                ],
+                "answer": 0,
+                "explanation": "Proper session management ensures tokens expire and cannot be reused maliciously."
+            }
+        ],
+        "CIA - Confidentiality, Integrity and Availability": [
+            {
+                "id": "ICS_CIA001",
+                "question": "In the CIA triad, 'Confidentiality' primarily ensures:",
+                "options": [
+                    "Data is accessible only to authorized users",
+                    "Data is always available online",
+                    "Data is in correct format",
+                    "Data is backed up regularly"
+                ],
+                "answer": 0,
+                "explanation": "Confidentiality ensures that sensitive information is only accessible to those with proper authorization."
+            },
+            {
+                "id": "ICS_CIA002",
+                "question": "Which of the following is a mechanism to maintain confidentiality?",
+                "options": [
+                    "Encryption",
+                    "Load balancing",
+                    "Database indexing",
+                    "Disk partitioning"
+                ],
+                "answer": 0,
+                "explanation": "Encryption protects data from unauthorized access, preserving confidentiality."
+            },
+            {
+                "id": "ICS_CIA003",
+                "question": "'Integrity' in the CIA triad ensures:",
+                "options": [
+                    "Data is accurate, consistent, and unaltered",
+                    "Data is encrypted",
+                    "Data is always available online",
+                    "Data is compressed"
+                ],
+                "answer": 0,
+                "explanation": "Integrity ensures information is correct, complete, and has not been tampered with."
+            },
+            {
+                "id": "ICS_CIA004",
+                "question": "Which technique is commonly used to verify data integrity?",
+                "options": [
+                    "Checksums and hashes",
+                    "Firewalls",
+                    "VPNs",
+                    "Load balancers"
+                ],
+                "answer": 0,
+                "explanation": "Checksums and cryptographic hashes detect unauthorized modifications to data."
+            },
+            {
+                "id": "ICS_CIA005",
+                "question": "'Availability' in the CIA triad refers to:",
+                "options": [
+                    "Authorized users can access information when needed",
+                    "Data is encrypted",
+                    "Data is consistent",
+                    "Data is anonymized"
+                ],
+                "answer": 0,
+                "explanation": "Availability ensures that systems and data are accessible and operational when required."
+            },
+            {
+                "id": "ICS_CIA006",
+                "question": "Which of the following threats primarily affects availability?",
+                "options": [
+                    "Denial of Service (DoS) attack",
+                    "Password theft",
+                    "Data tampering",
+                    "Eavesdropping"
+                ],
+                "answer": 0,
+                "explanation": "DoS attacks disrupt service, making resources unavailable to legitimate users."
+            },
+            {
+                "id": "ICS_CIA007",
+                "question": "Digital signatures are mainly used to ensure:",
+                "options": [
+                    "Integrity and authenticity of data",
+                    "Network speed",
+                    "Availability",
+                    "Firewall configuration"
+                ],
+                "answer": 0,
+                "explanation": "Digital signatures validate that data has not been altered and confirm the sender’s identity."
+            },
+            {
+                "id": "ICS_CIA008",
+                "question": "Which method ensures confidentiality of data at rest?",
+                "options": [
+                    "Disk encryption",
+                    "Session timeout",
+                    "Access logging",
+                    "Network segmentation"
+                ],
+                "answer": 0,
+                "explanation": "Encrypting data stored on disks prevents unauthorized access."
+            },
+            {
+                "id": "ICS_CIA009",
+                "question": "Redundancy and backup systems primarily support which CIA principle?",
+                "options": [
+                    "Availability",
+                    "Confidentiality",
+                    "Integrity",
+                    "Authentication"
+                ],
+                "answer": 0,
+                "explanation": "Backups and redundancy help ensure continuous access to data and services."
+            },
+            {
+                "id": "ICS_CIA010",
+                "question": "Which attack compromises data integrity?",
+                "options": [
+                    "Man-in-the-middle attack that alters messages",
+                    "Brute force password attack",
+                    "DoS attack",
+                    "Network sniffing only"
+                ],
+                "answer": 0,
+                "explanation": "Altering messages during transmission compromises data integrity."
+            },
+            {
+                "id": "ICS_CIA011",
+                "question": "Access control lists (ACLs) are primarily used to maintain:",
+                "options": [
+                    "Confidentiality",
+                    "Integrity",
+                    "Availability",
+                    "Authentication only"
+                ],
+                "answer": 0,
+                "explanation": "ACLs define which users or systems can access resources, ensuring confidentiality."
+            },
+            {
+                "id": "ICS_CIA012",
+                "question": "Hashing passwords ensures which aspect of the CIA triad?",
+                "options": [
+                    "Integrity",
+                    "Availability",
+                    "Confidentiality",
+                    "Authentication only"
+                ],
+                "answer": 0,
+                "explanation": "Hashing ensures stored passwords are not altered and protects them from unauthorized access."
+            },
+            {
+                "id": "ICS_CIA013",
+                "question": "Which security measure ensures availability during hardware failure?",
+                "options": [
+                    "Failover systems and redundancy",
+                    "Password complexity",
+                    "Digital certificates",
+                    "TLS encryption"
+                ],
+                "answer": 0,
+                "explanation": "Redundant systems and failover mechanisms maintain availability during failures."
+            },
+            {
+                "id": "ICS_CIA014",
+                "question": "Transport Layer Security (TLS) primarily provides:",
+                "options": [
+                    "Confidentiality and integrity",
+                    "Availability",
+                    "Redundancy",
+                    "Backup"
+                ],
+                "answer": 0,
+                "explanation": "TLS encrypts data in transit and ensures it has not been altered."
+            },
+            {
+                "id": "ICS_CIA015",
+                "question": "Checksums in data transmission primarily protect:",
+                "options": [
+                    "Integrity",
+                    "Availability",
+                    "Confidentiality",
+                    "Authentication"
+                ],
+                "answer": 0,
+                "explanation": "Checksums detect errors or tampering, ensuring data integrity."
+            },
+            {
+                "id": "ICS_CIA016",
+                "question": "Which of the following is an example of a breach of confidentiality?",
+                "options": [
+                    "Unauthorized disclosure of customer records",
+                    "Server downtime",
+                    "Data inconsistency",
+                    "Backup failure"
+                ],
+                "answer": 0,
+                "explanation": "Confidentiality is breached when sensitive information is exposed to unauthorized parties."
+            },
+            {
+                "id": "ICS_CIA017",
+                "question": "Version control and audit logs primarily help ensure:",
+                "options": [
+                    "Integrity",
+                    "Availability",
+                    "Confidentiality",
+                    "Bandwidth optimization"
+                ],
+                "answer": 0,
+                "explanation": "Tracking changes ensures data has not been tampered with, supporting integrity."
+            },
+            {
+                "id": "ICS_CIA018",
+                "question": "High availability clusters and load balancers ensure:",
+                "options": [
+                    "Availability",
+                    "Confidentiality",
+                    "Integrity",
+                    "Encryption"
+                ],
+                "answer": 0,
+                "explanation": "These systems provide continuous access to services even under high load or failure."
+            },
+            {
+                "id": "ICS_CIA019",
+                "question": "Digital certificates help achieve which CIA principles?",
+                "options": [
+                    "Confidentiality and integrity",
+                    "Availability only",
+                    "Backup recovery",
+                    "Firewall protection"
+                ],
+                "answer": 0,
+                "explanation": "Certificates authenticate entities and ensure data integrity and confidentiality during communication."
+            },
+            {
+                "id": "ICS_CIA020",
+                "question": "Availability is least affected by:",
+                "options": [
+                    "Unauthorized data disclosure",
+                    "DoS attacks",
+                    "Hardware failure",
+                    "Network congestion"
+                ],
+                "answer": 0,
+                "explanation": "Confidentiality breaches do not directly affect availability, whereas attacks or failures can."
+            }
+        ],
+        "Network Audit": [
+            {
+                "id": "ICS_NA001",
+                "question": "What is the primary purpose of a network audit?",
+                "options": [
+                    "To assess the security, performance, and compliance of a network",
+                    "To increase bandwidth",
+                    "To encrypt all traffic",
+                    "To design new applications"
+                ],
+                "answer": 0,
+                "explanation": "Network audits evaluate network security, performance, and compliance with policies and standards."
+            },
+            {
+                "id": "ICS_NA002",
+                "question": "Which of the following tools is commonly used for network auditing?",
+                "options": [
+                    "Wireshark",
+                    "Photoshop",
+                    "MS Word",
+                    "Excel"
+                ],
+                "answer": 0,
+                "explanation": "Wireshark captures and analyzes network traffic to identify vulnerabilities and anomalies."
+            },
+            {
+                "id": "ICS_NA003",
+                "question": "Which activity is part of a network audit?",
+                "options": [
+                    "Checking firewall configurations and access controls",
+                    "Designing a website",
+                    "Writing software code",
+                    "Updating antivirus definitions only"
+                ],
+                "answer": 0,
+                "explanation": "Network audits include reviewing firewalls, ACLs, and configurations for compliance and security."
+            },
+            {
+                "id": "ICS_NA004",
+                "question": "Vulnerability scanning during a network audit is used to:",
+                "options": [
+                    "Identify potential security weaknesses",
+                    "Measure bandwidth",
+                    "Install software patches",
+                    "Encrypt traffic"
+                ],
+                "answer": 0,
+                "explanation": "Vulnerability scanning detects misconfigurations, outdated software, and exploitable weaknesses."
+            },
+            {
+                "id": "ICS_NA005",
+                "question": "Which protocol analysis technique is used in a network audit?",
+                "options": [
+                    "Packet sniffing",
+                    "Data entry",
+                    "Spreadsheet analysis",
+                    "Disk defragmentation"
+                ],
+                "answer": 0,
+                "explanation": "Packet sniffing captures network packets to analyze protocols, traffic, and potential threats."
+            },
+            {
+                "id": "ICS_NA006",
+                "question": "A network audit can help detect which of the following?",
+                "options": [
+                    "Unauthorized devices or users on the network",
+                    "CPU overheating",
+                    "Printer errors",
+                    "Hard disk fragmentation"
+                ],
+                "answer": 0,
+                "explanation": "Audits monitor connected devices and users to detect unauthorized access."
+            },
+            {
+                "id": "ICS_NA007",
+                "question": "Which document is usually prepared after a network audit?",
+                "options": [
+                    "Audit report detailing findings and recommendations",
+                    "User manual",
+                    "Website sitemap",
+                    "Software license agreement"
+                ],
+                "answer": 0,
+                "explanation": "Audit reports summarize observations, risks, and suggested corrective measures."
+            },
+            {
+                "id": "ICS_NA008",
+                "question": "Network auditing helps organizations comply with:",
+                "options": [
+                    "Security policies and regulatory standards",
+                    "UI design guidelines",
+                    "Programming syntax rules",
+                    "Database normalization standards"
+                ],
+                "answer": 0,
+                "explanation": "Audits ensure networks comply with internal policies and external regulations."
+            },
+            {
+                "id": "ICS_NA009",
+                "question": "Which of the following is a passive network audit technique?",
+                "options": [
+                    "Monitoring traffic without injecting packets",
+                    "Port scanning",
+                    "Penetration testing",
+                    "Firmware upgrades"
+                ],
+                "answer": 0,
+                "explanation": "Passive auditing observes traffic and activities without actively probing or altering the network."
+            },
+            {
+                "id": "ICS_NA010",
+                "question": "Which is an active network audit technique?",
+                "options": [
+                    "Port scanning",
+                    "Observing traffic silently",
+                    "Checking backups only",
+                    "Reading policy documents"
+                ],
+                "answer": 0,
+                "explanation": "Active auditing probes network systems to identify vulnerabilities and open ports."
+            },
+            {
+                "id": "ICS_NA011",
+                "question": "Which of the following ensures that audit findings are traceable and actionable?",
+                "options": [
+                    "Maintaining logs and documentation",
+                    "Increasing internet speed",
+                    "Encrypting hard drives only",
+                    "Disabling firewalls temporarily"
+                ],
+                "answer": 0,
+                "explanation": "Detailed logs and documentation make findings auditable and allow corrective actions."
+            },
+            {
+                "id": "ICS_NA012",
+                "question": "Which security component is typically verified during a network audit?",
+                "options": [
+                    "Router and firewall configurations",
+                    "Screen resolution",
+                    "Printer ink levels",
+                    "Software GUI color scheme"
+                ],
+                "answer": 0,
+                "explanation": "Auditors review routers, firewalls, and other network devices for security compliance."
+            },
+            {
+                "id": "ICS_NA013",
+                "question": "Network audit can help in detecting:",
+                "options": [
+                    "Malware-infected endpoints",
+                    "Text formatting issues",
+                    "Spreadsheet formula errors",
+                    "Disk defragmentation status"
+                ],
+                "answer": 0,
+                "explanation": "Audits help identify compromised devices or malware on the network."
+            },
+            {
+                "id": "ICS_NA014",
+                "question": "Which of the following best defines a vulnerability assessment in network auditing?",
+                "options": [
+                    "Identifying weaknesses that could be exploited by attackers",
+                    "Measuring network bandwidth",
+                    "Calculating storage utilization",
+                    "Checking user satisfaction"
+                ],
+                "answer": 0,
+                "explanation": "Vulnerability assessments detect potential points of exploitation in a network."
+            },
+            {
+                "id": "ICS_NA015",
+                "question": "Penetration testing in a network audit is conducted to:",
+                "options": [
+                    "Simulate attacks to evaluate security controls",
+                    "Check website SEO",
+                    "Install updates",
+                    "Monitor CPU usage"
+                ],
+                "answer": 0,
+                "explanation": "Penetration tests simulate attacks to identify security gaps."
+            },
+            {
+                "id": "ICS_NA016",
+                "question": "Which audit tool monitors network traffic for anomalies in real-time?",
+                "options": [
+                    "Intrusion Detection System (IDS)",
+                    "MS Excel",
+                    "Text editor",
+                    "Email client"
+                ],
+                "answer": 0,
+                "explanation": "IDS analyzes traffic in real-time to detect suspicious patterns."
+            },
+            {
+                "id": "ICS_NA017",
+                "question": "A network audit schedule should ideally be:",
+                "options": [
+                    "Regular and periodic",
+                    "Once every 10 years",
+                    "Only after attacks",
+                    "Only when setting up new hardware"
+                ],
+                "answer": 0,
+                "explanation": "Regular audits ensure ongoing security and compliance monitoring."
+            },
+            {
+                "id": "ICS_NA018",
+                "question": "Which of the following is a critical step after identifying vulnerabilities in a network audit?",
+                "options": [
+                    "Remediation and mitigation",
+                    "Printing reports only",
+                    "Changing screen resolution",
+                    "Updating user emails"
+                ],
+                "answer": 0,
+                "explanation": "Corrective actions are taken to eliminate or mitigate discovered vulnerabilities."
+            },
+            {
+                "id": "ICS_NA019",
+                "question": "Network audit can also help in:",
+                "options": [
+                    "Policy compliance verification",
+                    "Designing graphics",
+                    "Writing code in Java",
+                    "Document formatting"
+                ],
+                "answer": 0,
+                "explanation": "Audits ensure network operations adhere to organizational and regulatory policies."
+            },
+            {
+                "id": "ICS_NA020",
+                "question": "Which activity is part of auditing wireless networks?",
+                "options": [
+                    "Checking encryption methods and unauthorized access points",
+                    "Adjusting printer settings",
+                    "Scanning hard drives",
+                    "Monitoring keyboard usage"
+                ],
+                "answer": 0,
+                "explanation": "Wireless audits evaluate encryption, access points, and rogue devices to ensure secure Wi-Fi operations."
+            }
+        ],
+        "Systems Audit": [
+            {
+                "id": "ICS_SA001",
+                "question": "What is the primary purpose of a systems audit?",
+                "options": [
+                    "To evaluate controls, efficiency, and compliance of an information system",
+                    "To design websites",
+                    "To increase bandwidth",
+                    "To encrypt files only"
+                ],
+                "answer": 0,
+                "explanation": "Systems audits assess controls, security, efficiency, and compliance of information systems."
+            },
+            {
+                "id": "ICS_SA002",
+                "question": "Which type of systems audit evaluates the effectiveness of IT controls?",
+                "options": [
+                    "IT general controls (ITGC) audit",
+                    "Financial audit",
+                    "HR audit",
+                    "Marketing audit"
+                ],
+                "answer": 0,
+                "explanation": "ITGC audits check controls over systems, applications, and operations to ensure proper functioning and security."
+            },
+            {
+                "id": "ICS_SA003",
+                "question": "Which tool can be used for monitoring system logs during a systems audit?",
+                "options": [
+                    "SIEM (Security Information and Event Management)",
+                    "MS Paint",
+                    "Notepad",
+                    "Excel formulas"
+                ],
+                "answer": 0,
+                "explanation": "SIEM tools collect, correlate, and analyze logs to detect anomalies and ensure compliance."
+            },
+            {
+                "id": "ICS_SA004",
+                "question": "Which of the following is a key step in conducting a systems audit?",
+                "options": [
+                    "Reviewing policies, procedures, and system configurations",
+                    "Updating antivirus software only",
+                    "Changing monitor resolution",
+                    "Printing reports randomly"
+                ],
+                "answer": 0,
+                "explanation": "Auditors review policies, procedures, configurations, and logs to evaluate control effectiveness."
+            },
+            {
+                "id": "ICS_SA005",
+                "question": "Which audit type verifies whether a system meets business objectives and requirements?",
+                "options": [
+                    "Compliance and performance audit",
+                    "Financial audit",
+                    "Inventory audit",
+                    "Tax audit"
+                ],
+                "answer": 0,
+                "explanation": "Performance audits assess whether IT systems deliver the intended outcomes efficiently."
+            },
+            {
+                "id": "ICS_SA006",
+                "question": "Which of the following is a common finding in systems audits?",
+                "options": [
+                    "Weak passwords and inadequate access controls",
+                    "Incorrect font sizes",
+                    "Screen brightness issues",
+                    "Printer ink levels"
+                ],
+                "answer": 0,
+                "explanation": "Weak authentication and poor access control are frequent security risks discovered during audits."
+            },
+            {
+                "id": "ICS_SA007",
+                "question": "Segregation of duties (SoD) in systems audit helps to:",
+                "options": [
+                    "Prevent fraud and unauthorized activities",
+                    "Increase network speed",
+                    "Compress files",
+                    "Update antivirus definitions"
+                ],
+                "answer": 0,
+                "explanation": "SoD ensures that critical tasks are divided among multiple personnel to reduce risk."
+            },
+            {
+                "id": "ICS_SA008",
+                "question": "Which standard is often used as a reference for IT systems audits?",
+                "options": [
+                    "ISO/IEC 27001",
+                    "HTML5",
+                    "SQL",
+                    "TCP/IP"
+                ],
+                "answer": 0,
+                "explanation": "ISO/IEC 27001 provides guidelines for information security management systems, widely used in audits."
+            },
+            {
+                "id": "ICS_SA009",
+                "question": "Systems audit ensures which of the following in IT environments?",
+                "options": [
+                    "Confidentiality, integrity, availability, and compliance",
+                    "Screen resolution settings",
+                    "Bandwidth allocation",
+                    "User interface design only"
+                ],
+                "answer": 0,
+                "explanation": "Audits verify that IT systems maintain CIA principles and comply with policies and regulations."
+            },
+            {
+                "id": "ICS_SA010",
+                "question": "Which audit activity involves checking backups, recovery procedures, and disaster recovery plans?",
+                "options": [
+                    "Business continuity audit",
+                    "Financial audit",
+                    "Network cabling check",
+                    "Antivirus installation check"
+                ],
+                "answer": 0,
+                "explanation": "Auditing backup and recovery ensures systems can restore operations in case of failure."
+            },
+            {
+                "id": "ICS_SA011",
+                "question": "Audit trails and logs primarily help in:",
+                "options": [
+                    "Tracking system activities and accountability",
+                    "Increasing RAM",
+                    "Screen brightness adjustment",
+                    "Software installation only"
+                ],
+                "answer": 0,
+                "explanation": "Logs provide evidence of user and system activities for accountability and forensic analysis."
+            },
+            {
+                "id": "ICS_SA012",
+                "question": "Which type of audit tests the actual security of a system by simulating attacks?",
+                "options": [
+                    "Penetration testing",
+                    "Inventory check",
+                    "Network cabling inspection",
+                    "Printer configuration"
+                ],
+                "answer": 0,
+                "explanation": "Penetration testing evaluates system resilience by simulating real-world attacks."
+            },
+            {
+                "id": "ICS_SA013",
+                "question": "Which of the following is a major output of a systems audit?",
+                "options": [
+                    "Audit report with findings, risks, and recommendations",
+                    "Presentation slides",
+                    "Spreadsheet formulas",
+                    "Marketing plan"
+                ],
+                "answer": 0,
+                "explanation": "The audit report summarizes findings and suggests corrective actions."
+            },
+            {
+                "id": "ICS_SA014",
+                "question": "Reviewing user access rights and permissions is a part of which systems audit process?",
+                "options": [
+                    "Access control audit",
+                    "Bandwidth optimization",
+                    "UI design review",
+                    "Software patching only"
+                ],
+                "answer": 0,
+                "explanation": "Access control audits ensure that users have appropriate privileges and prevent unauthorized access."
+            },
+            {
+                "id": "ICS_SA015",
+                "question": "System change management audit primarily evaluates:",
+                "options": [
+                    "Proper authorization and documentation of changes",
+                    "Screen resolution",
+                    "Network cable quality",
+                    "Printer configuration"
+                ],
+                "answer": 0,
+                "explanation": "Audits check that system modifications are approved, tested, and documented to prevent errors and vulnerabilities."
+            },
+            {
+                "id": "ICS_SA016",
+                "question": "Which audit type ensures IT systems comply with legal and regulatory requirements?",
+                "options": [
+                    "Compliance audit",
+                    "Financial audit",
+                    "Inventory audit",
+                    "Tax audit"
+                ],
+                "answer": 0,
+                "explanation": "Compliance audits verify that IT systems adhere to regulations and organizational policies."
+            },
+            {
+                "id": "ICS_SA017",
+                "question": "Which technique is used to verify the completeness and accuracy of data processed by IT systems?",
+                "options": [
+                    "Data validation and reconciliation",
+                    "Screen brightness calibration",
+                    "Bandwidth calculation",
+                    "Printer alignment check"
+                ],
+                "answer": 0,
+                "explanation": "Data validation and reconciliation ensure that processing is correct and reliable."
+            },
+            {
+                "id": "ICS_SA018",
+                "question": "Which of the following helps in detecting unauthorized software installations during a systems audit?",
+                "options": [
+                    "Software inventory audit",
+                    "Password strength test",
+                    "Network cabling check",
+                    "Firewall configuration only"
+                ],
+                "answer": 0,
+                "explanation": "Auditing installed software ensures compliance with licensing and prevents security risks from unauthorized applications."
+            },
+            {
+                "id": "ICS_SA019",
+                "question": "Which control is evaluated during a systems audit to prevent fraud?",
+                "options": [
+                    "Segregation of duties",
+                    "Wi-Fi channel selection",
+                    "Monitor resolution",
+                    "Printer ink levels"
+                ],
+                "answer": 0,
+                "explanation": "SoD prevents individuals from having excessive control that could enable fraudulent actions."
+            },
+            {
+                "id": "ICS_SA020",
+                "question": "The systems audit process typically concludes with:",
+                "options": [
+                    "Submission of an audit report and recommended remediation steps",
+                    "Updating software drivers",
+                    "Cleaning hardware",
+                    "Changing screen resolution"
+                ],
+                "answer": 0,
+                "explanation": "Audits end with a report detailing findings, risks, and recommendations for corrective actions."
+            }
+        ],
+        "extra_qs": [
+            {
+                "id": "ICS001",
+                "question": "Which of the following is an example of a social engineering cyber attack?",
+                "options": [
+                    "Phishing email",
+                    "SQL injection",
+                    "DDoS attack",
+                    "Man-in-the-middle attack"
+                ],
+                "answer": 0,
+                "explanation": "Phishing emails trick users into revealing sensitive information, a common social engineering technique."
+            },
+            {
+                "id": "ICS002",
+                "question": "Buffer overflow vulnerability primarily affects:",
+                "options": [
+                    "Software security",
+                    "Network bandwidth",
+                    "Firewall performance",
+                    "Disk storage"
+                ],
+                "answer": 0,
+                "explanation": "Buffer overflow occurs when a program writes more data than the allocated memory, affecting software security."
+            },
+            {
+                "id": "ICS003",
+                "question": "Which of the following ensures secure software development?",
+                "options": [
+                    "Input validation and code reviews",
+                    "Using bright colors in UI",
+                    "Increasing CPU speed",
+                    "Disk defragmentation"
+                ],
+                "answer": 0,
+                "explanation": "Input validation and code reviews prevent vulnerabilities in software development."
+            },
+            {
+                "id": "ICS004",
+                "question": "Network sniffing can compromise:",
+                "options": [
+                    "Confidentiality",
+                    "Availability",
+                    "Hardware performance",
+                    "Firewall rules"
+                ],
+                "answer": 0,
+                "explanation": "Network sniffing captures sensitive data from traffic, violating confidentiality."
+            },
+            {
+                "id": "ICS005",
+                "question": "Multi-factor authentication (MFA) combines:",
+                "options": [
+                    "Something you know and something you have",
+                    "Two passwords only",
+                    "Only biometric authentication",
+                    "Firewall and antivirus"
+                ],
+                "answer": 0,
+                "explanation": "MFA uses different types of authentication factors, like password and token or biometric verification."
+            },
+            {
+                "id": "ICS006",
+                "question": "Which CIA principle is violated when data is altered without authorization?",
+                "options": [
+                    "Integrity",
+                    "Availability",
+                    "Confidentiality",
+                    "Authentication"
+                ],
+                "answer": 0,
+                "explanation": "Integrity ensures that data is accurate and unaltered; unauthorized changes violate it."
+            },
+            {
+                "id": "ICS007",
+                "question": "High availability clusters are designed to improve:",
+                "options": [
+                    "Availability",
+                    "Confidentiality",
+                    "Integrity",
+                    "Encryption strength"
+                ],
+                "answer": 0,
+                "explanation": "High availability systems maintain access to services even during failures, improving availability."
+            },
+            {
+                "id": "ICS008",
+                "question": "Which type of cyber attack floods a network to make it unavailable?",
+                "options": [
+                    "Denial of Service (DoS)",
+                    "SQL injection",
+                    "Password guessing",
+                    "Phishing"
+                ],
+                "answer": 0,
+                "explanation": "DoS attacks overwhelm network resources, making services unavailable."
+            },
+            {
+                "id": "ICS009",
+                "question": "Digital signatures are primarily used to ensure:",
+                "options": [
+                    "Integrity and authentication of messages",
+                    "Availability of data",
+                    "Firewall configuration",
+                    "Bandwidth optimization"
+                ],
+                "answer": 0,
+                "explanation": "Digital signatures verify that data has not been altered and confirm the sender's identity."
+            },
+            {
+                "id": "ICS010",
+                "question": "Static code analysis helps in:",
+                "options": [
+                    "Identifying security flaws in software before runtime",
+                    "Increasing disk speed",
+                    "Network routing",
+                    "Firewall setup"
+                ],
+                "answer": 0,
+                "explanation": "Static code analysis inspects code for potential vulnerabilities before deployment."
+            },
+            {
+                "id": "ICS011",
+                "question": "Which attack captures network packets and retransmits them to gain unauthorized access?",
+                "options": [
+                    "Replay attack",
+                    "ARP spoofing",
+                    "Brute force attack",
+                    "Phishing"
+                ],
+                "answer": 0,
+                "explanation": "Replay attacks intercept and resend valid data to gain access without knowing credentials."
+            },
+            {
+                "id": "ICS012",
+                "question": "Which security principle ensures data is available when needed?",
+                "options": [
+                    "Availability",
+                    "Confidentiality",
+                    "Integrity",
+                    "Authentication"
+                ],
+                "answer": 0,
+                "explanation": "Availability ensures that authorized users can access data and systems when required."
+            },
+            {
+                "id": "ICS013",
+                "question": "Session management weaknesses primarily threaten:",
+                "options": [
+                    "Availability and integrity",
+                    "Confidentiality only",
+                    "Bandwidth",
+                    "Disk storage"
+                ],
+                "answer": 0,
+                "explanation": "Poor session management can allow session hijacking, affecting availability and integrity of data."
+            },
+            {
+                "id": "ICS014",
+                "question": "Which tool is commonly used to analyze network traffic during a network audit?",
+                "options": [
+                    "Wireshark",
+                    "MS Word",
+                    "Photoshop",
+                    "Excel"
+                ],
+                "answer": 0,
+                "explanation": "Wireshark captures and analyzes packets to assess network security and performance."
+            },
+            {
+                "id": "ICS015",
+                "question": "A systems audit evaluates:",
+                "options": [
+                    "Controls, efficiency, and compliance of IT systems",
+                    "Screen brightness",
+                    "Printer ink levels",
+                    "User interface design only"
+                ],
+                "answer": 0,
+                "explanation": "Systems audits check security controls, compliance with standards, and system efficiency."
+            },
+            {
+                "id": "ICS016",
+                "question": "Unauthorized disclosure of sensitive files violates which CIA principle?",
+                "options": [
+                    "Confidentiality",
+                    "Availability",
+                    "Integrity",
+                    "Authentication"
+                ],
+                "answer": 0,
+                "explanation": "Confidentiality is violated when sensitive information is accessed or disclosed to unauthorized parties."
+            },
+            {
+                "id": "ICS017",
+                "question": "Penetration testing during a systems audit aims to:",
+                "options": [
+                    "Simulate attacks to find vulnerabilities",
+                    "Update antivirus software",
+                    "Check printer status",
+                    "Monitor CPU load only"
+                ],
+                "answer": 0,
+                "explanation": "Penetration testing identifies weaknesses by simulating attacks in a controlled environment."
+            },
+            {
+                "id": "ICS018",
+                "question": "Which of the following ensures that only authorized users access data?",
+                "options": [
+                    "Authentication and access control",
+                    "Network cabling",
+                    "Screen calibration",
+                    "Data compression"
+                ],
+                "answer": 0,
+                "explanation": "Authentication and access control mechanisms restrict access to authorized users."
+            },
+            {
+                "id": "ICS019",
+                "question": "Which of the following is a passive network audit technique?",
+                "options": [
+                    "Monitoring traffic without injecting packets",
+                    "Port scanning",
+                    "Penetration testing",
+                    "Password cracking"
+                ],
+                "answer": 0,
+                "explanation": "Passive audits observe network traffic without actively probing systems."
+            },
+            {
+                "id": "ICS020",
+                "question": "Checksums and cryptographic hashes are used to verify:",
+                "options": [
+                    "Data integrity",
+                    "Availability",
+                    "Confidentiality",
+                    "Firewall configuration"
+                ],
+                "answer": 0,
+                "explanation": "Hashes detect unauthorized modifications, ensuring integrity of data."
+            },
+            {
+                "id": "ICS021",
+                "question": "Software input validation primarily prevents:",
+                "options": [
+                    "Injection attacks",
+                    "Hardware failure",
+                    "Firewall misconfiguration",
+                    "Bandwidth issues"
+                ],
+                "answer": 0,
+                "explanation": "Input validation ensures that only proper data is accepted, preventing attacks like SQL injection."
+            },
+            {
+                "id": "ICS022",
+                "question": "Time-based one-time passwords (TOTP) are examples of:",
+                "options": [
+                    "Token-based authentication",
+                    "Certificate-based authentication",
+                    "Password hashing",
+                    "Firewall rules"
+                ],
+                "answer": 0,
+                "explanation": "TOTP generates time-limited tokens to securely authenticate users."
+            },
+            {
+                "id": "ICS023",
+                "question": "Which type of audit ensures that IT systems comply with regulations?",
+                "options": [
+                    "Compliance audit",
+                    "Financial audit",
+                    "Inventory audit",
+                    "Performance tuning"
+                ],
+                "answer": 0,
+                "explanation": "Compliance audits verify adherence to laws, standards, and organizational policies."
+            },
+            {
+                "id": "ICS024",
+                "question": "Which attack targets passwords by trying all possible combinations?",
+                "options": [
+                    "Brute force attack",
+                    "Phishing",
+                    "DDoS",
+                    "Replay attack"
+                ],
+                "answer": 0,
+                "explanation": "Brute force attacks attempt all possible passwords until access is gained."
+            },
+            {
+                "id": "ICS025",
+                "question": "Hashing passwords with salt primarily enhances:",
+                "options": [
+                    "Confidentiality",
+                    "Availability",
+                    "Integrity",
+                    "Bandwidth"
+                ],
+                "answer": 0,
+                "explanation": "Hashing with salt prevents attackers from recovering original passwords, enhancing confidentiality."
+            },
+            {
+                "id": "ICS026",
+                "question": "Network audit logs are critical for:",
+                "options": [
+                    "Tracking activities and accountability",
+                    "Printer maintenance",
+                    "Screen calibration",
+                    "Software installation only"
+                ],
+                "answer": 0,
+                "explanation": "Logs record user and system activities for accountability and forensic analysis."
+            },
+            {
+                "id": "ICS027",
+                "question": "Which attack compromises data integrity by modifying messages in transit?",
+                "options": [
+                    "Man-in-the-middle attack",
+                    "DoS attack",
+                    "Phishing",
+                    "Brute force"
+                ],
+                "answer": 0,
+                "explanation": "MITM attacks intercept and alter messages, violating integrity."
+            },
+            {
+                "id": "ICS028",
+                "question": "Failover systems primarily improve:",
+                "options": [
+                    "Availability",
+                    "Confidentiality",
+                    "Integrity",
+                    "Authentication"
+                ],
+                "answer": 0,
+                "explanation": "Failover systems ensure services remain available even during failures."
+            },
+            {
+                "id": "ICS029",
+                "question": "Segregation of duties helps in preventing:",
+                "options": [
+                    "Fraud and unauthorized actions",
+                    "CPU overheating",
+                    "Disk fragmentation",
+                    "Screen flickering"
+                ],
+                "answer": 0,
+                "explanation": "Dividing responsibilities reduces risk of fraud or misuse by individuals."
+            },
+            {
+                "id": "ICS030",
+                "question": "SIEM tools are used for:",
+                "options": [
+                    "Monitoring logs and detecting security incidents",
+                    "Document formatting",
+                    "Disk cleanup",
+                    "Bandwidth measurement"
+                ],
+                "answer": 0,
+                "explanation": "SIEM collects and analyzes security events to detect anomalies and breaches."
+            },
+            {
+                "id": "ICS031",
+                "question": "Replay attacks can be mitigated by:",
+                "options": [
+                    "Using timestamps or nonce values",
+                    "Increasing RAM",
+                    "Updating display drivers",
+                    "Changing screen resolution"
+                ],
+                "answer": 0,
+                "explanation": "Timestamps and nonces ensure that captured messages cannot be reused maliciously."
+            },
+            {
+                "id": "ICS032",
+                "question": "Digital certificates primarily provide:",
+                "options": [
+                    "Authentication and confidentiality",
+                    "Availability only",
+                    "Firewall protection",
+                    "Bandwidth optimization"
+                ],
+                "answer": 0,
+                "explanation": "Certificates confirm identities and help encrypt communications."
+            },
+            {
+                "id": "ICS033",
+                "question": "Version control in systems audit supports:",
+                "options": [
+                    "Integrity and traceability",
+                    "Network speed",
+                    "Screen brightness",
+                    "Disk partitioning"
+                ],
+                "answer": 0,
+                "explanation": "Version control ensures changes are tracked, supporting data integrity."
+            },
+            {
+                "id": "ICS034",
+                "question": "Penetration testing differs from vulnerability scanning in that it:",
+                "options": [
+                    "Simulates real attacks actively",
+                    "Only checks configurations passively",
+                    "Measures bandwidth",
+                    "Encrypts traffic"
+                ],
+                "answer": 0,
+                "explanation": "Penetration tests actively exploit vulnerabilities to test security."
+            },
+            {
+                "id": "ICS035",
+                "question": "Which authentication factor is based on biometrics?",
+                "options": [
+                    "Something you are",
+                    "Something you know",
+                    "Something you have",
+                    "Something you configure"
+                ],
+                "answer": 0,
+                "explanation": "Biometric factors include fingerprints, retina scans, and voice recognition."
+            },
+            {
+                "id": "ICS036",
+                "question": "Time-based one-time passwords enhance:",
+                "options": [
+                    "Authentication security",
+                    "Firewall speed",
+                    "CPU efficiency",
+                    "Disk throughput"
+                ],
+                "answer": 0,
+                "explanation": "TOTP adds a dynamic, temporary token to improve authentication."
+            },
+            {
+                "id": "ICS037",
+                "question": "Network audit checks for:",
+                "options": [
+                    "Unauthorized devices, open ports, and vulnerabilities",
+                    "Printer alignment",
+                    "Spreadsheet errors",
+                    "Monitor calibration"
+                ],
+                "answer": 0,
+                "explanation": "Audits verify network integrity, security, and proper configurations."
+            },
+            {
+                "id": "ICS038",
+                "question": "Adaptive authentication adjusts:",
+                "options": [
+                    "Security measures based on risk or context",
+                    "Screen brightness",
+                    "Disk speed",
+                    "Printer DPI"
+                ],
+                "answer": 0,
+                "explanation": "Adaptive authentication increases or decreases security requirements based on factors like location, device, or risk."
+            },
+            {
+                "id": "ICS039",
+                "question": "Which audit evaluates access control, backups, and disaster recovery?",
+                "options": [
+                    "Systems audit",
+                    "UI audit",
+                    "Financial audit",
+                    "Marketing audit"
+                ],
+                "answer": 0,
+                "explanation": "Systems audits verify operational and security controls including backups and access management."
+            },
+            {
+                "id": "ICS040",
+                "question": "Which of the following can compromise availability?",
+                "options": [
+                    "DoS attacks",
+                    "Password disclosure",
+                    "Malware encryption only",
+                    "None of the above"
+                ],
+                "answer": 0,
+                "explanation": "Denial of Service attacks make systems unavailable to authorized users."
+            },
+            {
+                "id": "ICS041",
+                "question": "Hashing passwords primarily protects against:",
+                "options": [
+                    "Unauthorized password recovery",
+                    "Server downtime",
+                    "Printer failures",
+                    "Disk errors"
+                ],
+                "answer": 0,
+                "explanation": "Hashed passwords prevent attackers from retrieving original passwords if storage is compromised."
+            },
+            {
+                "id": "ICS042",
+                "question": "Intrusion Detection Systems (IDS) help in:",
+                "options": [
+                    "Detecting suspicious activities in networks",
+                    "Measuring disk fragmentation",
+                    "Updating antivirus only",
+                    "Screen calibration"
+                ],
+                "answer": 0,
+                "explanation": "IDS monitor network traffic for signs of attacks or policy violations."
+            },
+            {
+                "id": "ICS043",
+                "question": "Compliance with ISO/IEC 27001 ensures:",
+                "options": [
+                    "Information security management standards are met",
+                    "UI design is modern",
+                    "Printer drivers are updated",
+                    "Network cables are intact"
+                ],
+                "answer": 0,
+                "explanation": "ISO/IEC 27001 defines standards for effective information security management."
+            },
+            {
+                "id": "ICS044",
+                "question": "Firewall audits typically verify:",
+                "options": [
+                    "Rulesets, policies, and access permissions",
+                    "Screen resolution",
+                    "CPU speed",
+                    "Printer DPI"
+                ],
+                "answer": 0,
+                "explanation": "Firewall configuration audits ensure only authorized traffic is allowed."
+            },
+            {
+                "id": "ICS045",
+                "question": "Unauthorized software installations can be detected by:",
+                "options": [
+                    "Software inventory audits",
+                    "Bandwidth measurement",
+                    "Disk defragmentation",
+                    "Screen calibration"
+                ],
+                "answer": 0,
+                "explanation": "Software inventory audits track installed applications to detect unauthorized programs."
+            },
+            {
+                "id": "ICS046",
+                "question": "Replay attacks are mitigated by:",
+                "options": [
+                    "Timestamps or nonces",
+                    "Firewall upgrades",
+                    "Disk partitioning",
+                    "Printer maintenance"
+                ],
+                "answer": 0,
+                "explanation": "Timestamps and nonces prevent attackers from reusing intercepted data."
+            },
+            {
+                "id": "ICS047",
+                "question": "Digital certificates are part of:",
+                "options": [
+                    "Public Key Infrastructure (PKI)",
+                    "Firewall rules",
+                    "Disk defragmentation",
+                    "Network cabling"
+                ],
+                "answer": 0,
+                "explanation": "Certificates are used in PKI to authenticate and encrypt communications."
+            },
+            {
+                "id": "ICS048",
+                "question": "Security Information and Event Management (SIEM) primarily supports:",
+                "options": [
+                    "Real-time monitoring and incident detection",
+                    "CPU overclocking",
+                    "Disk defragmentation",
+                    "Printer calibration"
+                ],
+                "answer": 0,
+                "explanation": "SIEM correlates logs and alerts to detect and respond to security incidents."
+            },
+            {
+                "id": "ICS049",
+                "question": "Segregation of duties prevents:",
+                "options": [
+                    "Fraud by ensuring no single person has excessive control",
+                    "CPU overheating",
+                    "Disk failures",
+                    "Network congestion"
+                ],
+                "answer": 0,
+                "explanation": "Dividing responsibilities reduces the risk of fraudulent or unauthorized actions."
+            },
+            {
+                "id": "ICS050",
+                "question": "Which audit verifies if network, software, and access controls meet organizational policies?",
+                "options": [
+                    "Combined network and systems audit",
+                    "Printer audit",
+                    "Disk audit",
+                    "UI audit"
+                ],
+                "answer": 0,
+                "explanation": "Combined audits check network and systems against security, operational, and compliance standards."
+            }
+        ]
+    }
+}

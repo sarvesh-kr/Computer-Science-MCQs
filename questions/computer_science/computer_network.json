@@ -1,55 +1,4817 @@
 {
     "data": {
-        "ABC": [
+        "ISO/OSI Stack": [
             {
-                "id": "PC001",
-                "question": "Which of the following is a primitive type in Java?",
+                "id": "ISO001",
+                "question": "Which layer of the OSI model is responsible for end-to-end communication?",
                 "options": [
-                    "String",
-                    "int",
-                    "Array",
-                    "Object"
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Physical Layer"
                 ],
-                "answer": 1,
-                "explanation": "int is a primitive type in Java."
+                "answer": 0,
+                "explanation": "The Transport Layer ensures end-to-end communication, providing reliable data transfer and flow control."
             },
             {
-                "id": "PC002",
-                "question": "Which language is platform independent?",
+                "id": "ISO002",
+                "question": "The OSI model consists of how many layers?",
                 "options": [
-                    "C++",
-                    "Java",
-                    "C",
-                    "Assembly"
+                    "7",
+                    "5",
+                    "6",
+                    "8"
+                ],
+                "answer": 0,
+                "explanation": "The OSI model has seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application."
+            },
+            {
+                "id": "ISO003",
+                "question": "Which layer of the OSI model is responsible for converting data into signals for transmission over the medium?",
+                "options": [
+                    "Physical Layer",
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Physical Layer converts data into electrical, optical, or radio signals suitable for transmission."
+            },
+            {
+                "id": "ISO004",
+                "question": "Error detection and correction is handled at which OSI layer?",
+                "options": [
+                    "Data Link Layer",
+                    "Transport Layer",
+                    "Network Layer",
+                    "Application Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Data Link Layer ensures reliable delivery of frames through error detection and correction."
+            },
+            {
+                "id": "ISO005",
+                "question": "Which OSI layer establishes, manages, and terminates sessions between applications?",
+                "options": [
+                    "Session Layer",
+                    "Transport Layer",
+                    "Application Layer",
+                    "Presentation Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Session Layer manages sessions, including setup, maintenance, and termination between applications."
+            },
+            {
+                "id": "ISO006",
+                "question": "The layer responsible for encryption and decryption of data in OSI model is?",
+                "options": [
+                    "Presentation Layer",
+                    "Transport Layer",
+                    "Network Layer",
+                    "Application Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Presentation Layer handles data representation, including encryption, compression, and formatting."
+            },
+            {
+                "id": "ISO007",
+                "question": "Which layer of the OSI model determines the path to route packets across networks?",
+                "options": [
+                    "Network Layer",
+                    "Transport Layer",
+                    "Data Link Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Network Layer handles routing, logical addressing, and path determination."
+            },
+            {
+                "id": "ISO008",
+                "question": "Segmentation of data into smaller units is performed by which OSI layer?",
+                "options": [
+                    "Transport Layer",
+                    "Application Layer",
+                    "Network Layer",
+                    "Data Link Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Transport Layer segments application data into smaller chunks for transmission."
+            },
+            {
+                "id": "ISO009",
+                "question": "Which OSI layer provides reliable data transfer services to the upper layers?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Session Layer",
+                    "Data Link Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Transport Layer ensures reliable data delivery, error recovery, and flow control."
+            },
+            {
+                "id": "ISO010",
+                "question": "Flow control is primarily a function of which OSI layer?",
+                "options": [
+                    "Transport Layer",
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Transport Layer manages flow control to prevent overwhelming the receiver."
+            },
+            {
+                "id": "ISO011",
+                "question": "Logical addressing (IP addressing) is handled at which OSI layer?",
+                "options": [
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Transport Layer",
+                    "Application Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Network Layer provides logical addressing (IP addresses) for identifying devices across networks."
+            },
+            {
+                "id": "ISO012",
+                "question": "Which layer of OSI is responsible for converting application data into a format suitable for transmission?",
+                "options": [
+                    "Presentation Layer",
+                    "Session Layer",
+                    "Application Layer",
+                    "Network Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Presentation Layer formats data, handles encryption/decryption, and ensures interoperability."
+            },
+            {
+                "id": "ISO013",
+                "question": "Which OSI layer provides the interface between network services and end-user applications?",
+                "options": [
+                    "Application Layer",
+                    "Presentation Layer",
+                    "Session Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Application Layer provides services directly to applications for communication over a network."
+            },
+            {
+                "id": "ISO014",
+                "question": "Which OSI layer packages data into frames?",
+                "options": [
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Transport Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Data Link Layer packages raw bits into frames for error detection and proper transmission."
+            },
+            {
+                "id": "ISO015",
+                "question": "The OSI layer responsible for node-to-node delivery of data is?",
+                "options": [
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Transport Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "Data Link Layer ensures reliable delivery of frames between directly connected nodes."
+            },
+            {
+                "id": "ISO016",
+                "question": "Which OSI layer adds headers and trailers to data frames?",
+                "options": [
+                    "Data Link Layer",
+                    "Transport Layer",
+                    "Network Layer",
+                    "Application Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Data Link Layer adds headers/trailers for addressing and error detection."
+            },
+            {
+                "id": "ISO017",
+                "question": "Which OSI layer is closest to the end user?",
+                "options": [
+                    "Application Layer",
+                    "Physical Layer",
+                    "Network Layer",
+                    "Data Link Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Application Layer is the topmost layer and interacts directly with end-user software."
+            },
+            {
+                "id": "ISO018",
+                "question": "Which OSI layer ensures that data is delivered in the same sequence it was sent?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Transport Layer provides sequencing to maintain the correct order of data segments."
+            },
+            {
+                "id": "ISO019",
+                "question": "Framing, physical addressing, and error detection belong to which OSI layer?",
+                "options": [
+                    "Data Link Layer",
+                    "Transport Layer",
+                    "Network Layer",
+                    "Application Layer"
+                ],
+                "answer": 0,
+                "explanation": "Data Link Layer handles framing, MAC addressing, and error detection for reliable transmission."
+            },
+            {
+                "id": "ISO020",
+                "question": "Which OSI layer converts data into bits for transmission over a medium?",
+                "options": [
+                    "Physical Layer",
+                    "Data Link Layer",
+                    "Transport Layer",
+                    "Network Layer"
+                ],
+                "answer": 0,
+                "explanation": "Physical Layer converts data frames into electrical, optical, or radio signals for the medium."
+            },
+            {
+                "id": "ISO021",
+                "question": "Which OSI layer is responsible for multiplexing?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Transport Layer can perform multiplexing, allowing multiple applications to share the network connection."
+            },
+            {
+                "id": "ISO022",
+                "question": "Acknowledgement of received data is a responsibility of which OSI layer?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "Transport Layer sends acknowledgements to ensure reliable delivery of segments."
+            },
+            {
+                "id": "ISO023",
+                "question": "Which layer of OSI handles the translation of data formats?",
+                "options": [
+                    "Presentation Layer",
+                    "Application Layer",
+                    "Session Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Presentation Layer ensures proper data format conversion, including ASCII, EBCDIC, or encryption."
+            },
+            {
+                "id": "ISO024",
+                "question": "Which OSI layer provides services such as FTP, HTTP, and SMTP?",
+                "options": [
+                    "Application Layer",
+                    "Transport Layer",
+                    "Presentation Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "Application Layer provides network services directly to end-user applications."
+            },
+            {
+                "id": "ISO025",
+                "question": "Which layer of OSI model is responsible for routing packets?",
+                "options": [
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Transport Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "Network Layer routes packets using logical addresses (IP)."
+            },
+            {
+                "id": "ISO026",
+                "question": "Which layer manages end-to-end reliability?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "Transport Layer ensures complete, reliable delivery between source and destination."
+            },
+            {
+                "id": "ISO027",
+                "question": "Which OSI layer defines the electrical characteristics of the network?",
+                "options": [
+                    "Physical Layer",
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "The Physical Layer specifies voltage levels, timing, and physical data transmission."
+            },
+            {
+                "id": "ISO028",
+                "question": "Which layer is responsible for logical addressing and routing?",
+                "options": [
+                    "Network Layer",
+                    "Transport Layer",
+                    "Data Link Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "Network Layer assigns logical addresses and determines routing paths."
+            },
+            {
+                "id": "ISO029",
+                "question": "Which OSI layer deals with node-to-node error control?",
+                "options": [
+                    "Data Link Layer",
+                    "Transport Layer",
+                    "Network Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "Data Link Layer handles error control for frames between directly connected nodes."
+            },
+            {
+                "id": "ISO030",
+                "question": "Which OSI layer defines how devices are physically connected to the medium?",
+                "options": [
+                    "Physical Layer",
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "Physical Layer defines connectors, cabling, and signal transmission methods."
+            },
+            {
+                "id": "ISO031",
+                "question": "Which OSI layer is responsible for reliable delivery and error recovery?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "Transport Layer ensures reliable delivery with acknowledgements and retransmissions."
+            },
+            {
+                "id": "ISO032",
+                "question": "Which OSI layer is concerned with syntax and semantics of the information transmitted?",
+                "options": [
+                    "Presentation Layer",
+                    "Application Layer",
+                    "Session Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "Presentation Layer ensures correct representation, encryption, and translation of data."
+            },
+            {
+                "id": "ISO033",
+                "question": "Which OSI layer provides services for user authentication and data privacy?",
+                "options": [
+                    "Presentation Layer",
+                    "Transport Layer",
+                    "Network Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "Presentation Layer can handle encryption, decryption, and compression, ensuring data privacy."
+            },
+            {
+                "id": "ISO034",
+                "question": "Which layer of OSI uses MAC addresses?",
+                "options": [
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Transport Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "Data Link Layer uses MAC addresses to identify devices on the same network segment."
+            },
+            {
+                "id": "ISO035",
+                "question": "Which OSI layer breaks data into segments and numbers them?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "Transport Layer segments application data and assigns sequence numbers for proper reassembly."
+            },
+            {
+                "id": "ISO036",
+                "question": "Which OSI layer provides the interface between the user application and the network?",
+                "options": [
+                    "Application Layer",
+                    "Transport Layer",
+                    "Session Layer",
+                    "Presentation Layer"
+                ],
+                "answer": 0,
+                "explanation": "Application Layer enables software applications to access network services."
+            },
+            {
+                "id": "ISO037",
+                "question": "Which OSI layer is responsible for identifying, establishing, and terminating connections between applications?",
+                "options": [
+                    "Session Layer",
+                    "Transport Layer",
+                    "Network Layer",
+                    "Presentation Layer"
+                ],
+                "answer": 0,
+                "explanation": "Session Layer manages sessions between applications and handles dialog control."
+            },
+            {
+                "id": "ISO038",
+                "question": "Which OSI layer ensures proper formatting, translation, and encryption of data?",
+                "options": [
+                    "Presentation Layer",
+                    "Session Layer",
+                    "Application Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "Presentation Layer formats and translates data to ensure interoperability between systems."
+            },
+            {
+                "id": "ISO039",
+                "question": "Which layer of OSI is responsible for establishing logical connections?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "Transport Layer establishes logical connections and ensures reliable communication."
+            },
+            {
+                "id": "ISO040",
+                "question": "Which OSI layer deals with transmission errors, flow control, and frame synchronization?",
+                "options": [
+                    "Data Link Layer",
+                    "Transport Layer",
+                    "Network Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "Data Link Layer handles errors, flow control, and synchronization of frames."
+            },
+            {
+                "id": "ISO041",
+                "question": "Which OSI layer is concerned with routing and logical addressing?",
+                "options": [
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Transport Layer",
+                    "Application Layer"
+                ],
+                "answer": 0,
+                "explanation": "Network Layer assigns IP addresses and determines the best path for data delivery."
+            },
+            {
+                "id": "ISO042",
+                "question": "Which OSI layer provides reliability through acknowledgements and retransmissions?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "Transport Layer ensures end-to-end reliability using acknowledgements and retransmissions."
+            },
+            {
+                "id": "ISO043",
+                "question": "Which OSI layer is responsible for converting data into signals suitable for transmission?",
+                "options": [
+                    "Physical Layer",
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "Physical Layer converts bits into electrical, optical, or radio signals."
+            },
+            {
+                "id": "ISO044",
+                "question": "Which OSI layer performs segmentation and reassembly of data?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "Transport Layer segments data and reassembles it at the receiver."
+            },
+            {
+                "id": "ISO045",
+                "question": "Which OSI layer is responsible for addressing frames using MAC addresses?",
+                "options": [
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Transport Layer",
+                    "Application Layer"
+                ],
+                "answer": 0,
+                "explanation": "Data Link Layer uses MAC addresses for node-to-node delivery within the same network."
+            },
+            {
+                "id": "ISO046",
+                "question": "Which OSI layer provides interface to network services such as email and file transfer?",
+                "options": [
+                    "Application Layer",
+                    "Presentation Layer",
+                    "Session Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "Application Layer provides network services directly to user applications."
+            },
+            {
+                "id": "ISO047",
+                "question": "Which OSI layer ensures that the data is delivered to the correct process on the destination host?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Application Layer"
+                ],
+                "answer": 0,
+                "explanation": "Transport Layer delivers data to the correct application process using port numbers."
+            },
+            {
+                "id": "ISO048",
+                "question": "Which OSI layer is responsible for session establishment and dialog control?",
+                "options": [
+                    "Session Layer",
+                    "Presentation Layer",
+                    "Transport Layer",
+                    "Network Layer"
+                ],
+                "answer": 0,
+                "explanation": "Session Layer manages sessions and controls dialog between applications."
+            },
+            {
+                "id": "ISO049",
+                "question": "Which OSI layer converts application data into network-compatible format and handles encryption?",
+                "options": [
+                    "Presentation Layer",
+                    "Session Layer",
+                    "Application Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "Presentation Layer formats and encrypts data to ensure compatibility between systems."
+            },
+            {
+                "id": "ISO050",
+                "question": "Which OSI layer ensures ordered delivery of segments and error-free communication?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Physical Layer"
+                ],
+                "answer": 0,
+                "explanation": "Transport Layer ensures sequential delivery, error checking, and reliability."
+            }
+        ],
+        "LAN Technologies (Ethernet, Token ring)": [
+            {
+                "id": "LAN001",
+                "question": "Which access method is used by traditional Ethernet?",
+                "options": [
+                    "CSMA/CD",
+                    "Token Passing",
+                    "Polling",
+                    "TDMA"
+                ],
+                "answer": 0,
+                "explanation": "Traditional Ethernet uses CSMA/CD (Carrier Sense Multiple Access with Collision Detection)."
+            },
+            {
+                "id": "LAN002",
+                "question": "Token Ring network was standardized by which organization?",
+                "options": [
+                    "IBM",
+                    "IEEE",
+                    "ISO",
+                    "ANSI"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring was developed and standardized by IBM."
+            },
+            {
+                "id": "LAN003",
+                "question": "Which IEEE standard defines Ethernet?",
+                "options": [
+                    "IEEE 802.3",
+                    "IEEE 802.5",
+                    "IEEE 802.11",
+                    "IEEE 802.15"
+                ],
+                "answer": 0,
+                "explanation": "IEEE 802.3 defines Ethernet standards."
+            },
+            {
+                "id": "LAN004",
+                "question": "Which IEEE standard defines Token Ring?",
+                "options": [
+                    "IEEE 802.5",
+                    "IEEE 802.3",
+                    "IEEE 802.11",
+                    "IEEE 802.1"
+                ],
+                "answer": 0,
+                "explanation": "IEEE 802.5 specifies Token Ring LAN technology."
+            },
+            {
+                "id": "LAN005",
+                "question": "In Ethernet, collisions occur when?",
+                "options": [
+                    "Two devices transmit simultaneously",
+                    "Token is lost",
+                    "Frame size is large",
+                    "CRC fails"
+                ],
+                "answer": 0,
+                "explanation": "Collisions occur when multiple devices transmit at the same time on a shared medium."
+            },
+            {
+                "id": "LAN006",
+                "question": "Which topology is logically used by Token Ring?",
+                "options": [
+                    "Ring",
+                    "Bus",
+                    "Star",
+                    "Mesh"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring uses a logical ring topology."
+            },
+            {
+                "id": "LAN007",
+                "question": "Which topology is logically used by Ethernet?",
+                "options": [
+                    "Bus",
+                    "Ring",
+                    "Mesh",
+                    "Tree"
+                ],
+                "answer": 0,
+                "explanation": "Traditional Ethernet uses a logical bus topology."
+            },
+            {
+                "id": "LAN008",
+                "question": "Which device controls access to the network in Token Ring?",
+                "options": [
+                    "Token",
+                    "Switch",
+                    "Hub",
+                    "Router"
+                ],
+                "answer": 0,
+                "explanation": "A special frame called a token controls access in Token Ring."
+            },
+            {
+                "id": "LAN009",
+                "question": "Which Ethernet cable uses RJ-45 connector?",
+                "options": [
+                    "Twisted Pair",
+                    "Coaxial",
+                    "Fiber Optic",
+                    "Twinax"
+                ],
+                "answer": 0,
+                "explanation": "Twisted pair Ethernet cables use RJ-45 connectors."
+            },
+            {
+                "id": "LAN010",
+                "question": "What is the maximum data rate of standard Ethernet?",
+                "options": [
+                    "10 Mbps",
+                    "100 Mbps",
+                    "1 Gbps",
+                    "10 Gbps"
+                ],
+                "answer": 0,
+                "explanation": "Standard Ethernet operates at 10 Mbps."
+            },
+            {
+                "id": "LAN011",
+                "question": "Fast Ethernet operates at which speed?",
+                "options": [
+                    "100 Mbps",
+                    "10 Mbps",
+                    "1 Gbps",
+                    "2 Mbps"
+                ],
+                "answer": 0,
+                "explanation": "Fast Ethernet supports data rates of 100 Mbps."
+            },
+            {
+                "id": "LAN012",
+                "question": "Gigabit Ethernet provides a data rate of?",
+                "options": [
+                    "1 Gbps",
+                    "100 Mbps",
+                    "10 Gbps",
+                    "10 Mbps"
+                ],
+                "answer": 0,
+                "explanation": "Gigabit Ethernet supports 1 Gbps transmission speed."
+            },
+            {
+                "id": "LAN013",
+                "question": "Which Ethernet standard supports 10 Gbps speed?",
+                "options": [
+                    "10GBASE",
+                    "100BASE-T",
+                    "1000BASE-T",
+                    "10BASE-T"
+                ],
+                "answer": 0,
+                "explanation": "10GBASE Ethernet supports 10 Gbps transmission."
+            },
+            {
+                "id": "LAN014",
+                "question": "Token Ring avoids collisions because?",
+                "options": [
+                    "Only token holder can transmit",
+                    "High bandwidth",
+                    "Uses switches",
+                    "Uses CSMA/CD"
+                ],
+                "answer": 0,
+                "explanation": "Only the device holding the token can transmit, preventing collisions."
+            },
+            {
+                "id": "LAN015",
+                "question": "Which Ethernet frame field is used for error detection?",
+                "options": [
+                    "FCS",
+                    "Preamble",
+                    "Destination Address",
+                    "Type"
+                ],
+                "answer": 0,
+                "explanation": "Frame Check Sequence (FCS) is used for error detection."
+            },
+            {
+                "id": "LAN016",
+                "question": "What is the minimum Ethernet frame size?",
+                "options": [
+                    "64 bytes",
+                    "46 bytes",
+                    "128 bytes",
+                    "512 bytes"
+                ],
+                "answer": 0,
+                "explanation": "Minimum Ethernet frame size is 64 bytes."
+            },
+            {
+                "id": "LAN017",
+                "question": "What is the maximum Ethernet frame size?",
+                "options": [
+                    "1518 bytes",
+                    "1024 bytes",
+                    "1500 bytes",
+                    "2048 bytes"
+                ],
+                "answer": 0,
+                "explanation": "Maximum Ethernet frame size is 1518 bytes."
+            },
+            {
+                "id": "LAN018",
+                "question": "Which access method is used by Token Ring?",
+                "options": [
+                    "Token Passing",
+                    "CSMA/CD",
+                    "Polling",
+                    "ALOHA"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring uses the token passing access method."
+            },
+            {
+                "id": "LAN019",
+                "question": "Which Ethernet type supports full-duplex communication?",
+                "options": [
+                    "Switched Ethernet",
+                    "Bus Ethernet",
+                    "Coaxial Ethernet",
+                    "Shared Ethernet"
+                ],
+                "answer": 0,
+                "explanation": "Switched Ethernet supports full-duplex communication."
+            },
+            {
+                "id": "LAN020",
+                "question": "Which device reduces collisions in Ethernet networks?",
+                "options": [
+                    "Switch",
+                    "Hub",
+                    "Repeater",
+                    "Bridge (old)"
+                ],
+                "answer": 0,
+                "explanation": "Switches create separate collision domains, reducing collisions."
+            },
+            {
+                "id": "LAN021",
+                "question": "Token Ring commonly operates at which speeds?",
+                "options": [
+                    "4 Mbps and 16 Mbps",
+                    "10 Mbps only",
+                    "100 Mbps",
+                    "1 Gbps"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring typically operates at 4 Mbps or 16 Mbps."
+            },
+            {
+                "id": "LAN022",
+                "question": "Which Ethernet encoding scheme is used in 10BASE-T?",
+                "options": [
+                    "Manchester Encoding",
+                    "NRZ",
+                    "4B/5B",
+                    "8B/10B"
+                ],
+                "answer": 0,
+                "explanation": "10BASE-T Ethernet uses Manchester encoding."
+            },
+            {
+                "id": "LAN023",
+                "question": "Which Ethernet variant uses coaxial cable?",
+                "options": [
+                    "10BASE2",
+                    "10BASE-T",
+                    "100BASE-T",
+                    "1000BASE-T"
+                ],
+                "answer": 0,
+                "explanation": "10BASE2 uses thin coaxial cable."
+            },
+            {
+                "id": "LAN024",
+                "question": "Which Ethernet standard uses fiber optic cable?",
+                "options": [
+                    "100BASE-FX",
+                    "10BASE-T",
+                    "100BASE-TX",
+                    "10BASE2"
+                ],
+                "answer": 0,
+                "explanation": "100BASE-FX Ethernet uses fiber optic cables."
+            },
+            {
+                "id": "LAN025",
+                "question": "Which component regenerates signals in Ethernet?",
+                "options": [
+                    "Repeater",
+                    "Router",
+                    "Gateway",
+                    "Switch"
+                ],
+                "answer": 0,
+                "explanation": "Repeaters regenerate and amplify signals."
+            },
+            {
+                "id": "LAN026",
+                "question": "Which Ethernet topology is physically star-shaped?",
+                "options": [
+                    "10BASE-T",
+                    "10BASE2",
+                    "10BASE5",
+                    "Token Ring"
+                ],
+                "answer": 0,
+                "explanation": "10BASE-T uses a physical star topology."
+            },
+            {
+                "id": "LAN027",
+                "question": "Which Ethernet technology eliminated collisions completely?",
+                "options": [
+                    "Full-duplex switched Ethernet",
+                    "Bus Ethernet",
+                    "Half-duplex Ethernet",
+                    "Coaxial Ethernet"
+                ],
+                "answer": 0,
+                "explanation": "Full-duplex switched Ethernet eliminates collisions."
+            },
+            {
+                "id": "LAN028",
+                "question": "Which field identifies the sender in an Ethernet frame?",
+                "options": [
+                    "Source MAC Address",
+                    "Destination MAC Address",
+                    "FCS",
+                    "Type"
+                ],
+                "answer": 0,
+                "explanation": "Source MAC address identifies the sender."
+            },
+            {
+                "id": "LAN029",
+                "question": "Which LAN technology is deterministic?",
+                "options": [
+                    "Token Ring",
+                    "Ethernet",
+                    "Wireless LAN",
+                    "ALOHA"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring is deterministic due to token passing."
+            },
+            {
+                "id": "LAN030",
+                "question": "Which Ethernet standard supports both copper and fiber?",
+                "options": [
+                    "1000BASE",
+                    "10BASE2",
+                    "10BASE5",
+                    "Token Ring"
+                ],
+                "answer": 0,
+                "explanation": "1000BASE standards support both copper and fiber media."
+            },
+            {
+                "id": "LAN031",
+                "question": "Which Ethernet feature allows backward compatibility?",
+                "options": [
+                    "Auto-negotiation",
+                    "Token passing",
+                    "Framing",
+                    "CRC"
+                ],
+                "answer": 0,
+                "explanation": "Auto-negotiation allows devices to choose the highest common speed."
+            },
+            {
+                "id": "LAN032",
+                "question": "Which LAN technology uses priority-based access?",
+                "options": [
+                    "Token Ring",
+                    "Ethernet",
+                    "CSMA",
+                    "ALOHA"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring can support priority-based token access."
+            },
+            {
+                "id": "LAN033",
+                "question": "Which Ethernet variant is known as Thick Ethernet?",
+                "options": [
+                    "10BASE5",
+                    "10BASE2",
+                    "10BASE-T",
+                    "100BASE-T"
+                ],
+                "answer": 0,
+                "explanation": "10BASE5 is known as Thick Ethernet."
+            },
+            {
+                "id": "LAN034",
+                "question": "Which Ethernet variant is known as Thin Ethernet?",
+                "options": [
+                    "10BASE2",
+                    "10BASE5",
+                    "10BASE-T",
+                    "100BASE-T"
+                ],
+                "answer": 0,
+                "explanation": "10BASE2 is known as Thin Ethernet."
+            },
+            {
+                "id": "LAN035",
+                "question": "Which Token Ring component monitors the network?",
+                "options": [
+                    "Active Monitor",
+                    "Bridge",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "The Active Monitor manages token passing and detects faults."
+            },
+            {
+                "id": "LAN036",
+                "question": "Which LAN technology is cheaper and widely adopted?",
+                "options": [
+                    "Ethernet",
+                    "Token Ring",
+                    "FDDI",
+                    "ATM"
+                ],
+                "answer": 0,
+                "explanation": "Ethernet is cost-effective and widely used."
+            },
+            {
+                "id": "LAN037",
+                "question": "Which Ethernet frame field indicates protocol type?",
+                "options": [
+                    "Type/Length",
+                    "FCS",
+                    "Preamble",
+                    "Padding"
+                ],
+                "answer": 0,
+                "explanation": "Type/Length field identifies the upper-layer protocol."
+            },
+            {
+                "id": "LAN038",
+                "question": "Which LAN technology became obsolete due to complexity?",
+                "options": [
+                    "Token Ring",
+                    "Ethernet",
+                    "Fast Ethernet",
+                    "Gigabit Ethernet"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring declined due to complexity and cost."
+            },
+            {
+                "id": "LAN039",
+                "question": "Which Ethernet mechanism handles collision resolution?",
+                "options": [
+                    "Backoff Algorithm",
+                    "Token Passing",
+                    "Priority Queuing",
+                    "Polling"
+                ],
+                "answer": 0,
+                "explanation": "Ethernet uses an exponential backoff algorithm after collisions."
+            },
+            {
+                "id": "LAN040",
+                "question": "Which Ethernet mode supports simultaneous send and receive?",
+                "options": [
+                    "Full Duplex",
+                    "Half Duplex",
+                    "Simplex",
+                    "Broadcast"
+                ],
+                "answer": 0,
+                "explanation": "Full-duplex allows simultaneous transmission and reception."
+            },
+            {
+                "id": "LAN041",
+                "question": "Which LAN technology uses star-wired ring physically?",
+                "options": [
+                    "Token Ring",
+                    "Ethernet",
+                    "FDDI",
+                    "Bus LAN"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring often uses a physical star but logical ring."
+            },
+            {
+                "id": "LAN042",
+                "question": "Which Ethernet standard supports PoE?",
+                "options": [
+                    "IEEE 802.3af",
+                    "IEEE 802.5",
+                    "IEEE 802.11",
+                    "IEEE 802.1Q"
+                ],
+                "answer": 0,
+                "explanation": "IEEE 802.3af defines Power over Ethernet."
+            },
+            {
+                "id": "LAN043",
+                "question": "Which LAN technology uses a circulating frame?",
+                "options": [
+                    "Token Ring",
+                    "Ethernet",
+                    "CSMA",
+                    "FDDI"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring uses a circulating token frame."
+            },
+            {
+                "id": "LAN044",
+                "question": "Which Ethernet frame field synchronizes communication?",
+                "options": [
+                    "Preamble",
+                    "FCS",
+                    "Type",
+                    "Padding"
+                ],
+                "answer": 0,
+                "explanation": "Preamble synchronizes sender and receiver."
+            },
+            {
+                "id": "LAN045",
+                "question": "Which LAN technology guarantees bounded delay?",
+                "options": [
+                    "Token Ring",
+                    "Ethernet",
+                    "Wireless LAN",
+                    "CSMA/CD"
+                ],
+                "answer": 0,
+                "explanation": "Token Ring provides predictable access delay."
+            },
+            {
+                "id": "LAN046",
+                "question": "Which Ethernet standard supports 40/100 Gbps?",
+                "options": [
+                    "IEEE 802.3ba",
+                    "IEEE 802.3u",
+                    "IEEE 802.3z",
+                    "IEEE 802.5"
+                ],
+                "answer": 0,
+                "explanation": "IEEE 802.3ba supports 40 and 100 Gbps Ethernet."
+            },
+            {
+                "id": "LAN047",
+                "question": "Which LAN technology primarily works at Data Link layer?",
+                "options": [
+                    "Ethernet",
+                    "Token Ring",
+                    "Both Ethernet and Token Ring",
+                    "None"
+                ],
+                "answer": 2,
+                "explanation": "Both Ethernet and Token Ring operate mainly at the Data Link layer."
+            },
+            {
+                "id": "LAN048",
+                "question": "Which Ethernet characteristic makes it non-deterministic?",
+                "options": [
+                    "CSMA/CD",
+                    "Token Passing",
+                    "Priority Scheduling",
+                    "Polling"
+                ],
+                "answer": 0,
+                "explanation": "CSMA/CD leads to unpredictable access delays."
+            },
+            {
+                "id": "LAN049",
+                "question": "Which LAN technology uses logical bus topology?",
+                "options": [
+                    "Ethernet",
+                    "Token Ring",
+                    "FDDI",
+                    "ATM"
+                ],
+                "answer": 0,
+                "explanation": "Ethernet uses a logical bus topology."
+            },
+            {
+                "id": "LAN050",
+                "question": "Which LAN technology became dominant due to simplicity and scalability?",
+                "options": [
+                    "Ethernet",
+                    "Token Ring",
+                    "FDDI",
+                    "ATM"
+                ],
+                "answer": 0,
+                "explanation": "Ethernet dominated due to simplicity, low cost, and scalability."
+            }
+        ],
+        "TCP/UDP & IP": [
+            {
+                "id": "TCPIP001",
+                "question": "Which protocol provides reliable, connection-oriented communication?",
+                "options": [
+                    "TCP",
+                    "UDP",
+                    "IP",
+                    "ICMP"
+                ],
+                "answer": 0,
+                "explanation": "TCP is connection-oriented and provides reliable data transfer with error recovery."
+            },
+            {
+                "id": "TCPIP002",
+                "question": "Which protocol is connectionless and does not guarantee delivery?",
+                "options": [
+                    "UDP",
+                    "TCP",
+                    "IP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "UDP is connectionless and provides best-effort delivery without reliability."
+            },
+            {
+                "id": "TCPIP003",
+                "question": "Which layer does TCP belong to?",
+                "options": [
+                    "Transport Layer",
+                    "Network Layer",
+                    "Data Link Layer",
+                    "Application Layer"
+                ],
+                "answer": 0,
+                "explanation": "TCP operates at the Transport layer of the OSI model."
+            },
+            {
+                "id": "TCPIP004",
+                "question": "Which layer does IP operate at?",
+                "options": [
+                    "Network Layer",
+                    "Transport Layer",
+                    "Data Link Layer",
+                    "Session Layer"
+                ],
+                "answer": 0,
+                "explanation": "IP works at the Network layer and handles logical addressing and routing."
+            },
+            {
+                "id": "TCPIP005",
+                "question": "Which protocol uses port numbers?",
+                "options": [
+                    "TCP and UDP",
+                    "IP only",
+                    "ICMP only",
+                    "ARP only"
+                ],
+                "answer": 0,
+                "explanation": "TCP and UDP use port numbers to identify application processes."
+            },
+            {
+                "id": "TCPIP006",
+                "question": "Which field in TCP ensures correct ordering of segments?",
+                "options": [
+                    "Sequence Number",
+                    "Acknowledgment Number",
+                    "Window Size",
+                    "Checksum"
+                ],
+                "answer": 0,
+                "explanation": "Sequence numbers ensure data is reassembled in correct order."
+            },
+            {
+                "id": "TCPIP007",
+                "question": "Which protocol is best suited for real-time applications like VoIP?",
+                "options": [
+                    "UDP",
+                    "TCP",
+                    "IP",
+                    "HTTP"
+                ],
+                "answer": 0,
+                "explanation": "UDP is preferred for real-time applications due to low latency."
+            },
+            {
+                "id": "TCPIP008",
+                "question": "What is the size of an IPv4 address?",
+                "options": [
+                    "32 bits",
+                    "64 bits",
+                    "128 bits",
+                    "16 bits"
+                ],
+                "answer": 0,
+                "explanation": "IPv4 addresses are 32-bit long."
+            },
+            {
+                "id": "TCPIP009",
+                "question": "Which IP version uses 128-bit addresses?",
+                "options": [
+                    "IPv6",
+                    "IPv4",
+                    "IPv5",
+                    "IPv8"
+                ],
+                "answer": 0,
+                "explanation": "IPv6 uses 128-bit addressing."
+            },
+            {
+                "id": "TCPIP010",
+                "question": "Which TCP mechanism controls congestion?",
+                "options": [
+                    "Window Size",
+                    "Checksum",
+                    "Port Number",
+                    "TTL"
+                ],
+                "answer": 0,
+                "explanation": "TCP uses window size for flow and congestion control."
+            },
+            {
+                "id": "TCPIP011",
+                "question": "Which protocol resolves IP address to MAC address?",
+                "options": [
+                    "ARP",
+                    "RARP",
+                    "ICMP",
+                    "DNS"
+                ],
+                "answer": 0,
+                "explanation": "ARP maps IP addresses to physical MAC addresses."
+            },
+            {
+                "id": "TCPIP012",
+                "question": "Which protocol reports errors and diagnostic information?",
+                "options": [
+                    "ICMP",
+                    "TCP",
+                    "UDP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "ICMP is used for error reporting and diagnostics."
+            },
+            {
+                "id": "TCPIP013",
+                "question": "Which field in IP header limits packet lifetime?",
+                "options": [
+                    "TTL",
+                    "Checksum",
+                    "Protocol",
+                    "Identification"
+                ],
+                "answer": 0,
+                "explanation": "TTL prevents packets from looping indefinitely."
+            },
+            {
+                "id": "TCPIP014",
+                "question": "Which protocol is used by ping command?",
+                "options": [
+                    "ICMP",
+                    "TCP",
+                    "UDP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "Ping uses ICMP echo request and reply messages."
+            },
+            {
+                "id": "TCPIP015",
+                "question": "Which TCP flag is used to initiate a connection?",
+                "options": [
+                    "SYN",
+                    "ACK",
+                    "FIN",
+                    "RST"
+                ],
+                "answer": 0,
+                "explanation": "SYN flag is used to initiate TCP connection."
+            },
+            {
+                "id": "TCPIP016",
+                "question": "How many steps are involved in TCP three-way handshake?",
+                "options": [
+                    "3",
+                    "2",
+                    "4",
+                    "5"
+                ],
+                "answer": 0,
+                "explanation": "TCP connection establishment uses a three-way handshake."
+            },
+            {
+                "id": "TCPIP017",
+                "question": "Which TCP flag terminates a connection gracefully?",
+                "options": [
+                    "FIN",
+                    "RST",
+                    "ACK",
+                    "SYN"
+                ],
+                "answer": 0,
+                "explanation": "FIN flag is used for graceful termination of TCP connection."
+            },
+            {
+                "id": "TCPIP018",
+                "question": "Which protocol does not perform error recovery?",
+                "options": [
+                    "UDP",
+                    "TCP",
+                    "IP",
+                    "ICMP"
+                ],
+                "answer": 0,
+                "explanation": "UDP does not provide error recovery or retransmission."
+            },
+            {
+                "id": "TCPIP019",
+                "question": "Which IP address class supports maximum number of hosts?",
+                "options": [
+                    "Class A",
+                    "Class B",
+                    "Class C",
+                    "Class D"
+                ],
+                "answer": 0,
+                "explanation": "Class A networks support the highest number of hosts."
+            },
+            {
+                "id": "TCPIP020",
+                "question": "Which class of IP address is used for multicast?",
+                "options": [
+                    "Class D",
+                    "Class A",
+                    "Class B",
+                    "Class C"
+                ],
+                "answer": 0,
+                "explanation": "Class D addresses are reserved for multicast."
+            },
+            {
+                "id": "TCPIP021",
+                "question": "Which protocol field identifies upper-layer protocol in IP?",
+                "options": [
+                    "Protocol",
+                    "TTL",
+                    "Checksum",
+                    "Fragment Offset"
+                ],
+                "answer": 0,
+                "explanation": "Protocol field specifies whether TCP, UDP, or ICMP is used."
+            },
+            {
+                "id": "TCPIP022",
+                "question": "Which IP mechanism breaks packets into smaller units?",
+                "options": [
+                    "Fragmentation",
+                    "Encapsulation",
+                    "Segmentation",
+                    "Multiplexing"
+                ],
+                "answer": 0,
+                "explanation": "IP fragmentation breaks large packets into smaller fragments."
+            },
+            {
+                "id": "TCPIP023",
+                "question": "Which protocol performs segmentation?",
+                "options": [
+                    "TCP",
+                    "IP",
+                    "ICMP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "TCP segments application data before transmission."
+            },
+            {
+                "id": "TCPIP024",
+                "question": "Which protocol is stateless?",
+                "options": [
+                    "UDP",
+                    "TCP",
+                    "FTP",
+                    "SMTP"
+                ],
+                "answer": 0,
+                "explanation": "UDP is stateless and connectionless."
+            },
+            {
+                "id": "TCPIP025",
+                "question": "Which IP address is reserved for loopback?",
+                "options": [
+                    "127.0.0.1",
+                    "0.0.0.0",
+                    "255.255.255.255",
+                    "192.168.1.1"
+                ],
+                "answer": 0,
+                "explanation": "127.0.0.1 is the loopback address."
+            },
+            {
+                "id": "TCPIP026",
+                "question": "Which protocol ensures flow control?",
+                "options": [
+                    "TCP",
+                    "UDP",
+                    "IP",
+                    "ICMP"
+                ],
+                "answer": 0,
+                "explanation": "TCP uses windowing for flow control."
+            },
+            {
+                "id": "TCPIP027",
+                "question": "Which protocol header contains source and destination ports?",
+                "options": [
+                    "TCP",
+                    "IP",
+                    "ICMP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "TCP header contains source and destination port numbers."
+            },
+            {
+                "id": "TCPIP028",
+                "question": "Which protocol is faster due to minimal overhead?",
+                "options": [
+                    "UDP",
+                    "TCP",
+                    "IP",
+                    "HTTP"
+                ],
+                "answer": 0,
+                "explanation": "UDP has minimal overhead, making it faster."
+            },
+            {
+                "id": "TCPIP029",
+                "question": "Which IP address represents all hosts in a network?",
+                "options": [
+                    "Broadcast Address",
+                    "Loopback Address",
+                    "Unicast Address",
+                    "Multicast Address"
+                ],
+                "answer": 0,
+                "explanation": "Broadcast address targets all hosts in a network."
+            },
+            {
+                "id": "TCPIP030",
+                "question": "Which TCP feature avoids overwhelming the receiver?",
+                "options": [
+                    "Flow Control",
+                    "Routing",
+                    "Fragmentation",
+                    "Addressing"
+                ],
+                "answer": 0,
+                "explanation": "Flow control ensures sender does not overwhelm receiver."
+            },
+            {
+                "id": "TCPIP031",
+                "question": "Which protocol supports checksum for error detection?",
+                "options": [
+                    "TCP and UDP",
+                    "IP only",
+                    "ARP only",
+                    "ICMP only"
+                ],
+                "answer": 0,
+                "explanation": "Both TCP and UDP use checksum for error detection."
+            },
+            {
+                "id": "TCPIP032",
+                "question": "Which IP class has default subnet mask 255.255.255.0?",
+                "options": [
+                    "Class C",
+                    "Class A",
+                    "Class B",
+                    "Class D"
+                ],
+                "answer": 0,
+                "explanation": "Class C uses 255.255.255.0 as default subnet mask."
+            },
+            {
+                "id": "TCPIP033",
+                "question": "Which TCP flag abruptly terminates a connection?",
+                "options": [
+                    "RST",
+                    "FIN",
+                    "ACK",
+                    "SYN"
+                ],
+                "answer": 0,
+                "explanation": "RST resets and abruptly terminates a TCP connection."
+            },
+            {
+                "id": "TCPIP034",
+                "question": "Which protocol is used for address resolution in IPv6?",
+                "options": [
+                    "NDP",
+                    "ARP",
+                    "ICMPv4",
+                    "RARP"
+                ],
+                "answer": 0,
+                "explanation": "IPv6 uses Neighbor Discovery Protocol instead of ARP."
+            },
+            {
+                "id": "TCPIP035",
+                "question": "Which protocol is unreliable by design?",
+                "options": [
+                    "UDP",
+                    "TCP",
+                    "FTP",
+                    "SMTP"
+                ],
+                "answer": 0,
+                "explanation": "UDP does not guarantee delivery."
+            },
+            {
+                "id": "TCPIP036",
+                "question": "Which IP address is private?",
+                "options": [
+                    "192.168.1.1",
+                    "8.8.8.8",
+                    "1.1.1.1",
+                    "172.0.0.1"
+                ],
+                "answer": 0,
+                "explanation": "192.168.0.0/16 range is private."
+            },
+            {
+                "id": "TCPIP037",
+                "question": "Which TCP field acknowledges received data?",
+                "options": [
+                    "Acknowledgment Number",
+                    "Sequence Number",
+                    "Window Size",
+                    "Urgent Pointer"
+                ],
+                "answer": 0,
+                "explanation": "Acknowledgment number confirms received segments."
+            },
+            {
+                "id": "TCPIP038",
+                "question": "Which protocol handles logical addressing?",
+                "options": [
+                    "IP",
+                    "TCP",
+                    "UDP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "IP handles logical addressing."
+            },
+            {
+                "id": "TCPIP039",
+                "question": "Which IP version removes broadcast?",
+                "options": [
+                    "IPv6",
+                    "IPv4",
+                    "IPv5",
+                    "IPv3"
+                ],
+                "answer": 0,
+                "explanation": "IPv6 eliminates broadcast and uses multicast."
+            },
+            {
+                "id": "TCPIP040",
+                "question": "Which protocol is used for congestion notification?",
+                "options": [
+                    "ICMP",
+                    "TCP",
+                    "UDP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "ICMP is used for congestion and error notifications."
+            },
+            {
+                "id": "TCPIP041",
+                "question": "Which TCP mechanism retransmits lost segments?",
+                "options": [
+                    "Timeout",
+                    "Routing",
+                    "Fragmentation",
+                    "Addressing"
+                ],
+                "answer": 0,
+                "explanation": "TCP retransmits segments after timeout."
+            },
+            {
+                "id": "TCPIP042",
+                "question": "Which protocol is used for file transfer over unreliable network?",
+                "options": [
+                    "TCP",
+                    "UDP",
+                    "IP",
+                    "ICMP"
+                ],
+                "answer": 0,
+                "explanation": "TCP ensures reliable file transfer."
+            },
+            {
+                "id": "TCPIP043",
+                "question": "Which IP address is invalid?",
+                "options": [
+                    "0.0.0.0",
+                    "192.168.1.10",
+                    "10.0.0.1",
+                    "172.16.0.1"
+                ],
+                "answer": 0,
+                "explanation": "0.0.0.0 is not a valid host address."
+            },
+            {
+                "id": "TCPIP044",
+                "question": "Which protocol uses sliding window?",
+                "options": [
+                    "TCP",
+                    "UDP",
+                    "IP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "TCP uses sliding window for flow control."
+            },
+            {
+                "id": "TCPIP045",
+                "question": "Which IP field helps in reassembly?",
+                "options": [
+                    "Identification",
+                    "TTL",
+                    "Protocol",
+                    "Checksum"
+                ],
+                "answer": 0,
+                "explanation": "Identification field helps reassemble fragments."
+            },
+            {
+                "id": "TCPIP046",
+                "question": "Which TCP feature ensures data integrity?",
+                "options": [
+                    "Checksum",
+                    "Port Number",
+                    "Window Size",
+                    "Flag"
+                ],
+                "answer": 0,
+                "explanation": "Checksum ensures integrity of TCP segments."
+            },
+            {
+                "id": "TCPIP047",
+                "question": "Which protocol sends data without handshake?",
+                "options": [
+                    "UDP",
+                    "TCP",
+                    "FTP",
+                    "SMTP"
+                ],
+                "answer": 0,
+                "explanation": "UDP sends data without connection establishment."
+            },
+            {
+                "id": "TCPIP048",
+                "question": "Which IP address type delivers to a single host?",
+                "options": [
+                    "Unicast",
+                    "Broadcast",
+                    "Multicast",
+                    "Anycast"
+                ],
+                "answer": 0,
+                "explanation": "Unicast communication is one-to-one."
+            },
+            {
+                "id": "TCPIP049",
+                "question": "Which TCP flag confirms connection establishment?",
+                "options": [
+                    "ACK",
+                    "SYN",
+                    "FIN",
+                    "RST"
+                ],
+                "answer": 0,
+                "explanation": "ACK acknowledges successful connection establishment."
+            },
+            {
+                "id": "TCPIP050",
+                "question": "Which protocol ensures ordered, reliable, and error-free delivery?",
+                "options": [
+                    "TCP",
+                    "UDP",
+                    "IP",
+                    "ICMP"
+                ],
+                "answer": 0,
+                "explanation": "TCP ensures ordered and reliable delivery."
+            }
+        ],
+        "Basic Concepts of Switches, Gateways, and Routers": [
+            {
+                "id": "NET001",
+                "question": "At which OSI layer does a switch primarily operate?",
+                "options": [
+                    "Data Link Layer",
+                    "Network Layer",
+                    "Physical Layer",
+                    "Transport Layer"
+                ],
+                "answer": 0,
+                "explanation": "A switch primarily operates at the Data Link layer using MAC addresses."
+            },
+            {
+                "id": "NET002",
+                "question": "Which device uses MAC address table to forward frames?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Gateway",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Switches use a MAC address table to forward frames."
+            },
+            {
+                "id": "NET003",
+                "question": "Which device operates at the Network layer?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers operate at the Network layer using IP addresses."
+            },
+            {
+                "id": "NET004",
+                "question": "Which addressing is used by routers to forward packets?",
+                "options": [
+                    "IP address",
+                    "MAC address",
+                    "Port number",
+                    "Physical address"
+                ],
+                "answer": 0,
+                "explanation": "Routers forward packets based on IP addresses."
+            },
+            {
+                "id": "NET005",
+                "question": "Which device connects networks using different protocols?",
+                "options": [
+                    "Gateway",
+                    "Router",
+                    "Switch",
+                    "Bridge"
+                ],
+                "answer": 0,
+                "explanation": "Gateways connect networks with different protocols."
+            },
+            {
+                "id": "NET006",
+                "question": "Which device breaks collision domains?",
+                "options": [
+                    "Switch",
+                    "Hub",
+                    "Repeater",
+                    "Modem"
+                ],
+                "answer": 0,
+                "explanation": "Each switch port is a separate collision domain."
+            },
+            {
+                "id": "NET007",
+                "question": "Which device breaks broadcast domains?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Bridge"
+                ],
+                "answer": 0,
+                "explanation": "Routers separate broadcast domains."
+            },
+            {
+                "id": "NET008",
+                "question": "Which switch feature allows network segmentation?",
+                "options": [
+                    "VLAN",
+                    "STP",
+                    "CSMA/CD",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "VLANs logically segment networks on switches."
+            },
+            {
+                "id": "NET009",
+                "question": "Which protocol prevents switching loops?",
+                "options": [
+                    "STP",
+                    "ARP",
+                    "RIP",
+                    "OSPF"
+                ],
+                "answer": 0,
+                "explanation": "Spanning Tree Protocol prevents loops in switches."
+            },
+            {
+                "id": "NET010",
+                "question": "Which device forwards data based on both MAC and IP addresses?",
+                "options": [
+                    "Layer 3 Switch",
+                    "Hub",
+                    "Bridge",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Layer 3 switches work at both Data Link and Network layers."
+            },
+            {
+                "id": "NET011",
+                "question": "Which table is maintained by a router?",
+                "options": [
+                    "Routing table",
+                    "MAC table",
+                    "ARP cache",
+                    "Frame table"
+                ],
+                "answer": 0,
+                "explanation": "Routers maintain routing tables."
+            },
+            {
+                "id": "NET012",
+                "question": "Which protocol is used by routers to determine best path?",
+                "options": [
+                    "Routing Protocol",
+                    "ARP",
+                    "DNS",
+                    "HTTP"
+                ],
+                "answer": 0,
+                "explanation": "Routing protocols help routers choose best paths."
+            },
+            {
+                "id": "NET013",
+                "question": "Which device forwards broadcasts by default?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Gateway",
+                    "Firewall"
+                ],
+                "answer": 0,
+                "explanation": "Switches forward broadcast frames within a LAN."
+            },
+            {
+                "id": "NET014",
+                "question": "Which device is also known as an intelligent hub?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Gateway",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Switch is often called an intelligent hub."
+            },
+            {
+                "id": "NET015",
+                "question": "Which device connects two LANs of same protocol?",
+                "options": [
+                    "Router",
+                    "Gateway",
+                    "Modem",
+                    "Firewall"
+                ],
+                "answer": 0,
+                "explanation": "Routers connect networks of same protocol."
+            },
+            {
+                "id": "NET016",
+                "question": "Which device works at multiple OSI layers?",
+                "options": [
+                    "Gateway",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Gateways can operate at multiple OSI layers."
+            },
+            {
+                "id": "NET017",
+                "question": "Which switching method provides lowest latency?",
+                "options": [
+                    "Cut-through switching",
+                    "Store-and-forward",
+                    "Fragment-free",
+                    "Packet switching"
+                ],
+                "answer": 0,
+                "explanation": "Cut-through switching forwards frames immediately."
+            },
+            {
+                "id": "NET018",
+                "question": "Which switching method performs error checking?",
+                "options": [
+                    "Store-and-forward",
+                    "Cut-through",
+                    "Fast switching",
+                    "Circuit switching"
+                ],
+                "answer": 0,
+                "explanation": "Store-and-forward checks frame integrity before forwarding."
+            },
+            {
+                "id": "NET019",
+                "question": "Which protocol maps IP address to MAC address?",
+                "options": [
+                    "ARP",
+                    "RARP",
+                    "ICMP",
+                    "DNS"
+                ],
+                "answer": 0,
+                "explanation": "ARP resolves IP to MAC address."
+            },
+            {
+                "id": "NET020",
+                "question": "Which device is required to connect LAN to WAN?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Bridge",
+                    "Hub"
+                ],
+                "answer": 0,
+                "explanation": "Routers connect LANs to WANs."
+            },
+            {
+                "id": "NET021",
+                "question": "Which device performs packet forwarding based on destination IP?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Bridge",
+                    "Hub"
+                ],
+                "answer": 0,
+                "explanation": "Routers forward packets using destination IP."
+            },
+            {
+                "id": "NET022",
+                "question": "Which technology allows multiple VLANs on one link?",
+                "options": [
+                    "VLAN Trunking",
+                    "STP",
+                    "ARP",
+                    "NAT"
+                ],
+                "answer": 0,
+                "explanation": "Trunking allows VLAN traffic over a single link."
+            },
+            {
+                "id": "NET023",
+                "question": "Which router function translates private IP to public IP?",
+                "options": [
+                    "NAT",
+                    "ARP",
+                    "DNS",
+                    "DHCP"
+                ],
+                "answer": 0,
+                "explanation": "NAT converts private IPs to public IPs."
+            },
+            {
+                "id": "NET024",
+                "question": "Which device increases network security by separating networks?",
+                "options": [
+                    "Router",
+                    "Hub",
+                    "Repeater",
+                    "Bridge"
+                ],
+                "answer": 0,
+                "explanation": "Routers isolate networks and improve security."
+            },
+            {
+                "id": "NET025",
+                "question": "Which switch mode learns MAC addresses automatically?",
+                "options": [
+                    "Dynamic Learning",
+                    "Static Learning",
+                    "Manual Learning",
+                    "ARP Learning"
+                ],
+                "answer": 0,
+                "explanation": "Switches dynamically learn MAC addresses."
+            },
+            {
+                "id": "NET026",
+                "question": "Which router protocol is distance-vector based?",
+                "options": [
+                    "RIP",
+                    "OSPF",
+                    "BGP",
+                    "IS-IS"
+                ],
+                "answer": 0,
+                "explanation": "RIP is a distance-vector routing protocol."
+            },
+            {
+                "id": "NET027",
+                "question": "Which routing protocol uses hop count as metric?",
+                "options": [
+                    "RIP",
+                    "OSPF",
+                    "EIGRP",
+                    "BGP"
+                ],
+                "answer": 0,
+                "explanation": "RIP uses hop count as routing metric."
+            },
+            {
+                "id": "NET028",
+                "question": "Which device cannot filter traffic?",
+                "options": [
+                    "Hub",
+                    "Switch",
+                    "Router",
+                    "Gateway"
+                ],
+                "answer": 0,
+                "explanation": "Hubs do not filter traffic."
+            },
+            {
+                "id": "NET029",
+                "question": "Which device regenerates and amplifies signals?",
+                "options": [
+                    "Repeater",
+                    "Router",
+                    "Switch",
+                    "Gateway"
+                ],
+                "answer": 0,
+                "explanation": "Repeaters regenerate signals."
+            },
+            {
+                "id": "NET030",
+                "question": "Which device forwards data only to intended recipient?",
+                "options": [
+                    "Switch",
+                    "Hub",
+                    "Repeater",
+                    "Modem"
+                ],
+                "answer": 0,
+                "explanation": "Switch sends frames only to the destination port."
+            },
+            {
+                "id": "NET031",
+                "question": "Which protocol prevents loops between routers?",
+                "options": [
+                    "Routing Protocols",
+                    "STP",
+                    "ARP",
+                    "NAT"
+                ],
+                "answer": 0,
+                "explanation": "Routing protocols avoid loops using algorithms."
+            },
+            {
+                "id": "NET032",
+                "question": "Which device works using store-and-forward technique?",
+                "options": [
+                    "Router",
+                    "Hub",
+                    "Repeater",
+                    "Modem"
+                ],
+                "answer": 0,
+                "explanation": "Routers use store-and-forward technique."
+            },
+            {
+                "id": "NET033",
+                "question": "Which switch feature allows prioritizing traffic?",
+                "options": [
+                    "QoS",
+                    "VLAN",
+                    "STP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "QoS prioritizes critical traffic."
+            },
+            {
+                "id": "NET034",
+                "question": "Which device connects dissimilar networks?",
+                "options": [
+                    "Gateway",
+                    "Switch",
+                    "Bridge",
+                    "Hub"
+                ],
+                "answer": 0,
+                "explanation": "Gateways connect dissimilar networks."
+            },
+            {
+                "id": "NET035",
+                "question": "Which device works on frames?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Gateway",
+                    "Firewall"
+                ],
+                "answer": 0,
+                "explanation": "Switches process frames."
+            },
+            {
+                "id": "NET036",
+                "question": "Which router protocol is link-state based?",
+                "options": [
+                    "OSPF",
+                    "RIP",
+                    "BGP",
+                    "IGMP"
+                ],
+                "answer": 0,
+                "explanation": "OSPF is a link-state routing protocol."
+            },
+            {
+                "id": "NET037",
+                "question": "Which device can block broadcast storms?",
+                "options": [
+                    "Router",
+                    "Hub",
+                    "Repeater",
+                    "Bridge"
+                ],
+                "answer": 0,
+                "explanation": "Routers block broadcast storms."
+            },
+            {
+                "id": "NET038",
+                "question": "Which switching avoids collision completely?",
+                "options": [
+                    "Full-duplex switching",
+                    "Half-duplex",
+                    "CSMA/CD",
+                    "Broadcast switching"
+                ],
+                "answer": 0,
+                "explanation": "Full-duplex switching eliminates collisions."
+            },
+            {
+                "id": "NET039",
+                "question": "Which protocol is used by routers to exchange routing information?",
+                "options": [
+                    "RIP",
+                    "ARP",
+                    "DNS",
+                    "HTTP"
+                ],
+                "answer": 0,
+                "explanation": "RIP exchanges routing information."
+            },
+            {
+                "id": "NET040",
+                "question": "Which device selects best path for data?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers choose best paths."
+            },
+            {
+                "id": "NET041",
+                "question": "Which device does not understand IP addresses?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Gateway",
+                    "Firewall"
+                ],
+                "answer": 0,
+                "explanation": "Standard switches do not understand IP."
+            },
+            {
+                "id": "NET042",
+                "question": "Which gateway feature allows protocol conversion?",
+                "options": [
+                    "Translation",
+                    "Encapsulation",
+                    "Segmentation",
+                    "Routing"
+                ],
+                "answer": 0,
+                "explanation": "Gateways translate between protocols."
+            },
+            {
+                "id": "NET043",
+                "question": "Which router feature allows internet sharing?",
+                "options": [
+                    "NAT",
+                    "VLAN",
+                    "STP",
+                    "ARP"
+                ],
+                "answer": 0,
+                "explanation": "NAT enables internet sharing."
+            },
+            {
+                "id": "NET044",
+                "question": "Which device uses default gateway concept?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers act as default gateways."
+            },
+            {
+                "id": "NET045",
+                "question": "Which device filters traffic based on MAC address?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Gateway",
+                    "Firewall"
+                ],
+                "answer": 0,
+                "explanation": "Switches filter traffic using MAC addresses."
+            },
+            {
+                "id": "NET046",
+                "question": "Which device works fastest?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Gateway",
+                    "Firewall"
+                ],
+                "answer": 0,
+                "explanation": "Switches are faster as they process frames."
+            },
+            {
+                "id": "NET047",
+                "question": "Which device reduces network congestion?",
+                "options": [
+                    "Switch",
+                    "Hub",
+                    "Repeater",
+                    "Modem"
+                ],
+                "answer": 0,
+                "explanation": "Switches reduce unnecessary traffic."
+            },
+            {
+                "id": "NET048",
+                "question": "Which router protocol is used between ISPs?",
+                "options": [
+                    "BGP",
+                    "RIP",
+                    "OSPF",
+                    "EIGRP"
+                ],
+                "answer": 0,
+                "explanation": "BGP is used between ISPs."
+            },
+            {
+                "id": "NET049",
+                "question": "Which switch feature allows loop-free topology?",
+                "options": [
+                    "STP",
+                    "VLAN",
+                    "QoS",
+                    "NAT"
+                ],
+                "answer": 0,
+                "explanation": "STP ensures loop-free topology."
+            },
+            {
+                "id": "NET050",
+                "question": "Which device is protocol-dependent?",
+                "options": [
+                    "Router",
+                    "Hub",
+                    "Repeater",
+                    "Bridge"
+                ],
+                "answer": 0,
+                "explanation": "Routers are protocol-dependent."
+            },
+            {
+                "id": "NET051",
+                "question": "Which device is protocol-independent?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Gateway",
+                    "Firewall"
+                ],
+                "answer": 0,
+                "explanation": "Switches are protocol-independent."
+            },
+            {
+                "id": "NET052",
+                "question": "Which device provides logical addressing?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Bridge"
+                ],
+                "answer": 0,
+                "explanation": "Routers use logical IP addressing."
+            },
+            {
+                "id": "NET053",
+                "question": "Which gateway works at Application layer?",
+                "options": [
+                    "Application Gateway",
+                    "Packet Gateway",
+                    "Circuit Gateway",
+                    "Frame Gateway"
+                ],
+                "answer": 0,
+                "explanation": "Application gateways work at Application layer."
+            },
+            {
+                "id": "NET054",
+                "question": "Which device maintains ARP cache?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers maintain ARP cache."
+            },
+            {
+                "id": "NET055",
+                "question": "Which device does not maintain any table?",
+                "options": [
+                    "Hub",
+                    "Switch",
+                    "Router",
+                    "Gateway"
+                ],
+                "answer": 0,
+                "explanation": "Hubs do not maintain tables."
+            },
+            {
+                "id": "NET056",
+                "question": "Which router feature improves scalability?",
+                "options": [
+                    "Subnetting",
+                    "Broadcasting",
+                    "Flooding",
+                    "Bridging"
+                ],
+                "answer": 0,
+                "explanation": "Subnetting improves scalability."
+            },
+            {
+                "id": "NET057",
+                "question": "Which device decides next hop?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers decide next hop."
+            },
+            {
+                "id": "NET058",
+                "question": "Which switch operates at physical layer?",
+                "options": [
+                    "Layer 1 Switch",
+                    "Layer 2 Switch",
+                    "Layer 3 Switch",
+                    "Layer 4 Switch"
+                ],
+                "answer": 0,
+                "explanation": "Layer 1 switch works like a hub."
+            },
+            {
+                "id": "NET059",
+                "question": "Which device forwards packets between VLANs?",
+                "options": [
+                    "Router",
+                    "Layer 2 Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers enable inter-VLAN routing."
+            },
+            {
+                "id": "NET060",
+                "question": "Which switch feature prevents MAC flooding?",
+                "options": [
+                    "Port Security",
+                    "STP",
+                    "QoS",
+                    "VLAN"
+                ],
+                "answer": 0,
+                "explanation": "Port security limits MAC addresses."
+            },
+            {
+                "id": "NET061",
+                "question": "Which device uses routing metrics?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers use metrics for path selection."
+            },
+            {
+                "id": "NET062",
+                "question": "Which device connects different architectures?",
+                "options": [
+                    "Gateway",
+                    "Router",
+                    "Switch",
+                    "Hub"
+                ],
+                "answer": 0,
+                "explanation": "Gateways connect different architectures."
+            },
+            {
+                "id": "NET063",
+                "question": "Which router feature balances traffic?",
+                "options": [
+                    "Load Balancing",
+                    "NAT",
+                    "ARP",
+                    "VLAN"
+                ],
+                "answer": 0,
+                "explanation": "Load balancing distributes traffic."
+            },
+            {
+                "id": "NET064",
+                "question": "Which device can act as firewall?",
+                "options": [
+                    "Router",
+                    "Hub",
+                    "Repeater",
+                    "Bridge"
+                ],
+                "answer": 0,
+                "explanation": "Routers can perform basic firewall functions."
+            },
+            {
+                "id": "NET065",
+                "question": "Which switch feature limits broadcast traffic?",
+                "options": [
+                    "VLAN",
+                    "STP",
+                    "QoS",
+                    "NAT"
+                ],
+                "answer": 0,
+                "explanation": "VLANs limit broadcast traffic."
+            },
+            {
+                "id": "NET066",
+                "question": "Which device connects two segments of same LAN?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Gateway",
+                    "Modem"
+                ],
+                "answer": 0,
+                "explanation": "Switch connects LAN segments."
+            },
+            {
+                "id": "NET067",
+                "question": "Which routing is manually configured?",
+                "options": [
+                    "Static Routing",
+                    "Dynamic Routing",
+                    "Adaptive Routing",
+                    "Default Routing"
+                ],
+                "answer": 0,
+                "explanation": "Static routing is manually configured."
+            },
+            {
+                "id": "NET068",
+                "question": "Which device uses packet filtering?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers can filter packets."
+            },
+            {
+                "id": "NET069",
+                "question": "Which device supports VLAN tagging?",
+                "options": [
+                    "Switch",
+                    "Hub",
+                    "Repeater",
+                    "Modem"
+                ],
+                "answer": 0,
+                "explanation": "Switches support VLAN tagging."
+            },
+            {
+                "id": "NET070",
+                "question": "Which gateway type works at Transport layer?",
+                "options": [
+                    "Circuit-level Gateway",
+                    "Application Gateway",
+                    "Packet Gateway",
+                    "Frame Gateway"
+                ],
+                "answer": 0,
+                "explanation": "Circuit-level gateways work at Transport layer."
+            },
+            {
+                "id": "NET071",
+                "question": "Which device forwards traffic based on subnet?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers forward based on subnet."
+            },
+            {
+                "id": "NET072",
+                "question": "Which device is costliest?",
+                "options": [
+                    "Gateway",
+                    "Router",
+                    "Switch",
+                    "Hub"
+                ],
+                "answer": 0,
+                "explanation": "Gateways are costliest due to complexity."
+            },
+            {
+                "id": "NET073",
+                "question": "Which device reduces packet collision and broadcast traffic?",
+                "options": [
+                    "Router",
+                    "Hub",
+                    "Repeater",
+                    "Modem"
+                ],
+                "answer": 0,
+                "explanation": "Routers reduce collision and broadcast domains."
+            },
+            {
+                "id": "NET074",
+                "question": "Which device uses ICMP for error reporting?",
+                "options": [
+                    "Router",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Routers use ICMP for error reporting."
+            },
+            {
+                "id": "NET075",
+                "question": "Which device provides protocol translation and security?",
+                "options": [
+                    "Gateway",
+                    "Switch",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 0,
+                "explanation": "Gateways provide protocol translation and security."
+            }
+        ],
+        "Application Layer Protocols (DNS, SMTP, POP, FTP, HTTP)": [
+            {
+                "id": "APP001",
+                "question": "Which protocol is primarily used for translating domain names into IP addresses?",
+                "options": [
+                    "FTP",
+                    "DNS",
+                    "SMTP",
+                    "HTTP"
                 ],
                 "answer": 1,
-                "explanation": "Java bytecode runs on JVM which makes it platform independent."
+                "explanation": "DNS resolves domain names into corresponding IP addresses."
+            },
+            {
+                "id": "APP002",
+                "question": "Which application layer protocol uses TCP port 80 by default?",
+                "options": [
+                    "HTTP",
+                    "FTP",
+                    "SMTP",
+                    "POP3"
+                ],
+                "answer": 0,
+                "explanation": "HTTP uses TCP port 80 for web communication."
+            },
+            {
+                "id": "APP003",
+                "question": "Which protocol is used to send emails from a client to a mail server?",
+                "options": [
+                    "POP3",
+                    "IMAP",
+                    "SMTP",
+                    "FTP"
+                ],
+                "answer": 2,
+                "explanation": "SMTP is used for sending emails."
+            },
+            {
+                "id": "APP004",
+                "question": "Which protocol is mainly used to retrieve emails from a mail server?",
+                "options": [
+                    "SMTP",
+                    "FTP",
+                    "POP3",
+                    "DNS"
+                ],
+                "answer": 2,
+                "explanation": "POP3 retrieves emails from the mail server to the client."
+            },
+            {
+                "id": "APP005",
+                "question": "Which protocol supports downloading and uploading files?",
+                "options": [
+                    "HTTP",
+                    "SMTP",
+                    "FTP",
+                    "DNS"
+                ],
+                "answer": 2,
+                "explanation": "FTP is designed for file transfer operations."
+            },
+            {
+                "id": "APP006",
+                "question": "Which port number is used by SMTP?",
+                "options": [
+                    "25",
+                    "110",
+                    "53",
+                    "80"
+                ],
+                "answer": 0,
+                "explanation": "SMTP uses TCP port 25 by default."
+            },
+            {
+                "id": "APP007",
+                "question": "Which protocol uses TCP port 53?",
+                "options": [
+                    "DNS",
+                    "FTP",
+                    "HTTP",
+                    "POP3"
+                ],
+                "answer": 0,
+                "explanation": "DNS commonly uses port 53 for queries."
+            },
+            {
+                "id": "APP008",
+                "question": "Which protocol uses TCP port 110?",
+                "options": [
+                    "SMTP",
+                    "POP3",
+                    "HTTP",
+                    "FTP"
+                ],
+                "answer": 1,
+                "explanation": "POP3 uses port 110 to retrieve emails."
+            },
+            {
+                "id": "APP009",
+                "question": "Which HTTP method is used to request data from a server?",
+                "options": [
+                    "POST",
+                    "PUT",
+                    "GET",
+                    "DELETE"
+                ],
+                "answer": 2,
+                "explanation": "GET method retrieves data from a server."
+            },
+            {
+                "id": "APP010",
+                "question": "Which protocol uses control and data connections separately?",
+                "options": [
+                    "HTTP",
+                    "SMTP",
+                    "FTP",
+                    "DNS"
+                ],
+                "answer": 2,
+                "explanation": "FTP uses separate control and data channels."
+            },
+            {
+                "id": "APP011",
+                "question": "Which DNS record maps a domain name to an IPv4 address?",
+                "options": [
+                    "MX",
+                    "AAAA",
+                    "A",
+                    "CNAME"
+                ],
+                "answer": 2,
+                "explanation": "A record maps a domain to an IPv4 address."
+            },
+            {
+                "id": "APP012",
+                "question": "Which DNS record specifies the mail server for a domain?",
+                "options": [
+                    "A",
+                    "MX",
+                    "PTR",
+                    "CNAME"
+                ],
+                "answer": 1,
+                "explanation": "MX record specifies mail exchange servers."
+            },
+            {
+                "id": "APP013",
+                "question": "Which protocol is stateless by nature?",
+                "options": [
+                    "FTP",
+                    "HTTP",
+                    "SMTP",
+                    "POP3"
+                ],
+                "answer": 1,
+                "explanation": "HTTP does not maintain session state by default."
+            },
+            {
+                "id": "APP014",
+                "question": "Which HTTP response code indicates success?",
+                "options": [
+                    "404",
+                    "500",
+                    "301",
+                    "200"
+                ],
+                "answer": 3,
+                "explanation": "HTTP 200 indicates successful request."
+            },
+            {
+                "id": "APP015",
+                "question": "Which protocol supports secure web communication?",
+                "options": [
+                    "HTTP",
+                    "FTP",
+                    "HTTPS",
+                    "SMTP"
+                ],
+                "answer": 2,
+                "explanation": "HTTPS provides encrypted web communication."
+            },
+            {
+                "id": "APP016",
+                "question": "Which protocol uses port 443?",
+                "options": [
+                    "FTP",
+                    "HTTPS",
+                    "SMTP",
+                    "POP3"
+                ],
+                "answer": 1,
+                "explanation": "HTTPS uses TCP port 443."
+            },
+            {
+                "id": "APP017",
+                "question": "Which protocol allows email access while keeping mail on server?",
+                "options": [
+                    "SMTP",
+                    "POP3",
+                    "IMAP",
+                    "FTP"
+                ],
+                "answer": 2,
+                "explanation": "IMAP allows mail to remain on the server."
+            },
+            {
+                "id": "APP018",
+                "question": "Which DNS record creates an alias for a domain?",
+                "options": [
+                    "A",
+                    "MX",
+                    "CNAME",
+                    "PTR"
+                ],
+                "answer": 2,
+                "explanation": "CNAME creates domain aliases."
+            },
+            {
+                "id": "APP019",
+                "question": "Which protocol is used for web page transfer?",
+                "options": [
+                    "SMTP",
+                    "DNS",
+                    "HTTP",
+                    "FTP"
+                ],
+                "answer": 2,
+                "explanation": "HTTP is used to transfer web pages."
+            },
+            {
+                "id": "APP020",
+                "question": "Which FTP mode initiates data connection from server to client?",
+                "options": [
+                    "Active mode",
+                    "Passive mode",
+                    "Secure mode",
+                    "Binary mode"
+                ],
+                "answer": 0,
+                "explanation": "Active FTP initiates data connection from server."
+            },
+            {
+                "id": "APP021",
+                "question": "Which protocol uses ASCII commands?",
+                "options": [
+                    "DNS",
+                    "FTP",
+                    "HTTP",
+                    "POP3"
+                ],
+                "answer": 1,
+                "explanation": "FTP uses ASCII-based commands."
+            },
+            {
+                "id": "APP022",
+                "question": "Which protocol is used to send web form data?",
+                "options": [
+                    "SMTP",
+                    "FTP",
+                    "HTTP",
+                    "DNS"
+                ],
+                "answer": 2,
+                "explanation": "HTTP is used to submit form data."
+            },
+            {
+                "id": "APP023",
+                "question": "Which DNS record maps IP address to domain name?",
+                "options": [
+                    "PTR",
+                    "A",
+                    "MX",
+                    "CNAME"
+                ],
+                "answer": 0,
+                "explanation": "PTR record performs reverse DNS lookup."
+            },
+            {
+                "id": "APP024",
+                "question": "Which HTTP method is used to submit data to server?",
+                "options": [
+                    "GET",
+                    "POST",
+                    "HEAD",
+                    "TRACE"
+                ],
+                "answer": 1,
+                "explanation": "POST submits data to server."
+            },
+            {
+                "id": "APP025",
+                "question": "Which protocol works on client-server architecture?",
+                "options": [
+                    "DNS",
+                    "SMTP",
+                    "HTTP",
+                    "All of these"
+                ],
+                "answer": 3,
+                "explanation": "All listed protocols use client-server model."
+            },
+            {
+                "id": "APP026",
+                "question": "Which application protocol uses TCP as transport?",
+                "options": [
+                    "DNS",
+                    "HTTP",
+                    "SMTP",
+                    "All of these"
+                ],
+                "answer": 3,
+                "explanation": "All listed protocols use TCP."
+            },
+            {
+                "id": "APP027",
+                "question": "Which FTP command is used to list files?",
+                "options": [
+                    "PUT",
+                    "GET",
+                    "LIST",
+                    "OPEN"
+                ],
+                "answer": 2,
+                "explanation": "LIST displays directory contents."
+            },
+            {
+                "id": "APP028",
+                "question": "Which HTTP code represents resource not found?",
+                "options": [
+                    "500",
+                    "403",
+                    "404",
+                    "301"
+                ],
+                "answer": 2,
+                "explanation": "404 indicates resource not found."
+            },
+            {
+                "id": "APP029",
+                "question": "Which protocol is used for name resolution?",
+                "options": [
+                    "SMTP",
+                    "FTP",
+                    "DNS",
+                    "HTTP"
+                ],
+                "answer": 2,
+                "explanation": "DNS resolves names to IP addresses."
+            },
+            {
+                "id": "APP030",
+                "question": "Which protocol uses push-based email delivery?",
+                "options": [
+                    "SMTP",
+                    "POP3",
+                    "IMAP",
+                    "HTTP"
+                ],
+                "answer": 0,
+                "explanation": "SMTP pushes emails to mail servers."
+            },
+            {
+                "id": "APP031",
+                "question": "Which DNS record stores IPv6 address?",
+                "options": [
+                    "AAAA",
+                    "A",
+                    "PTR",
+                    "MX"
+                ],
+                "answer": 0,
+                "explanation": "AAAA record maps IPv6 addresses."
+            },
+            {
+                "id": "APP032",
+                "question": "Which protocol uses request-response model?",
+                "options": [
+                    "FTP",
+                    "SMTP",
+                    "HTTP",
+                    "POP3"
+                ],
+                "answer": 2,
+                "explanation": "HTTP uses request-response communication."
+            },
+            {
+                "id": "APP033",
+                "question": "Which protocol is not used for email?",
+                "options": [
+                    "SMTP",
+                    "POP3",
+                    "IMAP",
+                    "HTTP"
+                ],
+                "answer": 3,
+                "explanation": "HTTP is not an email protocol."
+            },
+            {
+                "id": "APP034",
+                "question": "Which FTP mode is firewall-friendly?",
+                "options": [
+                    "Active",
+                    "Passive",
+                    "Binary",
+                    "Secure"
+                ],
+                "answer": 1,
+                "explanation": "Passive mode works better with firewalls."
+            },
+            {
+                "id": "APP035",
+                "question": "Which HTTP header indicates content type?",
+                "options": [
+                    "Host",
+                    "User-Agent",
+                    "Content-Type",
+                    "Accept"
+                ],
+                "answer": 2,
+                "explanation": "Content-Type specifies data format."
+            },
+            {
+                "id": "APP036",
+                "question": "Which protocol supports URL addressing?",
+                "options": [
+                    "DNS",
+                    "HTTP",
+                    "SMTP",
+                    "FTP"
+                ],
+                "answer": 1,
+                "explanation": "HTTP uses URLs to access resources."
+            },
+            {
+                "id": "APP037",
+                "question": "Which protocol resolves mail server addresses?",
+                "options": [
+                    "DNS",
+                    "SMTP",
+                    "POP3",
+                    "HTTP"
+                ],
+                "answer": 0,
+                "explanation": "DNS resolves mail servers via MX records."
+            },
+            {
+                "id": "APP038",
+                "question": "Which HTTP method is idempotent?",
+                "options": [
+                    "POST",
+                    "GET",
+                    "CONNECT",
+                    "PATCH"
+                ],
+                "answer": 1,
+                "explanation": "GET is idempotent."
+            },
+            {
+                "id": "APP039",
+                "question": "Which protocol supports authentication and encryption?",
+                "options": [
+                    "HTTP",
+                    "HTTPS",
+                    "FTP",
+                    "DNS"
+                ],
+                "answer": 1,
+                "explanation": "HTTPS provides encrypted communication."
+            },
+            {
+                "id": "APP040",
+                "question": "Which protocol uses command-reply mechanism?",
+                "options": [
+                    "HTTP",
+                    "FTP",
+                    "DNS",
+                    "SMTP"
+                ],
+                "answer": 1,
+                "explanation": "FTP uses command-reply interaction."
+            },
+            {
+                "id": "APP041",
+                "question": "Which DNS component stores cached responses?",
+                "options": [
+                    "Resolver",
+                    "Root server",
+                    "Authoritative server",
+                    "Client"
+                ],
+                "answer": 0,
+                "explanation": "Resolvers cache DNS responses."
+            },
+            {
+                "id": "APP042",
+                "question": "Which HTTP method updates existing resource?",
+                "options": [
+                    "PUT",
+                    "GET",
+                    "HEAD",
+                    "OPTIONS"
+                ],
+                "answer": 0,
+                "explanation": "PUT updates existing resource."
+            },
+            {
+                "id": "APP043",
+                "question": "Which protocol allows anonymous access?",
+                "options": [
+                    "SMTP",
+                    "FTP",
+                    "POP3",
+                    "IMAP"
+                ],
+                "answer": 1,
+                "explanation": "FTP allows anonymous login."
+            },
+            {
+                "id": "APP044",
+                "question": "Which protocol works on port 21?",
+                "options": [
+                    "FTP",
+                    "SMTP",
+                    "HTTP",
+                    "POP3"
+                ],
+                "answer": 0,
+                "explanation": "FTP control connection uses port 21."
+            },
+            {
+                "id": "APP045",
+                "question": "Which HTTP response indicates redirection?",
+                "options": [
+                    "200",
+                    "404",
+                    "301",
+                    "500"
+                ],
+                "answer": 2,
+                "explanation": "301 indicates permanent redirection."
+            },
+            {
+                "id": "APP046",
+                "question": "Which protocol is text-based?",
+                "options": [
+                    "FTP",
+                    "SMTP",
+                    "HTTP",
+                    "All of these"
+                ],
+                "answer": 3,
+                "explanation": "All listed protocols are text-based."
+            },
+            {
+                "id": "APP047",
+                "question": "Which DNS server is authoritative?",
+                "options": [
+                    "Root server",
+                    "Local resolver",
+                    "Cache server",
+                    "Proxy"
+                ],
+                "answer": 0,
+                "explanation": "Root servers are authoritative."
+            },
+            {
+                "id": "APP048",
+                "question": "Which protocol uses MIME?",
+                "options": [
+                    "SMTP",
+                    "HTTP",
+                    "FTP",
+                    "DNS"
+                ],
+                "answer": 0,
+                "explanation": "SMTP uses MIME for email content."
+            },
+            {
+                "id": "APP049",
+                "question": "Which HTTP header specifies requested host?",
+                "options": [
+                    "Host",
+                    "Accept",
+                    "Cookie",
+                    "Cache-Control"
+                ],
+                "answer": 0,
+                "explanation": "Host header specifies domain name."
+            },
+            {
+                "id": "APP050",
+                "question": "Which protocol supports web services?",
+                "options": [
+                    "HTTP",
+                    "FTP",
+                    "SMTP",
+                    "POP3"
+                ],
+                "answer": 0,
+                "explanation": "HTTP supports REST and web services."
+            },
+            {
+                "id": "APP051",
+                "question": "Which DNS query type is recursive?",
+                "options": [
+                    "Client query",
+                    "Iterative query",
+                    "Authoritative query",
+                    "Zone transfer"
+                ],
+                "answer": 0,
+                "explanation": "Client queries are recursive."
+            },
+            {
+                "id": "APP052",
+                "question": "Which HTTP method retrieves only headers?",
+                "options": [
+                    "HEAD",
+                    "GET",
+                    "OPTIONS",
+                    "TRACE"
+                ],
+                "answer": 0,
+                "explanation": "HEAD retrieves only headers."
+            },
+            {
+                "id": "APP053",
+                "question": "Which protocol downloads emails and deletes from server?",
+                "options": [
+                    "IMAP",
+                    "POP3",
+                    "SMTP",
+                    "FTP"
+                ],
+                "answer": 1,
+                "explanation": "POP3 typically deletes emails after download."
+            },
+            {
+                "id": "APP054",
+                "question": "Which DNS process copies zone data?",
+                "options": [
+                    "Zone transfer",
+                    "Recursive query",
+                    "Iteration",
+                    "Caching"
+                ],
+                "answer": 0,
+                "explanation": "Zone transfer copies DNS zone data."
+            },
+            {
+                "id": "APP055",
+                "question": "Which protocol supports cookies?",
+                "options": [
+                    "HTTP",
+                    "SMTP",
+                    "FTP",
+                    "DNS"
+                ],
+                "answer": 0,
+                "explanation": "HTTP supports cookies for session management."
+            },
+            {
+                "id": "APP056",
+                "question": "Which application protocol is insecure by default?",
+                "options": [
+                    "HTTP",
+                    "HTTPS",
+                    "FTPS",
+                    "SMTPS"
+                ],
+                "answer": 0,
+                "explanation": "HTTP does not provide encryption."
+            },
+            {
+                "id": "APP057",
+                "question": "Which protocol is used to upload files to server?",
+                "options": [
+                    "FTP",
+                    "HTTP",
+                    "SMTP",
+                    "POP3"
+                ],
+                "answer": 0,
+                "explanation": "FTP uploads files to servers."
+            },
+            {
+                "id": "APP058",
+                "question": "Which DNS record prevents domain spoofing for mail?",
+                "options": [
+                    "SPF",
+                    "MX",
+                    "PTR",
+                    "CNAME"
+                ],
+                "answer": 0,
+                "explanation": "SPF helps prevent email spoofing."
+            },
+            {
+                "id": "APP059",
+                "question": "Which protocol uses stateless communication?",
+                "options": [
+                    "HTTP",
+                    "FTP",
+                    "IMAP",
+                    "SMTP"
+                ],
+                "answer": 0,
+                "explanation": "HTTP is stateless."
+            },
+            {
+                "id": "APP060",
+                "question": "Which protocol delivers emails between servers?",
+                "options": [
+                    "SMTP",
+                    "POP3",
+                    "IMAP",
+                    "HTTP"
+                ],
+                "answer": 0,
+                "explanation": "SMTP delivers mail between servers."
+            },
+            {
+                "id": "APP061",
+                "question": "Which protocol can use both TCP and UDP?",
+                "options": [
+                    "DNS",
+                    "HTTP",
+                    "FTP",
+                    "SMTP"
+                ],
+                "answer": 0,
+                "explanation": "DNS uses UDP and TCP."
+            },
+            {
+                "id": "APP062",
+                "question": "Which HTTP version supports persistent connections by default?",
+                "options": [
+                    "HTTP/1.1",
+                    "HTTP/1.0",
+                    "HTTP/2",
+                    "HTTP/3"
+                ],
+                "answer": 0,
+                "explanation": "HTTP/1.1 supports persistent connections."
+            },
+            {
+                "id": "APP063",
+                "question": "Which protocol supports email attachments?",
+                "options": [
+                    "SMTP",
+                    "POP3",
+                    "IMAP",
+                    "SMTP with MIME"
+                ],
+                "answer": 3,
+                "explanation": "MIME enables email attachments."
+            },
+            {
+                "id": "APP064",
+                "question": "Which protocol is vulnerable to sniffing?",
+                "options": [
+                    "HTTP",
+                    "HTTPS",
+                    "FTPS",
+                    "SMTPS"
+                ],
+                "answer": 0,
+                "explanation": "HTTP traffic is unencrypted."
+            },
+            {
+                "id": "APP065",
+                "question": "Which DNS server answers with final authority?",
+                "options": [
+                    "Authoritative server",
+                    "Resolver",
+                    "Cache server",
+                    "Client"
+                ],
+                "answer": 0,
+                "explanation": "Authoritative server provides final answer."
+            },
+            {
+                "id": "APP066",
+                "question": "Which protocol is used to browse websites?",
+                "options": [
+                    "HTTP",
+                    "FTP",
+                    "SMTP",
+                    "DNS"
+                ],
+                "answer": 0,
+                "explanation": "HTTP is used for web browsing."
+            },
+            {
+                "id": "APP067",
+                "question": "Which protocol uses pull-based email access?",
+                "options": [
+                    "POP3",
+                    "SMTP",
+                    "HTTP",
+                    "FTP"
+                ],
+                "answer": 0,
+                "explanation": "POP3 pulls emails from server."
+            },
+            {
+                "id": "APP068",
+                "question": "Which protocol uses TCP port 20 for data?",
+                "options": [
+                    "FTP",
+                    "SMTP",
+                    "HTTP",
+                    "POP3"
+                ],
+                "answer": 0,
+                "explanation": "FTP active mode uses port 20."
+            },
+            {
+                "id": "APP069",
+                "question": "Which HTTP status code indicates server error?",
+                "options": [
+                    "500",
+                    "404",
+                    "301",
+                    "200"
+                ],
+                "answer": 0,
+                "explanation": "500 indicates internal server error."
+            },
+            {
+                "id": "APP070",
+                "question": "Which protocol is used for dynamic web content?",
+                "options": [
+                    "HTTP",
+                    "FTP",
+                    "SMTP",
+                    "DNS"
+                ],
+                "answer": 0,
+                "explanation": "HTTP supports dynamic web content."
+            },
+            {
+                "id": "APP071",
+                "question": "Which DNS hierarchy level is highest?",
+                "options": [
+                    "Root",
+                    "Top-level domain",
+                    "Second-level domain",
+                    "Subdomain"
+                ],
+                "answer": 0,
+                "explanation": "Root is highest in DNS hierarchy."
+            },
+            {
+                "id": "APP072",
+                "question": "Which protocol requires authentication?",
+                "options": [
+                    "POP3",
+                    "DNS",
+                    "HTTP",
+                    "ICMP"
+                ],
+                "answer": 0,
+                "explanation": "POP3 requires user authentication."
+            },
+            {
+                "id": "APP073",
+                "question": "Which HTTP method checks server capabilities?",
+                "options": [
+                    "OPTIONS",
+                    "HEAD",
+                    "TRACE",
+                    "GET"
+                ],
+                "answer": 0,
+                "explanation": "OPTIONS returns server capabilities."
+            },
+            {
+                "id": "APP074",
+                "question": "Which protocol uses hierarchical naming?",
+                "options": [
+                    "DNS",
+                    "HTTP",
+                    "FTP",
+                    "SMTP"
+                ],
+                "answer": 0,
+                "explanation": "DNS uses hierarchical domain naming."
+            },
+            {
+                "id": "APP075",
+                "question": "Which protocol is essential for internet browsing?",
+                "options": [
+                    "HTTP",
+                    "SMTP",
+                    "POP3",
+                    "FTP"
+                ],
+                "answer": 0,
+                "explanation": "HTTP is essential for browsing the web."
+            }
+        ],
+        "Firewalls": [
+            {
+                "id": "FW001",
+                "question": "What is the primary function of a firewall?",
+                "options": [
+                    "Data encryption",
+                    "Network traffic filtering",
+                    "IP addressing",
+                    "Routing packets"
+                ],
+                "answer": 1,
+                "explanation": "A firewall filters incoming and outgoing network traffic based on security rules."
+            },
+            {
+                "id": "FW002",
+                "question": "Which firewall operates at the Network layer of OSI model?",
+                "options": [
+                    "Proxy firewall",
+                    "Stateful firewall",
+                    "Packet filtering firewall",
+                    "Application firewall"
+                ],
+                "answer": 2,
+                "explanation": "Packet filtering firewalls work mainly at the Network layer."
+            },
+            {
+                "id": "FW003",
+                "question": "Which firewall keeps track of active connections?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Stateless firewall",
+                    "Circuit-level gateway"
+                ],
+                "answer": 1,
+                "explanation": "Stateful firewalls track the state of active connections."
+            },
+            {
+                "id": "FW004",
+                "question": "Which firewall works at the Application layer?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Application gateway",
+                    "Router"
+                ],
+                "answer": 2,
+                "explanation": "Application gateways operate at the Application layer."
+            },
+            {
+                "id": "FW005",
+                "question": "Which firewall acts as an intermediary between client and server?",
+                "options": [
+                    "Stateful firewall",
+                    "Packet filter",
+                    "Proxy firewall",
+                    "Bridge firewall"
+                ],
+                "answer": 2,
+                "explanation": "Proxy firewalls act as intermediaries."
+            },
+            {
+                "id": "FW006",
+                "question": "Which firewall provides highest level of security?",
+                "options": [
+                    "Packet filtering",
+                    "Stateful inspection",
+                    "Proxy firewall",
+                    "Router ACL"
+                ],
+                "answer": 2,
+                "explanation": "Proxy firewalls deeply inspect application data."
+            },
+            {
+                "id": "FW007",
+                "question": "Which firewall uses rules based on source and destination IP?",
+                "options": [
+                    "Application firewall",
+                    "Packet filtering firewall",
+                    "Proxy firewall",
+                    "NAT firewall"
+                ],
+                "answer": 1,
+                "explanation": "Packet filtering firewalls filter using IP and port rules."
+            },
+            {
+                "id": "FW008",
+                "question": "Which firewall is vulnerable to IP spoofing?",
+                "options": [
+                    "Stateful firewall",
+                    "Application firewall",
+                    "Packet filtering firewall",
+                    "Proxy firewall"
+                ],
+                "answer": 2,
+                "explanation": "Packet filtering firewalls are vulnerable to spoofing."
+            },
+            {
+                "id": "FW009",
+                "question": "Which firewall can inspect packet payload?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Application firewall",
+                    "Router"
+                ],
+                "answer": 2,
+                "explanation": "Application firewalls inspect payload contents."
+            },
+            {
+                "id": "FW010",
+                "question": "Which firewall maintains session table?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Proxy firewall",
+                    "NAT"
+                ],
+                "answer": 1,
+                "explanation": "Stateful firewalls maintain session tables."
+            },
+            {
+                "id": "FW011",
+                "question": "Which firewall type is fastest?",
+                "options": [
+                    "Proxy firewall",
+                    "Application firewall",
+                    "Packet filtering firewall",
+                    "Stateful firewall"
+                ],
+                "answer": 2,
+                "explanation": "Packet filtering firewalls have minimal processing overhead."
+            },
+            {
+                "id": "FW012",
+                "question": "Which firewall works using TCP handshake information?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Proxy firewall",
+                    "Circuit gateway"
+                ],
+                "answer": 1,
+                "explanation": "Stateful firewalls analyze TCP handshake states."
+            },
+            {
+                "id": "FW013",
+                "question": "Which firewall hides internal network structure?",
+                "options": [
+                    "Packet filter",
+                    "Proxy firewall",
+                    "Router",
+                    "Bridge"
+                ],
+                "answer": 1,
+                "explanation": "Proxy firewalls hide internal network details."
+            },
+            {
+                "id": "FW014",
+                "question": "Which firewall uses deep packet inspection?",
+                "options": [
+                    "Stateful firewall",
+                    "Packet filter",
+                    "Application firewall",
+                    "NAT"
+                ],
+                "answer": 2,
+                "explanation": "Application firewalls use deep packet inspection."
+            },
+            {
+                "id": "FW015",
+                "question": "Which firewall is also called a circuit-level gateway?",
+                "options": [
+                    "Proxy firewall",
+                    "Stateful firewall",
+                    "Packet filter",
+                    "Transport firewall"
+                ],
+                "answer": 3,
+                "explanation": "Circuit-level gateways operate at transport level."
+            },
+            {
+                "id": "FW016",
+                "question": "Which firewall is implemented using software?",
+                "options": [
+                    "Hardware firewall",
+                    "Software firewall",
+                    "Network firewall",
+                    "Physical firewall"
+                ],
+                "answer": 1,
+                "explanation": "Software firewalls run on general-purpose systems."
+            },
+            {
+                "id": "FW017",
+                "question": "Which firewall is placed at network perimeter?",
+                "options": [
+                    "Host firewall",
+                    "Network firewall",
+                    "Application firewall",
+                    "Personal firewall"
+                ],
+                "answer": 1,
+                "explanation": "Network firewalls protect entire networks."
+            },
+            {
+                "id": "FW018",
+                "question": "Which firewall protects individual systems?",
+                "options": [
+                    "Network firewall",
+                    "Proxy firewall",
+                    "Host-based firewall",
+                    "Stateful firewall"
+                ],
+                "answer": 2,
+                "explanation": "Host-based firewalls protect individual machines."
+            },
+            {
+                "id": "FW019",
+                "question": "Which firewall is most commonly used in enterprises?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Circuit firewall",
+                    "Bridge firewall"
+                ],
+                "answer": 1,
+                "explanation": "Stateful firewalls balance security and performance."
+            },
+            {
+                "id": "FW020",
+                "question": "Which firewall blocks traffic based on port numbers?",
+                "options": [
+                    "Packet filtering firewall",
+                    "Proxy firewall",
+                    "Application firewall",
+                    "Bridge firewall"
+                ],
+                "answer": 0,
+                "explanation": "Packet filtering uses port-based rules."
+            },
+            {
+                "id": "FW021",
+                "question": "Which firewall can prevent unauthorized application access?",
+                "options": [
+                    "Packet filter",
+                    "Router",
+                    "Application firewall",
+                    "NAT"
+                ],
+                "answer": 2,
+                "explanation": "Application firewalls control application-level access."
+            },
+            {
+                "id": "FW022",
+                "question": "Which firewall is integrated into modern operating systems?",
+                "options": [
+                    "Hardware firewall",
+                    "Proxy firewall",
+                    "Software firewall",
+                    "Bridge firewall"
+                ],
+                "answer": 2,
+                "explanation": "Operating systems include built-in software firewalls."
+            },
+            {
+                "id": "FW023",
+                "question": "Which firewall uses access control lists (ACLs)?",
+                "options": [
+                    "Packet filtering firewall",
+                    "Proxy firewall",
+                    "Application firewall",
+                    "NAT firewall"
+                ],
+                "answer": 0,
+                "explanation": "Packet filtering firewalls use ACLs."
+            },
+            {
+                "id": "FW024",
+                "question": "Which firewall provides NAT functionality?",
+                "options": [
+                    "Proxy firewall",
+                    "NAT firewall",
+                    "Packet filter",
+                    "Bridge firewall"
+                ],
+                "answer": 1,
+                "explanation": "NAT firewalls translate private IP addresses."
+            },
+            {
+                "id": "FW025",
+                "question": "Which firewall examines packet headers only?",
+                "options": [
+                    "Application firewall",
+                    "Stateful firewall",
+                    "Packet filtering firewall",
+                    "Proxy firewall"
+                ],
+                "answer": 2,
+                "explanation": "Packet filtering inspects headers only."
+            },
+            {
+                "id": "FW026",
+                "question": "Which firewall reduces network performance due to inspection?",
+                "options": [
+                    "Packet filter",
+                    "Proxy firewall",
+                    "Router",
+                    "Bridge"
+                ],
+                "answer": 1,
+                "explanation": "Proxy firewalls add latency due to deep inspection."
+            },
+            {
+                "id": "FW027",
+                "question": "Which firewall is suitable for HTTP filtering?",
+                "options": [
+                    "Packet filter",
+                    "Application firewall",
+                    "Router",
+                    "Bridge"
+                ],
+                "answer": 1,
+                "explanation": "Application firewalls filter HTTP traffic."
+            },
+            {
+                "id": "FW028",
+                "question": "Which firewall does not maintain connection state?",
+                "options": [
+                    "Stateful firewall",
+                    "Proxy firewall",
+                    "Packet filtering firewall",
+                    "Circuit firewall"
+                ],
+                "answer": 2,
+                "explanation": "Packet filtering firewalls are stateless."
+            },
+            {
+                "id": "FW029",
+                "question": "Which firewall can block malicious payloads?",
+                "options": [
+                    "Packet filter",
+                    "Application firewall",
+                    "Router ACL",
+                    "NAT"
+                ],
+                "answer": 1,
+                "explanation": "Application firewalls inspect payloads."
+            },
+            {
+                "id": "FW030",
+                "question": "Which firewall is deployed on individual PCs?",
+                "options": [
+                    "Network firewall",
+                    "Host-based firewall",
+                    "Proxy firewall",
+                    "Bridge firewall"
+                ],
+                "answer": 1,
+                "explanation": "Host-based firewalls protect individual systems."
+            },
+            {
+                "id": "FW031",
+                "question": "Which firewall operates at multiple OSI layers?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Next-generation firewall",
+                    "Bridge firewall"
+                ],
+                "answer": 2,
+                "explanation": "Next-generation firewalls operate across layers."
+            },
+            {
+                "id": "FW032",
+                "question": "Which firewall integrates IDS and IPS?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Next-generation firewall",
+                    "Router firewall"
+                ],
+                "answer": 2,
+                "explanation": "NGFW integrates IDS/IPS."
+            },
+            {
+                "id": "FW033",
+                "question": "Which firewall blocks traffic by default unless allowed?",
+                "options": [
+                    "Allow-all policy",
+                    "Deny-all policy firewall",
+                    "Bridge firewall",
+                    "Router"
+                ],
+                "answer": 1,
+                "explanation": "Deny-all policy is more secure."
+            },
+            {
+                "id": "FW034",
+                "question": "Which firewall policy is most secure?",
+                "options": [
+                    "Allow all",
+                    "Block all",
+                    "Deny by default",
+                    "Permit by default"
+                ],
+                "answer": 2,
+                "explanation": "Deny-by-default allows only authorized traffic."
+            },
+            {
+                "id": "FW035",
+                "question": "Which firewall prevents unauthorized outbound traffic?",
+                "options": [
+                    "Inbound firewall",
+                    "Outbound firewall",
+                    "Router",
+                    "Bridge"
+                ],
+                "answer": 1,
+                "explanation": "Outbound firewalls control outgoing traffic."
+            },
+            {
+                "id": "FW036",
+                "question": "Which firewall can prevent DDoS attacks?",
+                "options": [
+                    "Packet filter",
+                    "Application firewall",
+                    "Stateful firewall",
+                    "All of these"
+                ],
+                "answer": 3,
+                "explanation": "Multiple firewall types help mitigate DDoS."
+            },
+            {
+                "id": "FW037",
+                "question": "Which firewall is best for internal network segmentation?",
+                "options": [
+                    "Router",
+                    "Bridge",
+                    "Internal firewall",
+                    "Proxy firewall"
+                ],
+                "answer": 2,
+                "explanation": "Internal firewalls segment internal networks."
+            },
+            {
+                "id": "FW038",
+                "question": "Which firewall logs traffic activity?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Application firewall",
+                    "All of these"
+                ],
+                "answer": 3,
+                "explanation": "All firewall types can log traffic."
+            },
+            {
+                "id": "FW039",
+                "question": "Which firewall inspects SSL traffic?",
+                "options": [
+                    "Packet filter",
+                    "Application firewall",
+                    "Router",
+                    "Bridge"
+                ],
+                "answer": 1,
+                "explanation": "Application firewalls can inspect SSL/TLS traffic."
+            },
+            {
+                "id": "FW040",
+                "question": "Which firewall is deployed between DMZ and internal network?",
+                "options": [
+                    "Edge firewall",
+                    "Internal firewall",
+                    "Host firewall",
+                    "Bridge firewall"
+                ],
+                "answer": 1,
+                "explanation": "Internal firewalls protect internal networks from DMZ."
+            },
+            {
+                "id": "FW041",
+                "question": "Which firewall allows URL filtering?",
+                "options": [
+                    "Packet filter",
+                    "Application firewall",
+                    "Router",
+                    "Bridge"
+                ],
+                "answer": 1,
+                "explanation": "Application firewalls support URL filtering."
+            },
+            {
+                "id": "FW042",
+                "question": "Which firewall is essential for perimeter defense?",
+                "options": [
+                    "Host firewall",
+                    "Network firewall",
+                    "Bridge firewall",
+                    "Circuit firewall"
+                ],
+                "answer": 1,
+                "explanation": "Network firewalls protect perimeter."
+            },
+            {
+                "id": "FW043",
+                "question": "Which firewall provides content-based filtering?",
+                "options": [
+                    "Packet filter",
+                    "Application firewall",
+                    "Router",
+                    "NAT firewall"
+                ],
+                "answer": 1,
+                "explanation": "Application firewalls filter based on content."
+            },
+            {
+                "id": "FW044",
+                "question": "Which firewall is commonly hardware-based?",
+                "options": [
+                    "Host firewall",
+                    "Network firewall",
+                    "Software firewall",
+                    "Personal firewall"
+                ],
+                "answer": 1,
+                "explanation": "Network firewalls are usually hardware appliances."
+            },
+            {
+                "id": "FW045",
+                "question": "Which firewall reduces attack surface?",
+                "options": [
+                    "Router",
+                    "Firewall with default-deny",
+                    "Bridge",
+                    "Repeater"
+                ],
+                "answer": 1,
+                "explanation": "Default-deny firewalls reduce attack surface."
+            },
+            {
+                "id": "FW046",
+                "question": "Which firewall protects against unauthorized access?",
+                "options": [
+                    "Switch",
+                    "Firewall",
+                    "Router",
+                    "Hub"
+                ],
+                "answer": 1,
+                "explanation": "Firewalls protect against unauthorized access."
+            },
+            {
+                "id": "FW047",
+                "question": "Which firewall uses rules based on protocols?",
+                "options": [
+                    "Packet filtering firewall",
+                    "Bridge firewall",
+                    "Repeater",
+                    "Hub"
+                ],
+                "answer": 0,
+                "explanation": "Packet filtering uses protocol-based rules."
+            },
+            {
+                "id": "FW048",
+                "question": "Which firewall is suitable for small networks?",
+                "options": [
+                    "Enterprise NGFW",
+                    "Proxy firewall",
+                    "Software firewall",
+                    "DMZ firewall"
+                ],
+                "answer": 2,
+                "explanation": "Software firewalls suit small networks."
+            },
+            {
+                "id": "FW049",
+                "question": "Which firewall is cost-effective?",
+                "options": [
+                    "Proxy firewall",
+                    "NGFW",
+                    "Software firewall",
+                    "Hardware firewall"
+                ],
+                "answer": 2,
+                "explanation": "Software firewalls are cost-effective."
+            },
+            {
+                "id": "FW050",
+                "question": "Which firewall is mandatory for secure network design?",
+                "options": [
+                    "Hub",
+                    "Repeater",
+                    "Firewall",
+                    "Bridge"
+                ],
+                "answer": 2,
+                "explanation": "Firewalls are essential for network security."
             }
         ],
         "extra_qs": [
             {
-                "id": "PC001",
-                "question": "Which of the following is a primitive type in Java?",
+                "id": "NETX001",
+                "question": "Which OSI layer is responsible for encryption and compression?",
                 "options": [
-                    "String",
-                    "int",
-                    "Array",
-                    "Object"
+                    "Session",
+                    "Presentation",
+                    "Application",
+                    "Transport"
                 ],
                 "answer": 1,
-                "explanation": "int is a primitive type in Java."
+                "explanation": "Presentation layer handles encryption, decryption, and compression."
             },
             {
-                "id": "PC002",
-                "question": "Which language is platform independent?",
+                "id": "NETX002",
+                "question": "Which device operates only at the Physical layer?",
                 "options": [
-                    "C++",
-                    "Java",
-                    "C",
-                    "Assembly"
+                    "Switch",
+                    "Router",
+                    "Hub",
+                    "Bridge"
+                ],
+                "answer": 2,
+                "explanation": "Hub operates at the Physical layer."
+            },
+            {
+                "id": "NETX003",
+                "question": "Which protocol provides best-effort delivery?",
+                "options": [
+                    "TCP",
+                    "UDP",
+                    "FTP",
+                    "SMTP"
                 ],
                 "answer": 1,
-                "explanation": "Java bytecode runs on JVM which makes it platform independent."
+                "explanation": "UDP provides best-effort delivery."
+            },
+            {
+                "id": "NETX004",
+                "question": "Which Ethernet standard supports 1 Gbps speed?",
+                "options": [
+                    "10BASE-T",
+                    "100BASE-TX",
+                    "1000BASE-T",
+                    "10BASE2"
+                ],
+                "answer": 2,
+                "explanation": "1000BASE-T supports 1 Gbps."
+            },
+            {
+                "id": "NETX005",
+                "question": "Which protocol converts IP address to MAC address?",
+                "options": [
+                    "RARP",
+                    "ARP",
+                    "DNS",
+                    "ICMP"
+                ],
+                "answer": 1,
+                "explanation": "ARP resolves IP to MAC."
+            },
+            {
+                "id": "NETX006",
+                "question": "Which topology is used by Token Ring?",
+                "options": [
+                    "Star",
+                    "Bus",
+                    "Ring",
+                    "Mesh"
+                ],
+                "answer": 2,
+                "explanation": "Token Ring uses ring topology."
+            },
+            {
+                "id": "NETX007",
+                "question": "Which OSI layer ensures end-to-end delivery?",
+                "options": [
+                    "Transport",
+                    "Network",
+                    "Session",
+                    "Application"
+                ],
+                "answer": 0,
+                "explanation": "Transport layer ensures end-to-end delivery."
+            },
+            {
+                "id": "NETX008",
+                "question": "Which protocol is used for remote login?",
+                "options": [
+                    "FTP",
+                    "SMTP",
+                    "Telnet",
+                    "DNS"
+                ],
+                "answer": 2,
+                "explanation": "Telnet allows remote login."
+            },
+            {
+                "id": "NETX009",
+                "question": "Which IP address is APIPA?",
+                "options": [
+                    "192.168.x.x",
+                    "10.x.x.x",
+                    "169.254.x.x",
+                    "172.16.x.x"
+                ],
+                "answer": 2,
+                "explanation": "169.254.x.x is APIPA range."
+            },
+            {
+                "id": "NETX010",
+                "question": "Which layer adds MAC address?",
+                "options": [
+                    "Physical",
+                    "Data Link",
+                    "Network",
+                    "Transport"
+                ],
+                "answer": 1,
+                "explanation": "Data Link layer adds MAC address."
+            },
+            {
+                "id": "NETX011",
+                "question": "Which protocol is used by traceroute?",
+                "options": [
+                    "TCP",
+                    "UDP",
+                    "ICMP",
+                    "ARP"
+                ],
+                "answer": 2,
+                "explanation": "Traceroute uses ICMP messages."
+            },
+            {
+                "id": "NETX012",
+                "question": "Which switching method forwards packet after full reception?",
+                "options": [
+                    "Cut-through",
+                    "Fragment-free",
+                    "Store-and-forward",
+                    "Fast-forward"
+                ],
+                "answer": 2,
+                "explanation": "Store-and-forward waits for full frame."
+            },
+            {
+                "id": "NETX013",
+                "question": "Which protocol uses port 25?",
+                "options": [
+                    "POP3",
+                    "SMTP",
+                    "HTTP",
+                    "FTP"
+                ],
+                "answer": 1,
+                "explanation": "SMTP uses port 25."
+            },
+            {
+                "id": "NETX014",
+                "question": "Which address is used for multicast?",
+                "options": [
+                    "Class A",
+                    "Class B",
+                    "Class C",
+                    "Class D"
+                ],
+                "answer": 3,
+                "explanation": "Class D is used for multicast."
+            },
+            {
+                "id": "NETX015",
+                "question": "Which firewall policy is safest?",
+                "options": [
+                    "Allow all",
+                    "Block all",
+                    "Deny by default",
+                    "Permit by default"
+                ],
+                "answer": 2,
+                "explanation": "Deny-by-default is safest."
+            },
+            {
+                "id": "NETX016",
+                "question": "Which protocol is used for time synchronization?",
+                "options": [
+                    "FTP",
+                    "NTP",
+                    "SMTP",
+                    "SNMP"
+                ],
+                "answer": 1,
+                "explanation": "NTP synchronizes time."
+            },
+            {
+                "id": "NETX017",
+                "question": "Which device separates broadcast domains?",
+                "options": [
+                    "Hub",
+                    "Switch",
+                    "Router",
+                    "Repeater"
+                ],
+                "answer": 2,
+                "explanation": "Router separates broadcast domains."
+            },
+            {
+                "id": "NETX018",
+                "question": "Which protocol uses sliding window?",
+                "options": [
+                    "UDP",
+                    "IP",
+                    "TCP",
+                    "ICMP"
+                ],
+                "answer": 2,
+                "explanation": "TCP uses sliding window."
+            },
+            {
+                "id": "NETX019",
+                "question": "Which OSI layer handles dialog control?",
+                "options": [
+                    "Transport",
+                    "Session",
+                    "Presentation",
+                    "Application"
+                ],
+                "answer": 1,
+                "explanation": "Session layer handles dialog control."
+            },
+            {
+                "id": "NETX020",
+                "question": "Which Ethernet uses CSMA/CD?",
+                "options": [
+                    "Token Ring",
+                    "FDDI",
+                    "Ethernet",
+                    "ATM"
+                ],
+                "answer": 2,
+                "explanation": "Ethernet uses CSMA/CD."
+            },
+            {
+                "id": "NETX021",
+                "question": "Which protocol is used for secure file transfer?",
+                "options": [
+                    "FTP",
+                    "SFTP",
+                    "TFTP",
+                    "HTTP"
+                ],
+                "answer": 1,
+                "explanation": "SFTP provides secure file transfer."
+            },
+            {
+                "id": "NETX022",
+                "question": "Which port is used by HTTPS?",
+                "options": [
+                    "80",
+                    "21",
+                    "25",
+                    "443"
+                ],
+                "answer": 3,
+                "explanation": "HTTPS uses port 443."
+            },
+            {
+                "id": "NETX023",
+                "question": "Which IP header field prevents looping?",
+                "options": [
+                    "Protocol",
+                    "TTL",
+                    "Checksum",
+                    "Offset"
+                ],
+                "answer": 1,
+                "explanation": "TTL prevents infinite looping."
+            },
+            {
+                "id": "NETX024",
+                "question": "Which device connects two different networks?",
+                "options": [
+                    "Switch",
+                    "Hub",
+                    "Router",
+                    "Repeater"
+                ],
+                "answer": 2,
+                "explanation": "Router connects different networks."
+            },
+            {
+                "id": "NETX025",
+                "question": "Which protocol supports both TCP and UDP?",
+                "options": [
+                    "HTTP",
+                    "DNS",
+                    "FTP",
+                    "SMTP"
+                ],
+                "answer": 1,
+                "explanation": "DNS uses TCP and UDP."
+            },
+            {
+                "id": "NETX026",
+                "question": "Which firewall inspects application data?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Application firewall",
+                    "Router"
+                ],
+                "answer": 2,
+                "explanation": "Application firewall inspects payload."
+            },
+            {
+                "id": "NETX027",
+                "question": "Which address is used to test local TCP/IP stack?",
+                "options": [
+                    "0.0.0.0",
+                    "127.0.0.1",
+                    "255.255.255.255",
+                    "192.168.1.1"
+                ],
+                "answer": 1,
+                "explanation": "127.0.0.1 is loopback."
+            },
+            {
+                "id": "NETX028",
+                "question": "Which device works at multiple OSI layers?",
+                "options": [
+                    "Hub",
+                    "Repeater",
+                    "Router",
+                    "Switch"
+                ],
+                "answer": 3,
+                "explanation": "Switch works at L2 and sometimes L3."
+            },
+            {
+                "id": "NETX029",
+                "question": "Which protocol manages emails between servers?",
+                "options": [
+                    "POP3",
+                    "IMAP",
+                    "SMTP",
+                    "HTTP"
+                ],
+                "answer": 2,
+                "explanation": "SMTP manages server-to-server email."
+            },
+            {
+                "id": "NETX030",
+                "question": "Which topology has single point of failure?",
+                "options": [
+                    "Bus",
+                    "Ring",
+                    "Star",
+                    "Mesh"
+                ],
+                "answer": 2,
+                "explanation": "Star topology depends on central device."
+            },
+            {
+                "id": "NETX031",
+                "question": "Which OSI layer ensures reliable transmission?",
+                "options": [
+                    "Network",
+                    "Transport",
+                    "Session",
+                    "Data Link"
+                ],
+                "answer": 1,
+                "explanation": "Transport layer ensures reliability."
+            },
+            {
+                "id": "NETX032",
+                "question": "Which IP class is reserved?",
+                "options": [
+                    "Class A",
+                    "Class B",
+                    "Class D",
+                    "Class E"
+                ],
+                "answer": 3,
+                "explanation": "Class E is reserved."
+            },
+            {
+                "id": "NETX033",
+                "question": "Which protocol sends error messages?",
+                "options": [
+                    "TCP",
+                    "UDP",
+                    "ICMP",
+                    "ARP"
+                ],
+                "answer": 2,
+                "explanation": "ICMP sends error messages."
+            },
+            {
+                "id": "NETX034",
+                "question": "Which firewall tracks connection state?",
+                "options": [
+                    "Packet filter",
+                    "Stateful firewall",
+                    "Proxy firewall",
+                    "Bridge firewall"
+                ],
+                "answer": 1,
+                "explanation": "Stateful firewall tracks state."
+            },
+            {
+                "id": "NETX035",
+                "question": "Which DNS record maps IPv6 address?",
+                "options": [
+                    "A",
+                    "AAAA",
+                    "MX",
+                    "PTR"
+                ],
+                "answer": 1,
+                "explanation": "AAAA record maps IPv6."
+            },
+            {
+                "id": "NETX036",
+                "question": "Which Ethernet cable supports longest distance?",
+                "options": [
+                    "UTP",
+                    "STP",
+                    "Coaxial",
+                    "Fiber optic"
+                ],
+                "answer": 3,
+                "explanation": "Fiber supports longest distance."
+            },
+            {
+                "id": "NETX037",
+                "question": "Which device uses NAT?",
+                "options": [
+                    "Switch",
+                    "Router",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 1,
+                "explanation": "Router performs NAT."
+            },
+            {
+                "id": "NETX038",
+                "question": "Which protocol is stateless?",
+                "options": [
+                    "FTP",
+                    "HTTP",
+                    "SMTP",
+                    "IMAP"
+                ],
+                "answer": 1,
+                "explanation": "HTTP is stateless."
+            },
+            {
+                "id": "NETX039",
+                "question": "Which firewall hides internal IP addresses?",
+                "options": [
+                    "Packet filter",
+                    "NAT firewall",
+                    "Bridge firewall",
+                    "Repeater"
+                ],
+                "answer": 1,
+                "explanation": "NAT firewall hides internal IPs."
+            },
+            {
+                "id": "NETX040",
+                "question": "Which OSI layer handles framing?",
+                "options": [
+                    "Network",
+                    "Data Link",
+                    "Physical",
+                    "Transport"
+                ],
+                "answer": 1,
+                "explanation": "Data Link layer handles framing."
+            },
+            {
+                "id": "NETX041",
+                "question": "Which protocol is used to retrieve emails?",
+                "options": [
+                    "SMTP",
+                    "POP3",
+                    "FTP",
+                    "DNS"
+                ],
+                "answer": 1,
+                "explanation": "POP3 retrieves emails."
+            },
+            {
+                "id": "NETX042",
+                "question": "Which attack floods network with requests?",
+                "options": [
+                    "Spoofing",
+                    "Sniffing",
+                    "DDoS",
+                    "Phishing"
+                ],
+                "answer": 2,
+                "explanation": "DDoS floods network with traffic."
+            },
+            {
+                "id": "NETX043",
+                "question": "Which protocol uses port 110?",
+                "options": [
+                    "SMTP",
+                    "FTP",
+                    "POP3",
+                    "DNS"
+                ],
+                "answer": 2,
+                "explanation": "POP3 uses port 110."
+            },
+            {
+                "id": "NETX044",
+                "question": "Which layer provides logical addressing?",
+                "options": [
+                    "Data Link",
+                    "Network",
+                    "Transport",
+                    "Session"
+                ],
+                "answer": 1,
+                "explanation": "Network layer provides logical addressing."
+            },
+            {
+                "id": "NETX045",
+                "question": "Which firewall inspects SSL traffic?",
+                "options": [
+                    "Packet filter",
+                    "Application firewall",
+                    "Hub",
+                    "Repeater"
+                ],
+                "answer": 1,
+                "explanation": "Application firewall can inspect SSL."
+            },
+            {
+                "id": "NETX046",
+                "question": "Which topology provides highest redundancy?",
+                "options": [
+                    "Star",
+                    "Ring",
+                    "Bus",
+                    "Mesh"
+                ],
+                "answer": 3,
+                "explanation": "Mesh offers highest redundancy."
+            },
+            {
+                "id": "NETX047",
+                "question": "Which protocol is used for file download via browser?",
+                "options": [
+                    "SMTP",
+                    "FTP",
+                    "HTTP",
+                    "DNS"
+                ],
+                "answer": 2,
+                "explanation": "HTTP downloads files via browser."
+            },
+            {
+                "id": "NETX048",
+                "question": "Which firewall is software-based?",
+                "options": [
+                    "Network firewall",
+                    "Hardware firewall",
+                    "Host-based firewall",
+                    "Proxy appliance"
+                ],
+                "answer": 2,
+                "explanation": "Host-based firewall is software-based."
+            },
+            {
+                "id": "NETX049",
+                "question": "Which Ethernet uses twisted pair?",
+                "options": [
+                    "10BASE2",
+                    "10BASE5",
+                    "100BASE-TX",
+                    "Fiber Ethernet"
+                ],
+                "answer": 2,
+                "explanation": "100BASE-TX uses twisted pair."
+            },
+            {
+                "id": "NETX050",
+                "question": "Which protocol ensures confidentiality?",
+                "options": [
+                    "HTTP",
+                    "FTP",
+                    "HTTPS",
+                    "Telnet"
+                ],
+                "answer": 2,
+                "explanation": "HTTPS provides encrypted communication."
             }
         ]
     }

@@ -1,55 +1,3065 @@
 {
     "data": {
-        "ABC": [
+        "SQL Queries": [
             {
-                "id": "PC001",
-                "question": "Which of the following is a primitive type in Java?",
+                "id": "SQLS001",
+                "question": "Which SQL statement is used to retrieve data from a table?",
                 "options": [
-                    "String",
-                    "int",
-                    "Array",
-                    "Object"
+                    "GET",
+                    "FETCH",
+                    "SELECT",
+                    "RETRIEVE"
                 ],
-                "answer": 1,
-                "explanation": "int is a primitive type in Java."
+                "answer": 2,
+                "explanation": "SELECT is used to retrieve data from one or more tables."
             },
             {
-                "id": "PC002",
-                "question": "Which language is platform independent?",
+                "id": "SQLS002",
+                "question": "Which clause is used to filter rows in a SELECT statement?",
                 "options": [
-                    "C++",
-                    "Java",
-                    "C",
-                    "Assembly"
+                    "GROUP BY",
+                    "ORDER BY",
+                    "HAVING",
+                    "WHERE"
                 ],
-                "answer": 1,
-                "explanation": "Java bytecode runs on JVM which makes it platform independent."
-            }
-        ],
-        "extra_qs": [
-            {
-                "id": "PC001",
-                "question": "Which of the following is a primitive type in Java?",
-                "options": [
-                    "String",
-                    "int",
-                    "Array",
-                    "Object"
-                ],
-                "answer": 1,
-                "explanation": "int is a primitive type in Java."
+                "answer": 3,
+                "explanation": "WHERE clause filters rows before grouping."
             },
             {
-                "id": "PC002",
-                "question": "Which language is platform independent?",
+                "id": "SQLS003",
+                "question": "Which keyword is used to remove duplicate rows in SELECT output?",
                 "options": [
-                    "C++",
-                    "Java",
-                    "C",
-                    "Assembly"
+                    "UNIQUE",
+                    "DISTINCT",
+                    "DIFFERENT",
+                    "REMOVE"
                 ],
                 "answer": 1,
-                "explanation": "Java bytecode runs on JVM which makes it platform independent."
+                "explanation": "DISTINCT removes duplicate rows from the result set."
+            },
+            {
+                "id": "SQLS004",
+                "question": "What is the correct order of execution in a SELECT query?",
+                "options": [
+                    "SELECT → FROM → WHERE",
+                    "FROM → WHERE → SELECT",
+                    "WHERE → FROM → SELECT",
+                    "FROM → SELECT → WHERE"
+                ],
+                "answer": 1,
+                "explanation": "SQL logically executes FROM, then WHERE, then SELECT."
+            },
+            {
+                "id": "SQLS005",
+                "question": "Which clause is mandatory in every SELECT statement?",
+                "options": [
+                    "WHERE",
+                    "FROM",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 1,
+                "explanation": "FROM clause is mandatory to specify the table."
+            },
+            {
+                "id": "SQLS006",
+                "question": "Which operator is used to compare a value within a range in SELECT?",
+                "options": [
+                    "IN",
+                    "LIKE",
+                    "BETWEEN",
+                    "EXISTS"
+                ],
+                "answer": 2,
+                "explanation": "BETWEEN checks whether a value lies within a range."
+            },
+            {
+                "id": "SQLS007",
+                "question": "Which clause sorts the result of a SELECT query?",
+                "options": [
+                    "GROUP BY",
+                    "SORT BY",
+                    "ORDER BY",
+                    "HAVING"
+                ],
+                "answer": 2,
+                "explanation": "ORDER BY sorts the result set."
+            },
+            {
+                "id": "SQLS008",
+                "question": "Which SELECT query returns all columns from a table?",
+                "options": [
+                    "SELECT ALL FROM table;",
+                    "SELECT * FROM table;",
+                    "SELECT columns FROM table;",
+                    "SELECT table.*;"
+                ],
+                "answer": 1,
+                "explanation": "The asterisk (*) retrieves all columns."
+            },
+            {
+                "id": "SQLS009",
+                "question": "Which clause is used to filter groups in a SELECT query?",
+                "options": [
+                    "WHERE",
+                    "HAVING",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 1,
+                "explanation": "HAVING filters grouped records."
+            },
+            {
+                "id": "SQLS010",
+                "question": "Which keyword is used to assign an alias to a column in SELECT?",
+                "options": [
+                    "AS",
+                    "RENAME",
+                    "ALIAS",
+                    "DEFINE"
+                ],
+                "answer": 0,
+                "explanation": "AS assigns an alias to a column or expression."
+            },
+            {
+                "id": "SQLV001",
+                "question": "What is a VIEW in SQL?",
+                "options": [
+                    "A physical copy of a table",
+                    "A virtual table based on a SELECT query",
+                    "A temporary index",
+                    "A stored procedure"
+                ],
+                "answer": 1,
+                "explanation": "A VIEW is a virtual table created using a SELECT query."
+            },
+            {
+                "id": "SQLV002",
+                "question": "Which SQL statement is used to create a view?",
+                "options": [
+                    "CREATE TABLE",
+                    "CREATE INDEX",
+                    "CREATE VIEW",
+                    "MAKE VIEW"
+                ],
+                "answer": 2,
+                "explanation": "CREATE VIEW is used to define a view."
+            },
+            {
+                "id": "SQLV003",
+                "question": "Which statement is used to remove a view?",
+                "options": [
+                    "DELETE VIEW",
+                    "DROP VIEW",
+                    "REMOVE VIEW",
+                    "TRUNCATE VIEW"
+                ],
+                "answer": 1,
+                "explanation": "DROP VIEW permanently removes a view."
+            },
+            {
+                "id": "SQLV004",
+                "question": "Which of the following operations is NOT allowed on a simple view?",
+                "options": [
+                    "SELECT",
+                    "INSERT",
+                    "UPDATE",
+                    "TRUNCATE"
+                ],
+                "answer": 3,
+                "explanation": "TRUNCATE cannot be applied on a view."
+            },
+            {
+                "id": "SQLV005",
+                "question": "What happens when data is updated through a view?",
+                "options": [
+                    "View data changes only",
+                    "Base table data changes",
+                    "Both view and table remain unchanged",
+                    "View gets deleted"
+                ],
+                "answer": 1,
+                "explanation": "Updating a view updates the underlying base table."
+            },
+            {
+                "id": "SQLV006",
+                "question": "Which keyword ensures data modifications through a view follow its condition?",
+                "options": [
+                    "CHECK OPTION",
+                    "WITH OPTION",
+                    "VERIFY",
+                    "VALIDATE"
+                ],
+                "answer": 0,
+                "explanation": "WITH CHECK OPTION enforces view conditions during DML operations."
+            },
+            {
+                "id": "SQLV007",
+                "question": "Which type of view is created using aggregate functions?",
+                "options": [
+                    "Simple view",
+                    "Complex view",
+                    "Inline view",
+                    "Materialized view"
+                ],
+                "answer": 1,
+                "explanation": "Views with aggregates are complex views."
+            },
+            {
+                "id": "SQLV008",
+                "question": "Can a view be created using multiple tables?",
+                "options": [
+                    "No, never",
+                    "Yes, using joins",
+                    "Only with UNION",
+                    "Only using subqueries"
+                ],
+                "answer": 1,
+                "explanation": "Views can be created using joins on multiple tables."
+            },
+            {
+                "id": "SQLV009",
+                "question": "Which statement is TRUE about views?",
+                "options": [
+                    "They store data permanently",
+                    "They reduce data redundancy",
+                    "They increase storage usage",
+                    "They must have a primary key"
+                ],
+                "answer": 1,
+                "explanation": "Views reduce redundancy by reusing base tables."
+            },
+            {
+                "id": "SQLV010",
+                "question": "Which of the following is a key advantage of using views?",
+                "options": [
+                    "Faster execution always",
+                    "Improved data security",
+                    "Automatic indexing",
+                    "Reduced memory usage"
+                ],
+                "answer": 1,
+                "explanation": "Views enhance security by restricting column access."
+            },
+            {
+                "id": "SQLT001",
+                "question": "What is the primary purpose of the TRUNCATE command?",
+                "options": [
+                    "Delete selected rows",
+                    "Remove all rows from a table quickly",
+                    "Drop the table structure",
+                    "Delete rows with conditions"
+                ],
+                "answer": 1,
+                "explanation": "TRUNCATE removes all rows from a table efficiently."
+            },
+            {
+                "id": "SQLT002",
+                "question": "Which type of SQL command is TRUNCATE?",
+                "options": [
+                    "DML",
+                    "DCL",
+                    "DDL",
+                    "TCL"
+                ],
+                "answer": 2,
+                "explanation": "TRUNCATE is a DDL command."
+            },
+            {
+                "id": "SQLT003",
+                "question": "Which statement is TRUE about TRUNCATE?",
+                "options": [
+                    "It can be rolled back",
+                    "It fires DELETE triggers",
+                    "It resets identity values",
+                    "It removes table definition"
+                ],
+                "answer": 2,
+                "explanation": "TRUNCATE resets identity counters."
+            },
+            {
+                "id": "SQLT004",
+                "question": "Which clause can be used with TRUNCATE?",
+                "options": [
+                    "WHERE",
+                    "CASCADE",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 1,
+                "explanation": "CASCADE is supported in some DBMS."
+            },
+            {
+                "id": "SQLT005",
+                "question": "Which operation is NOT allowed with TRUNCATE?",
+                "options": [
+                    "Removing all rows",
+                    "Using WHERE clause",
+                    "Reclaiming storage",
+                    "Resetting auto-increment"
+                ],
+                "answer": 1,
+                "explanation": "TRUNCATE cannot use WHERE clause."
+            },
+            {
+                "id": "SQLT006",
+                "question": "Which constraint prevents TRUNCATE operation?",
+                "options": [
+                    "NOT NULL",
+                    "PRIMARY KEY",
+                    "FOREIGN KEY reference",
+                    "UNIQUE"
+                ],
+                "answer": 2,
+                "explanation": "Referenced foreign keys prevent truncation."
+            },
+            {
+                "id": "SQLT007",
+                "question": "Which permission is required to execute TRUNCATE?",
+                "options": [
+                    "DELETE privilege",
+                    "INSERT privilege",
+                    "DROP privilege",
+                    "ALTER privilege"
+                ],
+                "answer": 3,
+                "explanation": "TRUNCATE requires ALTER permission."
+            },
+            {
+                "id": "SQLT008",
+                "question": "Which is faster between DELETE and TRUNCATE?",
+                "options": [
+                    "DELETE always",
+                    "TRUNCATE always",
+                    "Both same",
+                    "Depends on index"
+                ],
+                "answer": 1,
+                "explanation": "TRUNCATE is faster due to minimal logging."
+            },
+            {
+                "id": "SQLT009",
+                "question": "What happens to indexes after TRUNCATE?",
+                "options": [
+                    "Indexes are dropped",
+                    "Indexes remain intact",
+                    "Indexes are disabled",
+                    "Indexes are rebuilt"
+                ],
+                "answer": 1,
+                "explanation": "Indexes remain but are emptied."
+            },
+            {
+                "id": "SQLT010",
+                "question": "Which statement differentiates TRUNCATE from DELETE?",
+                "options": [
+                    "TRUNCATE allows WHERE clause",
+                    "TRUNCATE is transaction-safe",
+                    "TRUNCATE cannot be rolled back",
+                    "TRUNCATE fires triggers"
+                ],
+                "answer": 2,
+                "explanation": "TRUNCATE generally cannot be rolled back."
+            },
+            {
+                "id": "SQLD001",
+                "question": "Which SQL command is used to remove rows from a table?",
+                "options": [
+                    "REMOVE",
+                    "DROP",
+                    "DELETE",
+                    "TRUNCATE"
+                ],
+                "answer": 2,
+                "explanation": "DELETE removes rows from a table."
+            },
+            {
+                "id": "SQLD002",
+                "question": "Which clause is used with DELETE to specify conditions?",
+                "options": [
+                    "HAVING",
+                    "ORDER BY",
+                    "WHERE",
+                    "GROUP BY"
+                ],
+                "answer": 2,
+                "explanation": "WHERE clause filters rows to be deleted."
+            },
+            {
+                "id": "SQLD003",
+                "question": "Which statement is TRUE about DELETE?",
+                "options": [
+                    "It is a DDL command",
+                    "It deletes table structure",
+                    "It can be rolled back",
+                    "It resets identity values"
+                ],
+                "answer": 2,
+                "explanation": "DELETE is a DML command and can be rolled back."
+            },
+            {
+                "id": "SQLD004",
+                "question": "Which trigger is fired by DELETE?",
+                "options": [
+                    "INSERT trigger",
+                    "UPDATE trigger",
+                    "DELETE trigger",
+                    "TRUNCATE trigger"
+                ],
+                "answer": 2,
+                "explanation": "DELETE fires DELETE triggers."
+            },
+            {
+                "id": "SQLD005",
+                "question": "What happens if DELETE is executed without WHERE clause?",
+                "options": [
+                    "Deletes first row only",
+                    "Deletes no rows",
+                    "Deletes all rows",
+                    "Gives syntax error"
+                ],
+                "answer": 2,
+                "explanation": "DELETE without WHERE removes all rows."
+            },
+            {
+                "id": "SQLD006",
+                "question": "Which operation is slower compared to TRUNCATE?",
+                "options": [
+                    "DROP",
+                    "ALTER",
+                    "DELETE",
+                    "CREATE"
+                ],
+                "answer": 2,
+                "explanation": "DELETE is slower due to row-by-row logging."
+            },
+            {
+                "id": "SQLD007",
+                "question": "Which constraint can prevent DELETE operation?",
+                "options": [
+                    "UNIQUE",
+                    "NOT NULL",
+                    "FOREIGN KEY reference",
+                    "CHECK"
+                ],
+                "answer": 2,
+                "explanation": "Foreign key constraints can block DELETE."
+            },
+            {
+                "id": "SQLD008",
+                "question": "Which clause allows deleting rows from joined tables?",
+                "options": [
+                    "USING",
+                    "FROM",
+                    "JOIN",
+                    "DELETE JOIN"
+                ],
+                "answer": 0,
+                "explanation": "USING clause allows delete with join (DB-specific)."
+            },
+            {
+                "id": "SQLD009",
+                "question": "Which command removes duplicate rows using DELETE?",
+                "options": [
+                    "DELETE DISTINCT",
+                    "DELETE USING",
+                    "DELETE with subquery",
+                    "DELETE ALL"
+                ],
+                "answer": 2,
+                "explanation": "Subqueries are used to remove duplicates."
+            },
+            {
+                "id": "SQLD010",
+                "question": "Which statement best differentiates DELETE from DROP?",
+                "options": [
+                    "DELETE removes structure",
+                    "DROP removes data only",
+                    "DELETE removes rows, DROP removes table",
+                    "Both behave same"
+                ],
+                "answer": 2,
+                "explanation": "DELETE removes rows, DROP removes table."
+            },
+            {
+                "id": "SQLU001",
+                "question": "Which SQL command is used to modify existing records in a table?",
+                "options": [
+                    "MODIFY",
+                    "ALTER",
+                    "UPDATE",
+                    "CHANGE"
+                ],
+                "answer": 2,
+                "explanation": "UPDATE is used to modify existing table records."
+            },
+            {
+                "id": "SQLU002",
+                "question": "Which clause is used with UPDATE to specify rows to be modified?",
+                "options": [
+                    "GROUP BY",
+                    "WHERE",
+                    "HAVING",
+                    "ORDER BY"
+                ],
+                "answer": 1,
+                "explanation": "WHERE filters rows to be updated."
+            },
+            {
+                "id": "SQLU003",
+                "question": "What happens if UPDATE is executed without a WHERE clause?",
+                "options": [
+                    "Only first row updates",
+                    "No rows are updated",
+                    "All rows are updated",
+                    "Syntax error occurs"
+                ],
+                "answer": 2,
+                "explanation": "UPDATE without WHERE updates all rows."
+            },
+            {
+                "id": "SQLU004",
+                "question": "Which type of SQL command is UPDATE?",
+                "options": [
+                    "DDL",
+                    "DCL",
+                    "TCL",
+                    "DML"
+                ],
+                "answer": 3,
+                "explanation": "UPDATE is a DML command."
+            },
+            {
+                "id": "SQLU005",
+                "question": "Which function can be used inside UPDATE statement?",
+                "options": [
+                    "COUNT()",
+                    "SUM()",
+                    "AVG()",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "Aggregate functions can be used via subqueries."
+            },
+            {
+                "id": "SQLU006",
+                "question": "Which trigger is fired by UPDATE?",
+                "options": [
+                    "INSERT trigger",
+                    "UPDATE trigger",
+                    "DELETE trigger",
+                    "TRUNCATE trigger"
+                ],
+                "answer": 1,
+                "explanation": "UPDATE triggers fire on UPDATE."
+            },
+            {
+                "id": "SQLU007",
+                "question": "Which clause allows updating data using another table?",
+                "options": [
+                    "JOIN",
+                    "USING",
+                    "FROM",
+                    "MERGE"
+                ],
+                "answer": 2,
+                "explanation": "FROM clause allows update with joins (DB-specific)."
+            },
+            {
+                "id": "SQLU008",
+                "question": "Which keyword sets a column value to NULL?",
+                "options": [
+                    "EMPTY",
+                    "DEFAULT",
+                    "NULL",
+                    "ZERO"
+                ],
+                "answer": 2,
+                "explanation": "NULL represents absence of value."
+            },
+            {
+                "id": "SQLU009",
+                "question": "Which constraint can restrict UPDATE operation?",
+                "options": [
+                    "CHECK",
+                    "NOT NULL",
+                    "FOREIGN KEY",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "All constraints can restrict UPDATE."
+            },
+            {
+                "id": "SQLU010",
+                "question": "Which feature ensures UPDATE can be reversed?",
+                "options": [
+                    "Trigger",
+                    "Rollback",
+                    "Commit",
+                    "Index"
+                ],
+                "answer": 1,
+                "explanation": "Rollback reverses UPDATE before commit."
+            },
+            {
+                "id": "SQLA001",
+                "question": "Which SQL command is used to modify the structure of an existing table?",
+                "options": [
+                    "UPDATE",
+                    "ALTER",
+                    "MODIFY",
+                    "CHANGE"
+                ],
+                "answer": 1,
+                "explanation": "ALTER is used to change the structure of a table."
+            },
+            {
+                "id": "SQLA002",
+                "question": "Which of the following operations can be performed using ALTER?",
+                "options": [
+                    "Insert rows",
+                    "Delete rows",
+                    "Add a column",
+                    "Update records"
+                ],
+                "answer": 2,
+                "explanation": "ALTER allows adding columns to a table."
+            },
+            {
+                "id": "SQLA003",
+                "question": "Which keyword is used to remove a column from a table?",
+                "options": [
+                    "DELETE",
+                    "REMOVE",
+                    "DROP",
+                    "TRUNCATE"
+                ],
+                "answer": 2,
+                "explanation": "DROP removes a column from table."
+            },
+            {
+                "id": "SQLA004",
+                "question": "Which SQL clause is used to change the data type of a column?",
+                "options": [
+                    "CHANGE",
+                    "MODIFY",
+                    "ALTER TYPE",
+                    "UPDATE TYPE"
+                ],
+                "answer": 1,
+                "explanation": "MODIFY is used in many DBMS to change data type."
+            },
+            {
+                "id": "SQLA005",
+                "question": "Which type of SQL command is ALTER?",
+                "options": [
+                    "DML",
+                    "DDL",
+                    "DCL",
+                    "TCL"
+                ],
+                "answer": 1,
+                "explanation": "ALTER is a DDL command."
+            },
+            {
+                "id": "SQLA006",
+                "question": "Which operation cannot be performed using ALTER?",
+                "options": [
+                    "Add constraint",
+                    "Drop constraint",
+                    "Rename column",
+                    "Delete rows"
+                ],
+                "answer": 3,
+                "explanation": "ALTER cannot delete table rows."
+            },
+            {
+                "id": "SQLA007",
+                "question": "Which command renames a table?",
+                "options": [
+                    "ALTER TABLE ... RENAME",
+                    "CHANGE TABLE",
+                    "MODIFY TABLE",
+                    "RENAME COLUMN"
+                ],
+                "answer": 0,
+                "explanation": "ALTER TABLE RENAME renames a table."
+            },
+            {
+                "id": "SQLA008",
+                "question": "Which constraint can be added using ALTER?",
+                "options": [
+                    "PRIMARY KEY",
+                    "FOREIGN KEY",
+                    "UNIQUE",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "All listed constraints can be added."
+            },
+            {
+                "id": "SQLA009",
+                "question": "Which statement is TRUE about ALTER?",
+                "options": [
+                    "It modifies data",
+                    "It is transaction-safe",
+                    "It changes table structure",
+                    "It fires DML triggers"
+                ],
+                "answer": 2,
+                "explanation": "ALTER changes schema structure."
+            },
+            {
+                "id": "SQLA010",
+                "question": "Which permission is required to execute ALTER?",
+                "options": [
+                    "INSERT",
+                    "DELETE",
+                    "ALTER",
+                    "SELECT"
+                ],
+                "answer": 2,
+                "explanation": "ALTER permission is required."
+            },
+            {
+                "id": "SQLJ001",
+                "question": "What is the purpose of an INNER JOIN in SQL?",
+                "options": [
+                    "Returns all rows from both tables",
+                    "Returns only matching rows from both tables",
+                    "Returns non-matching rows",
+                    "Returns rows from left table only"
+                ],
+                "answer": 1,
+                "explanation": "INNER JOIN returns only rows with matching values in both tables."
+            },
+            {
+                "id": "SQLJ002",
+                "question": "Which keyword is mandatory in an INNER JOIN condition?",
+                "options": [
+                    "USING",
+                    "ON",
+                    "WHERE",
+                    "MATCH"
+                ],
+                "answer": 1,
+                "explanation": "ON specifies the join condition."
+            },
+            {
+                "id": "SQLJ003",
+                "question": "Which clause is evaluated first in an INNER JOIN query?",
+                "options": [
+                    "SELECT",
+                    "WHERE",
+                    "FROM",
+                    "ORDER BY"
+                ],
+                "answer": 2,
+                "explanation": "FROM clause is evaluated first."
+            },
+            {
+                "id": "SQLJ004",
+                "question": "Which of the following is equivalent to INNER JOIN?",
+                "options": [
+                    "OUTER JOIN",
+                    "CROSS JOIN",
+                    "JOIN",
+                    "LEFT JOIN"
+                ],
+                "answer": 2,
+                "explanation": "JOIN defaults to INNER JOIN."
+            },
+            {
+                "id": "SQLJ005",
+                "question": "INNER JOIN combines tables based on:",
+                "options": [
+                    "Primary key only",
+                    "Foreign key only",
+                    "Matching column values",
+                    "Row position"
+                ],
+                "answer": 2,
+                "explanation": "INNER JOIN matches rows using common column values."
+            },
+            {
+                "id": "SQLJ006",
+                "question": "What happens if there is no matching row in an INNER JOIN?",
+                "options": [
+                    "NULL is returned",
+                    "Row is skipped",
+                    "Error occurs",
+                    "Row from left table is returned"
+                ],
+                "answer": 1,
+                "explanation": "Rows without matches are excluded."
+            },
+            {
+                "id": "SQLJ007",
+                "question": "Which join is used to join more than two tables?",
+                "options": [
+                    "INNER JOIN",
+                    "SELF JOIN",
+                    "CROSS JOIN",
+                    "Any JOIN"
+                ],
+                "answer": 3,
+                "explanation": "Any JOIN can join multiple tables."
+            },
+            {
+                "id": "SQLJ008",
+                "question": "Which condition is valid for INNER JOIN?",
+                "options": [
+                    "table1.id = table2.id",
+                    "table1.id > table2.id",
+                    "table1.id < table2.id",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "INNER JOIN supports various comparison operators."
+            },
+            {
+                "id": "SQLJ009",
+                "question": "Which join returns only common records?",
+                "options": [
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "FULL OUTER JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 3,
+                "explanation": "INNER JOIN returns only common rows."
+            },
+            {
+                "id": "SQLJ010",
+                "question": "Which join condition can cause Cartesian product if omitted?",
+                "options": [
+                    "INNER JOIN",
+                    "LEFT JOIN",
+                    "JOIN without ON clause",
+                    "RIGHT JOIN"
+                ],
+                "answer": 2,
+                "explanation": "Missing ON clause leads to Cartesian product."
+            },
+            {
+                "id": "SQLOJ001",
+                "question": "Which OUTER JOIN returns all rows from the left table and matching rows from the right table?",
+                "options": [
+                    "RIGHT OUTER JOIN",
+                    "FULL OUTER JOIN",
+                    "LEFT OUTER JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 2,
+                "explanation": "LEFT OUTER JOIN returns all rows from the left table."
+            },
+            {
+                "id": "SQLOJ002",
+                "question": "Which OUTER JOIN returns all rows from the right table?",
+                "options": [
+                    "LEFT OUTER JOIN",
+                    "RIGHT OUTER JOIN",
+                    "CROSS JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 1,
+                "explanation": "RIGHT OUTER JOIN returns all rows from the right table."
+            },
+            {
+                "id": "SQLOJ003",
+                "question": "Which join returns all rows from both tables including unmatched rows?",
+                "options": [
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "FULL OUTER JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 2,
+                "explanation": "FULL OUTER JOIN returns all rows from both tables."
+            },
+            {
+                "id": "SQLOJ004",
+                "question": "Which value is returned for non-matching columns in OUTER JOIN?",
+                "options": [
+                    "0",
+                    "Empty string",
+                    "NULL",
+                    "False"
+                ],
+                "answer": 2,
+                "explanation": "NULL is returned for missing matches."
+            },
+            {
+                "id": "SQLOJ005",
+                "question": "Which keyword is optional while writing LEFT OUTER JOIN?",
+                "options": [
+                    "LEFT",
+                    "OUTER",
+                    "JOIN",
+                    "ON"
+                ],
+                "answer": 1,
+                "explanation": "OUTER keyword is optional."
+            },
+            {
+                "id": "SQLOJ006",
+                "question": "Which OUTER JOIN is not supported in MySQL (without UNION workaround)?",
+                "options": [
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "FULL OUTER JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 2,
+                "explanation": "MySQL does not natively support FULL OUTER JOIN."
+            },
+            {
+                "id": "SQLOJ007",
+                "question": "Which join includes unmatched rows from both tables?",
+                "options": [
+                    "INNER JOIN",
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "FULL OUTER JOIN"
+                ],
+                "answer": 3,
+                "explanation": "FULL OUTER JOIN includes unmatched rows from both sides."
+            },
+            {
+                "id": "SQLOJ008",
+                "question": "LEFT OUTER JOIN is also known as:",
+                "options": [
+                    "LEFT JOIN",
+                    "PRIMARY JOIN",
+                    "MAIN JOIN",
+                    "LEFT INNER JOIN"
+                ],
+                "answer": 0,
+                "explanation": "LEFT JOIN is shorthand for LEFT OUTER JOIN."
+            },
+            {
+                "id": "SQLOJ009",
+                "question": "Which join preserves all rows of the first table in query order?",
+                "options": [
+                    "RIGHT JOIN",
+                    "FULL JOIN",
+                    "LEFT JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 2,
+                "explanation": "LEFT JOIN preserves all rows from first table."
+            },
+            {
+                "id": "SQLOJ010",
+                "question": "Which join can result in maximum number of rows?",
+                "options": [
+                    "INNER JOIN",
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "FULL OUTER JOIN"
+                ],
+                "answer": 3,
+                "explanation": "FULL OUTER JOIN can return maximum rows."
+            },
+            {
+                "id": "SQLOJ011",
+                "question": "Which join is best suited when all records of master table are required?",
+                "options": [
+                    "INNER JOIN",
+                    "LEFT OUTER JOIN",
+                    "RIGHT OUTER JOIN",
+                    "FULL JOIN"
+                ],
+                "answer": 1,
+                "explanation": "LEFT OUTER JOIN returns all rows from master table."
+            },
+            {
+                "id": "SQLOJ012",
+                "question": "Which join excludes rows without matching condition?",
+                "options": [
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "FULL JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 3,
+                "explanation": "INNER JOIN excludes unmatched rows."
+            },
+            {
+                "id": "SQLOJ013",
+                "question": "Which join is symmetrical in nature?",
+                "options": [
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "FULL OUTER JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 2,
+                "explanation": "FULL OUTER JOIN is symmetrical."
+            },
+            {
+                "id": "SQLOJ014",
+                "question": "Which clause defines join condition in OUTER JOIN?",
+                "options": [
+                    "WHERE",
+                    "HAVING",
+                    "ON",
+                    "GROUP BY"
+                ],
+                "answer": 2,
+                "explanation": "ON clause defines join condition."
+            },
+            {
+                "id": "SQLOJ015",
+                "question": "Which join returns NULLs for missing left table rows?",
+                "options": [
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "INNER JOIN",
+                    "CROSS JOIN"
+                ],
+                "answer": 1,
+                "explanation": "RIGHT JOIN returns NULLs for missing left table rows."
+            },
+            {
+                "id": "SQLAG001",
+                "question": "Which SQL function returns the total number of rows?",
+                "options": [
+                    "SUM()",
+                    "COUNT()",
+                    "AVG()",
+                    "MAX()"
+                ],
+                "answer": 1,
+                "explanation": "COUNT() returns the number of rows."
+            },
+            {
+                "id": "SQLAG002",
+                "question": "Which aggregate function ignores NULL values?",
+                "options": [
+                    "COUNT(*)",
+                    "COUNT(column)",
+                    "MAX()",
+                    "All except COUNT(*)"
+                ],
+                "answer": 3,
+                "explanation": "All aggregate functions except COUNT(*) ignore NULL values."
+            },
+            {
+                "id": "SQLAG003",
+                "question": "Which clause is mandatory when using aggregate functions with non-aggregated columns?",
+                "options": [
+                    "ORDER BY",
+                    "GROUP BY",
+                    "HAVING",
+                    "WHERE"
+                ],
+                "answer": 1,
+                "explanation": "GROUP BY is required with aggregate and non-aggregate columns."
+            },
+            {
+                "id": "SQLAG004",
+                "question": "Which aggregate function returns the average value?",
+                "options": [
+                    "SUM()",
+                    "COUNT()",
+                    "AVG()",
+                    "MEAN()"
+                ],
+                "answer": 2,
+                "explanation": "AVG() returns average value."
+            },
+            {
+                "id": "SQLAG005",
+                "question": "Which clause filters aggregated data?",
+                "options": [
+                    "WHERE",
+                    "GROUP BY",
+                    "HAVING",
+                    "ORDER BY"
+                ],
+                "answer": 2,
+                "explanation": "HAVING filters grouped data."
+            },
+            {
+                "id": "SQLAG006",
+                "question": "Which function returns highest value?",
+                "options": [
+                    "MAX()",
+                    "TOP()",
+                    "HIGH()",
+                    "LARGEST()"
+                ],
+                "answer": 0,
+                "explanation": "MAX() returns highest value."
+            },
+            {
+                "id": "SQLAG007",
+                "question": "Which aggregate function returns sum of values?",
+                "options": [
+                    "TOTAL()",
+                    "ADD()",
+                    "SUM()",
+                    "PLUS()"
+                ],
+                "answer": 2,
+                "explanation": "SUM() returns total of values."
+            },
+            {
+                "id": "SQLAG008",
+                "question": "Which aggregate function can be used with DISTINCT?",
+                "options": [
+                    "SUM()",
+                    "COUNT()",
+                    "AVG()",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "All aggregate functions can use DISTINCT."
+            },
+            {
+                "id": "SQLAG009",
+                "question": "Which statement is TRUE about COUNT(*)?",
+                "options": [
+                    "Counts non-null values",
+                    "Counts distinct values only",
+                    "Counts all rows",
+                    "Ignores NULL rows"
+                ],
+                "answer": 2,
+                "explanation": "COUNT(*) counts all rows including NULLs."
+            },
+            {
+                "id": "SQLAG010",
+                "question": "Which clause is applied after GROUP BY?",
+                "options": [
+                    "WHERE",
+                    "HAVING",
+                    "FROM",
+                    "SELECT"
+                ],
+                "answer": 1,
+                "explanation": "HAVING is applied after GROUP BY."
+            },
+            {
+                "id": "SQLAG011",
+                "question": "Which function is used to find minimum value?",
+                "options": [
+                    "MIN()",
+                    "LOW()",
+                    "LEAST()",
+                    "BOTTOM()"
+                ],
+                "answer": 0,
+                "explanation": "MIN() returns minimum value."
+            },
+            {
+                "id": "SQLAG012",
+                "question": "Which aggregate function can be nested?",
+                "options": [
+                    "SUM()",
+                    "AVG()",
+                    "COUNT()",
+                    "None"
+                ],
+                "answer": 3,
+                "explanation": "Aggregate functions cannot be directly nested."
+            },
+            {
+                "id": "SQLAG013",
+                "question": "Which clause sorts the aggregated result?",
+                "options": [
+                    "GROUP BY",
+                    "WHERE",
+                    "HAVING",
+                    "ORDER BY"
+                ],
+                "answer": 3,
+                "explanation": "ORDER BY sorts the final result."
+            },
+            {
+                "id": "SQLAG014",
+                "question": "Which function returns number of distinct values?",
+                "options": [
+                    "COUNT(DISTINCT column)",
+                    "COUNT(column)",
+                    "DISTINCT()",
+                    "UNIQUE()"
+                ],
+                "answer": 0,
+                "explanation": "COUNT(DISTINCT column) counts unique values."
+            },
+            {
+                "id": "SQLAG015",
+                "question": "Which aggregate function is used to calculate total salary per department?",
+                "options": [
+                    "AVG()",
+                    "COUNT()",
+                    "SUM()",
+                    "MAX()"
+                ],
+                "answer": 2,
+                "explanation": "SUM() calculates total salary."
+            },
+            {
+                "id": "SQLUN001",
+                "question": "Which SQL keyword combines results of two queries?",
+                "options": [
+                    "JOIN",
+                    "MERGE",
+                    "UNION",
+                    "INTERSECT"
+                ],
+                "answer": 2,
+                "explanation": "UNION combines results of two SELECT queries."
+            },
+            {
+                "id": "SQLUN002",
+                "question": "Which requirement must be met for UNION?",
+                "options": [
+                    "Both queries must have same number of columns",
+                    "Column names must be identical",
+                    "Both queries must be on same table",
+                    "All columns must be numeric"
+                ],
+                "answer": 0,
+                "explanation": "UNION requires same number of columns in both queries."
+            },
+            {
+                "id": "SQLUN003",
+                "question": "Which statement is TRUE about UNION?",
+                "options": [
+                    "It allows duplicate rows",
+                    "It removes duplicate rows by default",
+                    "It sorts results automatically",
+                    "It only works on numeric columns"
+                ],
+                "answer": 1,
+                "explanation": "UNION removes duplicate rows by default."
+            },
+            {
+                "id": "SQLUN004",
+                "question": "Which keyword preserves duplicates in UNION?",
+                "options": [
+                    "ALL",
+                    "DISTINCT",
+                    "KEEP",
+                    "INCLUDE"
+                ],
+                "answer": 0,
+                "explanation": "UNION ALL includes duplicates."
+            },
+            {
+                "id": "SQLUN005",
+                "question": "Which function can be used to sort UNION result?",
+                "options": [
+                    "ORDER BY",
+                    "GROUP BY",
+                    "HAVING",
+                    "SORT"
+                ],
+                "answer": 0,
+                "explanation": "ORDER BY can sort final UNION result."
+            },
+            {
+                "id": "SQLUN006",
+                "question": "Which is FALSE for UNION?",
+                "options": [
+                    "Columns should have compatible data types",
+                    "Column names must match exactly",
+                    "UNION removes duplicates by default",
+                    "Number of columns should match"
+                ],
+                "answer": 1,
+                "explanation": "Column names need not match; only positions and data types matter."
+            },
+            {
+                "id": "SQLUN007",
+                "question": "Which SQL operator is similar to UNION but returns only common rows?",
+                "options": [
+                    "INTERSECT",
+                    "EXCEPT",
+                    "JOIN",
+                    "MINUS"
+                ],
+                "answer": 0,
+                "explanation": "INTERSECT returns only rows common to both queries."
+            },
+            {
+                "id": "SQLUN008",
+                "question": "Can UNION combine queries with different table sources?",
+                "options": [
+                    "Yes",
+                    "No",
+                    "Only same database",
+                    "Only same schema"
+                ],
+                "answer": 0,
+                "explanation": "UNION can combine results from different tables."
+            },
+            {
+                "id": "SQLUN009",
+                "question": "Which statement describes UNION ALL?",
+                "options": [
+                    "Removes duplicates",
+                    "Preserves duplicates",
+                    "Filters only distinct values",
+                    "Performs aggregation"
+                ],
+                "answer": 1,
+                "explanation": "UNION ALL preserves duplicates in combined result."
+            },
+            {
+                "id": "SQLUN010",
+                "question": "Which clause must be at the end of a UNION query?",
+                "options": [
+                    "ORDER BY",
+                    "GROUP BY",
+                    "WHERE",
+                    "HAVING"
+                ],
+                "answer": 0,
+                "explanation": "ORDER BY should be at the end to sort the combined result."
+            },
+            {
+                "id": "SQLIN001",
+                "question": "Which SQL operator returns only the common rows from two SELECT queries?",
+                "options": [
+                    "UNION",
+                    "INTERSECT",
+                    "EXCEPT",
+                    "JOIN"
+                ],
+                "answer": 1,
+                "explanation": "INTERSECT returns only rows present in both queries."
+            },
+            {
+                "id": "SQLIN002",
+                "question": "Which requirement must be met for INTERSECT to work?",
+                "options": [
+                    "Both queries must have the same number of columns",
+                    "Both queries must be on the same table",
+                    "Both queries must use the same WHERE condition",
+                    "Both queries must have same column names"
+                ],
+                "answer": 0,
+                "explanation": "INTERSECT requires same number of columns with compatible types."
+            },
+            {
+                "id": "SQLIN003",
+                "question": "Which statement is TRUE about INTERSECT?",
+                "options": [
+                    "It includes duplicate rows by default",
+                    "It removes duplicate rows",
+                    "It requires ORDER BY clause",
+                    "It only works with numeric columns"
+                ],
+                "answer": 1,
+                "explanation": "INTERSECT removes duplicates by default."
+            },
+            {
+                "id": "SQLIN004",
+                "question": "Which operator is the opposite of INTERSECT?",
+                "options": [
+                    "UNION",
+                    "EXCEPT",
+                    "JOIN",
+                    "MINUS"
+                ],
+                "answer": 1,
+                "explanation": "EXCEPT (or MINUS) returns rows in first query not in second."
+            },
+            {
+                "id": "SQLIN005",
+                "question": "Can INTERSECT be used with UNION ALL?",
+                "options": [
+                    "Yes",
+                    "No",
+                    "Only with DISTINCT",
+                    "Only with GROUP BY"
+                ],
+                "answer": 0,
+                "explanation": "INTERSECT can be combined with UNION/UNION ALL queries."
+            },
+            {
+                "id": "SQLIN006",
+                "question": "Which clause can sort the result of INTERSECT?",
+                "options": [
+                    "ORDER BY",
+                    "GROUP BY",
+                    "HAVING",
+                    "WHERE"
+                ],
+                "answer": 0,
+                "explanation": "ORDER BY can be applied at the end of INTERSECT result."
+            },
+            {
+                "id": "SQLIN007",
+                "question": "Which is TRUE if no rows match in INTERSECT?",
+                "options": [
+                    "Returns all rows",
+                    "Returns NULL",
+                    "Returns empty result",
+                    "Error occurs"
+                ],
+                "answer": 2,
+                "explanation": "INTERSECT returns empty result set if no match exists."
+            },
+            {
+                "id": "SQLIN008",
+                "question": "Can INTERSECT combine queries from different tables?",
+                "options": [
+                    "Yes",
+                    "No",
+                    "Only within same database",
+                    "Only with JOIN"
+                ],
+                "answer": 0,
+                "explanation": "INTERSECT can operate on queries from different tables."
+            },
+            {
+                "id": "SQLIN009",
+                "question": "Which clause defines filtering before intersection?",
+                "options": [
+                    "WHERE",
+                    "HAVING",
+                    "ON",
+                    "GROUP BY"
+                ],
+                "answer": 0,
+                "explanation": "WHERE filters rows before INTERSECT operation."
+            },
+            {
+                "id": "SQLIN010",
+                "question": "Which data types must be compatible in INTERSECT?",
+                "options": [
+                    "Only numeric",
+                    "Only string",
+                    "Compatible types",
+                    "No restriction"
+                ],
+                "answer": 2,
+                "explanation": "Columns must have compatible data types."
+            },
+            {
+                "id": "SQLEX001",
+                "question": "Which SQL operator returns rows from the first query that are not in the second query?",
+                "options": [
+                    "INTERSECT",
+                    "EXCEPT",
+                    "UNION",
+                    "JOIN"
+                ],
+                "answer": 1,
+                "explanation": "EXCEPT returns rows present in the first query but not in the second."
+            },
+            {
+                "id": "SQLEX002",
+                "question": "Which requirement must be met to use EXCEPT?",
+                "options": [
+                    "Both queries must have same number of columns",
+                    "Both queries must be on the same table",
+                    "Column names must match",
+                    "All columns must be numeric"
+                ],
+                "answer": 0,
+                "explanation": "EXCEPT requires both queries to have same number of columns with compatible types."
+            },
+            {
+                "id": "SQLEX003",
+                "question": "Which statement is TRUE about EXCEPT?",
+                "options": [
+                    "It includes duplicates by default",
+                    "It removes duplicates by default",
+                    "It requires ORDER BY clause",
+                    "It only works on numeric columns"
+                ],
+                "answer": 1,
+                "explanation": "EXCEPT removes duplicate rows by default."
+            },
+            {
+                "id": "SQLEX004",
+                "question": "Which operator is often considered opposite to INTERSECT?",
+                "options": [
+                    "UNION",
+                    "EXCEPT",
+                    "JOIN",
+                    "MINUS"
+                ],
+                "answer": 1,
+                "explanation": "EXCEPT returns rows from first query not present in second, opposite of INTERSECT."
+            },
+            {
+                "id": "SQLEX005",
+                "question": "Can EXCEPT be used with UNION?",
+                "options": [
+                    "Yes",
+                    "No",
+                    "Only with INTERSECT",
+                    "Only with JOIN"
+                ],
+                "answer": 0,
+                "explanation": "EXCEPT can be combined with UNION or INTERSECT queries."
+            },
+            {
+                "id": "SQLEX006",
+                "question": "Which clause can sort the result of EXCEPT?",
+                "options": [
+                    "ORDER BY",
+                    "GROUP BY",
+                    "HAVING",
+                    "WHERE"
+                ],
+                "answer": 0,
+                "explanation": "ORDER BY sorts the final result after EXCEPT."
+            },
+            {
+                "id": "SQLEX007",
+                "question": "What happens if no rows in the first query are outside the second query?",
+                "options": [
+                    "Returns all rows",
+                    "Returns NULL",
+                    "Returns empty result",
+                    "Error occurs"
+                ],
+                "answer": 2,
+                "explanation": "EXCEPT returns empty set if all first query rows exist in second query."
+            },
+            {
+                "id": "SQLEX008",
+                "question": "Can EXCEPT combine queries from different tables?",
+                "options": [
+                    "Yes",
+                    "No",
+                    "Only same database",
+                    "Only with JOIN"
+                ],
+                "answer": 0,
+                "explanation": "EXCEPT can operate on queries from different tables."
+            },
+            {
+                "id": "SQLEX009",
+                "question": "Which clause filters rows before applying EXCEPT?",
+                "options": [
+                    "WHERE",
+                    "HAVING",
+                    "ON",
+                    "GROUP BY"
+                ],
+                "answer": 0,
+                "explanation": "WHERE clause filters rows before EXCEPT operation."
+            },
+            {
+                "id": "SQLEX010",
+                "question": "Which condition is required for column compatibility in EXCEPT?",
+                "options": [
+                    "Only numeric",
+                    "Only string",
+                    "Compatible types",
+                    "No restriction"
+                ],
+                "answer": 2,
+                "explanation": "Columns must have compatible data types for EXCEPT."
+            },
+            {
+                "id": "SQLIE001",
+                "question": "Which SQL clause checks if a value matches any value in a list or subquery?",
+                "options": [
+                    "EXISTS",
+                    "IN",
+                    "LIKE",
+                    "ANY"
+                ],
+                "answer": 1,
+                "explanation": "IN checks whether a value exists in a given set or subquery."
+            },
+            {
+                "id": "SQLIE002",
+                "question": "Which clause checks for the existence of rows returned by a subquery?",
+                "options": [
+                    "IN",
+                    "EXISTS",
+                    "ANY",
+                    "ALL"
+                ],
+                "answer": 1,
+                "explanation": "EXISTS returns TRUE if subquery returns any row."
+            },
+            {
+                "id": "SQLIE003",
+                "question": "Which clause is more efficient for large subqueries?",
+                "options": [
+                    "IN",
+                    "EXISTS",
+                    "LIKE",
+                    "BETWEEN"
+                ],
+                "answer": 1,
+                "explanation": "EXISTS is generally faster for large subqueries."
+            },
+            {
+                "id": "SQLIE004",
+                "question": "What does IN (SELECT column FROM table) return?",
+                "options": [
+                    "Rows where column equals any subquery result",
+                    "All rows",
+                    "No rows",
+                    "Rows with NULLs only"
+                ],
+                "answer": 0,
+                "explanation": "IN returns rows where the value matches any value from subquery."
+            },
+            {
+                "id": "SQLIE005",
+                "question": "EXISTS(subquery) returns TRUE when:",
+                "options": [
+                    "Subquery returns at least one row",
+                    "Subquery returns zero rows",
+                    "All subquery rows are NULL",
+                    "Subquery has a GROUP BY"
+                ],
+                "answer": 0,
+                "explanation": "EXISTS is TRUE if the subquery returns at least one row."
+            },
+            {
+                "id": "SQLIE006",
+                "question": "Which clause can be combined with NOT to negate condition?",
+                "options": [
+                    "IN",
+                    "EXISTS",
+                    "Both IN and EXISTS",
+                    "None"
+                ],
+                "answer": 2,
+                "explanation": "Both IN and EXISTS can use NOT to negate the condition."
+            },
+            {
+                "id": "SQLIE007",
+                "question": "IN clause can take:",
+                "options": [
+                    "Single value only",
+                    "Multiple values or subquery",
+                    "Only subquery",
+                    "Only numeric values"
+                ],
+                "answer": 1,
+                "explanation": "IN can take multiple literal values or a subquery."
+            },
+            {
+                "id": "SQLIE008",
+                "question": "EXISTS is evaluated:",
+                "options": [
+                    "After SELECT",
+                    "Before SELECT",
+                    "For each row",
+                    "Once per table"
+                ],
+                "answer": 2,
+                "explanation": "EXISTS is evaluated for each row in outer query."
+            },
+            {
+                "id": "SQLIE009",
+                "question": "Which statement differentiates IN and EXISTS?",
+                "options": [
+                    "IN checks set membership, EXISTS checks row existence",
+                    "IN checks row existence, EXISTS checks set",
+                    "Both same",
+                    "IN is faster always"
+                ],
+                "answer": 0,
+                "explanation": "IN checks membership in set, EXISTS checks whether subquery returns rows."
+            },
+            {
+                "id": "SQLIE010",
+                "question": "Which clause can handle NULL values correctly in subqueries?",
+                "options": [
+                    "IN",
+                    "EXISTS",
+                    "LIKE",
+                    "BETWEEN"
+                ],
+                "answer": 1,
+                "explanation": "EXISTS handles NULL values reliably in subqueries."
+            },
+            {
+                "id": "SQLNQ001",
+                "question": "What is a nested query in SQL?",
+                "options": [
+                    "A query inside another query",
+                    "A query that updates multiple tables",
+                    "A query that uses aggregate functions only",
+                    "A query without a SELECT clause"
+                ],
+                "answer": 0,
+                "explanation": "A nested query (subquery) is a query embedded within another query."
+            },
+            {
+                "id": "SQLNQ002",
+                "question": "Which part of an SQL statement can a nested query appear in?",
+                "options": [
+                    "SELECT clause",
+                    "FROM clause",
+                    "WHERE clause",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "Nested queries can appear in SELECT, FROM, or WHERE clauses."
+            },
+            {
+                "id": "SQLNQ003",
+                "question": "What is a correlated subquery?",
+                "options": [
+                    "A subquery that can run independently",
+                    "A subquery that references columns from outer query",
+                    "A subquery that only uses aggregate functions",
+                    "A subquery with multiple tables only"
+                ],
+                "answer": 1,
+                "explanation": "A correlated subquery depends on values from the outer query."
+            },
+            {
+                "id": "SQLNQ004",
+                "question": "Which type of subquery can be executed independently?",
+                "options": [
+                    "Correlated subquery",
+                    "Non-correlated subquery",
+                    "Nested aggregate query",
+                    "JOIN query"
+                ],
+                "answer": 1,
+                "explanation": "Non-correlated subqueries are independent and can execute alone."
+            },
+            {
+                "id": "SQLNQ005",
+                "question": "Which clause is commonly used with subqueries to filter rows?",
+                "options": [
+                    "GROUP BY",
+                    "HAVING",
+                    "WHERE",
+                    "ORDER BY"
+                ],
+                "answer": 2,
+                "explanation": "WHERE is used to filter rows based on subquery results."
+            },
+            {
+                "id": "SQLNQ006",
+                "question": "Can a subquery return multiple columns?",
+                "options": [
+                    "Yes, in SELECT clause only",
+                    "Yes, with multiple-column operators",
+                    "No, only one column is allowed",
+                    "No, only one row is allowed"
+                ],
+                "answer": 1,
+                "explanation": "Subqueries can return multiple columns in the FROM clause using table alias."
+            },
+            {
+                "id": "SQLNQ007",
+                "question": "Which SQL operator is often used with subqueries?",
+                "options": [
+                    "IN",
+                    "EXISTS",
+                    "ANY",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "IN, EXISTS, ANY, and ALL are commonly used with subqueries."
+            },
+            {
+                "id": "SQLNQ008",
+                "question": "What is the advantage of using nested queries?",
+                "options": [
+                    "Reduces code readability",
+                    "Allows complex filtering and calculation",
+                    "Requires less memory always",
+                    "Eliminates the need for indexes"
+                ],
+                "answer": 1,
+                "explanation": "Nested queries help implement complex filtering and calculations."
+            },
+            {
+                "id": "SQLNQ009",
+                "question": "Which statement is TRUE about correlated subqueries?",
+                "options": [
+                    "They execute once for entire query",
+                    "They execute for each row in outer query",
+                    "They cannot return multiple columns",
+                    "They are faster than non-correlated subqueries"
+                ],
+                "answer": 1,
+                "explanation": "Correlated subqueries are executed for each row in the outer query."
+            },
+            {
+                "id": "SQLNQ010",
+                "question": "Can nested queries include aggregate functions?",
+                "options": [
+                    "Yes, in SELECT or WHERE",
+                    "No, only outer queries can",
+                    "Only in ORDER BY",
+                    "Only with JOINs"
+                ],
+                "answer": 0,
+                "explanation": "Aggregate functions can be used inside subqueries."
+            },
+            {
+                "id": "SQLNQ011",
+                "question": "Which subquery is evaluated once for the entire outer query?",
+                "options": [
+                    "Correlated subquery",
+                    "Non-correlated subquery",
+                    "Nested aggregate query",
+                    "JOIN subquery"
+                ],
+                "answer": 1,
+                "explanation": "Non-correlated subqueries are evaluated once and reused."
+            },
+            {
+                "id": "SQLNQ012",
+                "question": "Which keyword is required when using a subquery in WHERE clause?",
+                "options": [
+                    "FROM",
+                    "IN",
+                    "JOIN",
+                    "ALL"
+                ],
+                "answer": 1,
+                "explanation": "IN is commonly used to compare a value against subquery results."
+            },
+            {
+                "id": "SQLNQ013",
+                "question": "Nested queries are also called:",
+                "options": [
+                    "Derived tables",
+                    "Subqueries",
+                    "Inline queries",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "Nested queries can be referred to as subqueries, derived tables, or inline queries."
+            },
+            {
+                "id": "SQLNQ014",
+                "question": "Can a nested query be used in FROM clause?",
+                "options": [
+                    "Yes, with alias",
+                    "No, only in WHERE or SELECT",
+                    "Yes, without alias",
+                    "No, never"
+                ],
+                "answer": 0,
+                "explanation": "Nested queries in FROM clause must have a table alias."
+            },
+            {
+                "id": "SQLNQ015",
+                "question": "Which is a limitation of nested queries?",
+                "options": [
+                    "Cannot be used with aggregate functions",
+                    "Can be slower than JOINs if correlated",
+                    "Cannot filter data",
+                    "Cannot return multiple rows"
+                ],
+                "answer": 1,
+                "explanation": "Correlated nested queries can be slower than equivalent JOINs."
+            },
+            {
+                "id": "SQLC001",
+                "question": "Which SQL statement is used to retrieve all columns from a table named 'employees'?",
+                "options": [
+                    "SELECT * FROM employees;",
+                    "GET * FROM employees;",
+                    "SHOW ALL FROM employees;",
+                    "FETCH * FROM employees;"
+                ],
+                "answer": 0,
+                "explanation": "SELECT * FROM table retrieves all columns from the specified table."
+            },
+            {
+                "id": "SQLC002",
+                "question": "What is the correct syntax to select only the 'name' and 'salary' columns from 'employees'?",
+                "options": [
+                    "SELECT name, salary FROM employees;",
+                    "SELECT * FROM employees WHERE name, salary;",
+                    "GET name, salary FROM employees;",
+                    "SELECT name salary FROM employees;"
+                ],
+                "answer": 0,
+                "explanation": "Columns are listed after SELECT separated by commas."
+            },
+            {
+                "id": "SQLC003",
+                "question": "What is the output of: SELECT COUNT(*) FROM employees;",
+                "options": [
+                    "Total number of rows in employees",
+                    "Sum of salaries",
+                    "Average age of employees",
+                    "List of employees' names"
+                ],
+                "answer": 0,
+                "explanation": "COUNT(*) returns the total number of rows in the table."
+            },
+            {
+                "id": "SQLC004",
+                "question": "Which keyword is used to remove all rows from a table without removing its structure?",
+                "options": [
+                    "TRUNCATE",
+                    "DELETE",
+                    "DROP",
+                    "REMOVE"
+                ],
+                "answer": 0,
+                "explanation": "TRUNCATE removes all data but keeps table structure intact."
+            },
+            {
+                "id": "SQLC005",
+                "question": "What happens if you use DELETE without a WHERE clause?",
+                "options": [
+                    "All rows are deleted",
+                    "Error occurs",
+                    "Table structure is removed",
+                    "Only NULL rows are deleted"
+                ],
+                "answer": 0,
+                "explanation": "DELETE without WHERE deletes all rows but keeps the table structure."
+            },
+            {
+                "id": "SQLC006",
+                "question": "What is the difference between TRUNCATE and DELETE?",
+                "options": [
+                    "DELETE can use WHERE; TRUNCATE cannot",
+                    "TRUNCATE can use WHERE; DELETE cannot",
+                    "Both are identical",
+                    "TRUNCATE deletes table structure too"
+                ],
+                "answer": 0,
+                "explanation": "DELETE allows conditional deletion; TRUNCATE deletes all rows without conditions."
+            },
+            {
+                "id": "SQLC007",
+                "question": "Which SQL statement is used to update salary of employees by 10%?",
+                "options": [
+                    "UPDATE employees SET salary = salary * 1.1;",
+                    "MODIFY employees SET salary = salary * 1.1;",
+                    "ALTER employees SET salary = salary * 1.1;",
+                    "CHANGE employees SET salary = salary * 1.1;"
+                ],
+                "answer": 0,
+                "explanation": "UPDATE is used to modify data values in a table."
+            },
+            {
+                "id": "SQLC008",
+                "question": "Which command changes the structure of a table?",
+                "options": [
+                    "ALTER",
+                    "UPDATE",
+                    "MODIFY",
+                    "SET"
+                ],
+                "answer": 0,
+                "explanation": "ALTER modifies table structure, like adding or dropping columns."
+            },
+            {
+                "id": "SQLC009",
+                "question": "How can you add a new column 'department' to table 'employees'?",
+                "options": [
+                    "ALTER TABLE employees ADD department VARCHAR(50);",
+                    "UPDATE TABLE employees ADD department;",
+                    "MODIFY TABLE employees ADD COLUMN department;",
+                    "INSERT COLUMN department INTO employees;"
+                ],
+                "answer": 0,
+                "explanation": "ALTER TABLE ... ADD column_name datatype adds a new column."
+            },
+            {
+                "id": "SQLC010",
+                "question": "Which clause filters records after grouping?",
+                "options": [
+                    "HAVING",
+                    "WHERE",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 0,
+                "explanation": "HAVING filters grouped data, WHERE filters rows before grouping."
+            },
+            {
+                "id": "SQLC011",
+                "question": "Which function calculates average salary?",
+                "options": [
+                    "AVG(salary)",
+                    "SUM(salary)",
+                    "COUNT(salary)",
+                    "TOTAL(salary)"
+                ],
+                "answer": 0,
+                "explanation": "AVG() returns the average of a numeric column."
+            },
+            {
+                "id": "SQLC012",
+                "question": "How do you find the maximum salary in employees table?",
+                "options": [
+                    "SELECT MAX(salary) FROM employees;",
+                    "SELECT HIGHEST(salary) FROM employees;",
+                    "SELECT TOP(salary) FROM employees;",
+                    "SELECT MAXIMUM(salary) FROM employees;"
+                ],
+                "answer": 0,
+                "explanation": "MAX() returns the highest value in a column."
+            },
+            {
+                "id": "SQLC013",
+                "question": "What does COUNT(DISTINCT salary) return?",
+                "options": [
+                    "Number of unique salaries",
+                    "Sum of salaries",
+                    "Number of all salaries including duplicates",
+                    "Average salary"
+                ],
+                "answer": 0,
+                "explanation": "COUNT(DISTINCT column) counts only unique values."
+            },
+            {
+                "id": "SQLC014",
+                "question": "Which keyword is used to combine results of two queries and remove duplicates?",
+                "options": [
+                    "UNION",
+                    "JOIN",
+                    "INTERSECT",
+                    "EXCEPT"
+                ],
+                "answer": 0,
+                "explanation": "UNION combines results and removes duplicates by default."
+            },
+            {
+                "id": "SQLC015",
+                "question": "Which operator returns only rows common to two queries?",
+                "options": [
+                    "INTERSECT",
+                    "UNION",
+                    "EXCEPT",
+                    "JOIN"
+                ],
+                "answer": 0,
+                "explanation": "INTERSECT returns rows present in both queries."
+            },
+            {
+                "id": "SQLC016",
+                "question": "Which operator returns rows from first query not in second query?",
+                "options": [
+                    "EXCEPT",
+                    "INTERSECT",
+                    "UNION",
+                    "JOIN"
+                ],
+                "answer": 0,
+                "explanation": "EXCEPT returns rows in the first query missing from the second."
+            },
+            {
+                "id": "SQLC017",
+                "question": "Which clause checks if a value exists in a subquery?",
+                "options": [
+                    "IN",
+                    "EXISTS",
+                    "ANY",
+                    "ALL"
+                ],
+                "answer": 0,
+                "explanation": "IN checks whether a value exists in a list or subquery."
+            },
+            {
+                "id": "SQLC018",
+                "question": "Which clause returns TRUE if subquery has at least one row?",
+                "options": [
+                    "EXISTS",
+                    "IN",
+                    "ANY",
+                    "ALL"
+                ],
+                "answer": 0,
+                "explanation": "EXISTS checks for the presence of rows in a subquery."
+            },
+            {
+                "id": "SQLC019",
+                "question": "What is a correlated subquery?",
+                "options": [
+                    "Depends on outer query",
+                    "Independent query",
+                    "Aggregate function only",
+                    "Used only with UNION"
+                ],
+                "answer": 0,
+                "explanation": "Correlated subquery references outer query columns and executes per row."
+            },
+            {
+                "id": "SQLC020",
+                "question": "Which join returns only matching rows from both tables?",
+                "options": [
+                    "INNER JOIN",
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "FULL OUTER JOIN"
+                ],
+                "answer": 0,
+                "explanation": "INNER JOIN returns rows where join condition matches in both tables."
+            },
+            {
+                "id": "SQLC021",
+                "question": "Which join returns all rows from the left table and matched rows from right table?",
+                "options": [
+                    "LEFT OUTER JOIN",
+                    "RIGHT OUTER JOIN",
+                    "FULL OUTER JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 0,
+                "explanation": "LEFT JOIN returns all rows from left table, NULLs for unmatched rows from right table."
+            },
+            {
+                "id": "SQLC022",
+                "question": "Which join returns all rows from right table and matched rows from left?",
+                "options": [
+                    "RIGHT OUTER JOIN",
+                    "LEFT OUTER JOIN",
+                    "FULL OUTER JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 0,
+                "explanation": "RIGHT JOIN preserves all right table rows."
+            },
+            {
+                "id": "SQLC023",
+                "question": "Which join returns all rows from both tables including unmatched rows?",
+                "options": [
+                    "FULL OUTER JOIN",
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "INNER JOIN"
+                ],
+                "answer": 0,
+                "explanation": "FULL OUTER JOIN includes unmatched rows from both tables."
+            },
+            {
+                "id": "SQLC024",
+                "question": "What is the output of SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id;",
+                "options": [
+                    "Only rows with matching id",
+                    "All rows from table1",
+                    "All rows from table2",
+                    "All rows from both tables"
+                ],
+                "answer": 0,
+                "explanation": "INNER JOIN returns rows where the id matches in both tables."
+            },
+            {
+                "id": "SQLC025",
+                "question": "Which aggregate function returns the sum of a numeric column?",
+                "options": [
+                    "SUM()",
+                    "AVG()",
+                    "MAX()",
+                    "COUNT()"
+                ],
+                "answer": 0,
+                "explanation": "SUM() calculates total of numeric column values."
+            },
+            {
+                "id": "SQLC026",
+                "question": "Which statement creates a view named 'high_salary' showing employees with salary > 50000?",
+                "options": [
+                    "CREATE VIEW high_salary AS SELECT * FROM employees WHERE salary > 50000;",
+                    "VIEW high_salary SELECT * FROM employees WHERE salary > 50000;",
+                    "CREATE TABLE high_salary AS SELECT * FROM employees WHERE salary > 50000;",
+                    "SELECT * INTO high_salary FROM employees WHERE salary > 50000;"
+                ],
+                "answer": 0,
+                "explanation": "CREATE VIEW defines a view using a SELECT query."
+            },
+            {
+                "id": "SQLC027",
+                "question": "Which statement is TRUE about SQL views?",
+                "options": [
+                    "They store data physically",
+                    "They can simplify complex queries",
+                    "They cannot be queried like tables",
+                    "They always require indexes"
+                ],
+                "answer": 1,
+                "explanation": "Views are virtual tables that simplify query usage."
+            },
+            {
+                "id": "SQLC028",
+                "question": "What happens if you update a base table of a view?",
+                "options": [
+                    "View reflects changes automatically",
+                    "View remains unchanged",
+                    "View throws error",
+                    "View must be recreated"
+                ],
+                "answer": 0,
+                "explanation": "Views reflect the current state of underlying tables."
+            },
+            {
+                "id": "SQLC029",
+                "question": "Which SQL command is used to remove a view?",
+                "options": [
+                    "DROP VIEW view_name;",
+                    "DELETE VIEW view_name;",
+                    "REMOVE VIEW view_name;",
+                    "TRUNCATE VIEW view_name;"
+                ],
+                "answer": 0,
+                "explanation": "DROP VIEW deletes the view definition."
+            },
+            {
+                "id": "SQLC030",
+                "question": "Which clause is used to filter rows in a view?",
+                "options": [
+                    "WHERE",
+                    "HAVING",
+                    "ORDER BY",
+                    "GROUP BY"
+                ],
+                "answer": 0,
+                "explanation": "WHERE filters rows when creating a view."
+            },
+            {
+                "id": "SQLC031",
+                "question": "Which command will remove all rows from a table 'departments' without logging individual deletions?",
+                "options": [
+                    "TRUNCATE TABLE departments;",
+                    "DELETE FROM departments;",
+                    "DROP TABLE departments;",
+                    "REMOVE TABLE departments;"
+                ],
+                "answer": 0,
+                "explanation": "TRUNCATE is faster and minimally logged compared to DELETE."
+            },
+            {
+                "id": "SQLC032",
+                "question": "Which command permanently deletes a table including its structure?",
+                "options": [
+                    "DROP TABLE employees;",
+                    "DELETE FROM employees;",
+                    "TRUNCATE TABLE employees;",
+                    "REMOVE TABLE employees;"
+                ],
+                "answer": 0,
+                "explanation": "DROP TABLE deletes the table structure and all data."
+            },
+            {
+                "id": "SQLC033",
+                "question": "What is the output of: SELECT * FROM employees WHERE salary IN (40000, 50000, 60000);",
+                "options": [
+                    "Rows where salary is 40000, 50000, or 60000",
+                    "All rows with salary not in the list",
+                    "Only first row with salary 40000",
+                    "No rows are returned"
+                ],
+                "answer": 0,
+                "explanation": "IN matches any value in the list."
+            },
+            {
+                "id": "SQLC034",
+                "question": "What does EXISTS (SELECT * FROM employees WHERE salary > 60000) return?",
+                "options": [
+                    "TRUE if at least one employee earns >60000",
+                    "All salaries >60000",
+                    "NULL",
+                    "Error if no row matches"
+                ],
+                "answer": 0,
+                "explanation": "EXISTS returns TRUE if the subquery has at least one row."
+            },
+            {
+                "id": "SQLC035",
+                "question": "Which SQL statement joins 'employees' and 'departments' showing all employees with their department names?",
+                "options": [
+                    "SELECT e.name, d.dept_name FROM employees e INNER JOIN departments d ON e.dept_id = d.id;",
+                    "SELECT e.name, d.dept_name FROM employees e JOIN departments d;",
+                    "SELECT * FROM employees, departments;",
+                    "SELECT e.name, d.dept_name FROM employees e LEFT OUTER JOIN departments;"
+                ],
+                "answer": 0,
+                "explanation": "INNER JOIN returns matching rows from both tables with ON condition."
+            },
+            {
+                "id": "SQLC036",
+                "question": "Which join includes all employees even if they do not belong to any department?",
+                "options": [
+                    "LEFT OUTER JOIN",
+                    "INNER JOIN",
+                    "RIGHT OUTER JOIN",
+                    "FULL OUTER JOIN"
+                ],
+                "answer": 0,
+                "explanation": "LEFT OUTER JOIN includes all left table rows."
+            },
+            {
+                "id": "SQLC037",
+                "question": "What is the difference between UNION and UNION ALL?",
+                "options": [
+                    "UNION removes duplicates, UNION ALL keeps duplicates",
+                    "UNION keeps duplicates, UNION ALL removes duplicates",
+                    "UNION is faster than UNION ALL always",
+                    "UNION works only on numeric columns"
+                ],
+                "answer": 0,
+                "explanation": "UNION removes duplicate rows, UNION ALL preserves them."
+            },
+            {
+                "id": "SQLC038",
+                "question": "Which SQL operator returns rows common in two queries?",
+                "options": [
+                    "INTERSECT",
+                    "UNION",
+                    "EXCEPT",
+                    "JOIN"
+                ],
+                "answer": 0,
+                "explanation": "INTERSECT returns only matching rows from both queries."
+            },
+            {
+                "id": "SQLC039",
+                "question": "Which operator returns rows from first query not in second query?",
+                "options": [
+                    "EXCEPT",
+                    "INTERSECT",
+                    "UNION",
+                    "JOIN"
+                ],
+                "answer": 0,
+                "explanation": "EXCEPT excludes rows present in the second query."
+            },
+            {
+                "id": "SQLC040",
+                "question": "What is the output of: SELECT salary FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);",
+                "options": [
+                    "Salaries above average",
+                    "All salaries",
+                    "Average salary only",
+                    "NULL values"
+                ],
+                "answer": 0,
+                "explanation": "Subquery calculates AVG(salary), outer query returns salaries above it."
+            },
+            {
+                "id": "SQLC041",
+                "question": "Which clause is used to aggregate data by a column?",
+                "options": [
+                    "GROUP BY",
+                    "ORDER BY",
+                    "HAVING",
+                    "WHERE"
+                ],
+                "answer": 0,
+                "explanation": "GROUP BY groups rows to apply aggregate functions."
+            },
+            {
+                "id": "SQLC042",
+                "question": "How can you filter grouped data with aggregate function SUM?",
+                "options": [
+                    "HAVING SUM(salary) > 100000",
+                    "WHERE SUM(salary) > 100000",
+                    "ORDER BY SUM(salary) > 100000",
+                    "GROUP BY SUM(salary) > 100000"
+                ],
+                "answer": 0,
+                "explanation": "HAVING filters groups after aggregation."
+            },
+            {
+                "id": "SQLC043",
+                "question": "Which SQL function returns minimum value of a column?",
+                "options": [
+                    "MIN()",
+                    "MAX()",
+                    "AVG()",
+                    "SUM()"
+                ],
+                "answer": 0,
+                "explanation": "MIN() returns smallest value of a column."
+            },
+            {
+                "id": "SQLC044",
+                "question": "Which function counts rows ignoring NULLs?",
+                "options": [
+                    "COUNT(column_name)",
+                    "COUNT(*)",
+                    "SUM(column_name)",
+                    "AVG(column_name)"
+                ],
+                "answer": 0,
+                "explanation": "COUNT(column_name) ignores NULLs, COUNT(*) counts all rows."
+            },
+            {
+                "id": "SQLC045",
+                "question": "What is a nested query?",
+                "options": [
+                    "Query inside another query",
+                    "Query that updates multiple tables",
+                    "Query without SELECT",
+                    "Only query with JOIN"
+                ],
+                "answer": 0,
+                "explanation": "Nested query (subquery) is a query embedded in another query."
+            },
+            {
+                "id": "SQLC046",
+                "question": "Which subquery references outer query columns?",
+                "options": [
+                    "Correlated subquery",
+                    "Non-correlated subquery",
+                    "Aggregate subquery",
+                    "Inline view"
+                ],
+                "answer": 0,
+                "explanation": "Correlated subquery depends on outer query columns."
+            },
+            {
+                "id": "SQLC047",
+                "question": "Which subquery can run independently of outer query?",
+                "options": [
+                    "Non-correlated subquery",
+                    "Correlated subquery",
+                    "Nested join",
+                    "Derived table"
+                ],
+                "answer": 0,
+                "explanation": "Non-correlated subquery can execute alone."
+            },
+            {
+                "id": "SQLC048",
+                "question": "Which clause filters subquery results before comparison?",
+                "options": [
+                    "WHERE",
+                    "HAVING",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 0,
+                "explanation": "WHERE filters rows before subquery output is used."
+            },
+            {
+                "id": "SQLC049",
+                "question": "How do you sort the results of a UNION query?",
+                "options": [
+                    "ORDER BY at the end",
+                    "ORDER BY inside each SELECT",
+                    "GROUP BY",
+                    "HAVING"
+                ],
+                "answer": 0,
+                "explanation": "ORDER BY after UNION sorts combined result."
+            },
+            {
+                "id": "SQLC050",
+                "question": "Which clause filters data after aggregation?",
+                "options": [
+                    "HAVING",
+                    "WHERE",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 0,
+                "explanation": "HAVING filters groups created by GROUP BY."
+            },
+            {
+                "id": "SQLC051",
+                "question": "What happens if a subquery in WHERE clause returns multiple rows with = operator?",
+                "options": [
+                    "Error occurs",
+                    "All rows matched",
+                    "Only first row considered",
+                    "NULL returned"
+                ],
+                "answer": 0,
+                "explanation": "Using = with multi-row subquery causes an error; use IN instead."
+            },
+            {
+                "id": "SQLC052",
+                "question": "Which join is best for showing unmatched records from both tables?",
+                "options": [
+                    "FULL OUTER JOIN",
+                    "INNER JOIN",
+                    "LEFT JOIN",
+                    "RIGHT JOIN"
+                ],
+                "answer": 0,
+                "explanation": "FULL OUTER JOIN returns all rows including unmatched rows from both tables."
+            },
+            {
+                "id": "SQLC053",
+                "question": "Which query returns first 5 rows of employees?",
+                "options": [
+                    "SELECT * FROM employees LIMIT 5;",
+                    "SELECT TOP 5 * FROM employees;",
+                    "SELECT FIRST 5 * FROM employees;",
+                    "Both 1 and 2 depending on SQL dialect"
+                ],
+                "answer": 3,
+                "explanation": "LIMIT is used in MySQL/PostgreSQL; TOP in SQL Server."
+            },
+            {
+                "id": "SQLC054",
+                "question": "Which operator can compare a value against results of a subquery?",
+                "options": [
+                    "ANY",
+                    "ALL",
+                    "IN",
+                    "All of the above"
+                ],
+                "answer": 3,
+                "explanation": "IN, ANY, and ALL can be used to compare values against subquery results."
+            },
+            {
+                "id": "SQLC055",
+                "question": "Which aggregate function counts only non-NULL values?",
+                "options": [
+                    "COUNT(column)",
+                    "COUNT(*)",
+                    "SUM(column)",
+                    "AVG(column)"
+                ],
+                "answer": 0,
+                "explanation": "COUNT(column) counts only non-NULL values in the column."
+            },
+            {
+                "id": "SQLC056",
+                "question": "What is the difference between LEFT JOIN and RIGHT JOIN?",
+                "options": [
+                    "LEFT JOIN preserves left table rows; RIGHT JOIN preserves right table rows",
+                    "LEFT JOIN preserves right table; RIGHT JOIN preserves left",
+                    "Both are identical",
+                    "LEFT JOIN only works with INNER JOIN"
+                ],
+                "answer": 0,
+                "explanation": "LEFT JOIN keeps all left table rows; RIGHT JOIN keeps all right table rows."
+            },
+            {
+                "id": "SQLC057",
+                "question": "Which SQL statement removes duplicate rows from a query result?",
+                "options": [
+                    "SELECT DISTINCT column_name FROM table;",
+                    "SELECT UNIQUE column_name FROM table;",
+                    "SELECT column_name FROM table;",
+                    "SELECT column_name ALL FROM table;"
+                ],
+                "answer": 0,
+                "explanation": "DISTINCT removes duplicate rows."
+            },
+            {
+                "id": "SQLC058",
+                "question": "Which clause filters aggregated rows?",
+                "options": [
+                    "HAVING",
+                    "WHERE",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 0,
+                "explanation": "HAVING filters groups after aggregation."
+            },
+            {
+                "id": "SQLC059",
+                "question": "Which SQL statement finds average salary per department?",
+                "options": [
+                    "SELECT dept_id, AVG(salary) FROM employees GROUP BY dept_id;",
+                    "SELECT AVG(salary) FROM employees;",
+                    "SELECT dept_id, SUM(salary) FROM employees;",
+                    "SELECT dept_id FROM employees GROUP BY AVG(salary);"
+                ],
+                "answer": 0,
+                "explanation": "GROUP BY groups rows per department to compute AVG(salary)."
+            },
+            {
+                "id": "SQLC060",
+                "question": "Which clause is applied first in SQL query execution order?",
+                "options": [
+                    "FROM",
+                    "WHERE",
+                    "GROUP BY",
+                    "SELECT"
+                ],
+                "answer": 0,
+                "explanation": "FROM is executed first to retrieve tables for query processing."
+            },
+            {
+                "id": "SQLC061",
+                "question": "Which keyword removes all rows and resets identity counters in SQL Server?",
+                "options": [
+                    "TRUNCATE",
+                    "DELETE",
+                    "DROP",
+                    "CLEAR"
+                ],
+                "answer": 0,
+                "explanation": "TRUNCATE clears all rows and resets identity columns."
+            },
+            {
+                "id": "SQLC062",
+                "question": "What is the difference between DROP and TRUNCATE?",
+                "options": [
+                    "DROP removes table and structure; TRUNCATE removes all rows only",
+                    "TRUNCATE removes table and structure; DROP removes rows",
+                    "Both are identical",
+                    "DROP only works with views"
+                ],
+                "answer": 0,
+                "explanation": "DROP deletes table structure, TRUNCATE clears all rows."
+            },
+            {
+                "id": "SQLC063",
+                "question": "Which SQL clause is used to sort query results?",
+                "options": [
+                    "ORDER BY",
+                    "GROUP BY",
+                    "HAVING",
+                    "WHERE"
+                ],
+                "answer": 0,
+                "explanation": "ORDER BY sorts the query output by one or more columns."
+            },
+            {
+                "id": "SQLC064",
+                "question": "Which function calculates the average excluding NULLs?",
+                "options": [
+                    "AVG(column_name)",
+                    "SUM(column_name)/COUNT(*)",
+                    "SUM(column_name)",
+                    "COUNT(column_name)"
+                ],
+                "answer": 0,
+                "explanation": "AVG ignores NULL values when computing average."
+            },
+            {
+                "id": "SQLC065",
+                "question": "What is a derived table?",
+                "options": [
+                    "A subquery used in FROM clause",
+                    "A temporary table created with CREATE TABLE",
+                    "A view",
+                    "An index table"
+                ],
+                "answer": 0,
+                "explanation": "Derived tables are subqueries used in FROM clause with an alias."
+            },
+            {
+                "id": "SQLC066",
+                "question": "Which SQL command updates multiple rows conditionally?",
+                "options": [
+                    "UPDATE employees SET salary = salary * 1.1 WHERE dept_id = 5;",
+                    "UPDATE employees SET salary = salary * 1.1;",
+                    "ALTER TABLE employees SET salary = salary * 1.1;",
+                    "MODIFY TABLE employees SET salary = salary * 1.1;"
+                ],
+                "answer": 0,
+                "explanation": "UPDATE with WHERE applies changes conditionally."
+            },
+            {
+                "id": "SQLC067",
+                "question": "What is the purpose of an index in SQL?",
+                "options": [
+                    "Speeds up data retrieval",
+                    "Stores table structure",
+                    "Deletes duplicate rows",
+                    "Calculates aggregates automatically"
+                ],
+                "answer": 0,
+                "explanation": "Indexes improve query performance by quickly locating rows."
+            },
+            {
+                "id": "SQLC068",
+                "question": "Which join is equivalent to INNER JOIN in terms of returned rows?",
+                "options": [
+                    "CROSS JOIN with WHERE condition",
+                    "LEFT JOIN",
+                    "RIGHT JOIN",
+                    "FULL OUTER JOIN"
+                ],
+                "answer": 0,
+                "explanation": "CROSS JOIN with a matching WHERE condition returns same rows as INNER JOIN."
+            },
+            {
+                "id": "SQLC069",
+                "question": "Which statement is TRUE for UNION?",
+                "options": [
+                    "Number and types of columns must match",
+                    "Columns names must match exactly",
+                    "Only works with numeric columns",
+                    "Removes all duplicates and NULLs"
+                ],
+                "answer": 0,
+                "explanation": "UNION requires same number of columns with compatible types."
+            },
+            {
+                "id": "SQLC070",
+                "question": "What does SELECT EXISTS(subquery) return?",
+                "options": [
+                    "TRUE if subquery has rows, FALSE otherwise",
+                    "Number of rows",
+                    "First row only",
+                    "NULL if no row exists"
+                ],
+                "answer": 0,
+                "explanation": "EXISTS returns a boolean based on subquery existence."
+            },
+            {
+                "id": "SQLC071",
+                "question": "Which clause filters before aggregation?",
+                "options": [
+                    "WHERE",
+                    "HAVING",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 0,
+                "explanation": "WHERE filters rows before grouping and aggregation."
+            },
+            {
+                "id": "SQLC072",
+                "question": "Which clause filters after aggregation?",
+                "options": [
+                    "HAVING",
+                    "WHERE",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 0,
+                "explanation": "HAVING filters grouped data after aggregate functions."
+            },
+            {
+                "id": "SQLC073",
+                "question": "What is the output of: SELECT * FROM employees WHERE dept_id = 5 AND salary > 50000;",
+                "options": [
+                    "Rows where dept_id=5 AND salary>50000",
+                    "All rows from department 5",
+                    "All rows with salary>50000",
+                    "Error occurs"
+                ],
+                "answer": 0,
+                "explanation": "WHERE with AND requires both conditions to be true."
+            },
+            {
+                "id": "SQLC074",
+                "question": "Which clause can be used to combine multiple conditions in a query?",
+                "options": [
+                    "AND, OR, NOT",
+                    "GROUP BY",
+                    "ORDER BY",
+                    "HAVING"
+                ],
+                "answer": 0,
+                "explanation": "AND, OR, NOT combine multiple conditions in WHERE or HAVING clauses."
+            },
+            {
+                "id": "SQLC075",
+                "question": "What is the purpose of nested queries?",
+                "options": [
+                    "To allow querying results of another query",
+                    "To update multiple tables at once",
+                    "To automatically create indexes",
+                    "To permanently store intermediate results"
+                ],
+                "answer": 0,
+                "explanation": "Nested queries allow using results of one query in another."
+            },
+            {
+                "id": "SQLC076",
+                "question": "Which SQL command is used to rename a column?",
+                "options": [
+                    "ALTER TABLE table_name RENAME COLUMN old_name TO new_name;",
+                    "UPDATE COLUMN old_name TO new_name;",
+                    "MODIFY COLUMN old_name AS new_name;",
+                    "CHANGE COLUMN old_name TO new_name;"
+                ],
+                "answer": 0,
+                "explanation": "ALTER TABLE ... RENAME COLUMN changes column name."
+            },
+            {
+                "id": "SQLC077",
+                "question": "Which clause is used to rename a column temporarily in query output?",
+                "options": [
+                    "AS alias_name",
+                    "RENAME",
+                    "ALIAS",
+                    "SET"
+                ],
+                "answer": 0,
+                "explanation": "AS assigns temporary alias to column or table in query output."
+            },
+            {
+                "id": "SQLC078",
+                "question": "Which operator compares a value against a list returned by a subquery?",
+                "options": [
+                    "IN",
+                    "EXISTS",
+                    "LIKE",
+                    "BETWEEN"
+                ],
+                "answer": 0,
+                "explanation": "IN checks if a value matches any value in a list or subquery."
+            },
+            {
+                "id": "SQLC079",
+                "question": "Which operator is preferred when only the existence of rows is important?",
+                "options": [
+                    "EXISTS",
+                    "IN",
+                    "ANY",
+                    "ALL"
+                ],
+                "answer": 0,
+                "explanation": "EXISTS is faster when only presence of rows is required."
+            },
+            {
+                "id": "SQLC080",
+                "question": "Which join multiplies all rows from two tables (Cartesian product)?",
+                "options": [
+                    "CROSS JOIN",
+                    "INNER JOIN",
+                    "LEFT JOIN",
+                    "RIGHT JOIN"
+                ],
+                "answer": 0,
+                "explanation": "CROSS JOIN returns Cartesian product of tables."
+            },
+            {
+                "id": "SQLC081",
+                "question": "What is the output of: SELECT salary*12 AS annual_salary FROM employees;",
+                "options": [
+                    "Monthly salary multiplied by 12 with alias annual_salary",
+                    "Annual salary permanently stored",
+                    "Error if alias not pre-defined",
+                    "Only first row multiplied by 12"
+                ],
+                "answer": 0,
+                "explanation": "AS defines temporary column alias; calculation applies to all rows."
+            },
+            {
+                "id": "SQLC082",
+                "question": "Which command changes column datatype?",
+                "options": [
+                    "ALTER TABLE table_name ALTER COLUMN column_name datatype;",
+                    "UPDATE table_name SET column_name = datatype;",
+                    "MODIFY COLUMN column_name datatype;",
+                    "CHANGE COLUMN column_name datatype;"
+                ],
+                "answer": 0,
+                "explanation": "ALTER TABLE ... ALTER COLUMN changes the datatype of an existing column."
+            },
+            {
+                "id": "SQLC083",
+                "question": "Which clause is required in nested query to compare numeric value with multiple rows?",
+                "options": [
+                    "IN",
+                    "EXISTS",
+                    "BETWEEN",
+                    "LIKE"
+                ],
+                "answer": 0,
+                "explanation": "IN allows comparison with multiple subquery results."
+            },
+            {
+                "id": "SQLC084",
+                "question": "Which SQL function counts all rows including duplicates?",
+                "options": [
+                    "COUNT(*)",
+                    "COUNT(column_name)",
+                    "SUM(column_name)",
+                    "AVG(column_name)"
+                ],
+                "answer": 0,
+                "explanation": "COUNT(*) counts all rows regardless of NULLs or duplicates."
+            },
+            {
+                "id": "SQLC085",
+                "question": "Which clause groups rows based on one or more columns?",
+                "options": [
+                    "GROUP BY",
+                    "ORDER BY",
+                    "HAVING",
+                    "WHERE"
+                ],
+                "answer": 0,
+                "explanation": "GROUP BY groups rows for aggregation."
+            },
+            {
+                "id": "SQLC086",
+                "question": "Which operator returns TRUE if value is greater than all subquery results?",
+                "options": [
+                    "ALL",
+                    "ANY",
+                    "IN",
+                    "EXISTS"
+                ],
+                "answer": 0,
+                "explanation": "ALL compares value against all subquery results."
+            },
+            {
+                "id": "SQLC087",
+                "question": "Which clause can be used to filter NULL values?",
+                "options": [
+                    "WHERE column IS NULL or IS NOT NULL",
+                    "HAVING",
+                    "ORDER BY",
+                    "GROUP BY"
+                ],
+                "answer": 0,
+                "explanation": "IS NULL / IS NOT NULL in WHERE filters NULL values."
+            },
+            {
+                "id": "SQLC088",
+                "question": "Which statement correctly finds employees earning above department average?",
+                "options": [
+                    "SELECT * FROM employees e WHERE salary > (SELECT AVG(salary) FROM employees WHERE dept_id = e.dept_id);",
+                    "SELECT * FROM employees WHERE salary > AVG(salary);",
+                    "SELECT * FROM employees GROUP BY dept_id HAVING salary > AVG(salary);",
+                    "SELECT * FROM employees WHERE salary > ANY(dept_id);"
+                ],
+                "answer": 0,
+                "explanation": "Correlated subquery compares each employee's salary to department average."
+            },
+            {
+                "id": "SQLC089",
+                "question": "Which clause can be used to remove duplicate results in nested query?",
+                "options": [
+                    "DISTINCT",
+                    "GROUP BY",
+                    "HAVING",
+                    "WHERE"
+                ],
+                "answer": 0,
+                "explanation": "DISTINCT removes duplicate rows in subquery or main query."
+            },
+            {
+                "id": "SQLC090",
+                "question": "Which clause limits query results in SQL Server?",
+                "options": [
+                    "TOP",
+                    "LIMIT",
+                    "FETCH FIRST",
+                    "ROWNUM"
+                ],
+                "answer": 0,
+                "explanation": "TOP n is used in SQL Server to limit rows returned."
+            },
+            {
+                "id": "SQLC091",
+                "question": "Which clause limits query results in MySQL/PostgreSQL?",
+                "options": [
+                    "LIMIT",
+                    "TOP",
+                    "FETCH FIRST",
+                    "ROWNUM"
+                ],
+                "answer": 0,
+                "explanation": "LIMIT n restricts number of rows returned."
+            },
+            {
+                "id": "SQLC092",
+                "question": "Which statement is used to rename a table?",
+                "options": [
+                    "ALTER TABLE old_name RENAME TO new_name;",
+                    "UPDATE TABLE old_name TO new_name;",
+                    "MODIFY TABLE old_name AS new_name;",
+                    "RENAME TABLE old_name TO new_name;"
+                ],
+                "answer": 0,
+                "explanation": "ALTER TABLE ... RENAME TO changes the table name."
+            },
+            {
+                "id": "SQLC093",
+                "question": "Which operator compares a value to any of the results of a subquery?",
+                "options": [
+                    "ANY",
+                    "ALL",
+                    "IN",
+                    "EXISTS"
+                ],
+                "answer": 0,
+                "explanation": "ANY returns TRUE if comparison is TRUE for any row in subquery."
+            },
+            {
+                "id": "SQLC094",
+                "question": "Which join returns unmatched rows from right table and NULL for left table?",
+                "options": [
+                    "RIGHT JOIN",
+                    "LEFT JOIN",
+                    "INNER JOIN",
+                    "FULL OUTER JOIN"
+                ],
+                "answer": 0,
+                "explanation": "RIGHT JOIN preserves all right table rows, NULLs for unmatched left rows."
+            },
+            {
+                "id": "SQLC095",
+                "question": "Which SQL statement shows structure of table 'employees'?",
+                "options": [
+                    "DESCRIBE employees;",
+                    "SHOW TABLE employees;",
+                    "SELECT * FROM employees;",
+                    "TABLE employees;"
+                ],
+                "answer": 0,
+                "explanation": "DESCRIBE or DESC shows table column definitions."
+            },
+            {
+                "id": "SQLC096",
+                "question": "Which clause is used to remove rows conditionally from a table?",
+                "options": [
+                    "DELETE FROM table_name WHERE condition;",
+                    "TRUNCATE TABLE table_name;",
+                    "DROP TABLE table_name;",
+                    "ALTER TABLE table_name;"
+                ],
+                "answer": 0,
+                "explanation": "DELETE removes rows matching a condition."
+            },
+            {
+                "id": "SQLC097",
+                "question": "Which clause filters query after joins?",
+                "options": [
+                    "WHERE",
+                    "HAVING",
+                    "GROUP BY",
+                    "ORDER BY"
+                ],
+                "answer": 0,
+                "explanation": "WHERE filters rows after join but before aggregation."
+            },
+            {
+                "id": "SQLC098",
+                "question": "Which statement defines a view showing employees earning above average salary?",
+                "options": [
+                    "CREATE VIEW high_earners AS SELECT * FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);",
+                    "CREATE VIEW high_earners AS SELECT * FROM employees;",
+                    "SELECT * INTO high_earners FROM employees WHERE salary > AVG(salary);",
+                    "ALTER VIEW high_earners AS SELECT * FROM employees WHERE salary > 50000;"
+                ],
+                "answer": 0,
+                "explanation": "View uses a subquery to filter employees earning above average."
+            },
+            {
+                "id": "SQLC099",
+                "question": "Which SQL function returns maximum value of a column?",
+                "options": [
+                    "MAX()",
+                    "MIN()",
+                    "SUM()",
+                    "COUNT()"
+                ],
+                "answer": 0,
+                "explanation": "MAX() returns the largest value in a column."
+            },
+            {
+                "id": "SQLC100",
+                "question": "Which clause returns top N highest salaries per department?",
+                "options": [
+                    "Use ROW_NUMBER() OVER(PARTITION BY dept_id ORDER BY salary DESC) and filter",
+                    "Use GROUP BY dept_id LIMIT N",
+                    "Use TOP N in WHERE clause",
+                    "Use DISTINCT salaries with LIMIT"
+                ],
+                "answer": 0,
+                "explanation": "ROW_NUMBER() with PARTITION BY and ORDER BY allows selecting top N rows per group."
             }
         ]
     }

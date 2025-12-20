@@ -311,9 +311,10 @@
             "Programming Concepts": "programming_concepts.json",
             "Data Structures & Algorithms": "data_structures_algorithms.json",
             "Computer Networks": "computer_network.json",
-            "Database": "dbms.json",
+            "DBMS": "dbms.json",
             "SQL": "sql.json",
             "Data Analytics Languages": "data_analytics_languages.json",
+            "Information & Cyber Security": "information_cyber_security.json"
         };
 
         // ================= Custom Dropdown =================
@@ -356,6 +357,8 @@
                     extraQs = data.extra_qs || [];
                     delete data.extra_qs;
                     loadTopic();
+                    
+                    document.getElementById("scoreSummary").style.display = "none";
                 })
                 .catch(err => console.error("Failed to load JSON:", err));
         }
@@ -478,6 +481,8 @@
             document.querySelectorAll(".section").forEach(s => s.style.display = "none");
             document.getElementById(section.replace(/\s+/g, '')).style.display = "block";
             document.getElementById("sidebar").classList.remove("open");
+
+            document.getElementById("scoreSummary").style.display = "none";
         }
 
         function checkAnswer(section, idx, q, radio) {
@@ -511,17 +516,22 @@
             if (document.getElementById("scoreSummary").style.display === "block") showScore();
         }
 
+
         function showScore() {
             let total = 0, correct = 0, wrong = 0;
 
-            document.querySelectorAll(".question").forEach(q => {
-                if (q.closest("#AllQuestions") && !q.dataset.isExtra) return;
+            // Get currently visible section
+            const visibleSection = document.querySelector(".section[style*='display: block']");
+            if (!visibleSection) return;
+
+            // Count questions only inside this section
+            visibleSection.querySelectorAll(".question").forEach(q => {
                 total++;
                 if (q.dataset.status === "correct") correct++;
                 if (q.dataset.status === "wrong") wrong++;
             });
 
-            let s = document.getElementById("scoreSummary");
+            const s = document.getElementById("scoreSummary");
             s.style.display = "block";
             s.innerHTML = `
         Total: ${total}<br>
@@ -530,6 +540,7 @@
         Unanswered: ${total - correct - wrong}
     `;
         }
+
 
         document.getElementById("menuBtn").onclick = () => {
             document.getElementById("sidebar").classList.toggle("open");
