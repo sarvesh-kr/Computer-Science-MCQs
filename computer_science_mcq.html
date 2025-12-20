@@ -270,6 +270,36 @@
             outline: none;
             box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.4);
         }
+
+
+        .home_btn {
+            display: block;
+            width: 100%;
+            padding: 10px 12px;
+            margin-top: 12px;
+            margin-bottom: 14px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s;
+        }
+
+        .home_btn:hover {
+            box-shadow: 0 6px 14px rgba(52, 152, 219, 0.35);
+            transform: translateY(-1px);
+            opacity: 0.95;
+        }
+
+        .home_btn:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 8px rgba(52, 152, 219, 0.3);
+        }
     </style>
 </head>
 
@@ -285,6 +315,7 @@
     <div id="main">
 
         <div id="sidebar">
+            <a href="/" class="home_btn">Home</a>
             <h3>Topics</h3>
             <div id="topicSelect-wrapper">
                 <div class="custom-select" id="topicDropdown">
@@ -359,7 +390,7 @@
                     extraQs = data.extra_qs || [];
                     delete data.extra_qs;
                     loadTopic();
-                    
+
                     document.getElementById("scoreSummary").style.display = "none";
                 })
                 .catch(err => console.error("Failed to load JSON:", err));
