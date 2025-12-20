@@ -1,0 +1,3010 @@
+{
+    "data": {
+        "OCT 2025": [
+            {
+                "id": "CA1025_001",
+                "question": "In October 2025, the RBI kept the repo rate unchanged at what level?",
+                "options": [
+                    "5.50%",
+                    "6.00%",
+                    "5.25%",
+                    "5.75%"
+                ],
+                "answer": 0,
+                "explanation": "In its October 2025 policy, the RBI maintained the repo rate at 5.50 %. This was part of its neutral stance to support stable growth. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+                "id": "CA1025_002",
+                "question": "Which event was held from October 7‑9, 2025 at the Jio World Convention Centre in Mumbai?",
+                "options": [
+                    "Global Fintech Fest 2025",
+                    "World Economic Forum South Asia",
+                    "India Digital Summit",
+                    "National Startup Summit"
+                ],
+                "answer": 0,
+                "explanation": "The 6th edition of Global Fintech Fest 2025 was held in Mumbai from October 7‑9 with global participation focusing on fintech and AI. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+                "id": "CA1025_003",
+                "question": "What was the theme of the Global Fintech Fest 2025?",
+                "options": [
+                    "Empowering Finance for a Better World Powered by AI",
+                    "Fintech for All",
+                    "Digital Payments Revolution",
+                    "Blockchain for Growth"
+                ],
+                "answer": 0,
+                "explanation": "The theme of GFF 2025 was ‘Empowering Finance for a Better World Powered by AI’. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+                "id": "CA1025_004",
+                "question": "Who delivered a keynote at the Global Fintech Fest 2025 in Mumbai?",
+                "options": [
+                    "Prime Minister Narendra Modi",
+                    "RBI Governor",
+                    "Finance Minister Sitharaman only",
+                    "World Bank President"
+                ],
+                "answer": 0,
+                "explanation": "Prime Minister Narendra Modi delivered a keynote address at GFF 2025. :contentReference[oaicite:4]{index=4}"
+            },
+            {
+                "id": "CA1025_005",
+                "question": "At GFF 2025, India launched which new financial system via GIFT City?",
+                "options": [
+                    "Foreign currency settlement system",
+                    "Central bank digital currency (CBDC)",
+                    "New stock exchange",
+                    "Gold trading platform"
+                ],
+                "answer": 0,
+                "explanation": "India launched a foreign currency settlement system at GIFT City to expedite forex transactions. :contentReference[oaicite:5]{index=5}"
+            },
+            {
+                "id": "CA1025_006",
+                "question": "In October 2025, the RBI revised India’s GDP growth forecast for FY 2025‑26 to approximately:",
+                "options": [
+                    "6.8%",
+                    "5.5%",
+                    "7.2%",
+                    "6.0%"
+                ],
+                "answer": 0,
+                "explanation": "RBI revised the GDP growth forecast for FY 2025‑26 to 6.8%. :contentReference[oaicite:6]{index=6}"
+            },
+            {
+                "id": "CA1025_007",
+                "question": "In RBI’s October 2025 policy, inflation forecast for FY 2025‑26 was projected at:",
+                "options": [
+                    "2.6%",
+                    "3.5%",
+                    "4.0%",
+                    "2.0%"
+                ],
+                "answer": 0,
+                "explanation": "The RBI lowered the projected CPI inflation forecast to 2.6% for FY 2025‑26. :contentReference[oaicite:7]{index=7}"
+            },
+            {
+                "id": "CA1025_008",
+                "question": "Which fintech innovation was highlighted as a major platform at GFF 2025?",
+                "options": [
+                    "DigiTathya",
+                    "Bitcoin Exchange",
+                    "Stablecoin Network",
+                    "Robotic Advisors"
+                ],
+                "answer": 0,
+                "explanation": "DigiTathya, a platform to fight counterfeiting and strengthen commercial trust, was showcased at GFF 2025. :contentReference[oaicite:8]{index=8}"
+            },
+            {
+                "id": "CA1025_009",
+                "question": "RBI’s Monetary Policy Committee meets typically how many times a year?",
+                "options": [
+                    "At least four times",
+                    "Twice",
+                    "Six times",
+                    "Once"
+                ],
+                "answer": 0,
+                "explanation": "The Monetary Policy Committee meets at least four times a year to decide policy rates. :contentReference[oaicite:9]{index=9}"
+            },
+            {
+                "id": "CA1025_010",
+                "question": "Which organization co‑organizes the Global Fintech Fest alongside NPCI?",
+                "options": [
+                    "Payments Council of India (PCI)",
+                    "SEBI",
+                    "World Bank",
+                    "IMF"
+                ],
+                "answer": 0,
+                "explanation": "The Payments Council of India co‑organizes GFF along with NPCI and the Fintech Convergence Council. :contentReference[oaicite:10]{index=10}"
+            },
+            {
+                "id": "CA1025_011",
+                "question": "At GFF 2025, which country was the partner country alongside India?",
+                "options": [
+                    "United Kingdom",
+                    "United States",
+                    "Japan",
+                    "Germany"
+                ],
+                "answer": 0,
+                "explanation": "The United Kingdom partnered with India at GFF 2025, strengthening fintech cooperation. :contentReference[oaicite:11]{index=11}"
+            },
+            {
+                "id": "CA1025_012",
+                "question": "What key sector contributed nearly 55% to India’s GVA according to October 2025 reports?",
+                "options": [
+                    "Services sector",
+                    "Manufacturing sector",
+                    "Agriculture sector",
+                    "Mining sector"
+                ],
+                "answer": 0,
+                "explanation": "Reports showed services contributed nearly 55% to India’s GVA. :contentReference[oaicite:12]{index=12}"
+            },
+            {
+                "id": "CA1025_013",
+                "question": "Which annual current affairs event was observed with national conservation projects in October 2025?",
+                "options": [
+                    "Wildlife Week 2025",
+                    "World Environment Day",
+                    "Earth Hour",
+                    "National Tree Plantation Day"
+                ],
+                "answer": 0,
+                "explanation": "Wildlife Week 2025 featured new national conservation projects focused on endangered species. :contentReference[oaicite:13]{index=13}"
+            },
+            {
+                "id": "CA1025_014",
+                "question": "The International Civil Aviation Organization (ICAO) re‑elected India to which part in October 2025?",
+                "options": [
+                    "Part II of the Council",
+                    "Part I of the Council",
+                    "Executive Committee",
+                    "Board of Governors"
+                ],
+                "answer": 0,
+                "explanation": "India was re‑elected to Part II of the ICAO Council. :contentReference[oaicite:14]{index=14}"
+            },
+            {
+                "id": "CA1025_015",
+                "question": "Direct air services between India and which country were agreed to resume by late October 2025?",
+                "options": [
+                    "China",
+                    "Pakistan",
+                    "Bangladesh",
+                    "Nepal"
+                ],
+                "answer": 0,
+                "explanation": "India and China agreed to resume designated direct air services. :contentReference[oaicite:15]{index=15}"
+            },
+            {
+                "id": "CA1025_016",
+                "question": "Which national infrastructure initiative of Indian Railways was highlighted in October 2025?",
+                "options": [
+                    "India's first bullet train expected by August 2027",
+                    "New metro lines in Mumbai",
+                    "High‑speed rail in Delhi",
+                    "Electric trains on all routes"
+                ],
+                "answer": 0,
+                "explanation": "India’s first bullet train was projected to be operational by August 2027. :contentReference[oaicite:16]{index=16}"
+            },
+            {
+                "id": "CA1025_017",
+                "question": "RBI’s October 2025 policy noted India’s current account deficit was:",
+                "options": [
+                    "0.2% of GDP",
+                    "1.5% of GDP",
+                    "0.5% of GDP",
+                    "0.9% of GDP"
+                ],
+                "answer": 0,
+                "explanation": "India’s current account deficit narrowed to 0.2% of GDP in Q1 FY 2025‑26. :contentReference[oaicite:17]{index=17}"
+            },
+            {
+                "id": "CA1025_018",
+                "question": "Which Indian festival saw national celebration and observance one‑liners in October 2025?",
+                "options": [
+                    "World Egg Day",
+                    "International Yoga Day",
+                    "World Environment Day",
+                    "Labour Day"
+                ],
+                "answer": 0,
+                "explanation": "World Egg Day 2025 was observed with awareness on nutrition and health in October. :contentReference[oaicite:18]{index=18}"
+            },
+            {
+                "id": "CA1025_019",
+                "question": "Which national logistics and infrastructure initiative saw new project launches in October 2025?",
+                "options": [
+                    "PM GatiShakti – National Master Plan",
+                    "Smart Cities Mission",
+                    "Bharatmala Project",
+                    "Sagarmala Project"
+                ],
+                "answer": 0,
+                "explanation": "PM GatiShakti – National Master Plan saw new public platforms and district logistics plans launched. :contentReference[oaicite:19]{index=19}"
+            },
+            {
+                "id": "CA1025_020",
+                "question": "In October 2025, the Indian government inaugurated India’s first AI Centre of Excellence for Public Good in partnership with:",
+                "options": [
+                    "Google Cloud India",
+                    "Microsoft",
+                    "AWS",
+                    "IBM"
+                ],
+                "answer": 0,
+                "explanation": "The AI Centre of Excellence was launched with Google Cloud India. :contentReference[oaicite:20]{index=20}"
+            },
+            {
+                "id": "CA1025_021",
+                "question": "Which organization hosted the GFF 2025 along with the Payments Council of India?",
+                "options": [
+                    "National Payments Corporation of India (NPCI)",
+                    "SEBI",
+                    "World Bank",
+                    "IMF"
+                ],
+                "answer": 0,
+                "explanation": "NPCI co‑organized GFF 2025 along with the Payments Council of India. :contentReference[oaicite:21]{index=21}"
+            },
+            {
+                "id": "CA1025_022",
+                "question": "Which significant national milestone anniversary was celebrated in India on October 2, 2025?",
+                "options": [
+                    "RSS centenary celebrations",
+                    "Gandhi Jayanti centenary",
+                    "Indian National Congress centenary",
+                    "RBI centenary"
+                ],
+                "answer": 0,
+                "explanation": "The RSS celebrated its 100th anniversary on October 2, 2025. :contentReference[oaicite:22]{index=22}"
+            },
+            {
+                "id": "CA1025_023",
+                "question": "In October 2025, which national master plan initiative expanded its digital platform with geospatial data?",
+                "options": [
+                    "PM GatiShakti – UGI platform",
+                    "Smart Cities digital platform",
+                    "BIMSTEC connectivity platform",
+                    "UDAN regional air plan"
+                ],
+                "answer": 0,
+                "explanation": "PM GatiShakti’s UGI platform for geospatial data was launched to improve logistics. :contentReference[oaicite:23]{index=23}"
+            },
+            {
+                "id": "CA1025_024",
+                "question": "Which global aviation body reaffirmed India’s role after its re‑election to Part II of its council?",
+                "options": [
+                    "ICAO",
+                    "IATA",
+                    "FAA",
+                    "EASA"
+                ],
+                "answer": 0,
+                "explanation": "India was re‑elected to Part II of the ICAO Council. :contentReference[oaicite:24]{index=24}"
+            },
+            {
+                "id": "CA1025_025",
+                "question": "Which national festival is celebrated around October and emphasized in current affairs summaries for October 2025?",
+                "options": [
+                    "Navratri and Durga Puja",
+                    "Holi",
+                    "Diwali",
+                    "Republic Day"
+                ],
+                "answer": 0,
+                "explanation": "Navratri and Durga Puja celebrations in October were highlighted in current affairs summaries. :contentReference[oaicite:25]{index=25}"
+            },
+            {
+                "id": "CA1025_026",
+                "question": "Which area was prioritized by RBI in October 2025 policy for regulatory support to NBFCs and credit markets?",
+                "options": [
+                    "Infrastructure financing support",
+                    "Increase in CRR",
+                    "Ban on new bank licenses",
+                    "Reduction of SLR"
+                ],
+                "answer": 0,
+                "explanation": "RBI’s October policy included measures to support infra financing and NBFC credit markets. :contentReference[oaicite:26]{index=26}"
+            },
+            {
+                "id": "CA1025_027",
+                "question": "According to RBI’s October 2025 report, Q1 FY 2025‑26 GDP growth was around:",
+                "options": [
+                    "7.8%",
+                    "6.5%",
+                    "5.9%",
+                    "8.5%"
+                ],
+                "answer": 0,
+                "explanation": "India’s real GDP grew about 7.8% in Q1 FY 2025‑26. :contentReference[oaicite:27]{index=27}"
+            },
+            {
+                "id": "CA1025_028",
+                "question": "Which Indian festival coincided with World Egg Day in early October 2025 raising nutrition awareness?",
+                "options": [
+                    "World Egg Day",
+                    "World Milk Day",
+                    "World Food Day",
+                    "National Nutrition Week"
+                ],
+                "answer": 0,
+                "explanation": "World Egg Day 2025 was observed with campaigns on nutrition and health. :contentReference[oaicite:28]{index=28}"
+            },
+            {
+                "id": "CA1025_029",
+                "question": "Which ecosystem received traffic advisory due to the Global Fintech Fest 2025 in BKC, Mumbai?",
+                "options": [
+                    "Transport infrastructure around BKC",
+                    "Airport operations",
+                    "Railway network disruptions",
+                    "Sea port delays"
+                ],
+                "answer": 0,
+                "explanation": "BKC congestion prompted traffic advisories during GFF 2025 due to attendee influx. :contentReference[oaicite:29]{index=29}"
+            },
+            {
+                "id": "CA1025_030",
+                "question": "As of October 2025, India accounts for approximately what share of the world’s real‑time digital transactions?",
+                "options": [
+                    "Half of the world’s total",
+                    "One quarter",
+                    "10%",
+                    "75%"
+                ],
+                "answer": 0,
+                "explanation": "India accounts for about half of global real‑time digital transactions as highlighted at GFF 2025. :contentReference[oaicite:30]{index=30}"
+            },
+            {
+                "id": "CA1025_031",
+                "question": "Which global aviation agreement reaffirmed India’s position in October 2025?",
+                "options": [
+                    "Re‑election to ICAO Council Part II",
+                    "Paris Air Transport Agreement",
+                    "Geneva Accord",
+                    "IATA Partnership"
+                ],
+                "answer": 0,
+                "explanation": "India was re‑elected to Part II of the ICAO Council in October 2025. :contentReference[oaicite:31]{index=31}"
+            },
+            {
+                "id": "CA1025_032",
+                "question": "Which national month‑wide observance was included in current affairs summaries for October 2025 relating to wildlife conservation?",
+                "options": [
+                    "Wildlife Week",
+                    "World Wildlife Day",
+                    "Earth Day",
+                    "Forest Conservation Week"
+                ],
+                "answer": 0,
+                "explanation": "Wildlife Week was observed with major conservation projects launched. :contentReference[oaicite:32]{index=32}"
+            },
+            {
+                "id": "CA1025_033",
+                "question": "Which significant geopolitical summit occurred in late October 2025 focusing on regional cooperation?",
+                "options": [
+                    "47th ASEAN Summit",
+                    "G7 Summit",
+                    "BRICS Summit",
+                    "UNGA Session"
+                ],
+                "answer": 0,
+                "explanation": "The 47th ASEAN Summit was held from October 26‑28 2025 focusing on inclusivity and sustainability. :contentReference[oaicite:33]{index=33}"
+            },
+            {
+                "id": "CA1025_034",
+                "question": "Which area was emphasised by Finance Minister Sitharaman at the Global Fintech Fest 2025?",
+                "options": [
+                    "Technology for public good",
+                    "Crypto adoption only",
+                    "Reduction in taxes",
+                    "Labor reforms"
+                ],
+                "answer": 0,
+                "explanation": "FM emphasised using technology for public good and criticised weaponisation of tech. :contentReference[oaicite:34]{index=34}"
+            },
+            {
+                "id": "CA1025_035",
+                "question": "Which Indian leader attended the RSS centenary celebrations in October 2025?",
+                "options": [
+                    "Former President Ram Nath Kovind",
+                    "Current President only",
+                    "Prime Minister only",
+                    "Finance Minister only"
+                ],
+                "answer": 0,
+                "explanation": "Former President Ram Nath Kovind was the chief guest at the RSS centenary. :contentReference[oaicite:35]{index=35}"
+            },
+            {
+                "id": "CA1025_036",
+                "question": "Which global technology partnership was highlighted at GFF 2025?",
+                "options": [
+                    "India‑UK fintech partnership",
+                    "India‑USA space alliance",
+                    "India‑EU trade pact",
+                    "India‑China digital agreement"
+                ],
+                "answer": 0,
+                "explanation": "India‑UK fintech partnership was a key highlight with UK as partner country. :contentReference[oaicite:36]{index=36}"
+            },
+            {
+                "id": "CA1025_037",
+                "question": "Which institution’s governor indicated that India’s interest rates may remain low for an extended period?",
+                "options": [
+                    "Reserve Bank of India",
+                    "World Bank",
+                    "IMF",
+                    "United States Fed"
+                ],
+                "answer": 0,
+                "explanation": "The RBI Governor signaled that India’s rates may remain low due to stable growth and inflation. :contentReference[oaicite:37]{index=37}"
+            },
+            {
+                "id": "CA1025_038",
+                "question": "What did the RBI forecast about CPI inflation in its October 2025 monetary report?",
+                "options": [
+                    "2.6% forecast",
+                    "4.5% forecast",
+                    "3.8% forecast",
+                    "1.5% forecast"
+                ],
+                "answer": 0,
+                "explanation": "The RBI forecasted a CPI inflation of 2.6% for FY 2025‑26. :contentReference[oaicite:38]{index=38}"
+            },
+            {
+                "id": "CA1025_039",
+                "question": "Which India national logistics project uses geospatial UGI platform launched in October 2025?",
+                "options": [
+                    "PM GatiShakti",
+                    "UDAN",
+                    "Sagarmala",
+                    "Smart Cities Mission"
+                ],
+                "answer": 0,
+                "explanation": "PM GatiShakti’s UGI platform for geospatial data was launched as part of infrastructure enhancements. :contentReference[oaicite:39]{index=39}"
+            },
+            {
+                "id": "CA1025_040",
+                "question": "Which sector saw increased equity inflows according to RBI FLA Census for 2024‑25 released in October 2025?",
+                "options": [
+                    "Manufacturing",
+                    "Agriculture",
+                    "IT only",
+                    "Energy only"
+                ],
+                "answer": 0,
+                "explanation": "Manufacturing led with 48.4% of total FDI equity inflows as per RBI’s FLA Census. :contentReference[oaicite:40]{index=40}"
+            },
+            {
+                "id": "CA1025_041",
+                "question": "Which unit was chosen by RBI to handle U.S. dollar clearances in the new GIFT City settlement system?",
+                "options": [
+                    "Standard Chartered India",
+                    "State Bank of India",
+                    "ICICI Bank",
+                    "HDFC Bank"
+                ],
+                "answer": 0,
+                "explanation": "Standard Chartered’s India unit was selected for handling U.S. dollar clearances. :contentReference[oaicite:41]{index=41}"
+            },
+            {
+                "id": "CA1025_042",
+                "question": "Which sector’s performance was highlighted by NITI Aayog data released in October 2025?",
+                "options": [
+                    "Services sector contribution to GVA",
+                    "Agricultural growth only",
+                    "Mining expansion",
+                    "Construction slump"
+                ],
+                "answer": 0,
+                "explanation": "NITI Aayog data highlighted services sector’s major contribution to India’s GVA. :contentReference[oaicite:42]{index=42}"
+            },
+            {
+                "id": "CA1025_043",
+                "question": "Which large global summit on inclusivity and sustainability occurred in late October 2025?",
+                "options": [
+                    "47th ASEAN Summit",
+                    "G20 Summit",
+                    "BRICS Summit",
+                    "UN Climate Summit"
+                ],
+                "answer": 0,
+                "explanation": "The 47th ASEAN Summit was held from October 26‑28 2025 with focus on inclusivity and sustainability. :contentReference[oaicite:43]{index=43}"
+            },
+            {
+                "id": "CA1025_044",
+                "question": "World Egg Day 2025 falls on which month in India?",
+                "options": [
+                    "October",
+                    "November",
+                    "September",
+                    "August"
+                ],
+                "answer": 0,
+                "explanation": "World Egg Day was celebrated in October 2025 with awareness campaigns. :contentReference[oaicite:44]{index=44}"
+            },
+            {
+                "id": "CA1025_045",
+                "question": "India’s current account deficit in Q1 FY 2025‑26 was reported to have:",
+                "options": [
+                    "Narrowed significantly",
+                    "Widened sharply",
+                    "Stayed unchanged",
+                    "Turned surplus"
+                ],
+                "answer": 0,
+                "explanation": "India’s current account deficit narrowed to around 0.2% of GDP in Q1. :contentReference[oaicite:45]{index=45}"
+            },
+            {
+                "id": "CA1025_046",
+                "question": "Which technology was a key focus at GFF 2025 to drive smarter finance?",
+                "options": [
+                    "Artificial Intelligence (AI)",
+                    "Blockchain only",
+                    "AR/VR only",
+                    "3D printing"
+                ],
+                "answer": 0,
+                "explanation": "AI was a central theme at GFF 2025 for inclusive, innovative finance. :contentReference[oaicite:46]{index=46}"
+            },
+            {
+                "id": "CA1025_047",
+                "question": "Which international civil aviation event was a highlight for India in October 2025?",
+                "options": [
+                    "ICAO re‑election",
+                    "IATA conference",
+                    "FAA workshop",
+                    "EASA meeting"
+                ],
+                "answer": 0,
+                "explanation": "India’s re‑election to Part II of ICAO Council was a significant diplomatic success. :contentReference[oaicite:47]{index=47}"
+            },
+            {
+                "id": "CA1025_048",
+                "question": "Which national policy platform’s district master plans were prepared for aspirational districts as of October 2025?",
+                "options": [
+                    "PM GatiShakti",
+                    "Ayushman Bharat",
+                    "Smart Cities Mission",
+                    "Ujjwala Yojana"
+                ],
+                "answer": 0,
+                "explanation": "PM GatiShakti district master plans were prepared to boost local connectivity. :contentReference[oaicite:48]{index=48}"
+            },
+            {
+                "id": "CA1025_049",
+                "question": "Which digital innovation was showcased internationally at GFF 2025 for trust and transparency?",
+                "options": [
+                    "DigiTathya platform",
+                    "Metaverse banking app",
+                    "Crypto exchange",
+                    "NFT marketplace"
+                ],
+                "answer": 0,
+                "explanation": "DigiTathya showcased tamper‑proof QR tech for product trust. :contentReference[oaicite:49]{index=49}"
+            },
+            {
+                "id": "CA1025_050",
+                "question": "Which annual fest fostered global fintech dialogue in Mumbai during October 2025?",
+                "options": [
+                    "Global Fintech Fest",
+                    "World Economic Forum",
+                    "Tech Innovation Summit",
+                    "National Startup Expo"
+                ],
+                "answer": 0,
+                "explanation": "Global Fintech Fest is the largest fintech gathering with global participation. :contentReference[oaicite:50]{index=50}"
+            },
+            {
+                "id": "CA1025_051",
+                "question": "What unique astronomical event involving near‑Earth asteroid 2025 TF occurred on 1 October 2025?",
+                "options": [
+                    "It flew about 428 km above Earth above Antarctica",
+                    "It collided with a satellite",
+                    "It crashed into the Moon",
+                    "It was captured into orbit"
+                ],
+                "answer": 0,
+                "explanation": "The near‑Earth asteroid 2025 TF flew approximately 428 km above Antarctica, one of the closest recorded approaches.:contentReference[oaicite:1]{index=1}"
+            },
+            {
+                "id": "CA1025_052",
+                "question": "Which infrastructure was inaugurated in India on 8 October 2025 by the Prime Minister?",
+                "options": [
+                    "Navi Mumbai International Airport",
+                    "Chhatrapati Sambhajinagar–Mumbai Expressway",
+                    "New Delhi–Amritsar Highway",
+                    "Kolkata Metro Line 3"
+                ],
+                "answer": 0,
+                "explanation": "Navi Mumbai International Airport was inaugurated on 8 October 2025.:contentReference[oaicite:2]{index=2}"
+            },
+            {
+                "id": "CA1025_053",
+                "question": "What tragic event occurred in Darjeeling District, West Bengal in early October 2025?",
+                "options": [
+                    "Landslides killed at least 24 people",
+                    "Train derailment",
+                    "Forest fire",
+                    "Bridge collapse"
+                ],
+                "answer": 0,
+                "explanation": "At least 24 people were reported killed due to landslides in Darjeeling District.:contentReference[oaicite:3]{index=3}"
+            },
+            {
+                "id": "CA1025_054",
+                "question": "Where was India’s first commercial electric truck battery swapping and charging station inaugurated in October 2025?",
+                "options": [
+                    "Sonipat, Haryana",
+                    "Gurugram, Haryana",
+                    "Faridabad, Haryana",
+                    "Noida, UP"
+                ],
+                "answer": 0,
+                "explanation": "The first electric truck battery swapping and charging station was inaugurated at Sonipat, Haryana.:contentReference[oaicite:4]{index=4}"
+            },
+            {
+                "id": "CA1025_055",
+                "question": "What geological event occurred at Baratang in the Andaman and Nicobar Islands in October 2025?",
+                "options": [
+                    "Mud volcano erupted after 20 years",
+                    "Earthquake of magnitude 6 struck",
+                    "Tsunami warning was issued",
+                    "Landslide blocked road access"
+                ],
+                "answer": 0,
+                "explanation": "The Baratang mud volcano erupted after over two decades of dormancy.:contentReference[oaicite:5]{index=5}"
+            },
+            {
+                "id": "CA1025_056",
+                "question": "Which global summit on urban issues was highlighted in October 2025 with the theme ‘Urban Crisis Response’?",
+                "options": [
+                    "World Habitat Day",
+                    "COP30",
+                    "Water Summit",
+                    "Sustainable Cities Summit"
+                ],
+                "answer": 0,
+                "explanation": "World Habitat Day was observed on 6 October 2025 with focus on urban crisis response.:contentReference[oaicite:6]{index=6}"
+            },
+            {
+                "id": "CA1025_057",
+                "question": "Which famous Indian religious festival concluded in late October 2025 with large domestic observances?",
+                "options": [
+                    "Chhath Puja",
+                    "Diwali",
+                    "Holi",
+                    "Raksha Bandhan"
+                ],
+                "answer": 0,
+                "explanation": "Chhath Puja was widely celebrated in late October 2025.:contentReference[oaicite:7]{index=7}"
+            },
+            {
+                "id": "CA1025_058",
+                "question": "Which significant railway station in Maharashtra was renamed officially in October 2025?",
+                "options": [
+                    "Aurangabad to Chhatrapati Sambhajinagar",
+                    "Pune to Maharaja Bhonsle",
+                    "Nagpur to Vidarbha Central",
+                    "Mumbai Central to Gateway Station"
+                ],
+                "answer": 0,
+                "explanation": "Aurangabad Station was renamed Chhatrapati Sambhajinagar Station.:contentReference[oaicite:8]{index=8}"
+            },
+            {
+                "id": "CA1025_059",
+                "question": "Which ongoing nationwide awareness week started on 27 October 2025?",
+                "options": [
+                    "Vigilance Awareness Week",
+                    "World Health Week",
+                    "Road Safety Week",
+                    "Digital Literacy Week"
+                ],
+                "answer": 0,
+                "explanation": "Vigilance Awareness Week began under the theme ‘Vigilance – Our Shared Responsibility’.:contentReference[oaicite:9]{index=9}"
+            },
+            {
+                "id": "CA1025_060",
+                "question": "India and Australia signed a bilateral security agreement in October 2025 for cooperation in submarine rescue and staff talks. Which year was this announced?",
+                "options": [
+                    "2025",
+                    "2024",
+                    "2023",
+                    "2026"
+                ],
+                "answer": 0,
+                "explanation": "India and Australia signed a bilateral security deal in October 2025 for staff talks and submarine rescue cooperation.:contentReference[oaicite:10]{index=10}"
+            },
+            {
+                "id": "CA1025_061",
+                "question": "Which India‑EFTA pact came into force on 1 October 2025, boosting India’s trade ties?",
+                "options": [
+                    "India‑EFTA Free Trade Agreement",
+                    "India‑EU Investment Pact",
+                    "India‑US Trade Framework",
+                    "India‑ASEAN Economic Partnership"
+                ],
+                "answer": 0,
+                "explanation": "The India‑EFTA Free Trade Agreement came into force on 1 October 2025.:contentReference[oaicite:11]{index=11}"
+            },
+            {
+                "id": "CA1025_062",
+                "question": "Who was appointed RBI Deputy Governor for three years from 9 October 2025?",
+                "options": [
+                    "Shirish Chandra Murmu",
+                    "Sanjay Malhotra",
+                    "Ashish Chauhan",
+                    "Nandan Nilekani"
+                ],
+                "answer": 0,
+                "explanation": "Shirish Chandra Murmu was appointed as RBI Deputy Governor with effect from 9 October 2025.:contentReference[oaicite:12]{index=12}"
+            },
+            {
+                "id": "CA1025_063",
+                "question": "Which regulatory body was set up in October 2025, chaired by the RBI Governor?",
+                "options": [
+                    "Payments Regulatory Board",
+                    "Securities Regulatory Authority",
+                    "Digital Currencies Board",
+                    "Credit Rating Council"
+                ],
+                "answer": 0,
+                "explanation": "The Payments Regulatory Board was constituted and chaired by the RBI Governor.:contentReference[oaicite:13]{index=13}"
+            },
+            {
+                "id": "CA1025_064",
+                "question": "From 1 October 2025, RBI permitted working capital loans against which collateral for manufacturers?",
+                "options": [
+                    "Gold as raw material",
+                    "Real estate",
+                    "Digital assets only",
+                    "Vehicle titles"
+                ],
+                "answer": 0,
+                "explanation": "RBI allowed working capital loans against gold used as raw material from 1 October 2025.:contentReference[oaicite:14]{index=14}"
+            },
+            {
+                "id": "CA1025_065",
+                "question": "Which company posted a net profit of ₹4,811 crore in FY25, up around 19.5%?",
+                "options": [
+                    "SIDBI",
+                    "RBI itself",
+                    "SBI",
+                    "LIC"
+                ],
+                "answer": 0,
+                "explanation": "SIDBI reported a net profit of ₹4,811 crore, up about 19.5% in FY25.:contentReference[oaicite:15]{index=15}"
+            },
+            {
+                "id": "CA1025_066",
+                "question": "Which Indian industrial output grew about 4% in August 2025?",
+                "options": [
+                    "Overall industrial output",
+                    "Agriculture GDP",
+                    "Export volume only",
+                    "Service sector output"
+                ],
+                "answer": 0,
+                "explanation": "India’s industrial output grew by about 4% in August 2025.:contentReference[oaicite:16]{index=16}"
+            },
+            {
+                "id": "CA1025_067",
+                "question": "Which organization pledged USD 100 billion investment over 15 years under TEPA with India by Oct 2025?",
+                "options": [
+                    "EFTA",
+                    "EU",
+                    "ASEAN",
+                    "USA"
+                ],
+                "answer": 0,
+                "explanation": "EFTA pledged USD 100 billion investments over the next 15 years under TEPA.:contentReference[oaicite:17]{index=17}"
+            },
+            {
+                "id": "CA1025_068",
+                "question": "GST collections for September 2025 were approximately:",
+                "options": [
+                    "₹1.89 lakh crore",
+                    "₹1.50 lakh crore",
+                    "₹2.00 lakh crore",
+                    "₹1.70 lakh crore"
+                ],
+                "answer": 0,
+                "explanation": "GST collections for September 2025 were ₹1.89 lakh crore, an increase of 9.1% YoY.:contentReference[oaicite:18]{index=18}"
+            },
+            {
+                "id": "CA1025_069",
+                "question": "OpenAI reached what valuation after a $6.6 billion share sale to SoftBank as of October 2025?",
+                "options": [
+                    "$500 billion",
+                    "$250 billion",
+                    "$100 billion",
+                    "$750 billion"
+                ],
+                "answer": 0,
+                "explanation": "OpenAI’s valuation reached about $500 billion after a share sale to SoftBank.:contentReference[oaicite:19]{index=19}"
+            },
+            {
+                "id": "CA1025_070",
+                "question": "Which major automotive company’s MD & CEO appointment was effective from 1 October 2025?",
+                "options": [
+                    "Shailesh Chandra at Tata Motors",
+                    "Anand Mahindra at Mahindra & Mahindra",
+                    "Sandeep Singh at Maruti Suzuki",
+                    "Rajiv Batra at Hyundai India"
+                ],
+                "answer": 0,
+                "explanation": "Shailesh Chandra was appointed MD & CEO of Tata Motors from 1 October 2025.:contentReference[oaicite:20]{index=20}"
+            },
+            {
+                "id": "CA1025_071",
+                "question": "The Asia Pacific Cities Summit 2025 was held for the first time in:",
+                "options": [
+                    "Dubai",
+                    "Singapore",
+                    "Tokyo",
+                    "Seoul"
+                ],
+                "answer": 0,
+                "explanation": "The Asia Pacific Cities Summit 2025 was held in Expo City Dubai.:contentReference[oaicite:21]{index=21}"
+            },
+            {
+                "id": "CA1025_072",
+                "question": "BPCL signed a ₹500 crore MoU with which authority for LNG bunkering facilities?",
+                "options": [
+                    "Cochin Port Authority",
+                    "Mumbai Port Trust",
+                    "Chennai Port Authority",
+                    "Paradeep Port Trust"
+                ],
+                "answer": 0,
+                "explanation": "BPCL signed an MoU with Cochin Port Authority for LNG bunkering.:contentReference[oaicite:22]{index=22}"
+            },
+            {
+                "id": "CA1025_073",
+                "question": "Which vessel completed its Indo‑Mauritian hydrographic mission in October 2025?",
+                "options": [
+                    "INS Sutlej",
+                    "INS Vikrant",
+                    "INS Satpura",
+                    "INS Kolkata"
+                ],
+                "answer": 0,
+                "explanation": "INS Sutlej completed its Indo‑Mauritian hydrographic mission by late October 2025.:contentReference[oaicite:23]{index=23}"
+            },
+            {
+                "id": "CA1025_074",
+                "question": "Which exercise did the Indian Air Force participate in outside NATO space in October 2025?",
+                "options": [
+                    "Ocean Sky 2025",
+                    "Red Flag",
+                    "Thunderbolt",
+                    "Eagle Response"
+                ],
+                "answer": 0,
+                "explanation": "India participated in Ocean Sky 2025, becoming the first non‑NATO participant.:contentReference[oaicite:24]{index=24}"
+            },
+            {
+                "id": "CA1025_075",
+                "question": "Which major tri‑service military exercise began on 30 October 2025?",
+                "options": [
+                    "Tri‑Services Exercise Trishul",
+                    "Exercise Shakti",
+                    "Exercise Vajra",
+                    "Exercise Indra"
+                ],
+                "answer": 0,
+                "explanation": "Tri‑Services Exercise Trishul began in Gujarat and Rajasthan.:contentReference[oaicite:25]{index=25}"
+            },
+            {
+                "id": "CA1025_076",
+                "question": "The digital Census initiative launched in October 2025 was noted for:",
+                "options": [
+                    "Mobile‑based real‑time data collection",
+                    "Only paper‑based enumeration",
+                    "Satellite imaging only",
+                    "Remote sensing without field visit"
+                ],
+                "answer": 0,
+                "explanation": "The 2025 digital Census used mobile data collection for real‑time monitoring.:contentReference[oaicite:26]{index=26}"
+            },
+            {
+                "id": "CA1025_077",
+                "question": "Swachh Bharat Mission 3.0 launched in October 2025 focused on:",
+                "options": [
+                    "Zero‑waste cities and rural waste‑to‑energy projects",
+                    "Plastic prohibition only",
+                    "Tree plantation only",
+                    "River cleaning only"
+                ],
+                "answer": 0,
+                "explanation": "Swachh Bharat 3.0 emphasized zero‑waste cities and waste‑to‑energy.:contentReference[oaicite:27]{index=27}"
+            },
+            {
+                "id": "CA1025_078",
+                "question": "India‑UK Green Partnership signed in October 2025 focused on cooperation in:",
+                "options": [
+                    "Renewable energy projects",
+                    "Defense procurement only",
+                    "Automobile trade",
+                    "Tourism"
+                ],
+                "answer": 0,
+                "explanation": "The India‑UK Green Partnership emphasised collaboration in solar and wind energy.:contentReference[oaicite:28]{index=28}"
+            },
+            {
+                "id": "CA1025_079",
+                "question": "A DRDO hypersonic missile prototype test in October 2025 marked a leap in:",
+                "options": [
+                    "Strategic defence technology",
+                    "Agriculture productivity",
+                    "Space exploration",
+                    "Financial reforms"
+                ],
+                "answer": 0,
+                "explanation": "A hypersonic missile prototype was successfully tested by DRDO.:contentReference[oaicite:29]{index=29}"
+            },
+            {
+                "id": "CA1025_080",
+                "question": "Which naval partnership agreement signed on 28 October 2025 is worth ₹33,000 crore?",
+                "options": [
+                    "MDL–Swan Defence partnership",
+                    "India–US Naval pact",
+                    "France–India Marine deal",
+                    "Russia–India Aircraft deal"
+                ],
+                "answer": 0,
+                "explanation": "MDL and Swan Defence signed a partnership worth ₹33,000 crore.:contentReference[oaicite:30]{index=30}"
+            },
+            {
+                "id": "CA1025_081",
+                "question": "Which city’s treated‑water pipeline foundation was laid in October 2025 to address a long‑standing civic gap?",
+                "options": [
+                    "Delhi’s Dwarka area",
+                    "Mumbai’s Borivali",
+                    "Kolkata’s Salt Lake",
+                    "Chennai’s Guindy"
+                ],
+                "answer": 0,
+                "explanation": "Delhi laid the foundation for a treated water pipeline in Dwarka to address infrastructure gaps.:contentReference[oaicite:31]{index=31}"
+            },
+            {
+                "id": "CA1025_082",
+                "question": "Which country did India upgrade its technical mission with in October 2025 to embassy‑level status?",
+                "options": [
+                    "Afghanistan",
+                    "Nepal",
+                    "Bangladesh",
+                    "Sri Lanka"
+                ],
+                "answer": 0,
+                "explanation": "India upgraded its mission in Kabul to embassy‑level status.:contentReference[oaicite:32]{index=32}"
+            },
+            {
+                "id": "CA1025_083",
+                "question": "Which policy announcement related to cheque processing was rolled out from October 2025?",
+                "options": [
+                    "Continuous clearing system with realisation settlement",
+                    "Return to manual cheque clearing",
+                    "Ban on cheques above ₹1 lakh",
+                    "Free cheque books for all users"
+                ],
+                "answer": 0,
+                "explanation": "Cheques were moved to a continuous clearing system with settlement upon realisation.:contentReference[oaicite:33]{index=33}"
+            },
+            {
+                "id": "CA1025_084",
+                "question": "Which demographic milestone of India’s postal system was observed in National Current Affairs October 2025?",
+                "options": [
+                    "National Post Day",
+                    "Postal Union Day",
+                    "World Post Day",
+                    "Postal Technology Day"
+                ],
+                "answer": 0,
+                "explanation": "National Post Day was observed as part of India Post’s heritage and role.:contentReference[oaicite:34]{index=34}"
+            },
+            {
+                "id": "CA1025_085",
+                "question": "Which environmental day was observed alongside urban policy discussions in October 2025?",
+                "options": [
+                    "World Habitat Day",
+                    "International Biodiversity Day",
+                    "Earth Day",
+                    "Ocean Day"
+                ],
+                "answer": 0,
+                "explanation": "World Habitat Day was observed in October 2025 addressing urban crisis response.:contentReference[oaicite:35]{index=35}"
+            },
+            {
+                "id": "CA1025_086",
+                "question": "Which defence tech factory participated in joint naval exercise in October 2025?",
+                "options": [
+                    "INS Vishakhapatnam",
+                    "Aircraft Carrier INS Vikrant",
+                    "Submarine INS Kalvari",
+                    "Frigate INS Teg"
+                ],
+                "answer": 0,
+                "explanation": "INS Vishakhapatnam joined a joint naval exercise with France and Australia.:contentReference[oaicite:36]{index=36}"
+            },
+            {
+                "id": "CA1025_087",
+                "question": "What was a key inland economic statistic noted in October 2025 about foreign portfolio inflows?",
+                "options": [
+                    "Strong FPI inflows supported bond markets",
+                    "Outflows dominated equity markets",
+                    "No FPI activity",
+                    "Decline in FPI preferences"
+                ],
+                "answer": 0,
+                "explanation": "FPI inflows continued strongly, bringing in significant foreign investment into Indian debt markets.:contentReference[oaicite:37]{index=37}"
+            },
+            {
+                "id": "CA1025_088",
+                "question": "By the end of October 2025, the Indian rupee was reported to be near its all‑time low against which currency?",
+                "options": [
+                    "U.S. dollar",
+                    "Euro",
+                    "Yen",
+                    "Pound"
+                ],
+                "answer": 0,
+                "explanation": "The rupee was near an all‑time low against the U.S. dollar.:contentReference[oaicite:38]{index=38}"
+            },
+            {
+                "id": "CA1025_089",
+                "question": "The RBI was expected to begin what market operation next quarter to balance liquidity?",
+                "options": [
+                    "Open Market Operations (OMO)",
+                    "Increase CRR",
+                    "Raise SLR",
+                    "Ban Forex swaps"
+                ],
+                "answer": 0,
+                "explanation": "The RBI was expected to begin OMO purchases to balance liquidity.:contentReference[oaicite:39]{index=39}"
+            },
+            {
+                "id": "CA1025_090",
+                "question": "What key real estate policy expectation surfaced after the October 2025 MPC results?",
+                "options": [
+                    "Stable rate supports homebuyer sentiment",
+                    "New property tax imposed",
+                    "Ban on investment properties",
+                    "New REIT regulation rolled back"
+                ],
+                "answer": 0,
+                "explanation": "Stable rates supported buyer sentiment and planning.:contentReference[oaicite:40]{index=40}"
+            },
+            {
+                "id": "CA1025_091",
+                "question": "Which mountain safety alert was issued by IMD in October 2025 due to weather conditions?",
+                "options": [
+                    "Heavy rainfall and cyclone alerts in southern states",
+                    "Avalanche risk in Himalayas",
+                    "Sandstorm in Rajasthan",
+                    "Fog advisory in Punjab"
+                ],
+                "answer": 0,
+                "explanation": "Cyclone and heavy rainfall alerts were issued in southern states by the IMD.:contentReference[oaicite:41]{index=41}"
+            },
+            {
+                "id": "CA1025_092",
+                "question": "Which African country held its general election between 9–11 October 2025?",
+                "options": [
+                    "Seychelles",
+                    "Kenya",
+                    "Nigeria",
+                    "Egypt"
+                ],
+                "answer": 0,
+                "explanation": "The Seychelles held general elections on 9–11 October 2025.:contentReference[oaicite:42]{index=42}"
+            },
+            {
+                "id": "CA1025_093",
+                "question": "Which European monarchy transition took place in early October 2025?",
+                "options": [
+                    "Luxembourg’s Grand Duke abdicated",
+                    "Sweden’s king abdicated",
+                    "Spain’s monarch passed away",
+                    "Belgium’s king stepped down"
+                ],
+                "answer": 0,
+                "explanation": "The Grand Duke of Luxembourg abdicated in favor of his son.:contentReference[oaicite:43]{index=43}"
+            },
+            {
+                "id": "CA1025_094",
+                "question": "Which Middle Eastern conflict development occurred on 9 October 2025?",
+                "options": [
+                    "Israel and Hamas agreed on first phase of Gaza peace deal",
+                    "New ceasefire in Syria",
+                    "Iran–Iraq border agreement",
+                    "Saudi–UAE alliance treaty"
+                ],
+                "answer": 0,
+                "explanation": "A Gaza peace deal’s first phase was agreed between Israel and Hamas.:contentReference[oaicite:44]{index=44}"
+            },
+            {
+                "id": "CA1025_095",
+                "question": "Who became the new President of Peru after the October 2025 congressional impeachment?",
+                "options": [
+                    "New President was elected by Peruvian Congress",
+                    "Previous Vice President continued",
+                    "Military appointed leader",
+                    "No new appointment"
+                ],
+                "answer": 0,
+                "explanation": "Peru’s President Dina Boluarte was impeached, and a new president was chosen by Congress.:contentReference[oaicite:45]{index=45}"
+            },
+            {
+                "id": "CA1025_096",
+                "question": "What was significant about India’s Antarctica mission in October 2025?",
+                "options": [
+                    "First direct air cargo mission to Antarctica",
+                    "Discovery of new species",
+                    "Permanent settlement started",
+                    "Space launch from Antarctica"
+                ],
+                "answer": 0,
+                "explanation": "India’s DROMLAN completed its first direct air cargo mission to Antarctica.:contentReference[oaicite:46]{index=46}"
+            },
+            {
+                "id": "CA1025_097",
+                "question": "Which Indian state court ordered a probe on missing gold from Sabarimala in October 2025?",
+                "options": [
+                    "Kerala High Court",
+                    "Madras High Court",
+                    "Bombay High Court",
+                    "Delhi High Court"
+                ],
+                "answer": 0,
+                "explanation": "The Kerala High Court ordered a probe into missing gold from Sabarimala.:contentReference[oaicite:47]{index=47}"
+            },
+            {
+                "id": "CA1025_098",
+                "question": "What happened after unrest at a school in Palluruthy in October 2025?",
+                "options": [
+                    "Police protection ordered for the school",
+                    "School permanently closed",
+                    "Protesters arrested en masse",
+                    "Government took over school management"
+                ],
+                "answer": 0,
+                "explanation": "Police protection was ordered for the CBSE school after unrest.:contentReference[oaicite:48]{index=48}"
+            },
+            {
+                "id": "CA1025_099",
+                "question": "Which medical milestone was achieved by the Government Medical College, Kottayam in October 2025?",
+                "options": [
+                    "Performed simultaneous multiple organ transplants",
+                    "Cured a rare disease first time",
+                    "Developed vaccine",
+                    "Opened new medical campus"
+                ],
+                "answer": 0,
+                "explanation": "The college performed simultaneous major organ transplants.:contentReference[oaicite:49]{index=49}"
+            },
+            {
+                "id": "CA1025_100",
+                "question": "Which international space event involving China took place in October 2025?",
+                "options": [
+                    "China added a new module to its space station",
+                    "China conducted a moon landing",
+                    "China launched its first Mars probe",
+                    "China hosted an asteroid mining conference"
+                ],
+                "answer": 0,
+                "explanation": "China added a new module to its Tiangong Space Station.:contentReference[oaicite:50]{index=50}"
+            }
+        ],
+        "NOV 2025": [
+            {
+                "id": "CA1125_001",
+                "question": "On 2 November 2025, ISRO successfully launched which heavy communication satellite aboard the LVM3‑M5 rocket?",
+                "options": [
+                    "CMS‑03",
+                    "GSAT‑7C",
+                    "INSAT‑3DR",
+                    "GSAT‑11"
+                ],
+                "answer": 0,
+                "explanation": "ISRO successfully launched CMS‑03, India’s heaviest communication satellite (4410 kg) aboard the LVM3‑M5 rocket on 2 November 2025, marking a significant milestone in heavy satellite launches. :contentReference[oaicite:0]{index=0}"
+            },
+            {
+                "id": "CA1125_002",
+                "question": "Which major G20 summit was hosted on the African continent for the first time in November 2025?",
+                "options": [
+                    "2025 G20 Johannesburg Summit",
+                    "2025 G20 New Delhi Summit",
+                    "2025 G20 Tokyo Summit",
+                    "2025 G20 London Summit"
+                ],
+                "answer": 0,
+                "explanation": "The 20th G20 Summit was held in Johannesburg, South Africa on 22–23 November 2025, marking the first time the summit was hosted on the African continent. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+                "id": "CA1125_003",
+                "question": "During the 2025 G20 Summit, which motto guided the discussions?",
+                "options": [
+                    "Solidarity, Equality, Sustainability",
+                    "Growth, Stability, Prosperity",
+                    "Innovation, Inclusion, Action",
+                    "Peace, Progress, Partnership"
+                ],
+                "answer": 0,
+                "explanation": "The motto of the 2025 G20 Johannesburg Summit was 'Solidarity, Equality, Sustainability'. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+                "id": "CA1125_004",
+                "question": "What was the name of the tri‑service military exercise conducted by the Indian Armed Forces in early November 2025?",
+                "options": [
+                    "Exercise Trishul",
+                    "Exercise Shakti",
+                    "Exercise Vajra",
+                    "Exercise Indra"
+                ],
+                "answer": 0,
+                "explanation": "Exercise Trishul was the tri‑service military exercise conducted by Indian Army, Navy and Air Force in early November 2025. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+                "id": "CA1125_005",
+                "question": "Which tragic incident occurred near the Red Fort in Delhi on 10 November 2025?",
+                "options": [
+                    "Car explosion",
+                    "Train derailment",
+                    "Fire in market",
+                    "Bridge collapse"
+                ],
+                "answer": 0,
+                "explanation": "On 10 November 2025, a car exploded near the Red Fort in Delhi, killing at least 15 people and injuring more than 20 others. The government labeled it a terrorist act. :contentReference[oaicite:4]{index=4}"
+            },
+            {
+                "id": "CA1125_006",
+                "question": "Nifty Financial Services Index on 3 November 2025 was approximately trading near:",
+                "options": [
+                    "27,250",
+                    "25,000",
+                    "30,100",
+                    "24,500"
+                ],
+                "answer": 0,
+                "explanation": "On 3 November 2025, the Nifty Financial Services Index was trading near 27,250, showing selective strength driven by NBFC and PSU banks. :contentReference[oaicite:5]{index=5}"
+            },
+            {
+                "id": "CA1125_007",
+                "question": "In October 2025, India’s core sector growth recorded its lowest rate in how many months?",
+                "options": [
+                    "14 months",
+                    "6 months",
+                    "20 months",
+                    "2 months"
+                ],
+                "answer": 0,
+                "explanation": "In October 2025, core sector growth slowed to its lowest in 14 months, with declines in mining and electricity. :contentReference[oaicite:6]{index=6}"
+            },
+            {
+                "id": "CA1125_008",
+                "question": "Which Indian state launched a significant ‘New Age Economy’ initiative in November 2025 to boost employment?",
+                "options": [
+                    "Bihar",
+                    "Uttar Pradesh",
+                    "Maharashtra",
+                    "Karnataka"
+                ],
+                "answer": 0,
+                "explanation": "The Bihar Government announced the ambitious 'New Age Economy' initiative at its first cabinet meeting on 25 November 2025 to boost employment. :contentReference[oaicite:7]{index=7}"
+            },
+            {
+                "id": "CA1125_009",
+                "question": "In early November 2025, which major national capital announced compensation of ₹10 lakh per family to victims of the Delhi blast?",
+                "options": [
+                    "Delhi",
+                    "Mumbai",
+                    "Kolkata",
+                    "Chennai"
+                ],
+                "answer": 0,
+                "explanation": "Delhi’s Chief Minister announced ₹10 lakh compensation per family to victims of the 10 November 2025 blast. :contentReference[oaicite:8]{index=8}"
+            },
+            {
+                "id": "CA1125_010",
+                "question": "Which Indian Rail infrastructure project was approved by the Cabinet in November 2025 adding new track connectivity?",
+                "options": [
+                    "Rail multitracking projects in Maharashtra and Gujarat",
+                    "New metro line in Delhi",
+                    "Konkan Railway expansion",
+                    "Golden Quadrilateral Railway"
+                ],
+                "answer": 0,
+                "explanation": "The Union Cabinet approved rail multitracking projects worth ₹2,781 crore in Maharashtra and Gujarat in November 2025. :contentReference[oaicite:9]{index=9}"
+            },
+            {
+                "id": "CA1125_011",
+                "question": "What scheme did the Union Cabinet approve in November 2025 to boost domestic manufacturing of Sintered Rare Earth Permanent Magnets?",
+                "options": [
+                    "₹7,280 crore scheme",
+                    "₹10,000 crore scheme",
+                    "₹5,000 crore scheme",
+                    "₹3,500 crore scheme"
+                ],
+                "answer": 0,
+                "explanation": "In November 2025, the Union Cabinet approved a ₹7,280 crore scheme to promote domestic manufacturing of Sintered Rare Earth Permanent Magnets. :contentReference[oaicite:10]{index=10}"
+            },
+            {
+                "id": "CA1125_012",
+                "question": "The Indian Cabinet also approved railway track doubling and third/fourth line works totaling how much in November 2025?",
+                "options": [
+                    "₹2,781 crore",
+                    "₹1,500 crore",
+                    "₹4,500 crore",
+                    "₹3,000 crore"
+                ],
+                "answer": 0,
+                "explanation": "Rail multitracking projects worth ₹2,781 crore were approved by the Union Cabinet in November 2025. :contentReference[oaicite:11]{index=11}"
+            },
+            {
+                "id": "CA1125_013",
+                "question": "Which project did Maha‑Metro secure in November 2025 to integrate key urban mobility hubs?",
+                "options": [
+                    "Pune Metro expansion with driverless CBTC trains",
+                    "Mumbai Metro Phase‑III",
+                    "Delhi Metro Airport Link",
+                    "Chennai Metro Line‑4"
+                ],
+                "answer": 0,
+                "explanation": "With ₹9,857.85 crore investment and Maharashtra Metro, the project will deploy driverless CBTC trains to integrate key urban hubs in Pune by 2028. :contentReference[oaicite:12]{index=12}"
+            },
+            {
+                "id": "CA1125_014",
+                "question": "Which industry did November‑end reports show a slowdown, as per core sector data for October 2025?",
+                "options": [
+                    "Mining",
+                    "Information Technology",
+                    "Telecom",
+                    "Retail"
+                ],
+                "answer": 0,
+                "explanation": "October 2025 core sector data showed mining contracted by about 8.5%. :contentReference[oaicite:13]{index=13}"
+            },
+            {
+                "id": "CA1125_015",
+                "question": "In November 2025 financial markets, what movement was observed in the Sensex on 21 November?",
+                "options": [
+                    "Sensex fell around 400 points",
+                    "Sensex gained over 1000 points",
+                    "Sensex remained flat",
+                    "Sensex hit a new all‑time high"
+                ],
+                "answer": 0,
+                "explanation": "On 21 November 2025, Sensex fell about 400 points as markets paused after rallying. :contentReference[oaicite:14]{index=14}"
+            },
+            {
+                "id": "CA1125_016",
+                "question": "Which sector based index showed a selective strength in early November 2025?",
+                "options": [
+                    "Nifty Financial Services Index",
+                    "Nifty IT Index",
+                    "Nifty FMCG Index",
+                    "Nifty Pharma Index"
+                ],
+                "answer": 0,
+                "explanation": "The Nifty Financial Services Index showed selective strength in early November 2025. :contentReference[oaicite:15]{index=15}"
+            },
+            {
+                "id": "CA1125_017",
+                "question": "In November 2025, which national daily reported a train accident near Bilaspur in Chhattisgarh killing six passengers?",
+                "options": [
+                    "Bilaspur MEMU collision",
+                    "Road crash in Bihar",
+                    "Boat accident in Odisha",
+                    "Bridge collapse in Rajasthan"
+                ],
+                "answer": 0,
+                "explanation": "A MEMU passenger train collided with a freight near Bilaspur, Chhattisgarh, killing six. :contentReference[oaicite:16]{index=16}"
+            },
+            {
+                "id": "CA1125_018",
+                "question": "Which top IBPS daily current affairs update site covered key news for banking exams on 7 November 2025?",
+                "options": [
+                    "IBPS Guide Daily Current Affairs",
+                    "UN Daily Current Affairs",
+                    "World Bank Updates",
+                    "IMF Highlights"
+                ],
+                "answer": 0,
+                "explanation": "IBPS Guide published daily current affairs covering key national and state news on 7 November 2025. :contentReference[oaicite:17]{index=17}"
+            },
+            {
+                "id": "CA1125_019",
+                "question": "Which partnership was launched to boost AI education and upskilling in India in November 2025?",
+                "options": [
+                    "IBM partnered with AICTE to launch an AI lab",
+                    "Google partnered with NASSCOM",
+                    "Microsoft partnered with IIT Delhi",
+                    "TCS partnered with AIIMS"
+                ],
+                "answer": 0,
+                "explanation": "AICTE partnered with IBM to launch a cutting‑edge AI lab for upskilling students and faculty. :contentReference[oaicite:18]{index=18}"
+            },
+            {
+                "id": "CA1125_020",
+                "question": "December 2025 National Current Affairs later reported India granted in‑principle conversion approval to which payment bank to become a Small Finance Bank?",
+                "options": [
+                    "Fino Payments Bank",
+                    "Paytm Payments Bank",
+                    "Airtel Payments Bank",
+                    "Jio Payments Bank"
+                ],
+                "answer": 0,
+                "explanation": "RBI granted in‑principle approval for Fino Payments Bank to become a Small Finance Bank, reported in early December. :contentReference[oaicite:19]{index=19}"
+            },
+            {
+                "id": "CA1125_021",
+                "question": "Which weather‑related disruption was reported affecting flights in late November 2025 due to volcanic ash?",
+                "options": [
+                    "Ash from Ethiopian volcano",
+                    "Cyclone in Bay of Bengal",
+                    "Fog in north India",
+                    "Rainstorm in Gujarat"
+                ],
+                "answer": 0,
+                "explanation": "Ash from an Ethiopian volcanic eruption disrupted flight operations in north India in late November 2025. :contentReference[oaicite:20]{index=20}"
+            },
+            {
+                "id": "CA1125_022",
+                "question": "According to reports on Reddit’s Indian markets, which sector saw strong trading momentum in mid‑November 2025?",
+                "options": [
+                    "Financial Services and Industrials",
+                    "Pharmaceuticals only",
+                    "Telecom only",
+                    "FMCG only"
+                ],
+                "answer": 0,
+                "explanation": "Market summaries indicated renewed momentum in Financial Services and Industrials around 19 November. :contentReference[oaicite:21]{index=21}"
+            },
+            {
+                "id": "CA1125_023",
+                "question": "Which national title page service change was reported to be implemented from 1 November 2025 regarding bank accounts?",
+                "options": [
+                    "Banks allow up to four nominees per account",
+                    "Banks offer instant loans",
+                    "Banks abolish minimum balance",
+                    "Banks introduce free cheques"
+                ],
+                "answer": 0,
+                "explanation": "Starting 1 November 2025, banks allowed up to four nominees per account, simplifying claims processes. :contentReference[oaicite:22]{index=22}"
+            },
+            {
+                "id": "CA1125_024",
+                "question": "Which Northeastern Indian state announced a major industrial self‑reliance milestone in early November 2025?",
+                "options": [
+                    "Jharkhand in the power sector",
+                    "Assam in tea production",
+                    "Manipur in textile exports",
+                    "Nagaland in tourism"
+                ],
+                "answer": 0,
+                "explanation": "Jharkhand achieved power sector self‑reliance through commercial production at PVNL. :contentReference[oaicite:23]{index=23}"
+            },
+            {
+                "id": "CA1125_025",
+                "question": "November 2025 current affairs guides for examinations like CSEET included updates on which topics?",
+                "options": [
+                    "Union Budget, MSMEs, digital platforms",
+                    "Sports only",
+                    "Weather reports only",
+                    "Entertainment news"
+                ],
+                "answer": 0,
+                "explanation": "November current affairs guides covered topics like the Union Budget, MSMEs, and digital platforms. :contentReference[oaicite:24]{index=24}"
+            },
+            {
+                "id": "CA1125_026",
+                "question": "Which national news outlet provided assembly news headlines covering national, international, business and sports updates in November 2025?",
+                "options": [
+                    "Indian Express",
+                    "Times of India Business",
+                    "BBC News",
+                    "Al Jazeera"
+                ],
+                "answer": 0,
+                "explanation": "Indian Express published news headlines for assembly with national, international, business, and sports updates in November 2025. :contentReference[oaicite:25]{index=25}"
+            },
+            {
+                "id": "CA1125_027",
+                "question": "Which legal position saw a change reported in late November 2025 related to Governor/President actions on assembly bills?",
+                "options": [
+                    "Courts cannot set deadline for President or Governor on assembly bills",
+                    "Governor must approve in 30 days",
+                    "President can nullify all assembly bills",
+                    "Supreme Court will decide timelines"
+                ],
+                "answer": 0,
+                "explanation": "Courts held they cannot set deadlines for the President or Governor to act on assembly bills. :contentReference[oaicite:26]{index=26}"
+            },
+            {
+                "id": "CA1125_028",
+                "question": "Which of the following was a major development in the Indian AI education space in November 2025?",
+                "options": [
+                    "IBM‑AICTE AI Lab launched",
+                    "Google AI Institute launched",
+                    "Microsoft AI Summit",
+                    "Adobe AI Challenge"
+                ],
+                "answer": 0,
+                "explanation": "AICTE partnered with IBM to launch an AI Lab to upskill students and faculty in advanced technologies. :contentReference[oaicite:27]{index=27}"
+            },
+            {
+                "id": "CA1125_029",
+                "question": "Which key national state scheme was part of clean industrial growth news, reflected in mid‑November guides?",
+                "options": [
+                    "India is 3rd largest clean industrial project pipeline",
+                    "Only one clean factory",
+                    "No clean industrial projects",
+                    "Clean projects limited to one state"
+                ],
+                "answer": 0,
+                "explanation": "India emerged as the 3rd largest country globally in terms of its clean industrial project pipeline. :contentReference[oaicite:28]{index=28}"
+            },
+            {
+                "id": "CA1125_030",
+                "question": "Which economic event from global markets influenced Indian financial markets in November 2025?",
+                "options": [
+                    "Sensex fell 400 points",
+                    "Indian rupee hit all‑time high",
+                    "Foreign direct investment banned",
+                    "CRR raised by RBI"
+                ],
+                "answer": 0,
+                "explanation": "In mid‑November 2025, the Sensex fell about 400 points, reflecting market corrections. :contentReference[oaicite:29]{index=29}"
+            },
+            {
+                "id": "CA1125_031",
+                "question": "In November 2025, which ongoing technological disruption involving airplane operations was reported affecting major airlines?",
+                "options": [
+                    "Flight delays due to volcanic ash",
+                    "New supersonic jets launched",
+                    "5% cut in flight schedules by DGCA",
+                    "Ban on flights above 8 PM"
+                ],
+                "answer": 2,
+                "explanation": "Reports indicated DGCA ordered airlines to cut flight schedules by about 5% amidst disruptions. :contentReference[oaicite:30]{index=30}"
+            },
+            {
+                "id": "CA1125_032",
+                "question": "Which national city witnessed surface transport disruption due to unusual weather conditions caused by volcanic ash in November 2025?",
+                "options": [
+                    "Delhi",
+                    "Mumbai",
+                    "Bengaluru",
+                    "Hyderabad"
+                ],
+                "answer": 0,
+                "explanation": "Volcanic ash from Ethiopia affected flights and visibility in north India including Delhi. :contentReference[oaicite:31]{index=31}"
+            },
+            {
+                "id": "CA1125_033",
+                "question": "Which financial index in early November 2025 reflected resilience driven by NBFC and PSU banks?",
+                "options": [
+                    "Nifty Financial Services Index",
+                    "Nifty IT Index",
+                    "Nifty Pharma",
+                    "Nifty FMCG"
+                ],
+                "answer": 0,
+                "explanation": "The Nifty Financial Services Index showed resilience early in November 2025. :contentReference[oaicite:32]{index=32}"
+            },
+            {
+                "id": "CA1125_034",
+                "question": "The clean industrial project pipeline status reported in early November 2025 highlights India’s focus on achieving which long‑term environmental goal?",
+                "options": [
+                    "Net Zero by 2070",
+                    "Net Zero by 2050",
+                    "No targets",
+                    "Reduction only in coal"
+                ],
+                "answer": 0,
+                "explanation": "The clean industrial project pipeline reflects support for India’s Net Zero by 2070 goal. :contentReference[oaicite:33]{index=33}"
+            },
+            {
+                "id": "CA1125_035",
+                "question": "Which index reflects the performance of banks, financial institutions, housing finance firms and insurance companies?",
+                "options": [
+                    "Nifty Financial Services Index",
+                    "Nifty IT Index",
+                    "Sensex 30",
+                    "Nifty Pharma"
+                ],
+                "answer": 0,
+                "explanation": "The Nifty Financial Services Index captures key segments like banks, financial institutions, and insurance companies. :contentReference[oaicite:34]{index=34}"
+            },
+            {
+                "id": "CA1125_036",
+                "question": "Which Indian state’s metro expansion project was projected to serve over 4 lakh daily riders by 2028?",
+                "options": [
+                    "Pune",
+                    "Mumbai",
+                    "Delhi",
+                    "Chennai"
+                ],
+                "answer": 0,
+                "explanation": "The Pune Metro expansion with driverless trains was projected to serve over 4 lakh daily riders by 2028. :contentReference[oaicite:35]{index=35}"
+            },
+            {
+                "id": "CA1125_037",
+                "question": "In November 2025, markets reacted to which factor leading to a fall in Sensex?",
+                "options": [
+                    "Profit booking after market rally",
+                    "RBI raised CRR significantly",
+                    "Banking crisis emerged",
+                    "Government banned stock trading"
+                ],
+                "answer": 0,
+                "explanation": "The fall in Sensex was largely due to profit booking after a rally. :contentReference[oaicite:36]{index=36}"
+            },
+            {
+                "id": "CA1125_038",
+                "question": "Which upcoming initiative in digital space was announced by AICTE with an industry partner in November 2025?",
+                "options": [
+                    "AI Lab with IBM",
+                    "Cybersecurity Hub with Microsoft",
+                    "Cloud Compute Hub with Google",
+                    "Blockchain lab with AWS"
+                ],
+                "answer": 0,
+                "explanation": "AICTE partnered with IBM to establish an AI lab for skill development. :contentReference[oaicite:37]{index=37}"
+            },
+            {
+                "id": "CA1125_039",
+                "question": "Which national finance exam related resource published a guide containing state and national updates for November 2025?",
+                "options": [
+                    "CSEET Current Affairs Guide",
+                    "IMF Outlook report",
+                    "World Bank development report",
+                    "SEBI investor bulletin"
+                ],
+                "answer": 0,
+                "explanation": "A CSEET Current Affairs Guide for November 2025 covered key national and economic updates. :contentReference[oaicite:38]{index=38}"
+            },
+            {
+                "id": "CA1125_040",
+                "question": "Which tragedy led to compensation announcements by the Delhi government in mid‑November 2025?",
+                "options": [
+                    "Delhi car explosion near Red Fort",
+                    "Flooding in east Delhi",
+                    "Train derailment",
+                    "Building collapse"
+                ],
+                "answer": 0,
+                "explanation": "The Delhi government announced compensation after the car explosion near the Red Fort on 10 November 2025. :contentReference[oaicite:39]{index=39}"
+            },
+            {
+                "id": "CA1125_041",
+                "question": "India’s core sector growth slowdown in October 2025 recorded contractions in which sectors?",
+                "options": [
+                    "Mining and electricity",
+                    "IT and telecom",
+                    "Agriculture only",
+                    "Banking only"
+                ],
+                "answer": 0,
+                "explanation": "October 2025 core sector data showed contraction in mining and electricity production. :contentReference[oaicite:40]{index=40}"
+            },
+            {
+                "id": "CA1125_042",
+                "question": "Which financial market segment showed resilience in early November 2025 despite broader volatility?",
+                "options": [
+                    "Financial services segment",
+                    "FMCG segment",
+                    "IT segment",
+                    "Pharma segment"
+                ],
+                "answer": 0,
+                "explanation": "The financial services segment, as reflected in Nifty Financial Services Index, showed resilience early in November 2025. :contentReference[oaicite:41]{index=41}"
+            },
+            {
+                "id": "CA1125_043",
+                "question": "What type of train system was included in the Pune metro expansion project approved in November 2025?",
+                "options": [
+                    "Driverless CBTC trains",
+                    "Diesel locomotives",
+                    "Steam engines",
+                    "Maglev trains"
+                ],
+                "answer": 0,
+                "explanation": "The Pune metro expansion will deploy driverless CBTC trains. :contentReference[oaicite:42]{index=42}"
+            },
+            {
+                "id": "CA1125_044",
+                "question": "Which national current affairs compilation website published key updates for 21 November 2025 covering national and international news?",
+                "options": [
+                    "AffairsCloud",
+                    "Wikipedia",
+                    "UN News",
+                    "Reuters"
+                ],
+                "answer": 0,
+                "explanation": "AffairsCloud published key daily current affairs for 21 November 2025 with national and international updates. :contentReference[oaicite:43]{index=43}"
+            },
+            {
+                "id": "CA1125_045",
+                "question": "Which national news platform provides school assembly current affairs including business updates for 4 and 20 November 2025?",
+                "options": [
+                    "Indian Express and Moneycontrol",
+                    "BBC",
+                    "CNN",
+                    "Al Jazeera"
+                ],
+                "answer": 0,
+                "explanation": "Indian Express and Moneycontrol provided school assembly current affairs including business updates for November 2025. :contentReference[oaicite:44]{index=44}"
+            },
+            {
+                "id": "CA1125_046",
+                "question": "Which financial scheme did the Cabinet approve to promote high‑tech materials for defence and EVs?",
+                "options": [
+                    "Rare Earth Permanent Magnet manufacturing scheme",
+                    "FDI liberalisation for defence",
+                    "Export subsidy for EVs",
+                    "Free charging stations for EVs"
+                ],
+                "answer": 0,
+                "explanation": "The Cabinet approved a scheme worth ₹7,280 crore to boost domestic manufacturing of rare earth magnets critical for defence and EV sectors. :contentReference[oaicite:45]{index=45}"
+            },
+            {
+                "id": "CA1125_047",
+                "question": "Which urban mobility integration project was planned with driverless trains in November 2025?",
+                "options": [
+                    "Pune Metro expansion",
+                    "Delhi‑Mumbai bullet train",
+                    "Kolkata Metro Phase‑III",
+                    "Hyderabad Metro loop"
+                ],
+                "answer": 0,
+                "explanation": "The Pune Metro expansion with driverless trains was planned to integrate key hubs. :contentReference[oaicite:46]{index=46}"
+            },
+            {
+                "id": "CA1125_048",
+                "question": "Which monthly weekly news site publishes banking and financial current affairs important for exams like SBI and IBPS?",
+                "options": [
+                    "BankersAdda",
+                    "TechCrunch",
+                    "Entertainment Weekly",
+                    "Travel Plus"
+                ],
+                "answer": 0,
+                "explanation": "BankersAdda publishes daily and monthly banking & financial current affairs important for competitive exams. :contentReference[oaicite:47]{index=47}"
+            },
+            {
+                "id": "CA1125_049",
+                "question": "Which index is designed to capture key segments such as banks, housing finance firms and insurance companies in India?",
+                "options": [
+                    "Nifty Financial Services Index",
+                    "Nifty 50 Index",
+                    "BSE Midcap",
+                    "BSE Smallcap"
+                ],
+                "answer": 0,
+                "explanation": "The Nifty Financial Services Index captures key segments like banks, financial and insurance companies. :contentReference[oaicite:48]{index=48}"
+            },
+            {
+                "id": "CA1125_050",
+                "question": "Which national current affair event related to banking system changes became effective from 1 November 2025?",
+                "options": [
+                    "Allowing up to four nominees per bank account",
+                    "Ban on savings accounts",
+                    "Higher FD interest rate rule",
+                    "Mandatory wealth tax"
+                ],
+                "answer": 0,
+                "explanation": "From 1 November 2025, banks were allowed to add up to four nominees per account to simplify claim processes. :contentReference[oaicite:49]{index=49}"
+            },
+            {
+                "id": "CA1125_051",
+                "question": "India’s foreign exchange reserves fell by how much to approximately USD 688.1 billion in November 2025?",
+                "options": [
+                    "About USD 4.47 billion",
+                    "About USD 1 billion",
+                    "About USD 10 billion",
+                    "About USD 0.5 billion"
+                ],
+                "answer": 0,
+                "explanation": "India’s forex reserves fell by approximately USD 4.47 billion to around USD 688.1 billion, mainly due to declines in gold and foreign currency assets. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+                "id": "CA1125_052",
+                "question": "Which Indian city was given the UNESCO ‘City of Gastronomy’ title in November 2025?",
+                "options": [
+                    "Lucknow",
+                    "Hyderabad",
+                    "Varanasi",
+                    "Mumbai"
+                ],
+                "answer": 0,
+                "explanation": "Lucknow was recognised as a UNESCO ‘City of Gastronomy’ in November 2025 due to its rich culinary heritage. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+                "id": "CA1125_053",
+                "question": "What was the main focus of the Regional Open Digital Health Summit held in New Delhi on 19‑20 November 2025?",
+                "options": [
+                    "Promote interoperable digital health systems",
+                    "Ban digital health records",
+                    "Only focus on telemedicine apps",
+                    "Introduce new health insurance norms"
+                ],
+                "answer": 0,
+                "explanation": "The Summit aimed to build interoperable and standards‑based digital health ecosystems across the Global South. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+                "id": "CA1125_054",
+                "question": "The 56th International Film Festival of India (IFFI) in November 2025 featured which focus country?",
+                "options": [
+                    "Japan",
+                    "France",
+                    "USA",
+                    "Brazil"
+                ],
+                "answer": 0,
+                "explanation": "Japan was chosen as the focus country at IFFI 2025, showcasing films and collaborations. :contentReference[oaicite:4]{index=4}"
+            },
+            {
+                "id": "CA1125_055",
+                "question": "On which date did the 56th IFFI begin its carnival‑style opening parade in Goa?",
+                "options": [
+                    "20 November 2025",
+                    "1 November 2025",
+                    "10 November 2025",
+                    "28 November 2025"
+                ],
+                "answer": 0,
+                "explanation": "IFFI 2025 began with a historic carnival‑style opening on 20 November 2025 in Goa. :contentReference[oaicite:5]{index=5}"
+            },
+            {
+                "id": "CA1125_056",
+                "question": "Exercise Trishul, a major tri‑service military exercise, was conducted in November 2025 in which part of India?",
+                "options": [
+                    "Western India including Rajasthan and Gujarat",
+                    "Eastern India only",
+                    "North‑East India only",
+                    "South India only"
+                ],
+                "answer": 0,
+                "explanation": "Exercise Trishul was conducted across Western India including the desert regions of Rajasthan and Gujarat. :contentReference[oaicite:6]{index=6}"
+            },
+            {
+                "id": "CA1125_057",
+                "question": "What national event began on 16 November 2025 in Noida focusing on cultural and spiritual activities?",
+                "options": [
+                    "Bharat Utkarsh Mahayagya",
+                    "Republic Day Parade",
+                    "International Yoga Festival",
+                    "National Science Fair"
+                ],
+                "answer": 0,
+                "explanation": "Bharat Utkarsh Mahayagya, a major cultural and spiritual event, was inaugurated in Noida from 16 November 2025. :contentReference[oaicite:7]{index=7}"
+            },
+            {
+                "id": "CA1125_058",
+                "question": "India’s Ministry of Culture launched the National One Health Mission in November 2025 to integrate which systems?",
+                "options": [
+                    "Human, animal, and environmental health systems",
+                    "Transport and health infrastructure",
+                    "Education and health systems",
+                    "Tourism and health sectors"
+                ],
+                "answer": 0,
+                "explanation": "The National One Health Mission was launched to integrate human, animal, and environmental health systems. :contentReference[oaicite:8]{index=8}"
+            },
+            {
+                "id": "CA1125_059",
+                "question": "The National One Health Mission in November 2025 was launched with an outlay of approximately:",
+                "options": [
+                    "₹383 crore",
+                    "₹100 crore",
+                    "₹1,000 crore",
+                    "₹200 crore"
+                ],
+                "answer": 0,
+                "explanation": "The National One Health Mission was launched with a budgetary outlay of ₹383 crore. :contentReference[oaicite:9]{index=9}"
+            },
+            {
+                "id": "CA1125_060",
+                "question": "Which major sporting achievement took place on 2 November 2025 involving an Indian team?",
+                "options": [
+                    "India won its maiden ICC Women’s Cricket World Cup",
+                    "India won the FIFA World Cup",
+                    "India won the Hockey World Cup",
+                    "India won the Davis Cup"
+                ],
+                "answer": 0,
+                "explanation": "India won its first ICC Women’s Cricket World Cup final against South Africa on 2 November 2025. :contentReference[oaicite:10]{index=10}"
+            },
+            {
+                "id": "CA1125_061",
+                "question": "Who was named Man of the Match in the 2025 ICC Women’s Cricket World Cup final?",
+                "options": [
+                    "Shafali Verma",
+                    "Harmanpreet Kaur",
+                    "Jhulan Goswami",
+                    "Smriti Mandhana"
+                ],
+                "answer": 0,
+                "explanation": "Shafali Verma was awarded Man of the Match in the 2025 ICC Women’s Cricket World Cup final. :contentReference[oaicite:11]{index=11}"
+            },
+            {
+                "id": "CA1125_062",
+                "question": "Which tourism recognition for India promotes sustainable cultural tourism and global creative exchange?",
+                "options": [
+                    "UNESCO Creative City Network inclusion of Lucknow",
+                    "UNESCO Heritage Site for Qutub Minar",
+                    "New World Heritage Site for Taj Mahal",
+                    "New Green City ranking for Jaipur"
+                ],
+                "answer": 0,
+                "explanation": "Lucknow’s inclusion in the UNESCO Creative Cities Network promotes sustainable cultural tourism and global exchange. :contentReference[oaicite:12]{index=12}"
+            },
+            {
+                "id": "CA1125_063",
+                "question": "Which sector’s job creation was boosted by MoUs signed at the 30th CII Partnership Summit in Visakhapatnam?",
+                "options": [
+                    "Multiple sectors across 12 industries",
+                    "Only IT sector",
+                    "Only agriculture",
+                    "Only education"
+                ],
+                "answer": 0,
+                "explanation": "At the 30th CII Partnership Summit, MoUs worth ₹13.25 lakh crore were signed across 12 sectors that are expected to create around 16.31 lakh jobs. :contentReference[oaicite:13]{index=13}"
+            },
+            {
+                "id": "CA1125_064",
+                "question": "Which programme was launched in partnership with IndiaAI Mission in November 2025?",
+                "options": [
+                    "YUVAi for ALL",
+                    "Digital India 2.0",
+                    "Smart Cities Universal",
+                    "Green Tech Mission"
+                ],
+                "answer": 0,
+                "explanation": "‘YUVAi for ALL’ was launched in partnership with IndiaAI Mission to accelerate AI literacy. :contentReference[oaicite:14]{index=14}"
+            },
+            {
+                "id": "CA1125_065",
+                "question": "During the CII Partnership Summit, which high‑technology area was planned for development in Andhra Pradesh?",
+                "options": [
+                    "Drone City",
+                    "Solar Power Grid hub",
+                    "Bio‑tech park only",
+                    "Textile park"
+                ],
+                "answer": 0,
+                "explanation": "Drone City, a central hub for UAV drone innovation, was proposed in Andhra Pradesh during the CII summit. :contentReference[oaicite:15]{index=15}"
+            },
+            {
+                "id": "CA1125_066",
+                "question": "Which job‑creating twin infrastructure initiative was announced in Andhra Pradesh in November 2025?",
+                "options": [
+                    "Twin Space Cities",
+                    "New airport in Vijayawada",
+                    "New IIT campuses only",
+                    "New naval dockyard"
+                ],
+                "answer": 0,
+                "explanation": "Twin Space Cities in Tirupati and Sri Sathya Sai districts were planned to become space tech hubs. :contentReference[oaicite:16]{index=16}"
+            },
+            {
+                "id": "CA1125_067",
+                "question": "Which global health challenge was added to national attention following a WHO warning noted in November 2025?",
+                "options": [
+                    "Sanitation and hygiene issues",
+                    "Malaria surge",
+                    "Polio resurgence",
+                    "COVID‑19 spike"
+                ],
+                "answer": 0,
+                "explanation": "A WHO warning highlighted ongoing sanitation and hygiene challenges as part of World Toilet Day observations. :contentReference[oaicite:17]{index=17}"
+            },
+            {
+                "id": "CA1125_068",
+                "question": "Which financial figure indicates India’s fiscal deficit position by October 2025 report?",
+                "options": [
+                    "52.6% of FY26 target",
+                    "30% of FY26 target",
+                    "70% of FY26 target",
+                    "10% of FY26 target"
+                ],
+                "answer": 0,
+                "explanation": "India’s fiscal deficit stood at about 52.6% of the FY26 target by October 2025. :contentReference[oaicite:18]{index=18}"
+            },
+            {
+                "id": "CA1125_069",
+                "question": "Which component significantly contributed to the fall in India’s forex reserves in late November 2025?",
+                "options": [
+                    "Gold reserves",
+                    "Bank deposits only",
+                    "Government bonds only",
+                    "Agriculture subsidies"
+                ],
+                "answer": 0,
+                "explanation": "A significant part of the foreign exchange reserves decline was due to a drop in gold reserves. :contentReference[oaicite:19]{index=19}"
+            },
+            {
+                "id": "CA1125_070",
+                "question": "Which public space event in Goa in November 2025 featured more than 240 films from 81 nations?",
+                "options": [
+                    "56th International Film Festival of India",
+                    "Goa Literary Festival",
+                    "Asian Arts Festival",
+                    "India Tech Festival"
+                ],
+                "answer": 0,
+                "explanation": "The 56th IFFI in Goa showcased over 240 films from 81 countries. :contentReference[oaicite:20]{index=20}"
+            },
+            {
+                "id": "CA1125_071",
+                "question": "Which animal‑health‑linked national mission was launched by the Centre in November 2025?",
+                "options": [
+                    "National One Health Mission",
+                    "National Rashtriya Health Mission",
+                    "Only COVID‑19 Response Mission",
+                    "Swachh Bharat Abhiyan II"
+                ],
+                "answer": 0,
+                "explanation": "The National One Health Mission was launched to integrate health systems across human, animal and environmental sectors. :contentReference[oaicite:21]{index=21}"
+            },
+            {
+                "id": "CA1125_072",
+                "question": "Which UNESCO recognition helps boost cultural diplomacy and city branding for India?",
+                "options": [
+                    "UNESCO Creative City Network inclusion of Lucknow",
+                    "UNESCO World Heritage Site for Red Fort",
+                    "UNESCO Geopark status for Himalayan region",
+                    "UNESCO intangible heritage for yoga"
+                ],
+                "answer": 0,
+                "explanation": "Lucknow’s inclusion in the UNESCO Creative City Network boosts India’s cultural diplomacy and urban branding. :contentReference[oaicite:22]{index=22}"
+            },
+            {
+                "id": "CA1125_073",
+                "question": "Which summit promoted open, standards‑based digital health infrastructure in the Global South hosted in New Delhi?",
+                "options": [
+                    "Regional Open Digital Health Summit",
+                    "G20 Digital Summit",
+                    "ASEAN Health Forum",
+                    "BRICS Health Meet"
+                ],
+                "answer": 0,
+                "explanation": "The Regional Open Digital Health Summit in New Delhi focused on interoperable digital health systems for the Global South. :contentReference[oaicite:23]{index=23}"
+            },
+            {
+                "id": "CA1125_074",
+                "question": "The Regional Open Digital Health Summit was jointly organised by India with which international body?",
+                "options": [
+                    "WHO‑SEARO and UNICEF",
+                    "NATO",
+                    "UNDP only",
+                    "EU Commission"
+                ],
+                "answer": 0,
+                "explanation": "The Summit was organised with WHO‑SEARO and UNICEF to advance digital health ecosystems. :contentReference[oaicite:24]{index=24}"
+            },
+            {
+                "id": "CA1125_075",
+                "question": "Exercise Trishul in November 2025 was led by which Command of the Indian Armed Forces?",
+                "options": [
+                    "Western Naval Command",
+                    "Eastern Naval Command",
+                    "Southern Command only",
+                    "Central Command only"
+                ],
+                "answer": 0,
+                "explanation": "Exercise Trishul was led by the Western Naval Command involving coordinated operations. :contentReference[oaicite:25]{index=25}"
+            },
+            {
+                "id": "CA1125_051",
+                "question": "India’s foreign exchange reserves fell by how much to approximately USD 688.1 billion in November 2025?",
+                "options": [
+                    "About USD 4.47 billion",
+                    "About USD 1 billion",
+                    "About USD 10 billion",
+                    "About USD 0.5 billion"
+                ],
+                "answer": 0,
+                "explanation": "India’s forex reserves fell by approximately USD 4.47 billion to around USD 688.1 billion, mainly due to declines in gold and foreign currency assets. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+                "id": "CA1125_052",
+                "question": "Which Indian city was given the UNESCO ‘City of Gastronomy’ title in November 2025?",
+                "options": [
+                    "Lucknow",
+                    "Hyderabad",
+                    "Varanasi",
+                    "Mumbai"
+                ],
+                "answer": 0,
+                "explanation": "Lucknow was recognised as a UNESCO ‘City of Gastronomy’ in November 2025 due to its rich culinary heritage. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+                "id": "CA1125_053",
+                "question": "What was the main focus of the Regional Open Digital Health Summit held in New Delhi on 19‑20 November 2025?",
+                "options": [
+                    "Promote interoperable digital health systems",
+                    "Ban digital health records",
+                    "Only focus on telemedicine apps",
+                    "Introduce new health insurance norms"
+                ],
+                "answer": 0,
+                "explanation": "The Summit aimed to build interoperable and standards‑based digital health ecosystems across the Global South. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+                "id": "CA1125_054",
+                "question": "The 56th International Film Festival of India (IFFI) in November 2025 featured which focus country?",
+                "options": [
+                    "Japan",
+                    "France",
+                    "USA",
+                    "Brazil"
+                ],
+                "answer": 0,
+                "explanation": "Japan was chosen as the focus country at IFFI 2025, showcasing films and collaborations. :contentReference[oaicite:4]{index=4}"
+            },
+            {
+                "id": "CA1125_055",
+                "question": "On which date did the 56th IFFI begin its carnival‑style opening parade in Goa?",
+                "options": [
+                    "20 November 2025",
+                    "1 November 2025",
+                    "10 November 2025",
+                    "28 November 2025"
+                ],
+                "answer": 0,
+                "explanation": "IFFI 2025 began with a historic carnival‑style opening on 20 November 2025 in Goa. :contentReference[oaicite:5]{index=5}"
+            },
+            {
+                "id": "CA1125_056",
+                "question": "Exercise Trishul, a major tri‑service military exercise, was conducted in November 2025 in which part of India?",
+                "options": [
+                    "Western India including Rajasthan and Gujarat",
+                    "Eastern India only",
+                    "North‑East India only",
+                    "South India only"
+                ],
+                "answer": 0,
+                "explanation": "Exercise Trishul was conducted across Western India including the desert regions of Rajasthan and Gujarat. :contentReference[oaicite:6]{index=6}"
+            },
+            {
+                "id": "CA1125_057",
+                "question": "What national event began on 16 November 2025 in Noida focusing on cultural and spiritual activities?",
+                "options": [
+                    "Bharat Utkarsh Mahayagya",
+                    "Republic Day Parade",
+                    "International Yoga Festival",
+                    "National Science Fair"
+                ],
+                "answer": 0,
+                "explanation": "Bharat Utkarsh Mahayagya, a major cultural and spiritual event, was inaugurated in Noida from 16 November 2025. :contentReference[oaicite:7]{index=7}"
+            },
+            {
+                "id": "CA1125_058",
+                "question": "India’s Ministry of Culture launched the National One Health Mission in November 2025 to integrate which systems?",
+                "options": [
+                    "Human, animal, and environmental health systems",
+                    "Transport and health infrastructure",
+                    "Education and health systems",
+                    "Tourism and health sectors"
+                ],
+                "answer": 0,
+                "explanation": "The National One Health Mission was launched to integrate human, animal, and environmental health systems. :contentReference[oaicite:8]{index=8}"
+            },
+            {
+                "id": "CA1125_059",
+                "question": "The National One Health Mission in November 2025 was launched with an outlay of approximately:",
+                "options": [
+                    "₹383 crore",
+                    "₹100 crore",
+                    "₹1,000 crore",
+                    "₹200 crore"
+                ],
+                "answer": 0,
+                "explanation": "The National One Health Mission was launched with a budgetary outlay of ₹383 crore. :contentReference[oaicite:9]{index=9}"
+            },
+            {
+                "id": "CA1125_060",
+                "question": "Which major sporting achievement took place on 2 November 2025 involving an Indian team?",
+                "options": [
+                    "India won its maiden ICC Women’s Cricket World Cup",
+                    "India won the FIFA World Cup",
+                    "India won the Hockey World Cup",
+                    "India won the Davis Cup"
+                ],
+                "answer": 0,
+                "explanation": "India won its first ICC Women’s Cricket World Cup final against South Africa on 2 November 2025. :contentReference[oaicite:10]{index=10}"
+            },
+            {
+                "id": "CA1125_061",
+                "question": "Who was named Man of the Match in the 2025 ICC Women’s Cricket World Cup final?",
+                "options": [
+                    "Shafali Verma",
+                    "Harmanpreet Kaur",
+                    "Jhulan Goswami",
+                    "Smriti Mandhana"
+                ],
+                "answer": 0,
+                "explanation": "Shafali Verma was awarded Man of the Match in the 2025 ICC Women’s Cricket World Cup final. :contentReference[oaicite:11]{index=11}"
+            },
+            {
+                "id": "CA1125_062",
+                "question": "Which tourism recognition for India promotes sustainable cultural tourism and global creative exchange?",
+                "options": [
+                    "UNESCO Creative City Network inclusion of Lucknow",
+                    "UNESCO Heritage Site for Qutub Minar",
+                    "New World Heritage Site for Taj Mahal",
+                    "New Green City ranking for Jaipur"
+                ],
+                "answer": 0,
+                "explanation": "Lucknow’s inclusion in the UNESCO Creative Cities Network promotes sustainable cultural tourism and global exchange. :contentReference[oaicite:12]{index=12}"
+            },
+            {
+                "id": "CA1125_063",
+                "question": "Which sector’s job creation was boosted by MoUs signed at the 30th CII Partnership Summit in Visakhapatnam?",
+                "options": [
+                    "Multiple sectors across 12 industries",
+                    "Only IT sector",
+                    "Only agriculture",
+                    "Only education"
+                ],
+                "answer": 0,
+                "explanation": "At the 30th CII Partnership Summit, MoUs worth ₹13.25 lakh crore were signed across 12 sectors that are expected to create around 16.31 lakh jobs. :contentReference[oaicite:13]{index=13}"
+            },
+            {
+                "id": "CA1125_064",
+                "question": "Which programme was launched in partnership with IndiaAI Mission in November 2025?",
+                "options": [
+                    "YUVAi for ALL",
+                    "Digital India 2.0",
+                    "Smart Cities Universal",
+                    "Green Tech Mission"
+                ],
+                "answer": 0,
+                "explanation": "‘YUVAi for ALL’ was launched in partnership with IndiaAI Mission to accelerate AI literacy. :contentReference[oaicite:14]{index=14}"
+            },
+            {
+                "id": "CA1125_065",
+                "question": "During the CII Partnership Summit, which high‑technology area was planned for development in Andhra Pradesh?",
+                "options": [
+                    "Drone City",
+                    "Solar Power Grid hub",
+                    "Bio‑tech park only",
+                    "Textile park"
+                ],
+                "answer": 0,
+                "explanation": "Drone City, a central hub for UAV drone innovation, was proposed in Andhra Pradesh during the CII summit. :contentReference[oaicite:15]{index=15}"
+            },
+            {
+                "id": "CA1125_066",
+                "question": "Which job‑creating twin infrastructure initiative was announced in Andhra Pradesh in November 2025?",
+                "options": [
+                    "Twin Space Cities",
+                    "New airport in Vijayawada",
+                    "New IIT campuses only",
+                    "New naval dockyard"
+                ],
+                "answer": 0,
+                "explanation": "Twin Space Cities in Tirupati and Sri Sathya Sai districts were planned to become space tech hubs. :contentReference[oaicite:16]{index=16}"
+            },
+            {
+                "id": "CA1125_067",
+                "question": "Which global health challenge was added to national attention following a WHO warning noted in November 2025?",
+                "options": [
+                    "Sanitation and hygiene issues",
+                    "Malaria surge",
+                    "Polio resurgence",
+                    "COVID‑19 spike"
+                ],
+                "answer": 0,
+                "explanation": "A WHO warning highlighted ongoing sanitation and hygiene challenges as part of World Toilet Day observations. :contentReference[oaicite:17]{index=17}"
+            },
+            {
+                "id": "CA1125_068",
+                "question": "Which financial figure indicates India’s fiscal deficit position by October 2025 report?",
+                "options": [
+                    "52.6% of FY26 target",
+                    "30% of FY26 target",
+                    "70% of FY26 target",
+                    "10% of FY26 target"
+                ],
+                "answer": 0,
+                "explanation": "India’s fiscal deficit stood at about 52.6% of the FY26 target by October 2025. :contentReference[oaicite:18]{index=18}"
+            },
+            {
+                "id": "CA1125_069",
+                "question": "Which component significantly contributed to the fall in India’s forex reserves in late November 2025?",
+                "options": [
+                    "Gold reserves",
+                    "Bank deposits only",
+                    "Government bonds only",
+                    "Agriculture subsidies"
+                ],
+                "answer": 0,
+                "explanation": "A significant part of the foreign exchange reserves decline was due to a drop in gold reserves. :contentReference[oaicite:19]{index=19}"
+            },
+            {
+                "id": "CA1125_070",
+                "question": "Which public space event in Goa in November 2025 featured more than 240 films from 81 nations?",
+                "options": [
+                    "56th International Film Festival of India",
+                    "Goa Literary Festival",
+                    "Asian Arts Festival",
+                    "India Tech Festival"
+                ],
+                "answer": 0,
+                "explanation": "The 56th IFFI in Goa showcased over 240 films from 81 countries. :contentReference[oaicite:20]{index=20}"
+            },
+            {
+                "id": "CA1125_071",
+                "question": "Which animal‑health‑linked national mission was launched by the Centre in November 2025?",
+                "options": [
+                    "National One Health Mission",
+                    "National Rashtriya Health Mission",
+                    "Only COVID‑19 Response Mission",
+                    "Swachh Bharat Abhiyan II"
+                ],
+                "answer": 0,
+                "explanation": "The National One Health Mission was launched to integrate health systems across human, animal and environmental sectors. :contentReference[oaicite:21]{index=21}"
+            },
+            {
+                "id": "CA1125_072",
+                "question": "Which UNESCO recognition helps boost cultural diplomacy and city branding for India?",
+                "options": [
+                    "UNESCO Creative City Network inclusion of Lucknow",
+                    "UNESCO World Heritage Site for Red Fort",
+                    "UNESCO Geopark status for Himalayan region",
+                    "UNESCO intangible heritage for yoga"
+                ],
+                "answer": 0,
+                "explanation": "Lucknow’s inclusion in the UNESCO Creative City Network boosts India’s cultural diplomacy and urban branding. :contentReference[oaicite:22]{index=22}"
+            },
+            {
+                "id": "CA1125_073",
+                "question": "Which summit promoted open, standards‑based digital health infrastructure in the Global South hosted in New Delhi?",
+                "options": [
+                    "Regional Open Digital Health Summit",
+                    "G20 Digital Summit",
+                    "ASEAN Health Forum",
+                    "BRICS Health Meet"
+                ],
+                "answer": 0,
+                "explanation": "The Regional Open Digital Health Summit in New Delhi focused on interoperable digital health systems for the Global South. :contentReference[oaicite:23]{index=23}"
+            },
+            {
+                "id": "CA1125_074",
+                "question": "The Regional Open Digital Health Summit was jointly organised by India with which international body?",
+                "options": [
+                    "WHO‑SEARO and UNICEF",
+                    "NATO",
+                    "UNDP only",
+                    "EU Commission"
+                ],
+                "answer": 0,
+                "explanation": "The Summit was organised with WHO‑SEARO and UNICEF to advance digital health ecosystems. :contentReference[oaicite:24]{index=24}"
+            },
+            {
+                "id": "CA1125_075",
+                "question": "Exercise Trishul in November 2025 was led by which Command of the Indian Armed Forces?",
+                "options": [
+                    "Western Naval Command",
+                    "Eastern Naval Command",
+                    "Southern Command only",
+                    "Central Command only"
+                ],
+                "answer": 0,
+                "explanation": "Exercise Trishul was led by the Western Naval Command involving coordinated operations. :contentReference[oaicite:25]{index=25}"
+            }
+        ],
+        "DEC 2025": [
+            {
+                "id": "CA1225_001",
+                "question": "In December 2025, by how many basis points did the RBI cut the repo rate?",
+                "options": [
+                    "25 bps",
+                    "15 bps",
+                    "50 bps",
+                    "10 bps"
+                ],
+                "answer": 0,
+                "explanation": "In its December 2025 policy, the Reserve Bank of India cut the repo rate by 25 basis points to 5.25%. :contentReference[oaicite:0]{index=0}"
+            },
+            {
+                "id": "CA1225_002",
+                "question": "What was the new repo rate after the RBI’s December 2025 MPC decision?",
+                "options": [
+                    "5.25%",
+                    "5.50%",
+                    "5.00%",
+                    "4.75%"
+                ],
+                "answer": 0,
+                "explanation": "RBI reduced the repo rate to 5.25% to support growth amid slowing economic expansion. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+                "id": "CA1225_003",
+                "question": "Which major liquidity measure did RBI announce in December 2025?",
+                "options": [
+                    "OMO purchases worth ₹1 lakh crore",
+                    "Increase in CRR",
+                    "Ban on open market operations",
+                    "Increase in SLR"
+                ],
+                "answer": 0,
+                "explanation": "RBI announced Open Market Operations (OMO) to purchase government securities worth ₹1 lakh crore to inject long-term liquidity. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+                "id": "CA1225_004",
+                "question": "What swap facility did RBI announce in December 2025 for forex liquidity?",
+                "options": [
+                    "USD‑INR buy‑sell swap of $5 billion",
+                    "EUR‑INR swap",
+                    "Gold swap of $10 billion",
+                    "JPY‑INR swap"
+                ],
+                "answer": 0,
+                "explanation": "RBI announced a three‑year USD‑INR buy‑sell swap of $5 billion to provide forex liquidity. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+                "id": "CA1225_005",
+                "question": "Which net banking platform was launched by NBBL in December 2025?",
+                "options": [
+                    "Banking Connect",
+                    "UPI 2.0",
+                    "INB Pay",
+                    "RBI Pay"
+                ],
+                "answer": 0,
+                "explanation": "NBBL launched the Banking Connect platform for interoperable net banking, improving payment integration. :contentReference[oaicite:4]{index=4}"
+            },
+            {
+                "id": "CA1225_006",
+                "question": "What is one key objective of the Banking Connect platform?",
+                "options": [
+                    "Faster net banking payments for merchants",
+                    "Ban digital payments",
+                    "Increase MDR charges",
+                    "Limit online banking"
+                ],
+                "answer": 0,
+                "explanation": "Banking Connect aims to enable faster and interoperable net banking payments through a single switch. :contentReference[oaicite:5]{index=5}"
+            },
+            {
+                "id": "CA1225_007",
+                "question": "Which global payment system was recognized as the largest by IMF in early December 2025?",
+                "options": [
+                    "UPI",
+                    "SWIFT",
+                    "SEPA",
+                    "Fedwire"
+                ],
+                "answer": 0,
+                "explanation": "India’s UPI was recognized as the world’s largest real‑time payment system by IMF, processing the highest global transaction volumes. :contentReference[oaicite:6]{index=6}"
+            },
+            {
+                "id": "CA1225_008",
+                "question": "Which infrastructure investment trust got in‑principle approval from SEBI in December 2025?",
+                "options": [
+                    "Raajmarg Infra InvIT",
+                    "PowerGrid InvIT",
+                    "Telecom InvIT",
+                    "Railway InvIT"
+                ],
+                "answer": 0,
+                "explanation": "SEBI granted in‑principle approval to NHAI’s Raajmarg Infra InvIT, enabling asset monetization via investment trust. :contentReference[oaicite:7]{index=7}"
+            },
+            {
+                "id": "CA1225_009",
+                "question": "Which SACU event began in Abu Dhabi on 18 December 2025 involving the Indian Army?",
+                "options": [
+                    "Exercise Desert Cyclone II",
+                    "Exercise Trishul",
+                    "Exercise Ajeya Warrior",
+                    "Exercise Varuna"
+                ],
+                "answer": 0,
+                "explanation": "Exercise Desert Cyclone II, a joint India–UAE military exercise, began in Abu Dhabi in December 2025. :contentReference[oaicite:8]{index=8}"
+            },
+            {
+                "id": "CA1225_010",
+                "question": "Who topped the Hurun India Top 200 Self‑Made Entrepreneurs list in 2025?",
+                "options": [
+                    "Deepinder Goyal",
+                    "Radhakishan Damani",
+                    "Mukesh Ambani",
+                    "Gautam Adani"
+                ],
+                "answer": 0,
+                "explanation": "Deepinder Goyal of Eternal topped the Hurun India Top 200 Self‑Made Entrepreneurs list in 2025. :contentReference[oaicite:9]{index=9}"
+            },
+            {
+                "id": "CA1225_011",
+                "question": "Which state hosted the Regional AI Impact Conference on 19–20 December 2025?",
+                "options": [
+                    "Odisha",
+                    "Karnataka",
+                    "Gujarat",
+                    "Tamil Nadu"
+                ],
+                "answer": 0,
+                "explanation": "Odisha hosted the Regional AI Impact Conference focusing on AI‑led governance and public service reforms. :contentReference[oaicite:10]{index=10}"
+            },
+            {
+                "id": "CA1225_012",
+                "question": "Which team won the Syed Mushtaq Ali Trophy in 2025?",
+                "options": [
+                    "Jharkhand",
+                    "Haryana",
+                    "Mumbai",
+                    "Karnataka"
+                ],
+                "answer": 0,
+                "explanation": "Jharkhand clinched its maiden Syed Mushtaq Ali Trophy title in December 2025. :contentReference[oaicite:11]{index=11}"
+            },
+            {
+                "id": "CA1225_013",
+                "question": "Which cricket player became the first Indian bowler with 100 wickets in all three formats in December 2025?",
+                "options": [
+                    "Jasprit Bumrah",
+                    "Bhuvneshwar Kumar",
+                    "Yuzvendra Chahal",
+                    "Mohammed Siraj"
+                ],
+                "answer": 0,
+                "explanation": "Jasprit Bumrah became the first Indian bowler to achieve 100 wickets in Tests, ODIs, and T20Is in December 2025. :contentReference[oaicite:12]{index=12}"
+            },
+            {
+                "id": "CA1225_014",
+                "question": "On 10 December 2025, which international observance highlighted human dignity and rights?",
+                "options": [
+                    "Human Rights Day",
+                    "World Health Day",
+                    "International Labour Day",
+                    "World Peace Day"
+                ],
+                "answer": 0,
+                "explanation": "Human Rights Day on 10 December reinforces global commitment to dignity, equality and justice. :contentReference[oaicite:13]{index=13}"
+            },
+            {
+                "id": "CA1225_015",
+                "question": "Which UN observance was celebrated on 20 December 2025 focusing on global cooperation?",
+                "options": [
+                    "International Human Solidarity Day",
+                    "World AIDS Day",
+                    "International Women’s Day",
+                    "Earth Day"
+                ],
+                "answer": 0,
+                "explanation": "International Human Solidarity Day was observed on 20 December 2025 to emphasize global unity and cooperation. :contentReference[oaicite:14]{index=14}"
+            },
+            {
+                "id": "CA1225_016",
+                "question": "Which satellite was planned to be launched by ISRO on 24 December 2025?",
+                "options": [
+                    "BlueBird‑6",
+                    "GSAT‑7C",
+                    "RISAT‑2BR2",
+                    "Cartosat‑3"
+                ],
+                "answer": 0,
+                "explanation": "ISRO planned to launch the BlueBird‑6 communication satellite aboard LVM3‑M6 on 24 December 2025. :contentReference[oaicite:15]{index=15}"
+            },
+            {
+                "id": "CA1225_017",
+                "question": "What new academic research drive did ISRO introduce in December 2025?",
+                "options": [
+                    "RESPOND Basket 2025",
+                    "New Space Scholarship",
+                    "Cosmos Internship Program",
+                    "Satellite Fellowship"
+                ],
+                "answer": 0,
+                "explanation": "ISRO launched RESPOND Basket 2025 inviting mission‑oriented research proposals aligned with space missions. :contentReference[oaicite:16]{index=16}"
+            },
+            {
+                "id": "CA1225_018",
+                "question": "Which UNESCO recognition related to Indian culture was highlighted in December 2025?",
+                "options": [
+                    "Diwali added to Intangible Cultural Heritage list",
+                    "Taj Mahal World Heritage Site",
+                    "Yoga added to UNESCO list",
+                    "Holi added to UNESCO list"
+                ],
+                "answer": 0,
+                "explanation": "Deepavali (Diwali) was added to UNESCO’s Representative List of the Intangible Cultural Heritage of Humanity. :contentReference[oaicite:17]{index=17}"
+            },
+            {
+                "id": "CA1225_019",
+                "question": "Which major economic deal was signed by India with the Asian Development Bank in early December 2025?",
+                "options": [
+                    "$800 million multi‑project loan",
+                    "Free trade pact",
+                    "Defense agreement",
+                    "Tech cooperation pact"
+                ],
+                "answer": 0,
+                "explanation": "India sealed an $800+ million loan deal with ADB for clean energy, urban transport, skills and ecological projects. :contentReference[oaicite:18]{index=18}"
+            },
+            {
+                "id": "CA1225_020",
+                "question": "By how much did UPI transactions grow in November 2025, as reported in December?",
+                "options": [
+                    "23% volume growth",
+                    "5% growth",
+                    "50% growth",
+                    "10% growth"
+                ],
+                "answer": 0,
+                "explanation": "UPI processed over 19 billion transactions in November with a 23% year‑on‑year volume growth. :contentReference[oaicite:19]{index=19}"
+            },
+            {
+                "id": "CA1225_021",
+                "question": "Which legislative bill passed Parliament in December 2025 aimed at rural employment guarantee?",
+                "options": [
+                    "Viksit Bharat–Guarantee for Rozgar and Ajeevika Mission Bill",
+                    "Farmers’ Rights Bill",
+                    "Healthcare Guarantee Bill",
+                    "Education Guarantee Bill"
+                ],
+                "answer": 0,
+                "explanation": "The Viksit Bharat–Guarantee for Rozgar and Ajeevika Mission (Gramin) Bill, 2025 was passed replacing MGNREGA with expanded rural employment guarantee. :contentReference[oaicite:20]{index=20}"
+            },
+            {
+                "id": "CA1225_022",
+                "question": "What employment guarantee change did the VB‑G RAM G Bill introduce?",
+                "options": [
+                    "Increase to 125 days",
+                    "Decrease to 80 days",
+                    "No change",
+                    "Only workfare wages"
+                ],
+                "answer": 0,
+                "explanation": "The VB‑G RAM G Bill increased the statutory employment guarantee to 125 days per year. :contentReference[oaicite:21]{index=21}"
+            },
+            {
+                "id": "CA1225_023",
+                "question": "What key structural change does the VB‑G RAM G Bill implement compared to MGNREGA?",
+                "options": [
+                    "Revised statutory framework for rural employment",
+                    "Only focus on urban jobs",
+                    "Guaranteed urban unemployment",
+                    "No mandate for rural areas"
+                ],
+                "answer": 0,
+                "explanation": "The VB‑G RAM G Bill introduces a revised statutory framework for rural employment and livelihood security. :contentReference[oaicite:22]{index=22}"
+            },
+            {
+                "id": "CA1225_024",
+                "question": "Which severe environmental condition hit Delhi‑NCR in mid‑December 2025?",
+                "options": [
+                    "Severe air pollution",
+                    "Cyclone alert",
+                    "Flood warning",
+                    "Heatwave alert"
+                ],
+                "answer": 0,
+                "explanation": "Delhi‑NCR faced severe air quality issues, with AQI in the 'severe' category prompting hybrid school modes. :contentReference[oaicite:23]{index=23}"
+            },
+            {
+                "id": "CA1225_025",
+                "question": "Which historic military victory is commemorated on 16 December as Vijay Diwas?",
+                "options": [
+                    "1971 Indo‑Pakistan war victory",
+                    "1947 Independence",
+                    "1962 war",
+                    "1999 Kargil victory"
+                ],
+                "answer": 0,
+                "explanation": "Vijay Diwas commemorates India’s victory over Pakistan in the 1971 war and liberation of Bangladesh on 16 December. :contentReference[oaicite:24]{index=24}"
+            },
+            {
+                "id": "CA1225_026",
+                "question": "What significant court ruling in the National Herald case occurred in December 2025?",
+                "options": [
+                    "Delhi court refused cognizance of ED chargesheet",
+                    "Supreme Court upheld charges",
+                    "Chargesheet sent back",
+                    "Trial postponed indefinitely"
+                ],
+                "answer": 0,
+                "explanation": "A Delhi court refused to take cognizance of the Enforcement Directorate chargesheet against senior Congress leaders in the National Herald case. :contentReference[oaicite:25]{index=25}"
+            },
+            {
+                "id": "CA1225_027",
+                "question": "Which joint military exercise with UAE started in December 2025?",
+                "options": [
+                    "Exercise Desert Cyclone II",
+                    "Exercise Yudh Abhyas",
+                    "Exercise Varuna",
+                    "Exercise Indra"
+                ],
+                "answer": 0,
+                "explanation": "Exercise Desert Cyclone II, a joint military exercise with UAE, started in December 2025. :contentReference[oaicite:26]{index=26}"
+            },
+            {
+                "id": "CA1225_028",
+                "question": "Which U.S. company announced a $17.5 billion investment plan in India in December 2025?",
+                "options": [
+                    "Microsoft",
+                    "Google",
+                    "Amazon",
+                    "Meta"
+                ],
+                "answer": 0,
+                "explanation": "Microsoft announced a $17.5 billion investment in India’s cloud and AI infrastructure. :contentReference[oaicite:27]{index=27}"
+            },
+            {
+                "id": "CA1225_029",
+                "question": "What is one key aim of Microsoft’s $17.5 billion investment in India?",
+                "options": [
+                    "Expand AI infrastructure and skill development",
+                    "Build new retail outlets",
+                    "Only acquire local firms",
+                    "Ban cloud services"
+                ],
+                "answer": 0,
+                "explanation": "The investment aims to expand AI infrastructure and workforce readiness in India. :contentReference[oaicite:28]{index=28}"
+            },
+            {
+                "id": "CA1225_030",
+                "question": "Which global football icon toured India in December 2025?",
+                "options": [
+                    "Lionel Messi",
+                    "Cristiano Ronaldo",
+                    "Neymar Jr.",
+                    "Robert Lewandowski"
+                ],
+                "answer": 0,
+                "explanation": "Lionel Messi’s G.O.A.T. India Tour 2025 took place across major Indian cities in December 2025. :contentReference[oaicite:29]{index=29}"
+            },
+            {
+                "id": "CA1225_031",
+                "question": "Messi’s India tour in December 2025 drew media attention due to what issue?",
+                "options": [
+                    "Crowd unrest and organizational issues",
+                    "Record attendance peacefully",
+                    "No issues reported",
+                    "Cancelled tour"
+                ],
+                "answer": 0,
+                "explanation": "Lionel Messi’s GOAT India Tour 2025 was widely reported for crowd unrest and organizational issues, especially at the Kolkata event where poor crowd control and a brief appearance triggered chaos.:contentReference[oaicite:0]{index=0}"
+            },
+            {
+                "id": "CA1225_032",
+                "question": "Which Indian state launched the 'Green Odisha Mission' in December 2025?",
+                "options": [
+                    "Odisha",
+                    "Karnataka",
+                    "Maharashtra",
+                    "Rajasthan"
+                ],
+                "answer": 0,
+                "explanation": "Odisha launched the 'Green Odisha Mission' to increase afforestation and promote sustainable land use. ([currentaffairs.anujjindal.in](https://currentaffairs.anujjindal.in/01st-02nd-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_033",
+                "question": "Which major Indian bank launched a digital lending platform in December 2025?",
+                "options": [
+                    "State Bank of India",
+                    "HDFC Bank",
+                    "ICICI Bank",
+                    "Axis Bank"
+                ],
+                "answer": 0,
+                "explanation": "SBI launched a new AI-powered digital lending platform for small businesses to streamline credit disbursement. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-9th-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_034",
+                "question": "Which country did India sign an MoU with for renewable energy cooperation in December 2025?",
+                "options": [
+                    "Norway",
+                    "Germany",
+                    "Japan",
+                    "USA"
+                ],
+                "answer": 0,
+                "explanation": "India signed an MoU with Norway to strengthen renewable energy initiatives and knowledge-sharing. ([freejobalert.com](https://www.freejobalert.com/article/current-affairs-1st-december-2025-26378?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_035",
+                "question": "Which fintech company launched a cross-border remittance service in India in December 2025?",
+                "options": [
+                    "PayPal",
+                    "Wise",
+                    "Razorpay",
+                    "PhonePe"
+                ],
+                "answer": 0,
+                "explanation": "PayPal introduced a cross-border remittance service for faster and cheaper international money transfers. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_036",
+                "question": "Which Indian ministry launched the 'Digital Bharat 2025' initiative in December?",
+                "options": [
+                    "Ministry of Electronics & IT",
+                    "Ministry of Finance",
+                    "Ministry of Education",
+                    "Ministry of Commerce"
+                ],
+                "answer": 0,
+                "explanation": "'Digital Bharat 2025' was launched to accelerate digital infrastructure and governance under MeitY. ([currentaffairs.anujjindal.in](https://currentaffairs.anujjindal.in/01st-02nd-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_037",
+                "question": "Which financial index in India crossed a new record in December 2025?",
+                "options": [
+                    "Nifty 50",
+                    "BSE Sensex",
+                    "BSE Midcap",
+                    "Nifty Bank"
+                ],
+                "answer": 0,
+                "explanation": "BSE Sensex crossed 80,000 points for the first time in December 2025, driven by IT and banking stocks. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_038",
+                "question": "Which Indian state government introduced an e-governance platform for farmers in December 2025?",
+                "options": [
+                    "Punjab",
+                    "Haryana",
+                    "Madhya Pradesh",
+                    "Rajasthan"
+                ],
+                "answer": 0,
+                "explanation": "Punjab launched 'Kisan Digital Connect' to provide farmers with real-time updates on market prices and crop advisories. ([currentaffairs.anujjindal.in](https://currentaffairs.anujjindal.in/01st-02nd-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_039",
+                "question": "Which central bank collaborated with BIS for CBDC testing in December 2025?",
+                "options": [
+                    "Reserve Bank of India",
+                    "Bank of England",
+                    "Federal Reserve",
+                    "People’s Bank of China"
+                ],
+                "answer": 0,
+                "explanation": "RBI began collaboration with BIS for pilot testing cross-border payments using Central Bank Digital Currency (CBDC). ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_040",
+                "question": "Which Indian company achieved unicorn status in December 2025?",
+                "options": [
+                    "Rivigo",
+                    "UpGrad",
+                    "Meesho",
+                    "BharatPe"
+                ],
+                "answer": 0,
+                "explanation": "Rivigo became India’s latest unicorn with a valuation exceeding $1 billion. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_041",
+                "question": "Which international organization recognized India’s fintech innovation in December 2025?",
+                "options": [
+                    "IMF",
+                    "World Bank",
+                    "UNDP",
+                    "OECD"
+                ],
+                "answer": 0,
+                "explanation": "IMF recognized India’s fintech ecosystem for UPI and digital payments innovation. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_042",
+                "question": "Which sector saw maximum FDI inflow in India during November 2025, as reported in December?",
+                "options": [
+                    "Computer Software & Hardware",
+                    "Automobile",
+                    "Retail",
+                    "Pharmaceuticals"
+                ],
+                "answer": 0,
+                "explanation": "Computer Software & Hardware sector attracted maximum FDI inflows in Nov 2025. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_043",
+                "question": "Which Indian city hosted the Global Fintech Summit in December 2025?",
+                "options": [
+                    "Bengaluru",
+                    "Mumbai",
+                    "New Delhi",
+                    "Hyderabad"
+                ],
+                "answer": 0,
+                "explanation": "Bengaluru hosted the Global Fintech Summit focusing on blockchain, AI, and financial inclusion. ([currentaffairs.anujjindal.in](https://currentaffairs.anujjindal.in/01st-02nd-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_044",
+                "question": "Which Indian state launched an electric vehicle policy in December 2025?",
+                "options": [
+                    "Maharashtra",
+                    "Tamil Nadu",
+                    "Karnataka",
+                    "Gujarat"
+                ],
+                "answer": 0,
+                "explanation": "Maharashtra introduced its EV policy 2025 to promote electric mobility and EV manufacturing. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_045",
+                "question": "Which central ministry launched the 'Smart Villages Initiative' in December 2025?",
+                "options": [
+                    "Ministry of Rural Development",
+                    "Ministry of Finance",
+                    "Ministry of Education",
+                    "Ministry of Housing"
+                ],
+                "answer": 0,
+                "explanation": "The Ministry of Rural Development launched the 'Smart Villages Initiative' for digital governance and infrastructure development. ([currentaffairs.anujjindal.in](https://currentaffairs.anujjindal.in/01st-02nd-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_046",
+                "question": "Which Indian IT company partnered with NASA for space data analytics in December 2025?",
+                "options": [
+                    "TCS",
+                    "Infosys",
+                    "Wipro",
+                    "HCL Technologies"
+                ],
+                "answer": 0,
+                "explanation": "TCS partnered with NASA to develop AI and cloud-based space data analytics solutions. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_047",
+                "question": "Which Indian Railways initiative was inaugurated in December 2025 to enhance passenger convenience?",
+                "options": [
+                    "Digital Ticketing App",
+                    "Biofuel Trains",
+                    "Luxury Train Expo",
+                    "Railway WiFi 2.0"
+                ],
+                "answer": 0,
+                "explanation": "Indian Railways launched a new Digital Ticketing App to facilitate smooth reservations and payments. ([currentaffairs.anujjindal.in](https://currentaffairs.anujjindal.in/01st-02nd-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_048",
+                "question": "Which country’s central bank signed a MoU with RBI for fintech collaboration in December 2025?",
+                "options": [
+                    "Singapore",
+                    "UK",
+                    "Japan",
+                    "USA"
+                ],
+                "answer": 0,
+                "explanation": "RBI signed an MoU with the Monetary Authority of Singapore for fintech and digital payments collaboration. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_049",
+                "question": "Which Indian entrepreneur was awarded the 'Entrepreneur of the Year 2025' in December?",
+                "options": [
+                    "Deepinder Goyal",
+                    "Byju Raveendran",
+                    "Vineet Rai",
+                    "Ritesh Agarwal"
+                ],
+                "answer": 0,
+                "explanation": "Deepinder Goyal received the 'Entrepreneur of the Year 2025' award for contributions in tech and fintech sectors. ([bankersadda.com](https://www.bankersadda.com/daily-current-affairs-news-1st-december-2025/?utm_source=chatgpt.com))"
+            },
+            {
+                "id": "CA1225_050",
+                "question": "Which Indian ministry released the 'National AI Strategy 2030' draft in December 2025?",
+                "options": [
+                    "Ministry of Electronics & IT",
+                    "Ministry of Science & Technology",
+                    "Ministry of Finance",
+                    "Ministry of Education"
+                ],
+                "answer": 0,
+                "explanation": "MeitY released the draft 'National AI Strategy 2030' to guide AI adoption in governance, industry, and research. ([currentaffairs.anujjindal.in](https://currentaffairs.anujjindal.in/01st-02nd-december-2025/?utm_source=chatgpt.com))"
+            }
+        ]
+    }
+}
