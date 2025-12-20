@@ -1,0 +1,1516 @@
+{
+    "data": {
+        "Shell Scripting Basics": [
+            {
+                "id": "SSB001",
+                "question": "What is the primary role of a shell in UNIX/Linux?",
+                "options": [
+                    "To compile source code",
+                    "To act as an interface between user and kernel",
+                    "To manage hardware devices directly",
+                    "To store system logs"
+                ],
+                "answer": 1,
+                "explanation": "The shell provides a command-line interface between the user and the operating system kernel."
+            },
+            {
+                "id": "SSB002",
+                "question": "Which symbol is used at the beginning of a shell script to specify the interpreter?",
+                "options": [
+                    "#!",
+                    "$$",
+                    "//",
+                    "##"
+                ],
+                "answer": 0,
+                "explanation": "The shebang (#!) tells the system which interpreter should execute the script."
+            },
+            {
+                "id": "SSB003",
+                "question": "Which command is used to change the permission of a shell script to make it executable?",
+                "options": [
+                    "chmod",
+                    "chown",
+                    "exec",
+                    "set"
+                ],
+                "answer": 0,
+                "explanation": "chmod is used to modify file permissions, including execution rights."
+            },
+            {
+                "id": "SSB004",
+                "question": "Which of the following is the default shell in most Linux distributions?",
+                "options": [
+                    "csh",
+                    "ksh",
+                    "bash",
+                    "zsh"
+                ],
+                "answer": 2,
+                "explanation": "Bash (Bourne Again Shell) is the default shell in most Linux systems."
+            },
+            {
+                "id": "SSB005",
+                "question": "How is a comment written in a shell script?",
+                "options": [
+                    "// comment",
+                    "/* comment */",
+                    "# comment",
+                    "<!-- comment -->"
+                ],
+                "answer": 2,
+                "explanation": "In shell scripting, lines starting with # are treated as comments."
+            },
+            {
+                "id": "SSB006",
+                "question": "Which command executes a shell script named test.sh in the current directory?",
+                "options": [
+                    "test.sh",
+                    "./test.sh",
+                    "run test.sh",
+                    "exec test.sh"
+                ],
+                "answer": 1,
+                "explanation": "Using ./ specifies execution from the current directory."
+            },
+            {
+                "id": "SSB007",
+                "question": "Which shell was the first UNIX shell?",
+                "options": [
+                    "Bash",
+                    "Korn shell",
+                    "Bourne shell",
+                    "C shell"
+                ],
+                "answer": 2,
+                "explanation": "The Bourne shell (sh) was the original UNIX shell."
+            },
+            {
+                "id": "SSB008",
+                "question": "What does the command `echo` do in a shell script?",
+                "options": [
+                    "Reads input from user",
+                    "Prints output to standard output",
+                    "Terminates the script",
+                    "Displays file contents"
+                ],
+                "answer": 1,
+                "explanation": "echo is used to display text or variable values on the terminal."
+            },
+            {
+                "id": "SSB009",
+                "question": "Which file extension is commonly used for shell scripts?",
+                "options": [
+                    ".shell",
+                    ".script",
+                    ".sh",
+                    ".bash"
+                ],
+                "answer": 2,
+                "explanation": ".sh is the commonly used extension for shell scripts."
+            },
+            {
+                "id": "SSB010",
+                "question": "Which of the following correctly prints 'Hello World' in a shell script?",
+                "options": [
+                    "print(\"Hello World\")",
+                    "echo \"Hello World\"",
+                    "printf Hello World",
+                    "write Hello World"
+                ],
+                "answer": 1,
+                "explanation": "echo \"Hello World\" is the standard way to print output."
+            },
+            {
+                "id": "SSB011",
+                "question": "Which command is used to find the current working directory?",
+                "options": [
+                    "cwd",
+                    "dir",
+                    "pwd",
+                    "where"
+                ],
+                "answer": 2,
+                "explanation": "pwd prints the present working directory."
+            },
+            {
+                "id": "SSB012",
+                "question": "What does `$0` represent in a shell script?",
+                "options": [
+                    "The first argument",
+                    "The script name",
+                    "The process ID",
+                    "The exit status"
+                ],
+                "answer": 1,
+                "explanation": "$0 stores the name of the script being executed."
+            },
+            {
+                "id": "SSB013",
+                "question": "Which command is used to display the contents of a file?",
+                "options": [
+                    "show",
+                    "read",
+                    "cat",
+                    "view"
+                ],
+                "answer": 2,
+                "explanation": "cat outputs the contents of a file to standard output."
+            },
+            {
+                "id": "SSB014",
+                "question": "Which symbol is used to combine multiple commands on a single line?",
+                "options": [
+                    ":",
+                    "|",
+                    ";",
+                    "&"
+                ],
+                "answer": 2,
+                "explanation": "The semicolon allows multiple commands to be executed sequentially."
+            },
+            {
+                "id": "SSB015",
+                "question": "What does the command `exit` do in a shell script?",
+                "options": [
+                    "Stops system services",
+                    "Terminates the current script",
+                    "Logs out the user only",
+                    "Reboots the system"
+                ],
+                "answer": 1,
+                "explanation": "exit terminates the execution of the shell script."
+            },
+            {
+                "id": "SSB016",
+                "question": "Which shell feature allows reuse of previously executed commands?",
+                "options": [
+                    "Job control",
+                    "Command history",
+                    "Alias",
+                    "Redirection"
+                ],
+                "answer": 1,
+                "explanation": "Command history stores previously executed commands."
+            },
+            {
+                "id": "SSB017",
+                "question": "Which command is used to clear the terminal screen?",
+                "options": [
+                    "cls",
+                    "clean",
+                    "clear",
+                    "reset"
+                ],
+                "answer": 2,
+                "explanation": "clear clears the terminal display."
+            },
+            {
+                "id": "SSB018",
+                "question": "Which operator redirects output to a file in shell scripting?",
+                "options": [
+                    "<",
+                    ">",
+                    ">>",
+                    "|"
+                ],
+                "answer": 1,
+                "explanation": "> redirects standard output to a file (overwriting it)."
+            },
+            {
+                "id": "SSB019",
+                "question": "Which command displays the manual pages for shell commands?",
+                "options": [
+                    "info",
+                    "help",
+                    "manual",
+                    "man"
+                ],
+                "answer": 3,
+                "explanation": "man shows the manual documentation for commands."
+            },
+            {
+                "id": "SSB020",
+                "question": "Which of the following shells supports advanced scripting features and backward compatibility with sh?",
+                "options": [
+                    "C shell",
+                    "Bourne shell",
+                    "Bash",
+                    "Fish shell"
+                ],
+                "answer": 2,
+                "explanation": "Bash extends sh while remaining backward compatible."
+            }
+        ],
+        "Shell Variables": [
+            {
+                "id": "SV001",
+                "question": "In shell scripting, how is a variable assigned a value?",
+                "options": [
+                    "var = value",
+                    "var:value",
+                    "var=value",
+                    "set var value"
+                ],
+                "answer": 2,
+                "explanation": "Shell variables are assigned using var=value without spaces."
+            },
+            {
+                "id": "SV002",
+                "question": "Which command is used to access the value of a shell variable?",
+                "options": [
+                    "$variable",
+                    "variable$",
+                    "${variable}",
+                    "@variable"
+                ],
+                "answer": 2,
+                "explanation": "${variable} is the standard and safe way to reference a variable’s value."
+            },
+            {
+                "id": "SV003",
+                "question": "Which statement about shell variables is TRUE?",
+                "options": [
+                    "Variables must be declared before use",
+                    "Variable names can start with a number",
+                    "By default, variables are treated as strings",
+                    "Variables are always global across shells"
+                ],
+                "answer": 2,
+                "explanation": "Shell variables are untyped and treated as strings by default."
+            },
+            {
+                "id": "SV004",
+                "question": "Which command makes a shell variable available to child processes?",
+                "options": [
+                    "env",
+                    "declare",
+                    "export",
+                    "set"
+                ],
+                "answer": 2,
+                "explanation": "export marks a variable as an environment variable."
+            },
+            {
+                "id": "SV005",
+                "question": "Which variable stores the exit status of the last executed command?",
+                "options": [
+                    "$!",
+                    "$$",
+                    "$?",
+                    "$#"
+                ],
+                "answer": 2,
+                "explanation": "$? holds the exit status of the most recent command."
+            },
+            {
+                "id": "SV006",
+                "question": "Which variable contains the process ID of the current shell?",
+                "options": [
+                    "$0",
+                    "$!",
+                    "$$",
+                    "$@"
+                ],
+                "answer": 2,
+                "explanation": "$$ represents the process ID of the current shell."
+            },
+            {
+                "id": "SV007",
+                "question": "Which command lists all shell variables and functions?",
+                "options": [
+                    "env",
+                    "printenv",
+                    "set",
+                    "export"
+                ],
+                "answer": 2,
+                "explanation": "set displays all shell variables and functions."
+            },
+            {
+                "id": "SV008",
+                "question": "Which variable stores the number of positional parameters?",
+                "options": [
+                    "$@",
+                    "$*",
+                    "$#",
+                    "$0"
+                ],
+                "answer": 2,
+                "explanation": "$# contains the count of arguments passed to the script."
+            },
+            {
+                "id": "SV009",
+                "question": "Which is a valid shell variable name?",
+                "options": [
+                    "1var",
+                    "var-name",
+                    "_var",
+                    "var name"
+                ],
+                "answer": 2,
+                "explanation": "Shell variable names can start with letters or underscore."
+            },
+            {
+                "id": "SV010",
+                "question": "What happens if a shell variable is not exported?",
+                "options": [
+                    "It cannot be used in the script",
+                    "It is deleted after assignment",
+                    "It is not visible to child shells",
+                    "It becomes read-only"
+                ],
+                "answer": 2,
+                "explanation": "Non-exported variables are local to the current shell."
+            },
+            {
+                "id": "SV011",
+                "question": "Which command removes a shell variable?",
+                "options": [
+                    "delete",
+                    "remove",
+                    "unset",
+                    "clear"
+                ],
+                "answer": 2,
+                "explanation": "unset deletes a variable from the shell environment."
+            },
+            {
+                "id": "SV012",
+                "question": "Which variable expands to all positional parameters individually?",
+                "options": [
+                    "$*",
+                    "$#",
+                    "$@",
+                    "$$"
+                ],
+                "answer": 2,
+                "explanation": "$@ expands each positional parameter separately."
+            },
+            {
+                "id": "SV013",
+                "question": "What is the default value type of a shell variable?",
+                "options": [
+                    "Integer",
+                    "Float",
+                    "String",
+                    "Boolean"
+                ],
+                "answer": 2,
+                "explanation": "Shell variables are strings by default."
+            },
+            {
+                "id": "SV014",
+                "question": "Which environment variable defines the executable search path?",
+                "options": [
+                    "HOME",
+                    "SHELL",
+                    "PATH",
+                    "PWD"
+                ],
+                "answer": 2,
+                "explanation": "PATH specifies directories searched for executable commands."
+            },
+            {
+                "id": "SV015",
+                "question": "Which variable stores all positional parameters as a single string?",
+                "options": [
+                    "$@",
+                    "$#",
+                    "$*",
+                    "$0"
+                ],
+                "answer": 2,
+                "explanation": "$* expands all positional parameters as one string."
+            },
+            {
+                "id": "SV016",
+                "question": "Which variable holds the name of the currently executing shell?",
+                "options": [
+                    "$0",
+                    "$SHELL",
+                    "$$",
+                    "$?"
+                ],
+                "answer": 0,
+                "explanation": "$0 contains the name of the script or shell."
+            },
+            {
+                "id": "SV017",
+                "question": "Which command can make a variable read-only?",
+                "options": [
+                    "export",
+                    "lock",
+                    "readonly",
+                    "const"
+                ],
+                "answer": 2,
+                "explanation": "readonly prevents modification of a variable."
+            },
+            {
+                "id": "SV018",
+                "question": "Which variable stores the user's home directory path?",
+                "options": [
+                    "PWD",
+                    "USER",
+                    "HOME",
+                    "LOGNAME"
+                ],
+                "answer": 2,
+                "explanation": "HOME contains the current user's home directory."
+            },
+            {
+                "id": "SV019",
+                "question": "Which of the following variables is automatically set by the shell?",
+                "options": [
+                    "total",
+                    "count",
+                    "PATH",
+                    "result"
+                ],
+                "answer": 2,
+                "explanation": "PATH is a predefined environment variable."
+            },
+            {
+                "id": "SV020",
+                "question": "Which syntax safely expands a variable when concatenating strings?",
+                "options": [
+                    "$varname",
+                    "${var}text",
+                    "$(var)",
+                    "@var"
+                ],
+                "answer": 1,
+                "explanation": "Using braces avoids ambiguity during variable expansion."
+            }
+        ],
+        "Shell Script Arguments": [
+            {
+                "id": "SSA001",
+                "question": "In a shell script, what does $1 represent?",
+                "options": [
+                    "The script name",
+                    "The first command-line argument",
+                    "The number of arguments",
+                    "All arguments together"
+                ],
+                "answer": 1,
+                "explanation": "$1 refers to the first argument passed to the script."
+            },
+            {
+                "id": "SSA002",
+                "question": "Which variable stores the total number of arguments passed to a shell script?",
+                "options": [
+                    "$@",
+                    "$0",
+                    "$#",
+                    "$*"
+                ],
+                "answer": 2,
+                "explanation": "$# contains the count of positional parameters."
+            },
+            {
+                "id": "SSA003",
+                "question": "What does $0 represent in a shell script?",
+                "options": [
+                    "First argument value",
+                    "Process ID of the script",
+                    "Exit status of last command",
+                    "Name of the script"
+                ],
+                "answer": 3,
+                "explanation": "$0 holds the name of the script being executed."
+            },
+            {
+                "id": "SSA004",
+                "question": "Which variable expands each positional parameter as a separate word?",
+                "options": [
+                    "$*",
+                    "$#",
+                    "$@",
+                    "$$"
+                ],
+                "answer": 2,
+                "explanation": "$@ expands arguments individually, preserving word boundaries."
+            },
+            {
+                "id": "SSA005",
+                "question": "Which variable expands all positional parameters as a single string?",
+                "options": [
+                    "$@",
+                    "$0",
+                    "$*",
+                    "$?"
+                ],
+                "answer": 2,
+                "explanation": "$* expands all arguments as one string."
+            },
+            {
+                "id": "SSA006",
+                "question": "How can a shell script access the tenth argument?",
+                "options": [
+                    "$10",
+                    "${10}",
+                    "$9+1",
+                    "$(10)"
+                ],
+                "answer": 1,
+                "explanation": "Arguments beyond $9 must be referenced using braces, e.g., ${10}."
+            },
+            {
+                "id": "SSA007",
+                "question": "Which variable stores the exit status of the last executed command?",
+                "options": [
+                    "$$",
+                    "$!",
+                    "$?",
+                    "$#"
+                ],
+                "answer": 2,
+                "explanation": "$? stores the exit status of the previous command."
+            },
+            {
+                "id": "SSA008",
+                "question": "Which command is used to shift positional parameters to the left?",
+                "options": [
+                    "move",
+                    "shift",
+                    "rotate",
+                    "pop"
+                ],
+                "answer": 1,
+                "explanation": "shift moves positional parameters so $2 becomes $1, and so on."
+            },
+            {
+                "id": "SSA009",
+                "question": "After executing `shift 2`, what happens to the arguments?",
+                "options": [
+                    "All arguments are removed",
+                    "The last two arguments are removed",
+                    "The first two arguments are discarded",
+                    "Arguments are duplicated"
+                ],
+                "answer": 2,
+                "explanation": "shift 2 discards the first two positional parameters."
+            },
+            {
+                "id": "SSA010",
+                "question": "Which variable contains the process ID of the current shell?",
+                "options": [
+                    "$!",
+                    "$$",
+                    "$0",
+                    "$@"
+                ],
+                "answer": 1,
+                "explanation": "$$ stores the PID of the running shell."
+            },
+            {
+                "id": "SSA011",
+                "question": "What happens if a script is executed without passing any arguments?",
+                "options": [
+                    "$# becomes -1",
+                    "$@ becomes NULL",
+                    "$# becomes 0",
+                    "$0 becomes empty"
+                ],
+                "answer": 2,
+                "explanation": "When no arguments are passed, $# evaluates to 0."
+            },
+            {
+                "id": "SSA012",
+                "question": "Which syntax safely iterates over all arguments in a script?",
+                "options": [
+                    "for arg in $*",
+                    "for arg in $@",
+                    "for arg in $#",
+                    "for arg in $$"
+                ],
+                "answer": 1,
+                "explanation": "Using $@ preserves each argument correctly, even with spaces."
+            },
+            {
+                "id": "SSA013",
+                "question": "Which of the following is TRUE regarding positional parameters?",
+                "options": [
+                    "They must be declared before use",
+                    "They are accessed using $ followed by a number",
+                    "They can only store numeric values",
+                    "They are available only in interactive shells"
+                ],
+                "answer": 1,
+                "explanation": "Positional parameters are accessed as $1, $2, etc."
+            },
+            {
+                "id": "SSA014",
+                "question": "Which variable stores all arguments excluding the script name?",
+                "options": [
+                    "$0",
+                    "$#",
+                    "$@",
+                    "$$"
+                ],
+                "answer": 2,
+                "explanation": "$@ holds all positional parameters except the script name."
+            },
+            {
+                "id": "SSA015",
+                "question": "Which command allows reassignment of positional parameters inside a script?",
+                "options": [
+                    "assign",
+                    "reset",
+                    "set",
+                    "export"
+                ],
+                "answer": 2,
+                "explanation": "set can redefine positional parameters within a script."
+            }
+        ],
+        "If Statement, Loop, Return": [
+            {
+                "id": "SLR001",
+                "question": "Which keyword is used to begin an if statement in a shell script?",
+                "options": [
+                    "then",
+                    "if",
+                    "case",
+                    "test"
+                ],
+                "answer": 1,
+                "explanation": "An if statement in shell scripting starts with the keyword 'if'."
+            },
+            {
+                "id": "SLR002",
+                "question": "Which keyword terminates an if-else block in shell scripting?",
+                "options": [
+                    "fi",
+                    "endif",
+                    "done",
+                    "exit"
+                ],
+                "answer": 0,
+                "explanation": "'fi' is used to end an if statement block."
+            },
+            {
+                "id": "SLR003",
+                "question": "Which command is commonly used to evaluate conditions inside an if statement?",
+                "options": [
+                    "eval",
+                    "test",
+                    "check",
+                    "verify"
+                ],
+                "answer": 1,
+                "explanation": "The 'test' command or [ ] is used for conditional evaluation."
+            },
+            {
+                "id": "SLR004",
+                "question": "What does the -eq operator represent in shell conditions?",
+                "options": [
+                    "String equality",
+                    "File existence",
+                    "Numeric equality",
+                    "Greater than"
+                ],
+                "answer": 2,
+                "explanation": "-eq is used to compare integers for equality."
+            },
+            {
+                "id": "SLR005",
+                "question": "Which loop executes a block of code while a condition remains true?",
+                "options": [
+                    "for",
+                    "until",
+                    "while",
+                    "select"
+                ],
+                "answer": 2,
+                "explanation": "The while loop runs as long as the condition is true."
+            },
+            {
+                "id": "SLR006",
+                "question": "Which loop executes until a condition becomes true?",
+                "options": [
+                    "for",
+                    "until",
+                    "while",
+                    "repeat"
+                ],
+                "answer": 1,
+                "explanation": "An until loop executes until the condition evaluates to true."
+            },
+            {
+                "id": "SLR007",
+                "question": "Which keyword ends a while or until loop?",
+                "options": [
+                    "fi",
+                    "exit",
+                    "done",
+                    "stop"
+                ],
+                "answer": 2,
+                "explanation": "The keyword 'done' terminates loop blocks."
+            },
+            {
+                "id": "SLR008",
+                "question": "What is the correct syntax to start a for loop in shell?",
+                "options": [
+                    "for i to n",
+                    "foreach i in list",
+                    "for i in list",
+                    "loop i in list"
+                ],
+                "answer": 2,
+                "explanation": "The correct syntax is 'for variable in list'."
+            },
+            {
+                "id": "SLR009",
+                "question": "Which keyword is used to skip the remaining loop iteration?",
+                "options": [
+                    "exit",
+                    "break",
+                    "continue",
+                    "return"
+                ],
+                "answer": 2,
+                "explanation": "'continue' skips the current iteration and moves to the next one."
+            },
+            {
+                "id": "SLR010",
+                "question": "Which keyword immediately terminates a loop?",
+                "options": [
+                    "return",
+                    "stop",
+                    "break",
+                    "exit"
+                ],
+                "answer": 2,
+                "explanation": "'break' exits the loop immediately."
+            },
+            {
+                "id": "SLR011",
+                "question": "What does the return statement do in a shell function?",
+                "options": [
+                    "Prints output",
+                    "Ends script execution",
+                    "Returns a numeric status",
+                    "Returns a string value"
+                ],
+                "answer": 2,
+                "explanation": "Return sends a numeric exit status (0–255) from a function."
+            },
+            {
+                "id": "SLR012",
+                "question": "Which value is considered TRUE in shell scripting?",
+                "options": [
+                    "0",
+                    "1",
+                    "-1",
+                    "Any positive number"
+                ],
+                "answer": 0,
+                "explanation": "In shell scripting, exit status 0 indicates success (true)."
+            },
+            {
+                "id": "SLR013",
+                "question": "Which operator checks if a file exists?",
+                "options": [
+                    "-f",
+                    "-d",
+                    "-e",
+                    "-r"
+                ],
+                "answer": 2,
+                "explanation": "-e checks for the existence of a file or directory."
+            },
+            {
+                "id": "SLR014",
+                "question": "Which statement is used for multi-way branching in shell scripts?",
+                "options": [
+                    "if-else",
+                    "switch",
+                    "case",
+                    "select"
+                ],
+                "answer": 2,
+                "explanation": "'case' is used for multiple condition branching."
+            },
+            {
+                "id": "SLR015",
+                "question": "Which keyword ends a case statement?",
+                "options": [
+                    "endcase",
+                    "esac",
+                    "done",
+                    "fi"
+                ],
+                "answer": 1,
+                "explanation": "A case block ends with 'esac'."
+            },
+            {
+                "id": "SLR016",
+                "question": "Which loop is best suited when the number of iterations is known?",
+                "options": [
+                    "while",
+                    "until",
+                    "for",
+                    "select"
+                ],
+                "answer": 2,
+                "explanation": "A for loop is ideal when iteration count is predetermined."
+            },
+            {
+                "id": "SLR017",
+                "question": "Which command exits a shell script immediately?",
+                "options": [
+                    "return",
+                    "break",
+                    "continue",
+                    "exit"
+                ],
+                "answer": 3,
+                "explanation": "'exit' terminates script execution."
+            },
+            {
+                "id": "SLR018",
+                "question": "Which conditional operator performs logical AND?",
+                "options": [
+                    "||",
+                    "&",
+                    "&&",
+                    "|"
+                ],
+                "answer": 2,
+                "explanation": "&& represents logical AND in shell conditions."
+            },
+            {
+                "id": "SLR019",
+                "question": "What does the -ne operator signify?",
+                "options": [
+                    "Not equal (numeric)",
+                    "Not empty",
+                    "No error",
+                    "Negative number"
+                ],
+                "answer": 0,
+                "explanation": "-ne checks numeric inequality."
+            },
+            {
+                "id": "SLR020",
+                "question": "Which keyword introduces the block executed when if condition is true?",
+                "options": [
+                    "then",
+                    "do",
+                    "else",
+                    "begin"
+                ],
+                "answer": 0,
+                "explanation": "'then' begins the true-condition block."
+            },
+            {
+                "id": "SLR021",
+                "question": "Which loop will execute at least once?",
+                "options": [
+                    "for",
+                    "while",
+                    "until",
+                    "None of the above"
+                ],
+                "answer": 3,
+                "explanation": "Shell scripting does not have a do-while loop; none guarantee one execution."
+            },
+            {
+                "id": "SLR022",
+                "question": "Which keyword separates multiple patterns in a case statement?",
+                "options": [
+                    ";",
+                    "|",
+                    ":",
+                    ","
+                ],
+                "answer": 1,
+                "explanation": "The pipe (|) separates multiple patterns in case."
+            },
+            {
+                "id": "SLR023",
+                "question": "Which symbol is used to terminate each case option?",
+                "options": [
+                    ";;",
+                    "::",
+                    "##",
+                    "**"
+                ],
+                "answer": 0,
+                "explanation": "Each case option ends with ';;'."
+            },
+            {
+                "id": "SLR024",
+                "question": "What is the valid numeric range for return values in shell functions?",
+                "options": [
+                    "0–100",
+                    "-255 to 255",
+                    "0–255",
+                    "1–255"
+                ],
+                "answer": 2,
+                "explanation": "Shell functions return exit codes between 0 and 255."
+            },
+            {
+                "id": "SLR025",
+                "question": "Which construct repeats commands for each item in a list?",
+                "options": [
+                    "while",
+                    "until",
+                    "case",
+                    "for"
+                ],
+                "answer": 3,
+                "explanation": "The for loop iterates over each element of a list."
+            }
+        ],
+        "Basic UNIX Commands": [
+            {
+                "id": "BUC001",
+                "question": "Which UNIX command is used to display the current working directory?",
+                "options": [
+                    "ls",
+                    "pwd",
+                    "whoami",
+                    "cd"
+                ],
+                "answer": 1,
+                "explanation": "pwd prints the present working directory."
+            },
+            {
+                "id": "BUC002",
+                "question": "Which command is used to list files including hidden files?",
+                "options": [
+                    "ls -l",
+                    "ls -a",
+                    "ls -r",
+                    "ls -h"
+                ],
+                "answer": 1,
+                "explanation": "ls -a displays all files including hidden ones."
+            },
+            {
+                "id": "BUC003",
+                "question": "Which command is used to change file permissions?",
+                "options": [
+                    "chmod",
+                    "chown",
+                    "umask",
+                    "setfacl"
+                ],
+                "answer": 0,
+                "explanation": "chmod modifies file or directory permissions."
+            },
+            {
+                "id": "BUC004",
+                "question": "Which UNIX command removes a directory and its contents recursively?",
+                "options": [
+                    "rm -d",
+                    "rmdir",
+                    "rm -r",
+                    "delete"
+                ],
+                "answer": 2,
+                "explanation": "rm -r removes directories along with their contents."
+            },
+            {
+                "id": "BUC005",
+                "question": "Which command is used to display the first few lines of a file?",
+                "options": [
+                    "tail",
+                    "cat",
+                    "head",
+                    "less"
+                ],
+                "answer": 2,
+                "explanation": "head shows the first 10 lines of a file by default."
+            },
+            {
+                "id": "BUC006",
+                "question": "Which command is used to display the last few lines of a file?",
+                "options": [
+                    "tail",
+                    "more",
+                    "head",
+                    "grep"
+                ],
+                "answer": 0,
+                "explanation": "tail displays the last part of a file."
+            },
+            {
+                "id": "BUC007",
+                "question": "Which command is used to search for a pattern in a file?",
+                "options": [
+                    "find",
+                    "locate",
+                    "grep",
+                    "search"
+                ],
+                "answer": 2,
+                "explanation": "grep searches text using patterns."
+            },
+            {
+                "id": "BUC008",
+                "question": "Which command shows currently logged-in users?",
+                "options": [
+                    "users",
+                    "whoami",
+                    "who",
+                    "login"
+                ],
+                "answer": 2,
+                "explanation": "who displays logged-in users."
+            },
+            {
+                "id": "BUC009",
+                "question": "Which command is used to copy files?",
+                "options": [
+                    "mv",
+                    "copy",
+                    "cp",
+                    "dup"
+                ],
+                "answer": 2,
+                "explanation": "cp is used to copy files or directories."
+            },
+            {
+                "id": "BUC010",
+                "question": "Which command moves or renames a file?",
+                "options": [
+                    "rename",
+                    "mv",
+                    "cp",
+                    "shift"
+                ],
+                "answer": 1,
+                "explanation": "mv moves or renames files and directories."
+            },
+            {
+                "id": "BUC011",
+                "question": "Which command displays disk space usage of file systems?",
+                "options": [
+                    "df",
+                    "du",
+                    "free",
+                    "lsblk"
+                ],
+                "answer": 0,
+                "explanation": "df shows disk space usage of file systems."
+            },
+            {
+                "id": "BUC012",
+                "question": "Which command shows disk usage of files and directories?",
+                "options": [
+                    "df",
+                    "du",
+                    "ls",
+                    "stat"
+                ],
+                "answer": 1,
+                "explanation": "du reports disk usage of files and directories."
+            },
+            {
+                "id": "BUC013",
+                "question": "Which command is used to display file contents page by page?",
+                "options": [
+                    "cat",
+                    "head",
+                    "less",
+                    "echo"
+                ],
+                "answer": 2,
+                "explanation": "less allows paginated viewing of files."
+            },
+            {
+                "id": "BUC014",
+                "question": "Which command creates an empty file?",
+                "options": [
+                    "cat",
+                    "newfile",
+                    "touch",
+                    "mkfile"
+                ],
+                "answer": 2,
+                "explanation": "touch creates an empty file or updates timestamps."
+            },
+            {
+                "id": "BUC015",
+                "question": "Which command counts lines, words, and characters in a file?",
+                "options": [
+                    "count",
+                    "stat",
+                    "wc",
+                    "awk"
+                ],
+                "answer": 2,
+                "explanation": "wc counts lines, words, and characters."
+            },
+            {
+                "id": "BUC016",
+                "question": "Which command is used to sort lines of text?",
+                "options": [
+                    "order",
+                    "arrange",
+                    "sort",
+                    "uniq"
+                ],
+                "answer": 2,
+                "explanation": "sort arranges lines of text in order."
+            },
+            {
+                "id": "BUC017",
+                "question": "Which command removes duplicate adjacent lines?",
+                "options": [
+                    "sort",
+                    "uniq",
+                    "grep",
+                    "cut"
+                ],
+                "answer": 1,
+                "explanation": "uniq filters out repeated adjacent lines."
+            },
+            {
+                "id": "BUC018",
+                "question": "Which command extracts columns from text?",
+                "options": [
+                    "cut",
+                    "paste",
+                    "awk",
+                    "split"
+                ],
+                "answer": 0,
+                "explanation": "cut extracts specific columns or fields."
+            },
+            {
+                "id": "BUC019",
+                "question": "Which command changes the current directory?",
+                "options": [
+                    "pwd",
+                    "ls",
+                    "cd",
+                    "chdir"
+                ],
+                "answer": 2,
+                "explanation": "cd is used to change directories."
+            },
+            {
+                "id": "BUC020",
+                "question": "Which command displays the manual page of a command?",
+                "options": [
+                    "help",
+                    "info",
+                    "man",
+                    "doc"
+                ],
+                "answer": 2,
+                "explanation": "man shows the manual documentation for commands."
+            }
+        ],
+        "extra_qs": [
+            {
+                "id": "SGX001",
+                "question": "Which shell is the default shell in most Linux distributions?",
+                "options": [
+                    "csh",
+                    "bash",
+                    "ksh",
+                    "zsh"
+                ],
+                "answer": 1,
+                "explanation": "Bash (Bourne Again Shell) is the default shell in most Linux systems."
+            },
+            {
+                "id": "SGX002",
+                "question": "Which symbol is used to comment a line in a shell script?",
+                "options": [
+                    "//",
+                    "#",
+                    "/* */",
+                    "--"
+                ],
+                "answer": 1,
+                "explanation": "Lines starting with # are treated as comments."
+            },
+            {
+                "id": "SGX003",
+                "question": "What does the shebang line (#!) specify?",
+                "options": [
+                    "Shell version",
+                    "Interpreter path",
+                    "Script permissions",
+                    "Execution mode"
+                ],
+                "answer": 1,
+                "explanation": "Shebang defines the interpreter to execute the script."
+            },
+            {
+                "id": "SGX004",
+                "question": "Which command makes a shell script executable?",
+                "options": [
+                    "chmod +x",
+                    "sh script.sh",
+                    "exec",
+                    "run"
+                ],
+                "answer": 0,
+                "explanation": "chmod +x grants execute permission."
+            },
+            {
+                "id": "SGX005",
+                "question": "Which variable stores the last background process ID?",
+                "options": [
+                    "$$",
+                    "$!",
+                    "$?",
+                    "$#"
+                ],
+                "answer": 1,
+                "explanation": "$! contains the PID of the most recent background process."
+            },
+            {
+                "id": "SGX006",
+                "question": "Which command substitutes the output of a command into a variable?",
+                "options": [
+                    "exec",
+                    "$( )",
+                    "set",
+                    "source"
+                ],
+                "answer": 1,
+                "explanation": "Command substitution using $( ) captures command output."
+            },
+            {
+                "id": "SGX007",
+                "question": "Which test operator checks if a string length is zero?",
+                "options": [
+                    "-n",
+                    "-z",
+                    "-s",
+                    "-e"
+                ],
+                "answer": 1,
+                "explanation": "-z checks if a string is empty."
+            },
+            {
+                "id": "SGX008",
+                "question": "Which operator compares strings for equality in shell?",
+                "options": [
+                    "-eq",
+                    "==",
+                    "-ne",
+                    ">"
+                ],
+                "answer": 1,
+                "explanation": "== is used for string comparison."
+            },
+            {
+                "id": "SGX009",
+                "question": "Which command reads user input from the terminal?",
+                "options": [
+                    "scan",
+                    "input",
+                    "read",
+                    "accept"
+                ],
+                "answer": 2,
+                "explanation": "read takes input from standard input."
+            },
+            {
+                "id": "SGX010",
+                "question": "Which symbol redirects standard output to a file (overwrite)?",
+                "options": [
+                    ">",
+                    ">>",
+                    "<",
+                    "|"
+                ],
+                "answer": 0,
+                "explanation": "> redirects output and overwrites the file."
+            },
+            {
+                "id": "SGX011",
+                "question": "Which symbol appends output to an existing file?",
+                "options": [
+                    "<",
+                    ">",
+                    ">>",
+                    "|"
+                ],
+                "answer": 2,
+                "explanation": ">> appends output instead of overwriting."
+            },
+            {
+                "id": "SGX012",
+                "question": "Which command connects output of one command to input of another?",
+                "options": [
+                    "redirect",
+                    "|",
+                    "&&",
+                    "||"
+                ],
+                "answer": 1,
+                "explanation": "Pipe (|) passes output to another command."
+            },
+            {
+                "id": "SGX013",
+                "question": "Which keyword defines a function in shell scripting?",
+                "options": [
+                    "func",
+                    "function",
+                    "define",
+                    "method"
+                ],
+                "answer": 1,
+                "explanation": "Functions can be defined using the 'function' keyword."
+            },
+            {
+                "id": "SGX014",
+                "question": "Which statement sources another script into current shell?",
+                "options": [
+                    "exec",
+                    "import",
+                    "source",
+                    "run"
+                ],
+                "answer": 2,
+                "explanation": "source executes a script in the current shell."
+            },
+            {
+                "id": "SGX015",
+                "question": "Which variable holds all shell environment variables?",
+                "options": [
+                    "env",
+                    "set",
+                    "export",
+                    "printenv"
+                ],
+                "answer": 0,
+                "explanation": "env lists environment variables."
+            },
+            {
+                "id": "SGX016",
+                "question": "Which command schedules jobs for future execution?",
+                "options": [
+                    "cron",
+                    "at",
+                    "schedule",
+                    "time"
+                ],
+                "answer": 1,
+                "explanation": "at schedules a job to run once in the future."
+            },
+            {
+                "id": "SGX017",
+                "question": "Which command repeatedly executes a command at fixed intervals?",
+                "options": [
+                    "cron",
+                    "loop",
+                    "watch",
+                    "repeat"
+                ],
+                "answer": 2,
+                "explanation": "watch runs a command repeatedly at intervals."
+            },
+            {
+                "id": "SGX018",
+                "question": "Which command prints environment variables?",
+                "options": [
+                    "printenv",
+                    "envset",
+                    "vars",
+                    "setenv"
+                ],
+                "answer": 0,
+                "explanation": "printenv displays environment variables."
+            },
+            {
+                "id": "SGX019",
+                "question": "Which command replaces the current shell with another process?",
+                "options": [
+                    "fork",
+                    "exec",
+                    "source",
+                    "spawn"
+                ],
+                "answer": 1,
+                "explanation": "exec replaces the current shell process."
+            },
+            {
+                "id": "SGX020",
+                "question": "Which command outputs the absolute path of a command?",
+                "options": [
+                    "path",
+                    "whereis",
+                    "which",
+                    "locate"
+                ],
+                "answer": 2,
+                "explanation": "which shows the command path used by the shell."
+            },
+            {
+                "id": "SGX021",
+                "question": "Which signal is sent by default using the kill command?",
+                "options": [
+                    "SIGKILL",
+                    "SIGSTOP",
+                    "SIGTERM",
+                    "SIGINT"
+                ],
+                "answer": 2,
+                "explanation": "kill sends SIGTERM by default."
+            },
+            {
+                "id": "SGX022",
+                "question": "Which command displays running processes?",
+                "options": [
+                    "jobs",
+                    "top",
+                    "ps",
+                    "proc"
+                ],
+                "answer": 2,
+                "explanation": "ps displays currently running processes."
+            },
+            {
+                "id": "SGX023",
+                "question": "Which command shows real-time process usage?",
+                "options": [
+                    "ps",
+                    "jobs",
+                    "top",
+                    "htree"
+                ],
+                "answer": 2,
+                "explanation": "top shows real-time system processes."
+            },
+            {
+                "id": "SGX024",
+                "question": "Which exit code conventionally indicates successful execution?",
+                "options": [
+                    "1",
+                    "-1",
+                    "255",
+                    "0"
+                ],
+                "answer": 3,
+                "explanation": "Exit status 0 indicates success."
+            },
+            {
+                "id": "SGX025",
+                "question": "Which command compares two files line by line?",
+                "options": [
+                    "diff",
+                    "cmp",
+                    "comm",
+                    "compare"
+                ],
+                "answer": 0,
+                "explanation": "diff shows differences between files line by line."
+            }
+        ]
+    }
+}

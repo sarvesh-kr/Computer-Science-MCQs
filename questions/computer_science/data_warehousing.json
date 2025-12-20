@@ -1,0 +1,1282 @@
+{
+    "data": {
+        "Data Extraction": [
+            {
+                "id": "DE001",
+                "question": "In data warehousing, data extraction primarily refers to:",
+                "options": [
+                    "Converting data into analytical formats",
+                    "Selecting and retrieving data from multiple source systems",
+                    "Storing data in dimensional tables",
+                    "Removing redundant records permanently"
+                ],
+                "answer": 1,
+                "explanation": "Data extraction is the process of retrieving required data from various heterogeneous source systems."
+            },
+            {
+                "id": "DE002",
+                "question": "Which of the following is a common source for data extraction in a data warehouse?",
+                "options": [
+                    "Data cube",
+                    "OLAP server",
+                    "Operational databases (OLTP)",
+                    "Data mart"
+                ],
+                "answer": 2,
+                "explanation": "Operational databases (OLTP systems) are primary sources from which data is extracted for warehousing."
+            },
+            {
+                "id": "DE003",
+                "question": "Which challenge is MOST commonly associated with data extraction?",
+                "options": [
+                    "Handling heterogeneous data formats",
+                    "Query optimization in OLAP",
+                    "Index creation",
+                    "Fact table normalization"
+                ],
+                "answer": 0,
+                "explanation": "Data extraction must deal with different data formats, schemas, and platforms across source systems."
+            },
+            {
+                "id": "DE004",
+                "question": "Incremental data extraction is mainly used to:",
+                "options": [
+                    "Extract all historical data repeatedly",
+                    "Reduce storage requirements",
+                    "Extract only data changed since the last extraction",
+                    "Transform unstructured data"
+                ],
+                "answer": 2,
+                "explanation": "Incremental extraction captures only new or modified data since the previous extraction cycle."
+            },
+            {
+                "id": "DE005",
+                "question": "Which technique is commonly used to identify changed records during data extraction?",
+                "options": [
+                    "Bitmap indexing",
+                    "Timestamp or change data capture (CDC)",
+                    "Hash partitioning",
+                    "Star schema modeling"
+                ],
+                "answer": 1,
+                "explanation": "Timestamps and CDC techniques help detect inserted, updated, or deleted records."
+            },
+            {
+                "id": "DE006",
+                "question": "Full data extraction is MOST suitable when:",
+                "options": [
+                    "Source data volume is extremely large",
+                    "Near real-time updates are required",
+                    "The data warehouse is being built for the first time",
+                    "Only minor changes occur frequently"
+                ],
+                "answer": 2,
+                "explanation": "Initial data warehouse loading usually requires full extraction of all relevant source data."
+            },
+            {
+                "id": "DE007",
+                "question": "Which factor should be minimized during data extraction to avoid impact on source systems?",
+                "options": [
+                    "Metadata usage",
+                    "Source system load",
+                    "Data consistency",
+                    "Extraction frequency"
+                ],
+                "answer": 1,
+                "explanation": "Extraction processes should minimize load on source systems to avoid affecting operational performance."
+            },
+            {
+                "id": "DE008",
+                "question": "Data extraction is generally performed during:",
+                "options": [
+                    "ETL process",
+                    "OLAP analysis phase",
+                    "Query optimization stage",
+                    "Data cube processing"
+                ],
+                "answer": 0,
+                "explanation": "Data extraction is the first step of the ETL (Extract, Transform, Load) process."
+            },
+            {
+                "id": "DE009",
+                "question": "Which type of data extraction captures data continuously as changes occur?",
+                "options": [
+                    "Batch extraction",
+                    "Static extraction",
+                    "Real-time extraction",
+                    "Full snapshot extraction"
+                ],
+                "answer": 2,
+                "explanation": "Real-time extraction captures and transfers data changes as they happen."
+            },
+            {
+                "id": "DE010",
+                "question": "Which metadata is MOST useful during data extraction?",
+                "options": [
+                    "Business metadata",
+                    "Technical metadata about source schemas",
+                    "User access metadata",
+                    "Query performance metadata"
+                ],
+                "answer": 1,
+                "explanation": "Technical metadata provides details about source tables, fields, and data types required for extraction."
+            }
+        ],
+        "Data Cleaning": [
+            {
+                "id": "DC001",
+                "question": "In data warehousing, data cleaning is primarily concerned with:",
+                "options": [
+                    "Designing fact and dimension tables",
+                    "Ensuring data quality by correcting errors and inconsistencies",
+                    "Extracting data from heterogeneous sources",
+                    "Optimizing OLAP queries"
+                ],
+                "answer": 1,
+                "explanation": "Data cleaning focuses on improving data quality by identifying and correcting inaccurate, incomplete, or inconsistent data."
+            },
+            {
+                "id": "DC002",
+                "question": "Which of the following is an example of data cleaning?",
+                "options": [
+                    "Creating aggregates in a data cube",
+                    "Removing duplicate customer records",
+                    "Loading data into a fact table",
+                    "Defining metadata repositories"
+                ],
+                "answer": 1,
+                "explanation": "Eliminating duplicate records is a classic data cleaning operation."
+            },
+            {
+                "id": "DC003",
+                "question": "Handling missing values during data cleaning is commonly done by:",
+                "options": [
+                    "Indexing the dataset",
+                    "Applying data normalization",
+                    "Deleting records or imputing values",
+                    "Partitioning fact tables"
+                ],
+                "answer": 2,
+                "explanation": "Missing values are addressed by deletion or by estimating suitable replacement values."
+            },
+            {
+                "id": "DC004",
+                "question": "Which problem is MOST directly addressed by data cleaning?",
+                "options": [
+                    "Slow query response time",
+                    "Schema mismatch",
+                    "Inconsistent data formats",
+                    "Dimensional modeling errors"
+                ],
+                "answer": 2,
+                "explanation": "Data cleaning resolves inconsistencies such as different date or text formats across records."
+            },
+            {
+                "id": "DC005",
+                "question": "Standardizing data values such as 'M' and 'Male' into a single form is an example of:",
+                "options": [
+                    "Data extraction",
+                    "Data integration",
+                    "Data cleaning",
+                    "Data loading"
+                ],
+                "answer": 2,
+                "explanation": "Standardization of values is a key data cleaning activity to ensure uniformity."
+            },
+            {
+                "id": "DC006",
+                "question": "Which technique is used to detect outliers during data cleaning?",
+                "options": [
+                    "Clustering or statistical analysis",
+                    "Star schema design",
+                    "Hash indexing",
+                    "Data partitioning"
+                ],
+                "answer": 0,
+                "explanation": "Statistical and clustering techniques help identify abnormal or outlier data values."
+            },
+            {
+                "id": "DC007",
+                "question": "Data cleaning is MOST critical in a data warehouse because:",
+                "options": [
+                    "Source systems always store clean data",
+                    "Analytical decisions rely on accurate and consistent data",
+                    "It reduces storage requirements significantly",
+                    "It replaces the need for data transformation"
+                ],
+                "answer": 1,
+                "explanation": "High-quality analytical results depend on clean and reliable data."
+            },
+            {
+                "id": "DC008",
+                "question": "Which of the following is NOT typically a data cleaning task?",
+                "options": [
+                    "Correcting spelling errors",
+                    "Resolving inconsistent codes",
+                    "Removing noise from data",
+                    "Creating OLAP dimensions"
+                ],
+                "answer": 3,
+                "explanation": "Creating OLAP dimensions is part of data modeling, not data cleaning."
+            },
+            {
+                "id": "DC009",
+                "question": "Noise in data during data cleaning refers to:",
+                "options": [
+                    "Duplicate records",
+                    "Random errors or meaningless data values",
+                    "Metadata inconsistencies",
+                    "Data transformation rules"
+                ],
+                "answer": 1,
+                "explanation": "Noise represents random or irrelevant data that can distort analysis."
+            },
+            {
+                "id": "DC010",
+                "question": "Which approach helps ensure referential integrity during data cleaning?",
+                "options": [
+                    "Validating foreign key values against master data",
+                    "Increasing extraction frequency",
+                    "Using denormalized schemas",
+                    "Applying data cube aggregation"
+                ],
+                "answer": 0,
+                "explanation": "Referential integrity is ensured by validating relationships between related datasets."
+            }
+        ],
+        "Data Transformation": [
+            {
+                "id": "DT001",
+                "question": "In data warehousing, data transformation is the process of:",
+                "options": [
+                    "Extracting data from operational systems",
+                    "Converting data into formats suitable for analysis",
+                    "Loading data into data marts",
+                    "Creating OLAP cubes"
+                ],
+                "answer": 1,
+                "explanation": "Data transformation converts extracted data into a consistent, analytical-friendly format."
+            },
+            {
+                "id": "DT002",
+                "question": "Which of the following is a common data transformation activity?",
+                "options": [
+                    "Removing duplicate rows",
+                    "Aggregating sales data by month",
+                    "Capturing changed records",
+                    "Indexing fact tables"
+                ],
+                "answer": 1,
+                "explanation": "Aggregation is a typical transformation step to prepare summarized data for analysis."
+            },
+            {
+                "id": "DT003",
+                "question": "Converting date formats from 'DD-MM-YYYY' to 'YYYY-MM-DD' is an example of:",
+                "options": [
+                    "Data loading",
+                    "Data extraction",
+                    "Data transformation",
+                    "Data validation"
+                ],
+                "answer": 2,
+                "explanation": "Format conversion is a key transformation operation."
+            },
+            {
+                "id": "DT004",
+                "question": "Which transformation ensures that multiple source codes map to a single standardized value?",
+                "options": [
+                    "Data parsing",
+                    "Data aggregation",
+                    "Data normalization / standardization",
+                    "Data indexing"
+                ],
+                "answer": 2,
+                "explanation": "Normalization or standardization maps different source representations to a common value."
+            },
+            {
+                "id": "DT005",
+                "question": "Deriving a new column such as 'Total_Price = Quantity × Unit_Price' is known as:",
+                "options": [
+                    "Data enrichment or derivation",
+                    "Data cleansing",
+                    "Data extraction",
+                    "Data replication"
+                ],
+                "answer": 0,
+                "explanation": "Creating computed or derived attributes is a data enrichment transformation."
+            },
+            {
+                "id": "DT006",
+                "question": "Which transformation is required to handle different units, such as converting kilograms to grams?",
+                "options": [
+                    "Filtering",
+                    "Unit conversion",
+                    "Data discretization",
+                    "Key generation"
+                ],
+                "answer": 1,
+                "explanation": "Unit conversion standardizes measurement units across data sources."
+            },
+            {
+                "id": "DT007",
+                "question": "Surrogate keys are typically generated during:",
+                "options": [
+                    "Data extraction",
+                    "Data transformation",
+                    "Data cube processing",
+                    "OLAP querying"
+                ],
+                "answer": 1,
+                "explanation": "Surrogate keys are created in the transformation stage to uniquely identify dimension records."
+            },
+            {
+                "id": "DT008",
+                "question": "Which transformation technique reduces continuous data into discrete ranges?",
+                "options": [
+                    "Data smoothing",
+                    "Data binning (discretization)",
+                    "Data merging",
+                    "Data validation"
+                ],
+                "answer": 1,
+                "explanation": "Binning converts continuous values into categorical ranges for analysis."
+            },
+            {
+                "id": "DT009",
+                "question": "Applying business rules such as tax calculations during ETL is an example of:",
+                "options": [
+                    "Data loading",
+                    "Data extraction",
+                    "Business rule–based transformation",
+                    "Metadata management"
+                ],
+                "answer": 2,
+                "explanation": "Business logic applied to data during ETL is part of transformation."
+            },
+            {
+                "id": "DT010",
+                "question": "Which of the following is NOT a data transformation task?",
+                "options": [
+                    "Generating surrogate keys",
+                    "Applying aggregations",
+                    "Validating referential integrity",
+                    "Storing data into warehouse tables"
+                ],
+                "answer": 3,
+                "explanation": "Storing data into warehouse tables is part of data loading, not transformation."
+            }
+        ],
+        "Data Loading": [
+            {
+                "id": "DL001",
+                "question": "In data warehousing, data loading refers to:",
+                "options": [
+                    "Extracting data from source systems",
+                    "Applying business rules to raw data",
+                    "Moving transformed data into warehouse storage structures",
+                    "Designing star schemas"
+                ],
+                "answer": 2,
+                "explanation": "Data loading is the ETL stage where transformed data is written into data warehouse tables."
+            },
+            {
+                "id": "DL002",
+                "question": "Which type of data loading inserts data into the warehouse for the first time?",
+                "options": [
+                    "Incremental load",
+                    "Initial (full) load",
+                    "Real-time load",
+                    "Refresh load"
+                ],
+                "answer": 1,
+                "explanation": "Initial or full load is used when populating the data warehouse for the first time."
+            },
+            {
+                "id": "DL003",
+                "question": "Incremental data loading primarily aims to:",
+                "options": [
+                    "Reload the entire warehouse",
+                    "Load only newly added or changed data",
+                    "Transform unstructured data",
+                    "Remove historical records"
+                ],
+                "answer": 1,
+                "explanation": "Incremental loading updates the warehouse with only new or modified records."
+            },
+            {
+                "id": "DL004",
+                "question": "Which constraint must be carefully maintained during data loading?",
+                "options": [
+                    "Referential integrity",
+                    "Query optimization",
+                    "Data cube aggregation",
+                    "Metadata versioning"
+                ],
+                "answer": 0,
+                "explanation": "Foreign key and primary key relationships must be preserved during loading."
+            },
+            {
+                "id": "DL005",
+                "question": "Bulk loading techniques are mainly used to:",
+                "options": [
+                    "Improve query performance",
+                    "Reduce load time for large volumes of data",
+                    "Apply data transformations",
+                    "Validate metadata consistency"
+                ],
+                "answer": 1,
+                "explanation": "Bulk loading efficiently inserts large datasets in minimal time."
+            },
+            {
+                "id": "DL006",
+                "question": "Which data loading strategy temporarily disables indexes and constraints?",
+                "options": [
+                    "Real-time loading",
+                    "Trickle loading",
+                    "Bulk loading",
+                    "Parallel querying"
+                ],
+                "answer": 2,
+                "explanation": "Bulk loading often disables indexes and constraints to speed up data insertion."
+            },
+            {
+                "id": "DL007",
+                "question": "Loading fact tables is usually done:",
+                "options": [
+                    "Before dimension tables",
+                    "Simultaneously with cube processing",
+                    "After dimension tables are loaded",
+                    "Only during full loads"
+                ],
+                "answer": 2,
+                "explanation": "Fact tables reference dimension tables, so dimensions must be loaded first."
+            },
+            {
+                "id": "DL008",
+                "question": "Which type of loading supports near real-time data availability?",
+                "options": [
+                    "Batch loading",
+                    "Static loading",
+                    "Trickle (continuous) loading",
+                    "Snapshot loading"
+                ],
+                "answer": 2,
+                "explanation": "Trickle loading continuously loads small amounts of data for near real-time access."
+            },
+            {
+                "id": "DL009",
+                "question": "Handling slowly changing dimensions (SCD) is MOST closely associated with:",
+                "options": [
+                    "Data extraction",
+                    "Data cleaning",
+                    "Data loading",
+                    "Data cube processing"
+                ],
+                "answer": 2,
+                "explanation": "SCD handling is typically implemented during the data loading phase."
+            },
+            {
+                "id": "DL010",
+                "question": "Which of the following is NOT a concern during data loading?",
+                "options": [
+                    "Load performance",
+                    "Error handling and recovery",
+                    "Maintaining data consistency",
+                    "Designing source system schemas"
+                ],
+                "answer": 3,
+                "explanation": "Source schema design is unrelated to the data loading process."
+            }
+        ],
+        "Metadata": [
+            {
+                "id": "MD001",
+                "question": "In data warehousing, metadata is best described as:",
+                "options": [
+                    "Summarized analytical data",
+                    "Data about data describing structure and meaning",
+                    "Temporary staging data",
+                    "Historical transaction data"
+                ],
+                "answer": 1,
+                "explanation": "Metadata provides information about data such as definitions, structure, origin, and usage."
+            },
+            {
+                "id": "MD002",
+                "question": "Which type of metadata describes table schemas, data types, and indexes?",
+                "options": [
+                    "Business metadata",
+                    "Operational metadata",
+                    "Technical metadata",
+                    "Process metadata"
+                ],
+                "answer": 2,
+                "explanation": "Technical metadata defines the physical and logical structure of data objects."
+            },
+            {
+                "id": "MD003",
+                "question": "Business metadata mainly helps users to:",
+                "options": [
+                    "Optimize ETL performance",
+                    "Understand the business meaning of data elements",
+                    "Track ETL execution status",
+                    "Manage database storage"
+                ],
+                "answer": 1,
+                "explanation": "Business metadata explains what the data represents from a business perspective."
+            },
+            {
+                "id": "MD004",
+                "question": "Which metadata records data refresh times, load statistics, and error logs?",
+                "options": [
+                    "Business metadata",
+                    "Technical metadata",
+                    "Operational metadata",
+                    "Dimensional metadata"
+                ],
+                "answer": 2,
+                "explanation": "Operational metadata captures ETL execution and operational details."
+            },
+            {
+                "id": "MD005",
+                "question": "A metadata repository in a data warehouse is used to:",
+                "options": [
+                    "Store cleaned transactional data",
+                    "Centralize and manage metadata information",
+                    "Execute OLAP queries",
+                    "Maintain data cubes"
+                ],
+                "answer": 1,
+                "explanation": "A metadata repository acts as a centralized store for all metadata types."
+            },
+            {
+                "id": "MD006",
+                "question": "Which of the following is an example of business metadata?",
+                "options": [
+                    "Column data type VARCHAR(50)",
+                    "Index creation date",
+                    "Definition of 'Net Profit' metric",
+                    "ETL job start time"
+                ],
+                "answer": 2,
+                "explanation": "Business metadata defines metrics, rules, and meanings understood by business users."
+            },
+            {
+                "id": "MD007",
+                "question": "Metadata is MOST useful in a data warehouse for:",
+                "options": [
+                    "Reducing storage requirements",
+                    "Improving user understanding and data governance",
+                    "Replacing ETL tools",
+                    "Increasing transaction throughput"
+                ],
+                "answer": 1,
+                "explanation": "Metadata improves data transparency, governance, and usability."
+            },
+            {
+                "id": "MD008",
+                "question": "Which tool component relies heavily on metadata to function correctly?",
+                "options": [
+                    "OLTP transaction manager",
+                    "ETL tools",
+                    "Source system applications",
+                    "Network load balancer"
+                ],
+                "answer": 1,
+                "explanation": "ETL tools depend on metadata for mappings, transformations, and data lineage."
+            },
+            {
+                "id": "MD009",
+                "question": "Data lineage information is classified under:",
+                "options": [
+                    "Business metadata",
+                    "Operational metadata",
+                    "Technical metadata",
+                    "Security metadata"
+                ],
+                "answer": 2,
+                "explanation": "Lineage shows how data flows and transforms across systems, which is technical metadata."
+            },
+            {
+                "id": "MD010",
+                "question": "Which of the following is NOT a function of metadata in data warehousing?",
+                "options": [
+                    "Supporting impact analysis",
+                    "Assisting query optimization",
+                    "Storing actual fact table records",
+                    "Facilitating data understanding"
+                ],
+                "answer": 2,
+                "explanation": "Metadata does not store actual data; it stores information about the data."
+            }
+        ],
+        "Data Cube": [
+            {
+                "id": "DCB001",
+                "question": "In data warehousing, a data cube is best defined as:",
+                "options": [
+                    "A multidimensional structure for data analysis",
+                    "A physical storage device",
+                    "A normalized relational table",
+                    "A metadata repository"
+                ],
+                "answer": 0,
+                "explanation": "A data cube organizes data across multiple dimensions to support multidimensional analysis."
+            },
+            {
+                "id": "DCB002",
+                "question": "Which operation on a data cube reduces the number of dimensions by fixing a single value?",
+                "options": [
+                    "Roll-up",
+                    "Drill-down",
+                    "Slice",
+                    "Dice"
+                ],
+                "answer": 2,
+                "explanation": "Slice selects a single value for one dimension, reducing the cube’s dimensionality."
+            },
+            {
+                "id": "DCB003",
+                "question": "The roll-up operation in a data cube is used to:",
+                "options": [
+                    "Increase the level of detail",
+                    "Navigate from summary to detailed data",
+                    "Aggregate data to a higher level",
+                    "Select a sub-cube"
+                ],
+                "answer": 2,
+                "explanation": "Roll-up summarizes data by moving up the hierarchy."
+            },
+            {
+                "id": "DCB004",
+                "question": "Which OLAP operation selects a sub-cube by specifying ranges for multiple dimensions?",
+                "options": [
+                    "Slice",
+                    "Roll-up",
+                    "Drill-through",
+                    "Dice"
+                ],
+                "answer": 3,
+                "explanation": "Dice creates a sub-cube by selecting specific ranges on multiple dimensions."
+            },
+            {
+                "id": "DCB005",
+                "question": "Drill-down operation on a data cube allows users to:",
+                "options": [
+                    "Aggregate data",
+                    "View data at a more detailed level",
+                    "Remove dimensions",
+                    "Create fact tables"
+                ],
+                "answer": 1,
+                "explanation": "Drill-down moves from summarized data to finer-grained data."
+            },
+            {
+                "id": "DCB006",
+                "question": "Which of the following is NOT a typical dimension in a sales data cube?",
+                "options": [
+                    "Time",
+                    "Product",
+                    "Location",
+                    "Revenue"
+                ],
+                "answer": 3,
+                "explanation": "Revenue is a measure, not a dimension."
+            },
+            {
+                "id": "DCB007",
+                "question": "Measures in a data cube are generally:",
+                "options": [
+                    "Textual descriptors",
+                    "Quantitative values for analysis",
+                    "Metadata descriptions",
+                    "Dimension hierarchies"
+                ],
+                "answer": 1,
+                "explanation": "Measures are numerical values such as sales, profit, or quantity."
+            },
+            {
+                "id": "DCB008",
+                "question": "Which OLAP operation changes the orientation of the data cube for alternative views?",
+                "options": [
+                    "Pivot (Rotate)",
+                    "Roll-up",
+                    "Slice",
+                    "Drill-down"
+                ],
+                "answer": 0,
+                "explanation": "Pivoting rotates the cube to view data from different perspectives."
+            },
+            {
+                "id": "DCB009",
+                "question": "A data cube with dimensions Time, Location, and Product is referred to as:",
+                "options": [
+                    "2-D cube",
+                    "3-D cube",
+                    "Factless cube",
+                    "Snowflake cube"
+                ],
+                "answer": 1,
+                "explanation": "The cube is named based on the number of dimensions it contains."
+            },
+            {
+                "id": "DCB010",
+                "question": "Pre-computation of aggregates in a data cube mainly helps to:",
+                "options": [
+                    "Reduce data redundancy",
+                    "Improve query performance",
+                    "Simplify ETL design",
+                    "Eliminate the need for metadata"
+                ],
+                "answer": 1,
+                "explanation": "Pre-computed aggregates significantly speed up analytical queries."
+            }
+        ],
+        "Data Mart": [
+            {
+                "id": "DM001",
+                "question": "In data warehousing, a data mart is defined as:",
+                "options": [
+                    "A centralized enterprise-wide data repository",
+                    "A subset of a data warehouse focused on a specific business area",
+                    "A temporary staging database",
+                    "A metadata management system"
+                ],
+                "answer": 1,
+                "explanation": "A data mart is a subject-oriented subset of a data warehouse designed for a specific department or function."
+            },
+            {
+                "id": "DM002",
+                "question": "Which type of data mart is created directly from operational source systems?",
+                "options": [
+                    "Dependent data mart",
+                    "Independent data mart",
+                    "Virtual data mart",
+                    "Logical data mart"
+                ],
+                "answer": 1,
+                "explanation": "Independent data marts source data directly from operational systems without a central warehouse."
+            },
+            {
+                "id": "DM003",
+                "question": "A dependent data mart differs from an independent data mart because it:",
+                "options": [
+                    "Uses data directly from OLTP systems",
+                    "Is refreshed in real time only",
+                    "Gets data from an enterprise data warehouse",
+                    "Does not support historical data"
+                ],
+                "answer": 2,
+                "explanation": "Dependent data marts are populated from a central data warehouse."
+            },
+            {
+                "id": "DM004",
+                "question": "Which of the following is a key advantage of using data marts?",
+                "options": [
+                    "Increased complexity of data models",
+                    "Reduced query performance",
+                    "Faster access to subject-specific data",
+                    "Elimination of ETL processes"
+                ],
+                "answer": 2,
+                "explanation": "Data marts improve performance by focusing on specific business subjects."
+            },
+            {
+                "id": "DM005",
+                "question": "Data marts are typically designed using:",
+                "options": [
+                    "Normalized schemas",
+                    "Network models",
+                    "Dimensional models such as star schemas",
+                    "Hierarchical database models"
+                ],
+                "answer": 2,
+                "explanation": "Dimensional modeling is commonly used in data marts for efficient querying."
+            },
+            {
+                "id": "DM006",
+                "question": "Which business unit is MOST likely to use a sales data mart?",
+                "options": [
+                    "Human resources",
+                    "Sales and marketing",
+                    "IT infrastructure",
+                    "System administration"
+                ],
+                "answer": 1,
+                "explanation": "Sales and marketing departments rely on sales-focused data marts for analysis."
+            },
+            {
+                "id": "DM007",
+                "question": "Which of the following is NOT a characteristic of a data mart?",
+                "options": [
+                    "Subject-oriented",
+                    "Department-specific",
+                    "Enterprise-wide integration",
+                    "Optimized for analysis"
+                ],
+                "answer": 2,
+                "explanation": "Enterprise-wide integration is a characteristic of data warehouses, not data marts."
+            },
+            {
+                "id": "DM008",
+                "question": "A virtual data mart primarily differs from a physical data mart because it:",
+                "options": [
+                    "Stores aggregated data permanently",
+                    "Physically replicates warehouse data",
+                    "Provides logical views without storing separate data",
+                    "Operates without metadata"
+                ],
+                "answer": 2,
+                "explanation": "Virtual data marts present logical views of data without physical storage."
+            },
+            {
+                "id": "DM009",
+                "question": "Which factor should be considered while designing a data mart?",
+                "options": [
+                    "User analytical requirements",
+                    "Network topology",
+                    "Operating system version",
+                    "Source code structure"
+                ],
+                "answer": 0,
+                "explanation": "Data marts are designed based on the analytical needs of specific users or departments."
+            },
+            {
+                "id": "DM010",
+                "question": "Data marts are MOST commonly used to support:",
+                "options": [
+                    "OLTP transaction processing",
+                    "Day-to-day operational updates",
+                    "Decision support and analysis",
+                    "System-level logging"
+                ],
+                "answer": 2,
+                "explanation": "Data marts support analytical and decision-support activities."
+            }
+        ],
+        "Data Models": [
+            {
+                "id": "DMOD001",
+                "question": "In data warehousing, a data model primarily defines:",
+                "options": [
+                    "The physical storage blocks on disk",
+                    "The logical structure of facts, dimensions, and their relationships",
+                    "The ETL execution schedule",
+                    "The network architecture of servers"
+                ],
+                "answer": 1,
+                "explanation": "A data model represents how fact and dimension tables are structured and related for analysis."
+            },
+            {
+                "id": "DMOD002",
+                "question": "Which data model uses a central fact table connected directly to denormalized dimension tables?",
+                "options": [
+                    "Snowflake schema",
+                    "Star schema",
+                    "Network model",
+                    "Hierarchical model"
+                ],
+                "answer": 1,
+                "explanation": "Star schema has a central fact table with denormalized dimension tables radiating from it."
+            },
+            {
+                "id": "DMOD003",
+                "question": "Compared to a star schema, a snowflake schema is characterized by:",
+                "options": [
+                    "Higher level of dimension table normalization",
+                    "Larger fact tables",
+                    "Absence of dimension hierarchies",
+                    "Poor query performance always"
+                ],
+                "answer": 0,
+                "explanation": "Snowflake schema normalizes dimension tables into multiple related tables."
+            },
+            {
+                "id": "DMOD004",
+                "question": "A fact table in a data warehouse mainly stores:",
+                "options": [
+                    "Textual descriptions of entities",
+                    "Metadata definitions",
+                    "Quantitative measures and foreign keys",
+                    "Only surrogate keys"
+                ],
+                "answer": 2,
+                "explanation": "Fact tables store numeric measures along with foreign keys to dimension tables."
+            },
+            {
+                "id": "DMOD005",
+                "question": "The level of detail represented by a fact table is known as:",
+                "options": [
+                    "Cardinality",
+                    "Granularity (grain)",
+                    "Normalization level",
+                    "Dimensionality"
+                ],
+                "answer": 1,
+                "explanation": "Grain defines exactly what a single row in the fact table represents."
+            },
+            {
+                "id": "DMOD006",
+                "question": "Which type of fact table contains no numeric measures and is used to record events?",
+                "options": [
+                    "Aggregate fact table",
+                    "Snapshot fact table",
+                    "Factless fact table",
+                    "Transaction fact table"
+                ],
+                "answer": 2,
+                "explanation": "Factless fact tables capture the occurrence of events without quantitative measures."
+            },
+            {
+                "id": "DMOD007",
+                "question": "A degenerate dimension is best described as:",
+                "options": [
+                    "A dimension table without attributes",
+                    "A dimension attribute stored in the fact table itself",
+                    "A normalized dimension hierarchy",
+                    "A dimension used only for metadata"
+                ],
+                "answer": 1,
+                "explanation": "Degenerate dimensions, such as invoice numbers, reside in the fact table without a separate dimension table."
+            },
+            {
+                "id": "DMOD008",
+                "question": "Which data model supports multiple fact tables sharing common dimension tables?",
+                "options": [
+                    "Star schema",
+                    "Snowflake schema",
+                    "Fact constellation (galaxy schema)",
+                    "Hierarchical model"
+                ],
+                "answer": 2,
+                "explanation": "Fact constellation schema consists of multiple fact tables sharing dimension tables."
+            },
+            {
+                "id": "DMOD009",
+                "question": "Bridge tables are commonly used in data models to handle:",
+                "options": [
+                    "Slowly changing dimensions",
+                    "Many-to-many relationships",
+                    "Surrogate key generation",
+                    "Fact aggregation"
+                ],
+                "answer": 1,
+                "explanation": "Bridge tables resolve many-to-many relationships between facts and dimensions."
+            },
+            {
+                "id": "DMOD010",
+                "question": "Which consideration is MOST important while designing a data warehouse data model?",
+                "options": [
+                    "Operating system compatibility",
+                    "End-user analytical requirements",
+                    "Source code optimization",
+                    "Network bandwidth"
+                ],
+                "answer": 1,
+                "explanation": "Data warehouse data models are driven by analytical and reporting requirements of users."
+            }
+        ],
+        "extra_qs": [
+            {
+                "id": "EX001",
+                "question": "Which characteristic differentiates a data warehouse from an operational database?",
+                "options": [
+                    "Normalized structure",
+                    "Subject-oriented and time-variant data",
+                    "High frequency updates",
+                    "Transaction consistency focus"
+                ],
+                "answer": 1,
+                "explanation": "Data warehouses are subject-oriented, integrated, time-variant, and non-volatile."
+            },
+            {
+                "id": "EX002",
+                "question": "Non-volatility in a data warehouse implies that data:",
+                "options": [
+                    "Is deleted after analysis",
+                    "Is frequently updated",
+                    "Is read-only once loaded",
+                    "Exists temporarily"
+                ],
+                "answer": 2,
+                "explanation": "Warehouse data is not updated or deleted during normal operations."
+            },
+            {
+                "id": "EX003",
+                "question": "Which ETL stage ensures conformity of data from multiple sources?",
+                "options": [
+                    "Extraction",
+                    "Transformation",
+                    "Loading",
+                    "Indexing"
+                ],
+                "answer": 1,
+                "explanation": "Transformation standardizes and integrates heterogeneous source data."
+            },
+            {
+                "id": "EX004",
+                "question": "Time dimension is important in data warehouses mainly to support:",
+                "options": [
+                    "Real-time processing",
+                    "Historical trend analysis",
+                    "Data encryption",
+                    "Transaction rollback"
+                ],
+                "answer": 1,
+                "explanation": "Time dimension enables historical and trend-based analysis."
+            },
+            {
+                "id": "EX005",
+                "question": "Which schema is easier to understand but may use more storage?",
+                "options": [
+                    "Snowflake schema",
+                    "Normalized schema",
+                    "Star schema",
+                    "Hierarchical schema"
+                ],
+                "answer": 2,
+                "explanation": "Star schema uses denormalized dimensions, improving simplicity but increasing storage."
+            },
+            {
+                "id": "EX006",
+                "question": "A slowly changing dimension (SCD) Type 2 maintains:",
+                "options": [
+                    "Only the latest value",
+                    "No history",
+                    "Full historical changes",
+                    "Aggregated values only"
+                ],
+                "answer": 2,
+                "explanation": "Type 2 SCD stores complete history by creating new dimension records."
+            },
+            {
+                "id": "EX007",
+                "question": "Which OLAP system stores data in multidimensional format?",
+                "options": [
+                    "ROLAP",
+                    "MOLAP",
+                    "HOLAP",
+                    "OLTP"
+                ],
+                "answer": 1,
+                "explanation": "MOLAP stores data in multidimensional cube structures."
+            },
+            {
+                "id": "EX008",
+                "question": "ROLAP primarily uses:",
+                "options": [
+                    "Multidimensional databases",
+                    "Flat files",
+                    "Relational databases",
+                    "In-memory cubes only"
+                ],
+                "answer": 2,
+                "explanation": "ROLAP implements OLAP operations using relational databases."
+            },
+            {
+                "id": "EX009",
+                "question": "Which operation summarizes data along a hierarchy?",
+                "options": [
+                    "Drill-down",
+                    "Slice",
+                    "Roll-up",
+                    "Pivot"
+                ],
+                "answer": 2,
+                "explanation": "Roll-up aggregates data to a higher level in the hierarchy."
+            },
+            {
+                "id": "EX010",
+                "question": "A snapshot fact table records:",
+                "options": [
+                    "Individual transactions",
+                    "Events without measures",
+                    "State of data at regular intervals",
+                    "Only aggregated measures"
+                ],
+                "answer": 2,
+                "explanation": "Snapshot fact tables capture data at specific points in time."
+            },
+            {
+                "id": "EX011",
+                "question": "Which dimension type changes very infrequently?",
+                "options": [
+                    "Rapidly changing dimension",
+                    "Slowly changing dimension",
+                    "Static dimension",
+                    "Junk dimension"
+                ],
+                "answer": 2,
+                "explanation": "Static dimensions rarely or never change."
+            },
+            {
+                "id": "EX012",
+                "question": "Junk dimensions are created to:",
+                "options": [
+                    "Store measures",
+                    "Handle high-cardinality attributes",
+                    "Combine low-cardinality flags",
+                    "Normalize dimensions"
+                ],
+                "answer": 2,
+                "explanation": "Junk dimensions group multiple low-cardinality attributes."
+            },
+            {
+                "id": "EX013",
+                "question": "Which key uniquely identifies a dimension record internally?",
+                "options": [
+                    "Natural key",
+                    "Foreign key",
+                    "Surrogate key",
+                    "Composite key"
+                ],
+                "answer": 2,
+                "explanation": "Surrogate keys are system-generated unique identifiers."
+            },
+            {
+                "id": "EX014",
+                "question": "Conformed dimensions are used to:",
+                "options": [
+                    "Increase redundancy",
+                    "Ensure consistency across data marts",
+                    "Replace fact tables",
+                    "Improve OLTP performance"
+                ],
+                "answer": 1,
+                "explanation": "Conformed dimensions allow consistent analysis across multiple data marts."
+            },
+            {
+                "id": "EX015",
+                "question": "Which component stores temporary extracted data before transformation?",
+                "options": [
+                    "Data mart",
+                    "Staging area",
+                    "Metadata repository",
+                    "OLAP cube"
+                ],
+                "answer": 1,
+                "explanation": "Staging area temporarily holds data during ETL."
+            },
+            {
+                "id": "EX016",
+                "question": "Fact table foreign keys primarily reference:",
+                "options": [
+                    "Other fact tables",
+                    "Metadata tables",
+                    "Dimension tables",
+                    "Index tables"
+                ],
+                "answer": 2,
+                "explanation": "Fact tables link to dimensions through foreign keys."
+            },
+            {
+                "id": "EX017",
+                "question": "Which data warehouse architecture includes staging, warehouse, and data marts?",
+                "options": [
+                    "Single-tier",
+                    "Two-tier",
+                    "Three-tier",
+                    "Peer-to-peer"
+                ],
+                "answer": 2,
+                "explanation": "Three-tier architecture separates staging, storage, and presentation layers."
+            },
+            {
+                "id": "EX018",
+                "question": "HOLAP is best described as:",
+                "options": [
+                    "Purely relational OLAP",
+                    "Purely multidimensional OLAP",
+                    "Combination of ROLAP and MOLAP",
+                    "Real-time OLAP only"
+                ],
+                "answer": 2,
+                "explanation": "HOLAP combines relational and multidimensional storage."
+            },
+            {
+                "id": "EX019",
+                "question": "Which measure can be meaningfully summed across dimensions?",
+                "options": [
+                    "Non-additive",
+                    "Semi-additive",
+                    "Additive",
+                    "Derived"
+                ],
+                "answer": 2,
+                "explanation": "Additive measures can be summed across all dimensions."
+            },
+            {
+                "id": "EX020",
+                "question": "Which activity ensures consistency between warehouse and source systems?",
+                "options": [
+                    "Impact analysis",
+                    "Data reconciliation",
+                    "Cube processing",
+                    "Query optimization"
+                ],
+                "answer": 1,
+                "explanation": "Data reconciliation verifies correctness between source and warehouse data."
+            },
+            {
+                "id": "EX021",
+                "question": "Which type of metadata tracks data origin and movement?",
+                "options": [
+                    "Business metadata",
+                    "Operational metadata",
+                    "Technical metadata",
+                    "Lineage metadata"
+                ],
+                "answer": 3,
+                "explanation": "Lineage metadata records data flow from source to destination."
+            },
+            {
+                "id": "EX022",
+                "question": "Which ETL approach loads data at fixed intervals?",
+                "options": [
+                    "Trickle loading",
+                    "Streaming load",
+                    "Batch loading",
+                    "Event-driven loading"
+                ],
+                "answer": 2,
+                "explanation": "Batch loading processes data at scheduled intervals."
+            },
+            {
+                "id": "EX023",
+                "question": "Which dimension attribute defines hierarchical relationships?",
+                "options": [
+                    "Measure",
+                    "Level",
+                    "Fact",
+                    "Snapshot"
+                ],
+                "answer": 1,
+                "explanation": "Levels define hierarchies within dimensions."
+            },
+            {
+                "id": "EX024",
+                "question": "A fact constellation schema is also known as:",
+                "options": [
+                    "Star schema",
+                    "Snowflake schema",
+                    "Galaxy schema",
+                    "Hybrid schema"
+                ],
+                "answer": 2,
+                "explanation": "Fact constellation is commonly referred to as galaxy schema."
+            },
+            {
+                "id": "EX025",
+                "question": "The primary goal of data warehousing is to support:",
+                "options": [
+                    "Transaction processing",
+                    "Real-time control systems",
+                    "Decision making and analysis",
+                    "Network management"
+                ],
+                "answer": 2,
+                "explanation": "Data warehouses are designed for analytical and decision-support purposes."
+            }
+        ]
+    }
+}
