@@ -308,12 +308,7 @@
 
         // ================= Topic Map =================
         const topics = {
-            "Programming Concepts": "programming_concepts.json",
-            "Data Structures & Algorithms": "data_structures_algorithms.json",
-            "Computer Networks": "computer_network.json",
-            "Database": "dbms.json",
-            "SQL": "sql.json",
-            "Data Analytics Languages": "data_analytics_languages.json",
+            "Grammar": "grammar.json"
         };
 
         // ================= Custom Dropdown =================
@@ -349,7 +344,7 @@
 
         // ================= Fetch and Load Topic =================
         function fetchTopic(file) {
-            fetch("questions/computer_science/" + file)
+            fetch("questions/english/" + file)
                 .then(res => res.json())
                 .then(json => {
                     data = json.data;

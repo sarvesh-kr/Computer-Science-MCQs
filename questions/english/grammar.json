@@ -1,0 +1,2406 @@
+{
+    "data": {
+        "Parts of Speech": [
+            {
+                "id": "POS001",
+                "question": "Which word is a noun in the sentence: 'The cat sleeps on the sofa'?",
+                "options": [
+                    "sleeps",
+                    "on",
+                    "cat",
+                    "the"
+                ],
+                "answer": 2,
+                "explanation": "‘Cat’ is the name of an animal, so it is a noun."
+            },
+            {
+                "id": "POS002",
+                "question": "Which word is a verb?",
+                "options": [
+                    "happy",
+                    "run",
+                    "blue",
+                    "slow"
+                ],
+                "answer": 1,
+                "explanation": "‘Run’ shows an action, so it is a verb."
+            },
+            {
+                "id": "POS003",
+                "question": "Identify the adjective: 'She wore a beautiful dress.'",
+                "options": [
+                    "She",
+                    "wore",
+                    "beautiful",
+                    "dress"
+                ],
+                "answer": 2,
+                "explanation": "‘Beautiful’ describes the noun ‘dress’."
+            },
+            {
+                "id": "POS004",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "quick",
+                    "quickly",
+                    "quickness",
+                    "quicker"
+                ],
+                "answer": 1,
+                "explanation": "‘Quickly’ modifies a verb."
+            },
+            {
+                "id": "POS005",
+                "question": "Which word is a pronoun?",
+                "options": [
+                    "Ravi",
+                    "book",
+                    "he",
+                    "school"
+                ],
+                "answer": 2,
+                "explanation": "‘He’ is used in place of a noun."
+            },
+            {
+                "id": "POS006",
+                "question": "Identify the preposition: 'The book is on the table.'",
+                "options": [
+                    "book",
+                    "is",
+                    "on",
+                    "table"
+                ],
+                "answer": 2,
+                "explanation": "‘On’ shows position."
+            },
+            {
+                "id": "POS007",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "but",
+                    "very",
+                    "quick",
+                    "house"
+                ],
+                "answer": 0,
+                "explanation": "‘But’ joins two clauses."
+            },
+            {
+                "id": "POS008",
+                "question": "Which word is an interjection?",
+                "options": [
+                    "Wow!",
+                    "Run",
+                    "Very",
+                    "Blue"
+                ],
+                "answer": 0,
+                "explanation": "‘Wow!’ expresses sudden feeling."
+            },
+            {
+                "id": "POS009",
+                "question": "Identify the noun: 'Honesty is the best policy.'",
+                "options": [
+                    "Honesty",
+                    "is",
+                    "best",
+                    "policy"
+                ],
+                "answer": 0,
+                "explanation": "‘Honesty’ is an abstract noun."
+            },
+            {
+                "id": "POS010",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "slowly",
+                    "slow",
+                    "slowness",
+                    "slowed"
+                ],
+                "answer": 1,
+                "explanation": "‘Slow’ describes a noun."
+            },
+            {
+                "id": "POS011",
+                "question": "Which part of speech is the word 'they'?",
+                "options": [
+                    "Noun",
+                    "Verb",
+                    "Pronoun",
+                    "Adjective"
+                ],
+                "answer": 2,
+                "explanation": "‘They’ replaces a noun."
+            },
+            {
+                "id": "POS012",
+                "question": "Identify the verb: 'Birds fly in the sky.'",
+                "options": [
+                    "Birds",
+                    "fly",
+                    "in",
+                    "sky"
+                ],
+                "answer": 1,
+                "explanation": "‘Fly’ shows action."
+            },
+            {
+                "id": "POS013",
+                "question": "Which word is a preposition?",
+                "options": [
+                    "under",
+                    "run",
+                    "happy",
+                    "boy"
+                ],
+                "answer": 0,
+                "explanation": "‘Under’ shows position."
+            },
+            {
+                "id": "POS014",
+                "question": "Which word is an adverb in 'He speaks softly'?",
+                "options": [
+                    "He",
+                    "speaks",
+                    "softly",
+                    "none"
+                ],
+                "answer": 2,
+                "explanation": "‘Softly’ modifies the verb ‘speaks’."
+            },
+            {
+                "id": "POS015",
+                "question": "Identify the conjunction: 'I tried but failed.'",
+                "options": [
+                    "I",
+                    "tried",
+                    "but",
+                    "failed"
+                ],
+                "answer": 2,
+                "explanation": "‘But’ joins two ideas."
+            },
+            {
+                "id": "POS016",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "honest",
+                    "honestly",
+                    "honesty",
+                    "honestness"
+                ],
+                "answer": 0,
+                "explanation": "‘Honest’ describes a noun."
+            },
+            {
+                "id": "POS017",
+                "question": "Which word is a noun?",
+                "options": [
+                    "run",
+                    "beauty",
+                    "quick",
+                    "slowly"
+                ],
+                "answer": 1,
+                "explanation": "‘Beauty’ is a thing/quality."
+            },
+            {
+                "id": "POS018",
+                "question": "Which word is a verb?",
+                "options": [
+                    "teacher",
+                    "teaching",
+                    "teach",
+                    "taughtness"
+                ],
+                "answer": 2,
+                "explanation": "‘Teach’ shows action."
+            },
+            {
+                "id": "POS019",
+                "question": "Which part of speech is 'very'?",
+                "options": [
+                    "Adjective",
+                    "Adverb",
+                    "Noun",
+                    "Pronoun"
+                ],
+                "answer": 1,
+                "explanation": "‘Very’ modifies an adjective or adverb."
+            },
+            {
+                "id": "POS020",
+                "question": "Identify the interjection:",
+                "options": [
+                    "Oh!",
+                    "Run",
+                    "Blue",
+                    "Quick"
+                ],
+                "answer": 0,
+                "explanation": "‘Oh!’ shows emotion."
+            },
+            {
+                "id": "POS021",
+                "question": "Which word is a pronoun?",
+                "options": [
+                    "Rita",
+                    "she",
+                    "school",
+                    "pen"
+                ],
+                "answer": 1,
+                "explanation": "‘She’ replaces a noun."
+            },
+            {
+                "id": "POS022",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "because",
+                    "slow",
+                    "very",
+                    "dog"
+                ],
+                "answer": 0,
+                "explanation": "‘Because’ joins clauses."
+            },
+            {
+                "id": "POS023",
+                "question": "Identify the adjective: 'A tall building'",
+                "options": [
+                    "A",
+                    "tall",
+                    "building",
+                    "none"
+                ],
+                "answer": 1,
+                "explanation": "‘Tall’ describes the noun."
+            },
+            {
+                "id": "POS024",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "fast",
+                    "faster",
+                    "fastest",
+                    "fastly"
+                ],
+                "answer": 3,
+                "explanation": "‘Fastly’ is an adverb form."
+            },
+            {
+                "id": "POS025",
+                "question": "Which word is a preposition?",
+                "options": [
+                    "between",
+                    "eat",
+                    "food",
+                    "happy"
+                ],
+                "answer": 0,
+                "explanation": "‘Between’ shows relation."
+            },
+            {
+                "id": "POS026",
+                "question": "Which part of speech is 'school'?",
+                "options": [
+                    "Verb",
+                    "Noun",
+                    "Adjective",
+                    "Adverb"
+                ],
+                "answer": 1,
+                "explanation": "‘School’ is a place."
+            },
+            {
+                "id": "POS027",
+                "question": "Which word is a verb?",
+                "options": [
+                    "sleep",
+                    "sleepy",
+                    "sleepiness",
+                    "sleptness"
+                ],
+                "answer": 0,
+                "explanation": "‘Sleep’ shows action/state."
+            },
+            {
+                "id": "POS028",
+                "question": "Identify the adjective:",
+                "options": [
+                    "care",
+                    "careful",
+                    "carefully",
+                    "careless"
+                ],
+                "answer": 1,
+                "explanation": "‘Careful’ describes a noun."
+            },
+            {
+                "id": "POS029",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "loud",
+                    "loudly",
+                    "loudness",
+                    "louder"
+                ],
+                "answer": 1,
+                "explanation": "‘Loudly’ modifies a verb."
+            },
+            {
+                "id": "POS030",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "and",
+                    "fast",
+                    "run",
+                    "red"
+                ],
+                "answer": 0,
+                "explanation": "‘And’ joins words."
+            },
+            {
+                "id": "POS031",
+                "question": "Which word is an interjection?",
+                "options": [
+                    "Alas!",
+                    "Work",
+                    "Very",
+                    "Cold"
+                ],
+                "answer": 0,
+                "explanation": "‘Alas!’ expresses sorrow."
+            },
+            {
+                "id": "POS032",
+                "question": "Which word is a noun?",
+                "options": [
+                    "think",
+                    "thought",
+                    "thinking",
+                    "thoughtful"
+                ],
+                "answer": 1,
+                "explanation": "‘Thought’ is a thing/idea."
+            },
+            {
+                "id": "POS033",
+                "question": "Which part of speech is 'him'?",
+                "options": [
+                    "Noun",
+                    "Pronoun",
+                    "Verb",
+                    "Adjective"
+                ],
+                "answer": 1,
+                "explanation": "‘Him’ is an object pronoun."
+            },
+            {
+                "id": "POS034",
+                "question": "Identify the verb:",
+                "options": [
+                    "jump",
+                    "jumping",
+                    "jumped",
+                    "all of these"
+                ],
+                "answer": 3,
+                "explanation": "All are verb forms."
+            },
+            {
+                "id": "POS035",
+                "question": "Which word is a preposition?",
+                "options": [
+                    "after",
+                    "eat",
+                    "happy",
+                    "boy"
+                ],
+                "answer": 0,
+                "explanation": "‘After’ shows time relation."
+            },
+            {
+                "id": "POS036",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "angrily",
+                    "anger",
+                    "angry",
+                    "angered"
+                ],
+                "answer": 2,
+                "explanation": "‘Angry’ describes a noun."
+            },
+            {
+                "id": "POS037",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "late",
+                    "latest",
+                    "lately",
+                    "lateness"
+                ],
+                "answer": 2,
+                "explanation": "‘Lately’ modifies a verb."
+            },
+            {
+                "id": "POS038",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "or",
+                    "big",
+                    "go",
+                    "house"
+                ],
+                "answer": 0,
+                "explanation": "‘Or’ joins alternatives."
+            },
+            {
+                "id": "POS039",
+                "question": "Which word is a noun?",
+                "options": [
+                    "strong",
+                    "strength",
+                    "strongly",
+                    "stronger"
+                ],
+                "answer": 1,
+                "explanation": "‘Strength’ is a noun."
+            },
+            {
+                "id": "POS040",
+                "question": "Identify the pronoun:",
+                "options": [
+                    "they",
+                    "school",
+                    "write",
+                    "happy"
+                ],
+                "answer": 0,
+                "explanation": "‘They’ replaces a noun."
+            },
+            {
+                "id": "POS041",
+                "question": "Which word is a verb?",
+                "options": [
+                    "decision",
+                    "decide",
+                    "deciding",
+                    "decidedly"
+                ],
+                "answer": 1,
+                "explanation": "‘Decide’ shows action."
+            },
+            {
+                "id": "POS042",
+                "question": "Which word is a preposition?",
+                "options": [
+                    "into",
+                    "eat",
+                    "blue",
+                    "fast"
+                ],
+                "answer": 0,
+                "explanation": "‘Into’ shows movement."
+            },
+            {
+                "id": "POS043",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "danger",
+                    "dangerous",
+                    "dangerously",
+                    "endanger"
+                ],
+                "answer": 1,
+                "explanation": "‘Dangerous’ describes a noun."
+            },
+            {
+                "id": "POS044",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "easy",
+                    "easier",
+                    "easily",
+                    "easiness"
+                ],
+                "answer": 2,
+                "explanation": "‘Easily’ modifies a verb."
+            },
+            {
+                "id": "POS045",
+                "question": "Which word is an interjection?",
+                "options": [
+                    "Hey!",
+                    "Sit",
+                    "Calm",
+                    "Blue"
+                ],
+                "answer": 0,
+                "explanation": "‘Hey!’ expresses attention."
+            },
+            {
+                "id": "POS046",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "although",
+                    "fast",
+                    "run",
+                    "boy"
+                ],
+                "answer": 0,
+                "explanation": "‘Although’ joins clauses."
+            },
+            {
+                "id": "POS047",
+                "question": "Which word is a noun?",
+                "options": [
+                    "arrival",
+                    "arrive",
+                    "arriving",
+                    "arrived"
+                ],
+                "answer": 0,
+                "explanation": "‘Arrival’ is a noun."
+            },
+            {
+                "id": "POS048",
+                "question": "Which word is a pronoun?",
+                "options": [
+                    "my",
+                    "book",
+                    "teacher",
+                    "school"
+                ],
+                "answer": 0,
+                "explanation": "‘My’ is a possessive pronoun."
+            },
+            {
+                "id": "POS049",
+                "question": "Which word is a verb?",
+                "options": [
+                    "play",
+                    "player",
+                    "playful",
+                    "playground"
+                ],
+                "answer": 0,
+                "explanation": "‘Play’ shows action."
+            },
+            {
+                "id": "POS050",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "child",
+                    "childish",
+                    "childhood",
+                    "childishly"
+                ],
+                "answer": 1,
+                "explanation": "‘Childish’ describes a noun."
+            },
+            {
+                "id": "POS051",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "bright",
+                    "brightly",
+                    "brightness",
+                    "brighter"
+                ],
+                "answer": 1,
+                "explanation": "‘Brightly’ modifies a verb."
+            },
+            {
+                "id": "POS052",
+                "question": "Which word is a noun?",
+                "options": [
+                    "decide",
+                    "decision",
+                    "decisive",
+                    "deciding"
+                ],
+                "answer": 1,
+                "explanation": "‘Decision’ is a thing/idea."
+            },
+            {
+                "id": "POS053",
+                "question": "Identify the verb:",
+                "options": [
+                    "movement",
+                    "move",
+                    "moving",
+                    "movable"
+                ],
+                "answer": 1,
+                "explanation": "‘Move’ shows action."
+            },
+            {
+                "id": "POS054",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "truth",
+                    "truthful",
+                    "truthfully",
+                    "truthfulness"
+                ],
+                "answer": 1,
+                "explanation": "‘Truthful’ describes a noun."
+            },
+            {
+                "id": "POS055",
+                "question": "Which word is a preposition?",
+                "options": [
+                    "through",
+                    "think",
+                    "thought",
+                    "thank"
+                ],
+                "answer": 0,
+                "explanation": "‘Through’ shows movement/position."
+            },
+            {
+                "id": "POS056",
+                "question": "Which word is a pronoun?",
+                "options": [
+                    "we",
+                    "team",
+                    "match",
+                    "win"
+                ],
+                "answer": 0,
+                "explanation": "‘We’ replaces a noun."
+            },
+            {
+                "id": "POS057",
+                "question": "Which word is an interjection?",
+                "options": [
+                    "Bravo!",
+                    "Write",
+                    "Slow",
+                    "Blue"
+                ],
+                "answer": 0,
+                "explanation": "‘Bravo!’ expresses praise."
+            },
+            {
+                "id": "POS058",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "while",
+                    "walk",
+                    "white",
+                    "wall"
+                ],
+                "answer": 0,
+                "explanation": "‘While’ joins clauses."
+            },
+            {
+                "id": "POS059",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "hope",
+                    "hopeful",
+                    "hopefully",
+                    "hopelessly"
+                ],
+                "answer": 1,
+                "explanation": "‘Hopeful’ describes a noun."
+            },
+            {
+                "id": "POS060",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "near",
+                    "nearer",
+                    "nearest",
+                    "nearly"
+                ],
+                "answer": 3,
+                "explanation": "‘Nearly’ modifies a verb or adjective."
+            },
+            {
+                "id": "POS061",
+                "question": "Which word is a noun?",
+                "options": [
+                    "fail",
+                    "failed",
+                    "failure",
+                    "failing"
+                ],
+                "answer": 2,
+                "explanation": "‘Failure’ is a noun."
+            },
+            {
+                "id": "POS062",
+                "question": "Identify the verb:",
+                "options": [
+                    "creation",
+                    "creator",
+                    "create",
+                    "creative"
+                ],
+                "answer": 2,
+                "explanation": "‘Create’ shows action."
+            },
+            {
+                "id": "POS063",
+                "question": "Which word is a pronoun?",
+                "options": [
+                    "their",
+                    "teacher",
+                    "class",
+                    "lesson"
+                ],
+                "answer": 0,
+                "explanation": "‘Their’ is a possessive pronoun."
+            },
+            {
+                "id": "POS064",
+                "question": "Which word is a preposition?",
+                "options": [
+                    "against",
+                    "anger",
+                    "angry",
+                    "angrily"
+                ],
+                "answer": 0,
+                "explanation": "‘Against’ shows relation."
+            },
+            {
+                "id": "POS065",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "care",
+                    "careless",
+                    "carelessly",
+                    "carelessness"
+                ],
+                "answer": 1,
+                "explanation": "‘Careless’ describes a noun."
+            },
+            {
+                "id": "POS066",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "safe",
+                    "safely",
+                    "safety",
+                    "safer"
+                ],
+                "answer": 1,
+                "explanation": "‘Safely’ modifies a verb."
+            },
+            {
+                "id": "POS067",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "yet",
+                    "yellow",
+                    "yard",
+                    "yesterday"
+                ],
+                "answer": 0,
+                "explanation": "‘Yet’ joins clauses."
+            },
+            {
+                "id": "POS068",
+                "question": "Which word is a noun?",
+                "options": [
+                    "strong",
+                    "strongly",
+                    "strength",
+                    "stronger"
+                ],
+                "answer": 2,
+                "explanation": "‘Strength’ is a noun."
+            },
+            {
+                "id": "POS069",
+                "question": "Which word is a verb?",
+                "options": [
+                    "choice",
+                    "choose",
+                    "chosen",
+                    "choosing"
+                ],
+                "answer": 1,
+                "explanation": "‘Choose’ shows action."
+            },
+            {
+                "id": "POS070",
+                "question": "Which word is an interjection?",
+                "options": [
+                    "Hurray!",
+                    "Hard",
+                    "Hurry",
+                    "House"
+                ],
+                "answer": 0,
+                "explanation": "‘Hurray!’ expresses joy."
+            },
+            {
+                "id": "POS071",
+                "question": "Which word is a pronoun?",
+                "options": [
+                    "someone",
+                    "person",
+                    "people",
+                    "man"
+                ],
+                "answer": 0,
+                "explanation": "‘Someone’ is an indefinite pronoun."
+            },
+            {
+                "id": "POS072",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "wood",
+                    "wooden",
+                    "woodenly",
+                    "woodiness"
+                ],
+                "answer": 1,
+                "explanation": "‘Wooden’ describes a noun."
+            },
+            {
+                "id": "POS073",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "clear",
+                    "clearly",
+                    "clarity",
+                    "clearer"
+                ],
+                "answer": 1,
+                "explanation": "‘Clearly’ modifies a verb."
+            },
+            {
+                "id": "POS074",
+                "question": "Which word is a preposition?",
+                "options": [
+                    "before",
+                    "begin",
+                    "behindness",
+                    "belief"
+                ],
+                "answer": 0,
+                "explanation": "‘Before’ shows time/place relation."
+            },
+            {
+                "id": "POS075",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "if",
+                    "in",
+                    "is",
+                    "it"
+                ],
+                "answer": 0,
+                "explanation": "‘If’ joins clauses conditionally."
+            },
+            {
+                "id": "POS076",
+                "question": "Which word is a noun?",
+                "options": [
+                    "happy",
+                    "happily",
+                    "happiness",
+                    "happier"
+                ],
+                "answer": 2,
+                "explanation": "‘Happiness’ is a noun."
+            },
+            {
+                "id": "POS077",
+                "question": "Which word is a verb?",
+                "options": [
+                    "drive",
+                    "driver",
+                    "driving",
+                    "driven"
+                ],
+                "answer": 0,
+                "explanation": "‘Drive’ shows action."
+            },
+            {
+                "id": "POS078",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "use",
+                    "useful",
+                    "usefully",
+                    "uselessly"
+                ],
+                "answer": 1,
+                "explanation": "‘Useful’ describes a noun."
+            },
+            {
+                "id": "POS079",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "silent",
+                    "silence",
+                    "silently",
+                    "silenter"
+                ],
+                "answer": 2,
+                "explanation": "‘Silently’ modifies a verb."
+            },
+            {
+                "id": "POS080",
+                "question": "Which word is a pronoun?",
+                "options": [
+                    "each",
+                    "chair",
+                    "chalk",
+                    "child"
+                ],
+                "answer": 0,
+                "explanation": "‘Each’ is a pronoun."
+            },
+            {
+                "id": "POS081",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "unless",
+                    "untils",
+                    "unlike",
+                    "under"
+                ],
+                "answer": 0,
+                "explanation": "‘Unless’ joins clauses."
+            },
+            {
+                "id": "POS082",
+                "question": "Which word is a noun?",
+                "options": [
+                    "think",
+                    "thinker",
+                    "thinking",
+                    "thoughtful"
+                ],
+                "answer": 1,
+                "explanation": "‘Thinker’ is a noun."
+            },
+            {
+                "id": "POS083",
+                "question": "Which word is a verb?",
+                "options": [
+                    "speak",
+                    "speaker",
+                    "speech",
+                    "spoken"
+                ],
+                "answer": 0,
+                "explanation": "‘Speak’ shows action."
+            },
+            {
+                "id": "POS084",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "wind",
+                    "windy",
+                    "windily",
+                    "windiness"
+                ],
+                "answer": 1,
+                "explanation": "‘Windy’ describes a noun."
+            },
+            {
+                "id": "POS085",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "real",
+                    "really",
+                    "reality",
+                    "realest"
+                ],
+                "answer": 1,
+                "explanation": "‘Really’ modifies a verb/adjective."
+            },
+            {
+                "id": "POS086",
+                "question": "Which word is a preposition?",
+                "options": [
+                    "across",
+                    "act",
+                    "active",
+                    "actively"
+                ],
+                "answer": 0,
+                "explanation": "‘Across’ shows position/movement."
+            },
+            {
+                "id": "POS087",
+                "question": "Which word is a pronoun?",
+                "options": [
+                    "nothing",
+                    "note",
+                    "number",
+                    "noun"
+                ],
+                "answer": 0,
+                "explanation": "‘Nothing’ is an indefinite pronoun."
+            },
+            {
+                "id": "POS088",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "though",
+                    "through",
+                    "thought",
+                    "think"
+                ],
+                "answer": 0,
+                "explanation": "‘Though’ joins clauses."
+            },
+            {
+                "id": "POS089",
+                "question": "Which word is an interjection?",
+                "options": [
+                    "Oops!",
+                    "Open",
+                    "Often",
+                    "Orange"
+                ],
+                "answer": 0,
+                "explanation": "‘Oops!’ shows sudden reaction."
+            },
+            {
+                "id": "POS090",
+                "question": "Which word is a noun?",
+                "options": [
+                    "grow",
+                    "grown",
+                    "growth",
+                    "growing"
+                ],
+                "answer": 2,
+                "explanation": "‘Growth’ is a noun."
+            },
+            {
+                "id": "POS091",
+                "question": "Which word is a verb?",
+                "options": [
+                    "build",
+                    "builder",
+                    "building",
+                    "buildings"
+                ],
+                "answer": 0,
+                "explanation": "‘Build’ shows action."
+            },
+            {
+                "id": "POS092",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "gold",
+                    "golden",
+                    "goldly",
+                    "goldness"
+                ],
+                "answer": 1,
+                "explanation": "‘Golden’ describes a noun."
+            },
+            {
+                "id": "POS093",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "wise",
+                    "wisely",
+                    "wisdom",
+                    "wiser"
+                ],
+                "answer": 1,
+                "explanation": "‘Wisely’ modifies a verb."
+            },
+            {
+                "id": "POS094",
+                "question": "Which word is a pronoun?",
+                "options": [
+                    "ours",
+                    "our",
+                    "owner",
+                    "own"
+                ],
+                "answer": 0,
+                "explanation": "‘Ours’ is a possessive pronoun."
+            },
+            {
+                "id": "POS095",
+                "question": "Which word is a conjunction?",
+                "options": [
+                    "so",
+                    "some",
+                    "soon",
+                    "soft"
+                ],
+                "answer": 0,
+                "explanation": "‘So’ joins cause and result."
+            },
+            {
+                "id": "POS096",
+                "question": "Which word is a noun?",
+                "options": [
+                    "lead",
+                    "leader",
+                    "leading",
+                    "led"
+                ],
+                "answer": 1,
+                "explanation": "‘Leader’ is a noun."
+            },
+            {
+                "id": "POS097",
+                "question": "Which word is a verb?",
+                "options": [
+                    "teach",
+                    "teacher",
+                    "teaching",
+                    "taught"
+                ],
+                "answer": 0,
+                "explanation": "‘Teach’ shows action."
+            },
+            {
+                "id": "POS098",
+                "question": "Which word is an adjective?",
+                "options": [
+                    "fame",
+                    "famous",
+                    "famously",
+                    "familiar"
+                ],
+                "answer": 1,
+                "explanation": "‘Famous’ describes a noun."
+            },
+            {
+                "id": "POS099",
+                "question": "Which word is an adverb?",
+                "options": [
+                    "deep",
+                    "deeply",
+                    "depth",
+                    "deeper"
+                ],
+                "answer": 1,
+                "explanation": "‘Deeply’ modifies a verb."
+            },
+            {
+                "id": "POS100",
+                "question": "Which word is an interjection?",
+                "options": [
+                    "Ah!",
+                    "Ask",
+                    "Always",
+                    "Able"
+                ],
+                "answer": 0,
+                "explanation": "‘Ah!’ expresses emotion."
+            },
+            {
+                "id": "POS101",
+                "question": "Identify the part of speech of the underlined word: He has **already** finished the work.",
+                "options": [
+                    "Adjective",
+                    "Adverb",
+                    "Verb",
+                    "Preposition"
+                ],
+                "answer": 1,
+                "explanation": "‘Already’ modifies the verb ‘finished’, so it is an adverb."
+            },
+            {
+                "id": "POS102",
+                "question": "Which word functions as a noun in the sentence: 'Swimming is good for health'?",
+                "options": [
+                    "good",
+                    "for",
+                    "Swimming",
+                    "health"
+                ],
+                "answer": 2,
+                "explanation": "‘Swimming’ is a gerund acting as a noun."
+            },
+            {
+                "id": "POS103",
+                "question": "Identify the conjunction in the sentence: 'He is poor yet honest.'",
+                "options": [
+                    "He",
+                    "poor",
+                    "yet",
+                    "honest"
+                ],
+                "answer": 2,
+                "explanation": "‘Yet’ joins two contrasting ideas."
+            },
+            {
+                "id": "POS104",
+                "question": "Which word is used as an adjective: 'This is a sleeping dog'?",
+                "options": [
+                    "sleeping",
+                    "dog",
+                    "is",
+                    "this"
+                ],
+                "answer": 0,
+                "explanation": "‘Sleeping’ describes the noun ‘dog’."
+            },
+            {
+                "id": "POS105",
+                "question": "Identify the preposition: 'He sat beside me.'",
+                "options": [
+                    "sat",
+                    "beside",
+                    "me",
+                    "he"
+                ],
+                "answer": 1,
+                "explanation": "‘Beside’ shows position."
+            },
+            {
+                "id": "POS106",
+                "question": "Which word is an abstract noun?",
+                "options": [
+                    "book",
+                    "chair",
+                    "honesty",
+                    "river"
+                ],
+                "answer": 2,
+                "explanation": "‘Honesty’ denotes a quality."
+            },
+            {
+                "id": "POS107",
+                "question": "Identify the pronoun in the sentence: 'Each of the boys was rewarded.'",
+                "options": [
+                    "boys",
+                    "was",
+                    "each",
+                    "rewarded"
+                ],
+                "answer": 2,
+                "explanation": "‘Each’ is an indefinite pronoun."
+            },
+            {
+                "id": "POS108",
+                "question": "Which word is a modal auxiliary verb?",
+                "options": [
+                    "go",
+                    "can",
+                    "went",
+                    "going"
+                ],
+                "answer": 1,
+                "explanation": "‘Can’ is a modal auxiliary verb."
+            },
+            {
+                "id": "POS109",
+                "question": "Identify the adjective: 'She bought an expensive car.'",
+                "options": [
+                    "bought",
+                    "she",
+                    "expensive",
+                    "car"
+                ],
+                "answer": 2,
+                "explanation": "‘Expensive’ qualifies the noun ‘car’."
+            },
+            {
+                "id": "POS110",
+                "question": "Which word is a relative pronoun?",
+                "options": [
+                    "who",
+                    "he",
+                    "they",
+                    "them"
+                ],
+                "answer": 0,
+                "explanation": "‘Who’ introduces a relative clause."
+            },
+            {
+                "id": "POS111",
+                "question": "Identify the adverb of frequency:",
+                "options": [
+                    "often",
+                    "very",
+                    "fast",
+                    "hard"
+                ],
+                "answer": 0,
+                "explanation": "‘Often’ shows frequency."
+            },
+            {
+                "id": "POS112",
+                "question": "Which word is a collective noun?",
+                "options": [
+                    "crowd",
+                    "people",
+                    "men",
+                    "children"
+                ],
+                "answer": 0,
+                "explanation": "‘Crowd’ denotes a collection."
+            },
+            {
+                "id": "POS113",
+                "question": "Identify the preposition in the sentence: 'The train passed through the tunnel.'",
+                "options": [
+                    "passed",
+                    "train",
+                    "through",
+                    "tunnel"
+                ],
+                "answer": 2,
+                "explanation": "‘Through’ shows movement."
+            },
+            {
+                "id": "POS114",
+                "question": "Which word is an interrogative pronoun?",
+                "options": [
+                    "which",
+                    "that",
+                    "this",
+                    "those"
+                ],
+                "answer": 0,
+                "explanation": "‘Which’ is used for asking questions."
+            },
+            {
+                "id": "POS115",
+                "question": "Identify the adjective of quantity:",
+                "options": [
+                    "many",
+                    "fast",
+                    "red",
+                    "there"
+                ],
+                "answer": 0,
+                "explanation": "‘Many’ indicates quantity."
+            },
+            {
+                "id": "POS116",
+                "question": "Which word is a transitive verb?",
+                "options": [
+                    "sleep",
+                    "die",
+                    "kill",
+                    "arrive"
+                ],
+                "answer": 2,
+                "explanation": "‘Kill’ requires an object."
+            },
+            {
+                "id": "POS117",
+                "question": "Identify the adverb in the sentence: 'He spoke loudly.'",
+                "options": [
+                    "he",
+                    "spoke",
+                    "loudly",
+                    "none"
+                ],
+                "answer": 2,
+                "explanation": "‘Loudly’ modifies the verb ‘spoke’."
+            },
+            {
+                "id": "POS118",
+                "question": "Which word is a demonstrative pronoun?",
+                "options": [
+                    "this",
+                    "he",
+                    "she",
+                    "they"
+                ],
+                "answer": 0,
+                "explanation": "‘This’ points to a specific noun."
+            },
+            {
+                "id": "POS119",
+                "question": "Identify the adjective: 'The blind man crossed the road.'",
+                "options": [
+                    "blind",
+                    "man",
+                    "crossed",
+                    "road"
+                ],
+                "answer": 0,
+                "explanation": "‘Blind’ describes the noun ‘man’."
+            },
+            {
+                "id": "POS120",
+                "question": "Which word is an adverb of manner?",
+                "options": [
+                    "slowly",
+                    "tomorrow",
+                    "here",
+                    "often"
+                ],
+                "answer": 0,
+                "explanation": "‘Slowly’ tells how an action is done."
+            },
+            {
+                "id": "POS121",
+                "question": "Identify the conjunction: 'He will pass if he works hard.'",
+                "options": [
+                    "will",
+                    "if",
+                    "hard",
+                    "pass"
+                ],
+                "answer": 1,
+                "explanation": "‘If’ introduces a condition."
+            },
+            {
+                "id": "POS122",
+                "question": "Which word is a proper noun?",
+                "options": [
+                    "city",
+                    "country",
+                    "India",
+                    "river"
+                ],
+                "answer": 2,
+                "explanation": "‘India’ is a specific name."
+            },
+            {
+                "id": "POS123",
+                "question": "Identify the verb: 'The baby is sleeping.'",
+                "options": [
+                    "baby",
+                    "is",
+                    "sleeping",
+                    "the"
+                ],
+                "answer": 2,
+                "explanation": "‘Sleeping’ is the main verb."
+            },
+            {
+                "id": "POS124",
+                "question": "Which word is an adverb of time?",
+                "options": [
+                    "yesterday",
+                    "fast",
+                    "here",
+                    "very"
+                ],
+                "answer": 0,
+                "explanation": "‘Yesterday’ indicates time."
+            },
+            {
+                "id": "POS125",
+                "question": "Identify the possessive pronoun:",
+                "options": [
+                    "mine",
+                    "me",
+                    "my",
+                    "I"
+                ],
+                "answer": 0,
+                "explanation": "‘Mine’ shows possession."
+            },
+            {
+                "id": "POS126",
+                "question": "Which word is a compound preposition?",
+                "options": [
+                    "because of",
+                    "in",
+                    "on",
+                    "at"
+                ],
+                "answer": 0,
+                "explanation": "‘Because of’ is a compound preposition."
+            },
+            {
+                "id": "POS127",
+                "question": "Identify the adjective: 'He gave me little money.'",
+                "options": [
+                    "gave",
+                    "little",
+                    "money",
+                    "me"
+                ],
+                "answer": 1,
+                "explanation": "‘Little’ qualifies the noun ‘money’."
+            },
+            {
+                "id": "POS128",
+                "question": "Which word is a reflexive pronoun?",
+                "options": [
+                    "himself",
+                    "him",
+                    "his",
+                    "he"
+                ],
+                "answer": 0,
+                "explanation": "‘Himself’ refers back to the subject."
+            },
+            {
+                "id": "POS129",
+                "question": "Identify the adverb of place:",
+                "options": [
+                    "here",
+                    "now",
+                    "soon",
+                    "often"
+                ],
+                "answer": 0,
+                "explanation": "‘Here’ shows place."
+            },
+            {
+                "id": "POS130",
+                "question": "Which word is an auxiliary verb?",
+                "options": [
+                    "has",
+                    "eat",
+                    "run",
+                    "jump"
+                ],
+                "answer": 0,
+                "explanation": "‘Has’ helps form tense."
+            },
+            {
+                "id": "POS131",
+                "question": "Which word is an adjective used as a noun: 'The rich should help the poor'?",
+                "options": [
+                    "rich",
+                    "should",
+                    "help",
+                    "the"
+                ],
+                "answer": 0,
+                "explanation": "‘Rich’ represents a class of people."
+            },
+            {
+                "id": "POS132",
+                "question": "Identify the verb of perception:",
+                "options": [
+                    "see",
+                    "eat",
+                    "build",
+                    "drive"
+                ],
+                "answer": 0,
+                "explanation": "‘See’ relates to sense perception."
+            },
+            {
+                "id": "POS133",
+                "question": "Which word is a numeral adjective?",
+                "options": [
+                    "three",
+                    "few",
+                    "many",
+                    "some"
+                ],
+                "answer": 0,
+                "explanation": "‘Three’ shows exact number."
+            },
+            {
+                "id": "POS134",
+                "question": "Identify the conjunction: 'Neither Ram nor Shyam was present.'",
+                "options": [
+                    "neither",
+                    "nor",
+                    "was",
+                    "present"
+                ],
+                "answer": 1,
+                "explanation": "‘Nor’ completes the correlative conjunction."
+            },
+            {
+                "id": "POS135",
+                "question": "Which word is an adverb modifying an adjective?",
+                "options": [
+                    "very",
+                    "red",
+                    "car",
+                    "drive"
+                ],
+                "answer": 0,
+                "explanation": "‘Very’ modifies an adjective."
+            },
+            {
+                "id": "POS136",
+                "question": "Identify the noun clause introducer:",
+                "options": [
+                    "that",
+                    "and",
+                    "but",
+                    "or"
+                ],
+                "answer": 0,
+                "explanation": "‘That’ introduces a noun clause."
+            },
+            {
+                "id": "POS137",
+                "question": "Which word is a linking verb?",
+                "options": [
+                    "is",
+                    "eat",
+                    "jump",
+                    "write"
+                ],
+                "answer": 0,
+                "explanation": "‘Is’ links subject and complement."
+            },
+            {
+                "id": "POS138",
+                "question": "Identify the adjective of quality:",
+                "options": [
+                    "honest",
+                    "two",
+                    "much",
+                    "some"
+                ],
+                "answer": 0,
+                "explanation": "‘Honest’ shows quality."
+            },
+            {
+                "id": "POS139",
+                "question": "Which word is an emphatic pronoun?",
+                "options": [
+                    "myself",
+                    "me",
+                    "my",
+                    "mine"
+                ],
+                "answer": 0,
+                "explanation": "‘Myself’ emphasizes the subject."
+            },
+            {
+                "id": "POS140",
+                "question": "Identify the adverb of degree:",
+                "options": [
+                    "too",
+                    "there",
+                    "when",
+                    "why"
+                ],
+                "answer": 0,
+                "explanation": "‘Too’ expresses degree."
+            },
+            {
+                "id": "POS141",
+                "question": "Which word is a finite verb?",
+                "options": [
+                    "runs",
+                    "running",
+                    "to run",
+                    "run"
+                ],
+                "answer": 0,
+                "explanation": "‘Runs’ agrees with the subject."
+            },
+            {
+                "id": "POS142",
+                "question": "Identify the preposition used for cause:",
+                "options": [
+                    "due to",
+                    "on",
+                    "at",
+                    "by"
+                ],
+                "answer": 0,
+                "explanation": "‘Due to’ indicates cause."
+            },
+            {
+                "id": "POS143",
+                "question": "Which word is an adjective phrase head?",
+                "options": [
+                    "very",
+                    "beautiful",
+                    "girl",
+                    "is"
+                ],
+                "answer": 1,
+                "explanation": "‘Beautiful’ is the main adjective."
+            },
+            {
+                "id": "POS144",
+                "question": "Identify the conjunction: 'Hard work as well as luck is needed.'",
+                "options": [
+                    "as well as",
+                    "and",
+                    "is",
+                    "hard"
+                ],
+                "answer": 0,
+                "explanation": "‘As well as’ joins two elements."
+            },
+            {
+                "id": "POS145",
+                "question": "Which word is an adverbial interrogative?",
+                "options": [
+                    "why",
+                    "who",
+                    "which",
+                    "what"
+                ],
+                "answer": 0,
+                "explanation": "‘Why’ asks about reason."
+            },
+            {
+                "id": "POS146",
+                "question": "Identify the noun of action:",
+                "options": [
+                    "movement",
+                    "move",
+                    "moving",
+                    "moves"
+                ],
+                "answer": 0,
+                "explanation": "‘Movement’ denotes action."
+            },
+            {
+                "id": "POS147",
+                "question": "Which word is a preposition of direction?",
+                "options": [
+                    "towards",
+                    "under",
+                    "within",
+                    "among"
+                ],
+                "answer": 0,
+                "explanation": "‘Towards’ shows direction."
+            },
+            {
+                "id": "POS148",
+                "question": "Identify the adjective used for emphasis:",
+                "options": [
+                    "own",
+                    "self",
+                    "same",
+                    "very"
+                ],
+                "answer": 3,
+                "explanation": "‘Very’ is used for emphasis."
+            },
+            {
+                "id": "POS149",
+                "question": "Which word is a coordinating conjunction?",
+                "options": [
+                    "but",
+                    "because",
+                    "although",
+                    "while"
+                ],
+                "answer": 0,
+                "explanation": "‘But’ joins equal clauses."
+            },
+            {
+                "id": "POS150",
+                "question": "Which word is an interjection expressing approval?",
+                "options": [
+                    "Well done!",
+                    "Oh!",
+                    "Alas!",
+                    "Ah!"
+                ],
+                "answer": 0,
+                "explanation": "‘Well done!’ shows appreciation."
+            },
+            {
+                "id": "POS151",
+                "question": "Identify the adjective of number:",
+                "options": [
+                    "first",
+                    "few",
+                    "much",
+                    "little"
+                ],
+                "answer": 0,
+                "explanation": "‘First’ shows order."
+            },
+            {
+                "id": "POS152",
+                "question": "Which word is a reciprocal pronoun?",
+                "options": [
+                    "each other",
+                    "one",
+                    "self",
+                    "mine"
+                ],
+                "answer": 0,
+                "explanation": "‘Each other’ shows mutual action."
+            },
+            {
+                "id": "POS153",
+                "question": "Identify the adverb modifying another adverb:",
+                "options": [
+                    "very",
+                    "quickly",
+                    "run",
+                    "fast"
+                ],
+                "answer": 0,
+                "explanation": "‘Very’ modifies another adverb."
+            },
+            {
+                "id": "POS154",
+                "question": "Which word is a subordinating conjunction?",
+                "options": [
+                    "because",
+                    "and",
+                    "or",
+                    "nor"
+                ],
+                "answer": 0,
+                "explanation": "‘Because’ introduces a dependent clause."
+            },
+            {
+                "id": "POS155",
+                "question": "Which word is a noun denoting profession?",
+                "options": [
+                    "teacher",
+                    "teach",
+                    "teaching",
+                    "taught"
+                ],
+                "answer": 0,
+                "explanation": "‘Teacher’ denotes a profession."
+            },
+            {
+                "id": "POS156",
+                "question": "Identify the adjective used as a complement:",
+                "options": [
+                    "happy",
+                    "happily",
+                    "happiness",
+                    "happier"
+                ],
+                "answer": 0,
+                "explanation": "‘Happy’ completes the meaning of the subject."
+            },
+            {
+                "id": "POS157",
+                "question": "Which word is an adverb of reason?",
+                "options": [
+                    "therefore",
+                    "here",
+                    "soon",
+                    "fast"
+                ],
+                "answer": 0,
+                "explanation": "‘Therefore’ shows reason/result."
+            },
+            {
+                "id": "POS158",
+                "question": "Identify the preposition of agency:",
+                "options": [
+                    "by",
+                    "with",
+                    "to",
+                    "for"
+                ],
+                "answer": 0,
+                "explanation": "‘By’ indicates the doer."
+            },
+            {
+                "id": "POS159",
+                "question": "Which word is a noun of state?",
+                "options": [
+                    "childhood",
+                    "child",
+                    "childish",
+                    "childishly"
+                ],
+                "answer": 0,
+                "explanation": "‘Childhood’ denotes a state."
+            },
+            {
+                "id": "POS160",
+                "question": "Which word is an interjection expressing surprise?",
+                "options": [
+                    "Oh!",
+                    "Bravo!",
+                    "Alas!",
+                    "Hello!"
+                ],
+                "answer": 0,
+                "explanation": "‘Oh!’ expresses surprise."
+            },
+            {
+                "id": "POS161",
+                "question": "Identify the adjective modifying a gerund:",
+                "options": [
+                    "constant",
+                    "constantly",
+                    "constancy",
+                    "constanter"
+                ],
+                "answer": 0,
+                "explanation": "‘Constant’ can modify a gerund."
+            },
+            {
+                "id": "POS162",
+                "question": "Which word is an adverbial phrase?",
+                "options": [
+                    "in haste",
+                    "haste",
+                    "hasty",
+                    "hastily"
+                ],
+                "answer": 0,
+                "explanation": "‘In haste’ works as an adverb."
+            },
+            {
+                "id": "POS163",
+                "question": "Identify the noun functioning as an adjective:",
+                "options": [
+                    "stone wall",
+                    "stone",
+                    "wall",
+                    "both"
+                ],
+                "answer": 3,
+                "explanation": "‘Stone’ modifies ‘wall’."
+            },
+            {
+                "id": "POS164",
+                "question": "Which word is a causative verb?",
+                "options": [
+                    "make",
+                    "go",
+                    "eat",
+                    "run"
+                ],
+                "answer": 0,
+                "explanation": "‘Make’ causes an action."
+            },
+            {
+                "id": "POS165",
+                "question": "Which word is an adverb of affirmation?",
+                "options": [
+                    "certainly",
+                    "never",
+                    "where",
+                    "why"
+                ],
+                "answer": 0,
+                "explanation": "‘Certainly’ shows affirmation."
+            },
+            {
+                "id": "POS166",
+                "question": "Identify the adjective of comparison:",
+                "options": [
+                    "better",
+                    "good",
+                    "best",
+                    "well"
+                ],
+                "answer": 0,
+                "explanation": "‘Better’ is comparative degree."
+            },
+            {
+                "id": "POS167",
+                "question": "Which word is a noun phrase head?",
+                "options": [
+                    "beautiful",
+                    "garden",
+                    "very",
+                    "in"
+                ],
+                "answer": 1,
+                "explanation": "‘Garden’ is the main noun."
+            },
+            {
+                "id": "POS168",
+                "question": "Identify the adverb used as a conjunction:",
+                "options": [
+                    "however",
+                    "very",
+                    "quickly",
+                    "there"
+                ],
+                "answer": 0,
+                "explanation": "‘However’ links sentences."
+            },
+            {
+                "id": "POS169",
+                "question": "Which word is a preposition of concession?",
+                "options": [
+                    "despite",
+                    "because",
+                    "since",
+                    "unless"
+                ],
+                "answer": 0,
+                "explanation": "‘Despite’ shows contrast."
+            },
+            {
+                "id": "POS170",
+                "question": "Which word is an interjection used in greeting?",
+                "options": [
+                    "Hello!",
+                    "Alas!",
+                    "Oh!",
+                    "Ah!"
+                ],
+                "answer": 0,
+                "explanation": "‘Hello!’ is used for greeting."
+            },
+            {
+                "id": "POS171",
+                "question": "Identify the adjective modifying a pronoun:",
+                "options": [
+                    "own",
+                    "self",
+                    "same",
+                    "very"
+                ],
+                "answer": 0,
+                "explanation": "‘Own’ modifies a pronoun."
+            },
+            {
+                "id": "POS172",
+                "question": "Which word is an adverb of condition?",
+                "options": [
+                    "otherwise",
+                    "there",
+                    "soon",
+                    "often"
+                ],
+                "answer": 0,
+                "explanation": "‘Otherwise’ expresses condition."
+            },
+            {
+                "id": "POS173",
+                "question": "Identify the noun denoting quantity:",
+                "options": [
+                    "amount",
+                    "many",
+                    "few",
+                    "several"
+                ],
+                "answer": 0,
+                "explanation": "‘Amount’ is a noun of quantity."
+            },
+            {
+                "id": "POS174",
+                "question": "Which word is a conjunctive adverb?",
+                "options": [
+                    "therefore",
+                    "and",
+                    "but",
+                    "or"
+                ],
+                "answer": 0,
+                "explanation": "‘Therefore’ connects clauses logically."
+            },
+            {
+                "id": "POS175",
+                "question": "Which word is an interjection expressing pain?",
+                "options": [
+                    "Ouch!",
+                    "Wow!",
+                    "Hey!",
+                    "Bravo!"
+                ],
+                "answer": 0,
+                "explanation": "‘Ouch!’ expresses pain."
+            },
+            {
+                "id": "POS176",
+                "question": "Identify the adjective used as a predicate:",
+                "options": [
+                    "asleep",
+                    "sleep",
+                    "sleeping",
+                    "slept"
+                ],
+                "answer": 0,
+                "explanation": "‘Asleep’ functions as a predicate adjective."
+            },
+            {
+                "id": "POS177",
+                "question": "Which word is an adverbial noun?",
+                "options": [
+                    "today",
+                    "day",
+                    "daily",
+                    "date"
+                ],
+                "answer": 0,
+                "explanation": "‘Today’ acts as an adverb of time."
+            },
+            {
+                "id": "POS178",
+                "question": "Identify the preposition used for instrument:",
+                "options": [
+                    "with",
+                    "by",
+                    "from",
+                    "to"
+                ],
+                "answer": 0,
+                "explanation": "‘With’ shows instrument."
+            },
+            {
+                "id": "POS179",
+                "question": "Which word is an adjective of emphasis?",
+                "options": [
+                    "own",
+                    "same",
+                    "very",
+                    "all"
+                ],
+                "answer": 2,
+                "explanation": "‘Very’ adds emphasis."
+            },
+            {
+                "id": "POS180",
+                "question": "Which word is an interjection expressing agreement?",
+                "options": [
+                    "Yes!",
+                    "Oh!",
+                    "Alas!",
+                    "Ah!"
+                ],
+                "answer": 0,
+                "explanation": "‘Yes!’ expresses agreement."
+            },
+            {
+                "id": "POS181",
+                "question": "Identify the adverb modifying a verb phrase:",
+                "options": [
+                    "hard",
+                    "hardly",
+                    "hardness",
+                    "harder"
+                ],
+                "answer": 1,
+                "explanation": "‘Hardly’ modifies the verb phrase."
+            },
+            {
+                "id": "POS182",
+                "question": "Which word is a noun used as subject complement?",
+                "options": [
+                    "doctor",
+                    "treat",
+                    "treating",
+                    "treated"
+                ],
+                "answer": 0,
+                "explanation": "‘Doctor’ renames the subject."
+            },
+            {
+                "id": "POS183",
+                "question": "Identify the adjective of distribution:",
+                "options": [
+                    "each",
+                    "every",
+                    "either",
+                    "all"
+                ],
+                "answer": 0,
+                "explanation": "‘Each’ distributes individually."
+            },
+            {
+                "id": "POS184",
+                "question": "Which word is a phrasal preposition?",
+                "options": [
+                    "in front of",
+                    "under",
+                    "over",
+                    "by"
+                ],
+                "answer": 0,
+                "explanation": "‘In front of’ is a phrasal preposition."
+            },
+            {
+                "id": "POS185",
+                "question": "Which word is an interjection expressing sorrow?",
+                "options": [
+                    "Alas!",
+                    "Wow!",
+                    "Hey!",
+                    "Yes!"
+                ],
+                "answer": 0,
+                "explanation": "‘Alas!’ expresses sorrow."
+            },
+            {
+                "id": "POS186",
+                "question": "Identify the adjective modifying an infinitive:",
+                "options": [
+                    "eager",
+                    "eagerly",
+                    "eagerness",
+                    "eagerest"
+                ],
+                "answer": 0,
+                "explanation": "‘Eager’ can modify an infinitive."
+            },
+            {
+                "id": "POS187",
+                "question": "Which word is an adverb of probability?",
+                "options": [
+                    "perhaps",
+                    "here",
+                    "then",
+                    "why"
+                ],
+                "answer": 0,
+                "explanation": "‘Perhaps’ expresses possibility."
+            },
+            {
+                "id": "POS188",
+                "question": "Identify the noun of condition:",
+                "options": [
+                    "poverty",
+                    "poor",
+                    "poorly",
+                    "poorer"
+                ],
+                "answer": 0,
+                "explanation": "‘Poverty’ denotes a condition."
+            },
+            {
+                "id": "POS189",
+                "question": "Which word is a subordinating conjunction of contrast?",
+                "options": [
+                    "although",
+                    "and",
+                    "or",
+                    "nor"
+                ],
+                "answer": 0,
+                "explanation": "‘Although’ shows contrast."
+            },
+            {
+                "id": "POS190",
+                "question": "Which word is an interjection expressing warning?",
+                "options": [
+                    "Beware!",
+                    "Wow!",
+                    "Hello!",
+                    "Ah!"
+                ],
+                "answer": 0,
+                "explanation": "‘Beware!’ gives warning."
+            },
+            {
+                "id": "POS191",
+                "question": "Identify the adjective modifying a collective noun:",
+                "options": [
+                    "large",
+                    "largely",
+                    "largeness",
+                    "larger"
+                ],
+                "answer": 0,
+                "explanation": "‘Large’ describes a collective noun."
+            },
+            {
+                "id": "POS192",
+                "question": "Which word is an adverbial clause introducer?",
+                "options": [
+                    "when",
+                    "what",
+                    "who",
+                    "which"
+                ],
+                "answer": 0,
+                "explanation": "‘When’ introduces an adverbial clause."
+            },
+            {
+                "id": "POS193",
+                "question": "Identify the noun denoting feeling:",
+                "options": [
+                    "fear",
+                    "fearful",
+                    "fearfully",
+                    "feared"
+                ],
+                "answer": 0,
+                "explanation": "‘Fear’ denotes emotion."
+            },
+            {
+                "id": "POS194",
+                "question": "Which word is a preposition used for purpose?",
+                "options": [
+                    "for",
+                    "by",
+                    "with",
+                    "from"
+                ],
+                "answer": 0,
+                "explanation": "‘For’ shows purpose."
+            },
+            {
+                "id": "POS195",
+                "question": "Which word is an interjection expressing call for attention?",
+                "options": [
+                    "Listen!",
+                    "Alas!",
+                    "Oh!",
+                    "Ah!"
+                ],
+                "answer": 0,
+                "explanation": "‘Listen!’ calls attention."
+            },
+            {
+                "id": "POS196",
+                "question": "Identify the adjective modifying a proper noun:",
+                "options": [
+                    "Indian",
+                    "India",
+                    "Indians",
+                    "Indianness"
+                ],
+                "answer": 0,
+                "explanation": "‘Indian’ modifies a proper noun."
+            },
+            {
+                "id": "POS197",
+                "question": "Which word is an adverb of sequence?",
+                "options": [
+                    "then",
+                    "there",
+                    "why",
+                    "how"
+                ],
+                "answer": 0,
+                "explanation": "‘Then’ shows order."
+            },
+            {
+                "id": "POS198",
+                "question": "Identify the noun of possession:",
+                "options": [
+                    "ownership",
+                    "own",
+                    "owned",
+                    "owning"
+                ],
+                "answer": 0,
+                "explanation": "‘Ownership’ denotes possession."
+            },
+            {
+                "id": "POS199",
+                "question": "Which word is a conjunction used in pairs?",
+                "options": [
+                    "both",
+                    "either",
+                    "neither",
+                    "all"
+                ],
+                "answer": 1,
+                "explanation": "‘Either’ is used with ‘or’."
+            },
+            {
+                "id": "POS200",
+                "question": "Which word is an interjection expressing request?",
+                "options": [
+                    "Please!",
+                    "Wow!",
+                    "Oh!",
+                    "Ah!"
+                ],
+                "answer": 0,
+                "explanation": "‘Please!’ expresses polite request."
+            }
+        ]
+    }
+}
