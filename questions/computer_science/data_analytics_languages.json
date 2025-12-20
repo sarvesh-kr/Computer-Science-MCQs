@@ -847,13 +847,13 @@
                 "id": "slice_21",
                 "question": "Slicing string 'Python' with [1:5:2] returns:",
                 "options": [
-                    "'yhn'",
-                    "'yto'",
-                    "'Pto'",
-                    "'ytn'"
+                    "'yh'",
+                    "'yt'",
+                    "'yho'",
+                    "'yn'"
                 ],
-                "answer": 3,
-                "explanation": "Indices 1,3 give characters 'y' and 't', step=2."
+                "answer": 0,
+                "explanation": "Indices 1 and 3 are retrieved ('y' and 'h'). Index 5 is the 'stop' parameter and is excluded from the results."
             },
             {
                 "id": "slice_22",
@@ -1109,15 +1109,15 @@
             },
             {
                 "id": "slice_43",
-                "question": "str[::-len(str)] returns:",
+                "question": "In Python, what does str[::-len(str)] return for any non-empty string?",
                 "options": [
-                    "Last character",
-                    "First character",
-                    "Reversed string",
-                    "Empty string"
+                    "The last character only",
+                    "The first character only",
+                    "The entire reversed string",
+                    "An empty string"
                 ],
-                "answer": 1,
-                "explanation": "Step=-length selects first element in reverse stepping."
+                "answer": 0,
+                "explanation": "With a negative step and omitted boundaries, the slice starts at the last index. Since the step equals the negative length, it only retrieves the first element in that sequence (the last character) before going out of bounds."
             },
             {
                 "id": "slice_44",
@@ -1215,7 +1215,7 @@
                     "unstack()"
                 ],
                 "answer": 1,
-                "explanation": "melt() unpivots a DataFrame from wide to long format by gathering column values into rows. :contentReference[oaicite:1]{index=1}"
+                "explanation": "melt() unpivots a DataFrame from wide to long format by gathering column values into rows."
             },
             {
                 "id": "reshape_02",
@@ -1227,7 +1227,7 @@
                     "Filters rows"
                 ],
                 "answer": 0,
-                "explanation": "pivot_table() reshapes data and performs aggregation functions like sum or mean. :contentReference[oaicite:2]{index=2}"
+                "explanation": "pivot_table() reshapes data and performs aggregation functions like sum or mean."
             },
             {
                 "id": "reshape_03",
@@ -1239,7 +1239,7 @@
                     "explode()"
                 ],
                 "answer": 0,
-                "explanation": "pivot() converts long data into wide format using index, columns, and values. :contentReference[oaicite:3]{index=3}"
+                "explanation": "pivot() converts long data into wide format using index, columns, and values."
             },
             {
                 "id": "reshape_04",
@@ -1251,7 +1251,7 @@
                     "Sorts DataFrame"
                 ],
                 "answer": 0,
-                "explanation": "stack() pivots columns into rows (e.g., for hierarchical index). :contentReference[oaicite:4]{index=4}"
+                "explanation": "stack() pivots columns into rows (e.g., for hierarchical index)."
             },
             {
                 "id": "reshape_05",
@@ -1263,7 +1263,7 @@
                     "Merges DataFrames"
                 ],
                 "answer": 0,
-                "explanation": "unstack() pivots a level of the row index into columns. :contentReference[oaicite:5]{index=5}"
+                "explanation": "unstack() pivots a level of the row index into columns."
             },
             {
                 "id": "reshape_06",
@@ -1275,7 +1275,7 @@
                     "unite()"
                 ],
                 "answer": 1,
-                "explanation": "gather() combines multiple columns into key-value pairs (long format) in R’s tidyr package. :contentReference[oaicite:6]{index=6}"
+                "explanation": "gather() combines multiple columns into key-value pairs (long format) in R’s tidyr package."
             },
             {
                 "id": "reshape_07",
@@ -1287,7 +1287,7 @@
                     "Aggregation function"
                 ],
                 "answer": 0,
-                "explanation": "id_vars specifies columns to keep constant while other columns are melted. :contentReference[oaicite:7]{index=7}"
+                "explanation": "id_vars specifies columns to keep constant while other columns are melted."
             },
             {
                 "id": "reshape_08",
@@ -1299,7 +1299,7 @@
                     "stack()"
                 ],
                 "answer": 0,
-                "explanation": "explode() transforms each element of a list-like column into separate rows. :contentReference[oaicite:8]{index=8}"
+                "explanation": "explode() transforms each element of a list-like column into separate rows."
             },
             {
                 "id": "reshape_09",
@@ -1311,7 +1311,7 @@
                     "Unstacks rows"
                 ],
                 "answer": 0,
-                "explanation": "spread() spreads key-value pairs into multiple columns in R’s tidyr. :contentReference[oaicite:9]{index=9}"
+                "explanation": "spread() spreads key-value pairs into multiple columns in R’s tidyr."
             },
             {
                 "id": "reshape_10",
@@ -1323,7 +1323,7 @@
                     "drop()"
                 ],
                 "answer": 0,
-                "explanation": "pivot_table() supports multi-level columns and aggregation. :contentReference[oaicite:10]{index=10}"
+                "explanation": "pivot_table() supports multi-level columns and aggregation."
             },
             {
                 "id": "reshape_11",
@@ -1335,7 +1335,7 @@
                     "pivot()"
                 ],
                 "answer": 0,
-                "explanation": "unstack() pivots a Series index level into DataFrame columns. :contentReference[oaicite:11]{index=11}"
+                "explanation": "unstack() pivots a Series index level into DataFrame columns."
             },
             {
                 "id": "reshape_12",
@@ -1347,7 +1347,7 @@
                     "DataFrame converted to array"
                 ],
                 "answer": 0,
-                "explanation": "pivot() arranges data with A index and B columns using values from C. :contentReference[oaicite:12]{index=12}"
+                "explanation": "pivot() arranges data with A index and B columns using values from C."
             },
             {
                 "id": "reshape_13",
@@ -1359,7 +1359,7 @@
                     "gather()"
                 ],
                 "answer": 0,
-                "explanation": "separate() splits a column into multiple columns by delimiter. :contentReference[oaicite:13]{index=13}"
+                "explanation": "separate() splits a column into multiple columns by delimiter."
             },
             {
                 "id": "reshape_14",
@@ -1371,7 +1371,7 @@
                     "Renames columns"
                 ],
                 "answer": 0,
-                "explanation": "stack() moves the innermost column level to row index. :contentReference[oaicite:14]{index=14}"
+                "explanation": "stack() moves the innermost column level to row index."
             },
             {
                 "id": "reshape_15",
@@ -1383,7 +1383,7 @@
                     "Gathers data"
                 ],
                 "answer": 0,
-                "explanation": "unite() combines multiple columns into one with a separator. :contentReference[oaicite:15]{index=15}"
+                "explanation": "unite() combines multiple columns into one with a separator."
             },
             {
                 "id": "reshape_16",
@@ -1395,7 +1395,7 @@
                     "explode()"
                 ],
                 "answer": 0,
-                "explanation": "stack()/unstack() handle multi-level indexed reshaping. :contentReference[oaicite:16]{index=16}"
+                "explanation": "stack()/unstack() handle multi-level indexed reshaping."
             },
             {
                 "id": "reshape_17",
@@ -1407,7 +1407,7 @@
                     "Explodes columns"
                 ],
                 "answer": 0,
-                "explanation": "pivot_table() reshapes data with aggregation. :contentReference[oaicite:17]{index=17}"
+                "explanation": "pivot_table() reshapes data with aggregation."
             },
             {
                 "id": "reshape_18",
@@ -1419,7 +1419,7 @@
                     "pivot_table does not reshape"
                 ],
                 "answer": 0,
-                "explanation": "pivot_table() allows aggregation when duplicates exist, pivot() does not. :contentReference[oaicite:18]{index=18}"
+                "explanation": "pivot_table() allows aggregation when duplicates exist, pivot() does not."
             },
             {
                 "id": "reshape_19",
@@ -1431,7 +1431,7 @@
                     "unstack()"
                 ],
                 "answer": 0,
-                "explanation": "melt() reshapes columns into rows (long format). :contentReference[oaicite:19]{index=19}"
+                "explanation": "melt() reshapes columns into rows (long format)."
             },
             {
                 "id": "reshape_20",
@@ -1443,7 +1443,7 @@
                     "Aggregating values"
                 ],
                 "answer": 0,
-                "explanation": "explode() separates list-like column values into distinct rows. :contentReference[oaicite:20]{index=20}"
+                "explanation": "explode() separates list-like column values into distinct rows."
             },
             {
                 "id": "reshape_21",
@@ -1455,7 +1455,7 @@
                     "df.stack()"
                 ],
                 "answer": 0,
-                "explanation": "Mapping join on MultiIndex levels flattens column names. :contentReference[oaicite:21]{index=21}"
+                "explanation": "Mapping join on MultiIndex levels flattens column names."
             },
             {
                 "id": "reshape_22",
@@ -1467,7 +1467,7 @@
                     "merge/join"
                 ],
                 "answer": 0,
-                "explanation": "reshape() uses direction and identifiers for wide/long format. :contentReference[oaicite:22]{index=22}"
+                "explanation": "reshape() uses direction and identifiers for wide/long format."
             },
             {
                 "id": "reshape_23",
@@ -1479,7 +1479,7 @@
                     "pivot()"
                 ],
                 "answer": 0,
-                "explanation": "explode() separates each list element into a new row. :contentReference[oaicite:23]{index=23}"
+                "explanation": "explode() separates each list element into a new row."
             },
             {
                 "id": "reshape_24",
@@ -1491,7 +1491,7 @@
                     "Array"
                 ],
                 "answer": 0,
-                "explanation": "stack() returns a Series with a stacked index. :contentReference[oaicite:24]{index=24}"
+                "explanation": "stack() returns a Series with a stacked index."
             },
             {
                 "id": "reshape_25",
@@ -1503,7 +1503,7 @@
                     "Array"
                 ],
                 "answer": 0,
-                "explanation": "unstack() pivots index to columns, producing a DataFrame. :contentReference[oaicite:25]{index=25}"
+                "explanation": "unstack() pivots index to columns, producing a DataFrame."
             },
             {
                 "id": "reshape_26",
@@ -1515,7 +1515,7 @@
                     "Exploded DataFrame"
                 ],
                 "answer": 0,
-                "explanation": "pivot() reshapes data into wide format. :contentReference[oaicite:26]{index=26}"
+                "explanation": "pivot() reshapes data into wide format."
             },
             {
                 "id": "reshape_27",
@@ -1527,7 +1527,7 @@
                     "Only for Series"
                 ],
                 "answer": 0,
-                "explanation": "stack() and unstack() reverse each other’s operations. :contentReference[oaicite:27]{index=27}"
+                "explanation": "stack() and unstack() reverse each other’s operations."
             },
             {
                 "id": "reshape_28",
@@ -1539,7 +1539,7 @@
                     "Joining tables"
                 ],
                 "answer": 0,
-                "explanation": "melt() creates long format suitable for plotting and analysis. :contentReference[oaicite:28]{index=28}"
+                "explanation": "melt() creates long format suitable for plotting and analysis."
             },
             {
                 "id": "reshape_29",
@@ -1551,7 +1551,7 @@
                     "columns"
                 ],
                 "answer": 0,
-                "explanation": "var_name gives the new column holding original column names. :contentReference[oaicite:29]{index=29}"
+                "explanation": "var_name gives the new column holding original column names."
             },
             {
                 "id": "reshape_30",
@@ -1563,7 +1563,7 @@
                     "columns"
                 ],
                 "answer": 0,
-                "explanation": "value_name holds the melted values. :contentReference[oaicite:30]{index=30}"
+                "explanation": "value_name holds the melted values."
             },
             {
                 "id": "reshape_31",
@@ -1575,7 +1575,7 @@
                     "Only DataFrame"
                 ],
                 "answer": 0,
-                "explanation": "stack() drops missing values by default. :contentReference[oaicite:31]{index=31}"
+                "explanation": "stack() drops missing values by default."
             },
             {
                 "id": "reshape_32",
@@ -1587,7 +1587,7 @@
                     "plyr"
                 ],
                 "answer": 0,
-                "explanation": "tidyr provides gather and spread for reshaping. :contentReference[oaicite:32]{index=32}"
+                "explanation": "tidyr provides gather and spread for reshaping."
             },
             {
                 "id": "reshape_33",
@@ -1599,7 +1599,7 @@
                     "unstack()"
                 ],
                 "answer": 0,
-                "explanation": "pivot() can reshape melted data back to wide. :contentReference[oaicite:33]{index=33}"
+                "explanation": "pivot() can reshape melted data back to wide."
             },
             {
                 "id": "reshape_34",
@@ -1611,7 +1611,7 @@
                     "resize()"
                 ],
                 "answer": 0,
-                "explanation": "pivot_longer() is tidyr’s modern replacement for gather(). :contentReference[oaicite:34]{index=34}"
+                "explanation": "pivot_longer() is tidyr’s modern replacement for gather()."
             },
             {
                 "id": "reshape_35",
@@ -1623,7 +1623,7 @@
                     "Transposes DataFrame"
                 ],
                 "answer": 0,
-                "explanation": "fill_value provides a value for missing pivot table cells. :contentReference[oaicite:35]{index=35}"
+                "explanation": "fill_value provides a value for missing pivot table cells."
             },
             {
                 "id": "reshape_36",
@@ -1635,7 +1635,7 @@
                     "explode()"
                 ],
                 "answer": 0,
-                "explanation": "unstack() pivots row index to columns. :contentReference[oaicite:36]{index=36}"
+                "explanation": "unstack() pivots row index to columns."
             },
             {
                 "id": "reshape_37",
@@ -1647,7 +1647,7 @@
                     "unite()"
                 ],
                 "answer": 0,
-                "explanation": "dcast() from reshape2 converts long to wide. :contentReference[oaicite:37]{index=37}"
+                "explanation": "dcast() from reshape2 converts long to wide."
             },
             {
                 "id": "reshape_38",
@@ -1659,7 +1659,7 @@
                     "unite()"
                 ],
                 "answer": 0,
-                "explanation": "pivot_wider() replaces spread() in newer tidyr versions. :contentReference[oaicite:38]{index=38}"
+                "explanation": "pivot_wider() replaces spread() in newer tidyr versions."
             },
             {
                 "id": "reshape_39",
@@ -1671,7 +1671,7 @@
                     "pivot()"
                 ],
                 "answer": 0,
-                "explanation": "transpose() swaps rows and columns entirely. :contentReference[oaicite:39]{index=39}"
+                "explanation": "transpose() swaps rows and columns entirely."
             },
             {
                 "id": "reshape_40",
@@ -1683,7 +1683,7 @@
                     "Returns same DataFrame"
                 ],
                 "answer": 0,
-                "explanation": "If value_vars is None, melt uses all columns not listed in id_vars. :contentReference[oaicite:40]{index=40}"
+                "explanation": "If value_vars is None, melt uses all columns not listed in id_vars."
             },
             {
                 "id": "reshape_41",
@@ -1695,7 +1695,7 @@
                     "sort"
                 ],
                 "answer": 0,
-                "explanation": "value_name names the column holding melted values. :contentReference[oaicite:41]{index=41}"
+                "explanation": "value_name names the column holding melted values."
             },
             {
                 "id": "reshape_42",
@@ -1707,7 +1707,7 @@
                     "explode()"
                 ],
                 "answer": 0,
-                "explanation": "pivot_table() handles duplicates using aggregation. :contentReference[oaicite:42]{index=42}"
+                "explanation": "pivot_table() handles duplicates using aggregation."
             },
             {
                 "id": "reshape_43",
@@ -1719,7 +1719,7 @@
                     "spread()"
                 ],
                 "answer": 0,
-                "explanation": "unite() creates one column from many. :contentReference[oaicite:43]{index=43}"
+                "explanation": "unite() creates one column from many."
             },
             {
                 "id": "reshape_44",
@@ -1731,7 +1731,7 @@
                     "explode()"
                 ],
                 "answer": 0,
-                "explanation": "stack() and unstack() are inverse reshaping operations. :contentReference[oaicite:44]{index=44}"
+                "explanation": "stack() and unstack() are inverse reshaping operations."
             },
             {
                 "id": "reshape_45",
@@ -1743,7 +1743,7 @@
                     "unstack()"
                 ],
                 "answer": 0,
-                "explanation": "melt() reshapes wide data into a tidy long format. :contentReference[oaicite:45]{index=45}"
+                "explanation": "melt() reshapes wide data into a tidy long format."
             },
             {
                 "id": "reshape_46",
@@ -1755,7 +1755,7 @@
                     "gather()"
                 ],
                 "answer": 0,
-                "explanation": "unite() combines multiple columns into one. :contentReference[oaicite:46]{index=46}"
+                "explanation": "unite() combines multiple columns into one."
             },
             {
                 "id": "reshape_47",
@@ -1767,7 +1767,7 @@
                     "gather() is for filtering"
                 ],
                 "answer": 0,
-                "explanation": "pivot_longer() replaces gather() with better control. :contentReference[oaicite:47]{index=47}"
+                "explanation": "pivot_longer() replaces gather() with better control."
             },
             {
                 "id": "reshape_48",
@@ -1779,7 +1779,7 @@
                     "columns"
                 ],
                 "answer": 0,
-                "explanation": "aggfunc defines aggregation for duplicates. :contentReference[oaicite:48]{index=48}"
+                "explanation": "aggfunc defines aggregation for duplicates."
             },
             {
                 "id": "reshape_49",
@@ -1791,7 +1791,7 @@
                     "explode()"
                 ],
                 "answer": 0,
-                "explanation": "unstack() moves the index to columns. :contentReference[oaicite:49]{index=49}"
+                "explanation": "unstack() moves the index to columns."
             },
             {
                 "id": "reshape_50",
@@ -4059,15 +4059,15 @@
             },
             {
                 "id": "cf_38",
-                "question": "Which inheritance is NOT supported directly?",
+                "question": "Which type of inheritance is NOT supported in Python (and most OOP languages) because it creates a logical impossibility?",
                 "options": [
-                    "Single",
-                    "Multiple",
-                    "Multilevel",
-                    "Hierarchical"
+                    "Multiple Inheritance",
+                    "Multilevel Inheritance",
+                    "Cyclic Inheritance",
+                    "Hierarchical Inheritance"
                 ],
-                "answer": 3,
-                "explanation": "Hierarchical inheritance is conceptual, not direct syntax."
+                "answer": 2,
+                "explanation": "Cyclic inheritance (where Class A inherits from Class B and Class B inherits from Class A) is invalid as it creates an infinite loop in the hierarchy."
             },
             {
                 "id": "cf_39",

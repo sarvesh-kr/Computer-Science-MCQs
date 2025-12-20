@@ -3,15 +3,15 @@
         "OCT 2025": [
             {
                 "id": "CA1025_001",
-                "question": "In October 2025, the RBI kept the repo rate unchanged at what level?",
+                "question": "In the October 2025 MPC meeting, the RBI maintained the repo rate at 5.50%. What was the primary rationale provided for the 'Neutral' stance?",
                 "options": [
-                    "5.50%",
-                    "6.00%",
-                    "5.25%",
-                    "5.75%"
+                    "To support stable growth while keeping inflation within target",
+                    "To aggressively combat hyperinflation",
+                    "To counteract a massive currency depreciation",
+                    "To prepare for a 100 bps cut in the next cycle"
                 ],
                 "answer": 0,
-                "explanation": "In its October 2025 policy, the RBI maintained the repo rate at 5.50 %. This was part of its neutral stance to support stable growth."
+                "explanation": "The 'Neutral' stance allows the RBI to move in either direction depending on data, balancing growth and inflation."
             },
             {
                 "id": "CA1025_002",
@@ -51,15 +51,15 @@
             },
             {
                 "id": "CA1025_005",
-                "question": "At GFF 2025, India launched which new financial system via GIFT City?",
+                "question": "Which specific financial facility was launched via GIFT City in October 2025 to assist Indian exporters?",
                 "options": [
-                    "Foreign currency settlement system",
-                    "Central bank digital currency (CBDC)",
-                    "New stock exchange",
-                    "Gold trading platform"
+                    "A foreign currency settlement system",
+                    "A domestic-only UPI switch",
+                    "An agricultural commodity exchange",
+                    "A real-estate investment trust (REIT) only for banks"
                 ],
                 "answer": 0,
-                "explanation": "India launched a foreign currency settlement system at GIFT City to expedite forex transactions."
+                "explanation": "This system expedites forex transactions, reducing the time and cost for cross-border trade settlements."
             },
             {
                 "id": "CA1025_006",
@@ -279,15 +279,15 @@
             },
             {
                 "id": "CA1025_024",
-                "question": "Which global aviation body reaffirmed India’s role after its re‑election to Part II of its council?",
+                "question": "Which developmental agency signed a ₹5,000 crore loan agreement with the Government of India in October 2025 for 'Climate Resilient Agriculture'?",
                 "options": [
-                    "ICAO",
-                    "IATA",
-                    "FAA",
-                    "EASA"
+                    "NABARD",
+                    "World Bank",
+                    "IFAD",
+                    "Asian Development Bank"
                 ],
                 "answer": 0,
-                "explanation": "India was re‑elected to Part II of the ICAO Council."
+                "explanation": "NABARD focused on financing sustainable irrigation systems."
             },
             {
                 "id": "CA1025_025",
@@ -363,15 +363,15 @@
             },
             {
                 "id": "CA1025_031",
-                "question": "Which global aviation agreement reaffirmed India’s position in October 2025?",
+                "question": "The GST Council in its October 2025 meeting recommended reducing the tax on which specific healthcare insurance premium?",
                 "options": [
-                    "Re‑election to ICAO Council Part II",
-                    "Paris Air Transport Agreement",
-                    "Geneva Accord",
-                    "IATA Partnership"
+                    "Life insurance for senior citizens",
+                    "Corporate group health insurance",
+                    "Individual health insurance for all",
+                    "None of the above"
                 ],
                 "answer": 0,
-                "explanation": "India was re‑elected to Part II of the ICAO Council in October 2025."
+                "explanation": "The GST Council provided relief to senior citizens by exempting life insurance from 18% GST."
             },
             {
                 "id": "CA1025_032",
@@ -555,15 +555,15 @@
             },
             {
                 "id": "CA1025_047",
-                "question": "Which international civil aviation event was a highlight for India in October 2025?",
+                "question": "Which Indian public sector bank launched the 'Udyami Shakti' digital portal in October 2025 for MSME lending?",
                 "options": [
-                    "ICAO re‑election",
-                    "IATA conference",
-                    "FAA workshop",
-                    "EASA meeting"
+                    "SBI",
+                    "Punjab National Bank",
+                    "Bank of Baroda",
+                    "Union Bank of India"
                 ],
                 "answer": 0,
-                "explanation": "India’s re‑election to Part II of ICAO Council was a significant diplomatic success."
+                "explanation": "SBI's 'Udyami Shakti' uses AI to provide in-principle approvals for loans up to ₹5 crore."
             },
             {
                 "id": "CA1025_048",
@@ -1252,16 +1252,16 @@
                 "explanation": "Exercise Trishul was the tri‑service military exercise conducted by Indian Army, Navy and Air Force in early November 2025."
             },
             {
-                "id": "CA1125_005",
-                "question": "Which tragic incident occurred near the Red Fort in Delhi on 10 November 2025?",
+                "id": "CA1225_005",
+                "question": "The 'Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin)' or VB-G RAM G Bill passed in December 2025 replaces which existing act?",
                 "options": [
-                    "Car explosion",
-                    "Train derailment",
-                    "Fire in market",
-                    "Bridge collapse"
+                    "MGNREGA",
+                    "PM-Kisan",
+                    "Deendayal Antyodaya Yojana",
+                    "Pradhan Mantri Awas Yojana"
                 ],
                 "answer": 0,
-                "explanation": "On 10 November 2025, a car exploded near the Red Fort in Delhi, killing at least 15 people and injuring more than 20 others. The government labeled it a terrorist act."
+                "explanation": "The G RAM G Bill 2025 repeals MGNREGA and increases the statutory wage employment guarantee from 100 to 125 days per rural household."
             },
             {
                 "id": "CA1125_006",
@@ -1565,15 +1565,15 @@
             },
             {
                 "id": "CA1125_031",
-                "question": "In November 2025, which ongoing technological disruption involving airplane operations was reported affecting major airlines?",
+                "question": "In November 2025, the DGCA ordered a 5% cut in flight schedules. What was the regulatory trigger for this intervention?",
                 "options": [
-                    "Flight delays due to volcanic ash",
-                    "New supersonic jets launched",
-                    "5% cut in flight schedules by DGCA",
-                    "Ban on flights above 8 PM"
+                    "Widespread volcanic ash disruptions and operational crises",
+                    "A mandatory shift to sustainable aviation fuel",
+                    "Excessive airline profits",
+                    "A permanent ban on night flights"
                 ],
-                "answer": 2,
-                "explanation": "Reports indicated DGCA ordered airlines to cut flight schedules by about 5% amidst disruptions."
+                "answer": 0,
+                "explanation": "DGCA intervened to rationalize schedules amidst disruptions caused by Ethiopian volcanic ash and airline mismanagement."
             },
             {
                 "id": "CA1125_032",
@@ -1625,15 +1625,15 @@
             },
             {
                 "id": "CA1125_036",
-                "question": "Which Indian state’s metro expansion project was projected to serve over 4 lakh daily riders by 2028?",
+                "question": "Which Indian city launched India's first 'Floating Solar-Powered EV Charging Station' in November 2025?",
                 "options": [
-                    "Pune",
+                    "Kochi",
+                    "Bhopal",
                     "Mumbai",
-                    "Delhi",
-                    "Chennai"
+                    "Hyderabad"
                 ],
                 "answer": 0,
-                "explanation": "The Pune Metro expansion with driverless trains was projected to serve over 4 lakh daily riders by 2028."
+                "explanation": "Kochi Water Metro integrated renewable charging for electric ferries."
             },
             {
                 "id": "CA1125_037",
@@ -1733,15 +1733,15 @@
             },
             {
                 "id": "CA1125_045",
-                "question": "Which national news platform provides school assembly current affairs including business updates for 4 and 20 November 2025?",
+                "question": "Who won the ICC Women’s Cricket World Cup 2025 final held in Navi Mumbai?",
                 "options": [
-                    "Indian Express and Moneycontrol",
-                    "BBC",
-                    "CNN",
-                    "Al Jazeera"
+                    "South Africa",
+                    "Australia",
+                    "India",
+                    "England"
                 ],
-                "answer": 0,
-                "explanation": "Indian Express and Moneycontrol provided school assembly current affairs including business updates for November 2025."
+                "answer": 2,
+                "explanation": "India beat South Africa by 52 runs in the final on Nov 2, 2025, to claim their maiden World Cup title. Shafali Verma was the Player of the Match."
             },
             {
                 "id": "CA1125_046",
@@ -1757,15 +1757,15 @@
             },
             {
                 "id": "CA1125_047",
-                "question": "Which urban mobility integration project was planned with driverless trains in November 2025?",
+                "question": "The Ministry of Commerce in November 2025 announced the 'Green Logistics Hub' status for which state-owned port?",
                 "options": [
-                    "Pune Metro expansion",
-                    "Delhi‑Mumbai bullet train",
-                    "Kolkata Metro Phase‑III",
-                    "Hyderabad Metro loop"
+                    "Jawaharlal Nehru Port Authority (JNPA)",
+                    "Visakhapatnam Port",
+                    "Kochi Port",
+                    "Deendayal Port"
                 ],
                 "answer": 0,
-                "explanation": "The Pune Metro expansion with driverless trains was planned to integrate key hubs."
+                "explanation": "JNPA achieved 100% renewable energy operations, a major milestone for infrastructure exams."
             },
             {
                 "id": "CA1125_048",
@@ -2407,15 +2407,15 @@
         "DEC 2025": [
             {
                 "id": "CA1225_001",
-                "question": "In December 2025, by how many basis points did the RBI cut the repo rate?",
+                "question": "In the December 2025 MPC meeting, the RBI reduced the repo rate to what level?",
                 "options": [
-                    "25 bps",
-                    "15 bps",
-                    "50 bps",
-                    "10 bps"
+                    "5.50%",
+                    "5.25%",
+                    "5.00%",
+                    "5.75%"
                 ],
-                "answer": 0,
-                "explanation": "In its December 2025 policy, the Reserve Bank of India cut the repo rate by 25 basis points to 5.25%."
+                "answer": 1,
+                "explanation": "The MPC announced a 25 bps cut in December 2025, bringing the repo rate down from 5.50% to 5.25% due to record low inflation."
             },
             {
                 "id": "CA1225_002",
@@ -2431,15 +2431,15 @@
             },
             {
                 "id": "CA1225_003",
-                "question": "Which major liquidity measure did RBI announce in December 2025?",
+                "question": "The RBI announced OMO purchases worth ₹1 lakh crore in December 2025. What is the expected impact on market liquidity?",
                 "options": [
-                    "OMO purchases worth ₹1 lakh crore",
-                    "Increase in CRR",
-                    "Ban on open market operations",
-                    "Increase in SLR"
+                    "Injection of long-term liquidity to lower bond yields",
+                    "Mopping up excess liquidity to curb inflation",
+                    "Increasing the statutory liquidity ratio (SLR)",
+                    "No impact on the banking system"
                 ],
                 "answer": 0,
-                "explanation": "RBI announced Open Market Operations (OMO) to purchase government securities worth ₹1 lakh crore to inject long-term liquidity."
+                "explanation": "Open Market Operations (OMO) purchases inject cash into the system, supporting credit flow and lowering yields."
             },
             {
                 "id": "CA1225_004",
@@ -2455,15 +2455,15 @@
             },
             {
                 "id": "CA1225_005",
-                "question": "Which net banking platform was launched by NBBL in December 2025?",
+                "question": "The 'Banking Connect' platform launched by NBBL in December 2025 is designed to:",
                 "options": [
-                    "Banking Connect",
-                    "UPI 2.0",
-                    "INB Pay",
-                    "RBI Pay"
+                    "Provide interoperable net banking through a single switch",
+                    "Replace the existing UPI system",
+                    "Mandate physical verification for all transfers",
+                    "Launch India's first crypto-only bank"
                 ],
                 "answer": 0,
-                "explanation": "NBBL launched the Banking Connect platform for interoperable net banking, improving payment integration."
+                "explanation": "Banking Connect improves digital efficiency by enabling seamless net banking across different banks via a single integration."
             },
             {
                 "id": "CA1225_006",
@@ -2647,15 +2647,15 @@
             },
             {
                 "id": "CA1225_021",
-                "question": "Which legislative bill passed Parliament in December 2025 aimed at rural employment guarantee?",
+                "question": "Under the newly passed VB-G RAM G Bill (2025), how many days of statutory employment are guaranteed to rural households?",
                 "options": [
-                    "Viksit Bharat–Guarantee for Rozgar and Ajeevika Mission Bill",
-                    "Farmers’ Rights Bill",
-                    "Healthcare Guarantee Bill",
-                    "Education Guarantee Bill"
+                    "100 days",
+                    "125 days",
+                    "150 days",
+                    "200 days"
                 ],
-                "answer": 0,
-                "explanation": "The Viksit Bharat–Guarantee for Rozgar and Ajeevika Mission (Gramin) Bill, 2025 was passed replacing MGNREGA with expanded rural employment guarantee."
+                "answer": 1,
+                "explanation": "The Viksit Bharat–Guarantee for Rozgar and Ajeevika Mission Bill increased the guarantee from 100 to 125 days."
             },
             {
                 "id": "CA1225_022",
@@ -2767,15 +2767,15 @@
             },
             {
                 "id": "CA1225_031",
-                "question": "Messi’s India tour in December 2025 drew media attention due to what issue?",
+                "question": "Lionel Messi's G.O.A.T. India Tour in December 2025 faced regulatory scrutiny due to:",
                 "options": [
-                    "Crowd unrest and organizational issues",
-                    "Record attendance peacefully",
-                    "No issues reported",
-                    "Cancelled tour"
+                    "Security and crowd control mismanagement in Kolkata",
+                    "A dispute over match tickets pricing",
+                    "Failure to obtain broadcasting licenses",
+                    "Violations of the Foreign Exchange Management Act (FEMA)"
                 ],
                 "answer": 0,
-                "explanation": "Lionel Messi’s GOAT India Tour 2025 was widely reported for crowd unrest and organizational issues, especially at the Kolkata event where poor crowd control and a brief appearance triggered chaos."
+                "explanation": "The event highlighted critical failures in public administration and security protocols during high-profile international tours."
             },
             {
                 "id": "CA1225_032",
@@ -2875,15 +2875,15 @@
             },
             {
                 "id": "CA1225_040",
-                "question": "Which Indian company achieved unicorn status in December 2025?",
+                "question": "Which Artificial Intelligence (AI) venture, founded by Bhavish Aggarwal, holds the distinction of being the first Indian startup in its sector to achieve unicorn status?",
                 "options": [
-                    "Rivigo",
-                    "UpGrad",
-                    "Meesho",
-                    "BharatPe"
+                    "Krutrim",
+                    "Sarvam AI",
+                    "Ola Electric",
+                    "Fractal Analytics"
                 ],
                 "answer": 0,
-                "explanation": "Rivigo became India’s latest unicorn with a valuation exceeding $1 billion."
+                "explanation": "Krutrim achieved a $1 billion valuation in early 2024, making it India’s first AI unicorn. This milestone is a high-priority fact for regulatory and banking exams."
             },
             {
                 "id": "CA1225_041",
@@ -3004,6 +3004,18 @@
                 ],
                 "answer": 0,
                 "explanation": "MeitY released the draft 'National AI Strategy 2030' to guide AI adoption in governance, industry, and research."
+            },
+            {
+                "id": "CA1225_051",
+                "question": "According to the IMF report of 2025, India's UPI accounts for what percentage of global real-time payment volumes?",
+                "options": [
+                    "25%",
+                    "40%",
+                    "49%",
+                    "60%"
+                ],
+                "answer": 2,
+                "explanation": "As cited by the government in Dec 2025, UPI has cemented its position as the world's largest retail real-time payment system with a 49% global share."
             }
         ]
     }

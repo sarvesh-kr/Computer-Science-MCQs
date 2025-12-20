@@ -670,8 +670,8 @@
                     "1 2 5 4 3 6 7",
                     "2 4 5 1 3 6 7"
                 ],
-                "answer": 0,
-                "explanation": "Preorder: root 1, left 2 4 5, right 3 6 7 → 1 2 4 5 3 6 7."
+                "answer": 2,
+                "explanation": "Root is 1. Left subtree (In: 2,4,5; Post: 4,5,2) gives Pre: 2,5,4. Right subtree (In: 6,3,7; Post: 6,7,3) gives Pre: 3,6,7. Combining these with root gives 1 2 5 4 3 6 7."
             },
             {
                 "id": "TREE007",
@@ -771,15 +771,15 @@
             },
             {
                 "id": "GRAPH005",
-                "question": "A graph has vertices 1-5 and edges 1-2,2-3,4-5. How many connected components exist?",
+                "question": "A graph has vertices 1-5 and edges 1-2, 2-3, 4-5. How many connected components exist?",
                 "options": [
                     "1",
                     "2",
                     "3",
                     "4"
                 ],
-                "answer": 2,
-                "explanation": "Components: {1,2,3}, {4,5} → total 2."
+                "answer": 1,
+                "explanation": "The components are {1,2,3} and {4,5}. Total count is 2, which corresponds to option index 1."
             },
             {
                 "id": "GRAPH006",

@@ -10,8 +10,8 @@
                     "10",
                     "Undefined behavior"
                 ],
-                "answer": 1,
-                "explanation": "x++ uses 5 then x becomes 6; ++x increments to 7; 5 + 7 = 12. Beware of sequence points; some compilers may treat as undefined."
+                "answer": 3,
+                "explanation": "In C++, modifying a variable twice between sequence points (like x++ and ++x in the same expression) results in undefined behavior."
             },
             {
                 "id": "GEN002",
@@ -22,8 +22,8 @@
                     "7",
                     "Undefined behavior"
                 ],
-                "answer": 2,
-                "explanation": "a++ = 2, a becomes 3; ++a = 4; sum = 2 + 4 = 6."
+                "answer": 3,
+                "explanation": "Similar to GEN001, the variable 'a' is modified twice without an intervening sequence point, leading to undefined behavior according to the C++ standard."
             },
             {
                 "id": "GEN003",
@@ -58,8 +58,8 @@
                     "4",
                     "Compiler error"
                 ],
-                "answer": 2,
-                "explanation": "C++ interprets as (a++) + a; a++=1, a becomes 2; 1 + 2 = 3."
+                "answer": 1,
+                "explanation": "C++ uses 'maximal munch' logic, interpreting this as (a++) + a. Here, a++ is 1 (original value) and a then becomes 2. 1 + 2 = 3."
             },
             {
                 "id": "GEN006",
@@ -126,12 +126,12 @@
                 "question": "What is the output of the following code?\n\nfor(int i=0;i<5;i++)\n if(i=3) cout << i;",
                 "options": [
                     "0 1 2 3 4",
-                    "3 3 3 3 3",
+                    "3",
                     "Infinite loop",
-                    "3"
+                    "Compilation error"
                 ],
-                "answer": 3,
-                "explanation": "i=3 assigns 3, treated as true; loop prints 3 every iteration but increments i; actual output may depend on compiler but prints 3 in one iteration."
+                "answer": 2,
+                "explanation": "The assignment i=3 always evaluates to true and resets i in every iteration, resulting in an infinite loop."
             },
             {
                 "id": "GEN012",
@@ -207,15 +207,15 @@
             },
             {
                 "id": "GEN018",
-                "question": "What is the output?\n\nint i=1;\nwhile(i<5)\n i*=i;\ncout << i;",
+                "question": "What is the output of the following code?\n\nint i=1;\nwhile(i<5)\n i*=i;\ncout << i;",
                 "options": [
                     "1",
-                    "2",
                     "4",
-                    "16"
+                    "16",
+                    "Infinite loop"
                 ],
                 "answer": 3,
-                "explanation": "i=1 → 1*1=1 (loop continues); infinite loop; some compilers may optimize; theoretically infinite, but if starting with i=2 → i=4, then next i*=i →16."
+                "explanation": "Since 1 multiplied by 1 is always 1, the condition i < 5 is always true, leading to an infinite loop."
             },
             {
                 "id": "GEN019",
@@ -248,10 +248,10 @@
                     "11",
                     "12",
                     "10",
-                    "Undefined"
+                    "Undefined behavior"
                 ],
-                "answer": 0,
-                "explanation": "++a=6, a++=6 (then a=7); sum=6+5? careful: sequence points may lead to undefined behavior in C++, safest answer: undefined behavior."
+                "answer": 3,
+                "explanation": "Because 'a' is modified twice in one expression, the result is undefined. While some compilers may output 12, the standard behavior is undefined."
             },
             {
                 "id": "GEN022",
@@ -574,8 +574,8 @@
                     "Undefined behavior",
                     "Compilation error"
                 ],
-                "answer": 2,
-                "explanation": "Shift operator precedence: << and >> have lower precedence than << cout; may lead to undefined or unexpected output."
+                "answer": 3,
+                "explanation": "The '<<' operator has higher precedence than '>>'. The code is interpreted as (cout << x) >> 1. Since the right-shift operator is not defined for the ostream object, this results in a compilation error."
             },
             {
                 "id": "GEN049",
@@ -610,8 +610,8 @@
                     "6",
                     "7"
                 ],
-                "answer": 1,
-                "explanation": "x=1; i=0→x+=0→1; i=1→x+=1→2; i=2→x+=2→4."
+                "answer": 0,
+                "explanation": "Step-by-step: Iteration 0 (i=0): x=1+0=1. Iteration 1 (i=1): x=1+1=2. Iteration 2 (i=2): x=2+2=4. Final output is 4."
             },
             {
                 "id": "GEN052",
@@ -1167,16 +1167,15 @@
             },
             {
                 "id": "GEN098",
-                "question": "What is the output?\n\nint x=3,y=4;\ncout<<(x&y);",
+                "question": "What is the output of the following bitwise operation?\n\nint x=3, y=4;\ncout << (x & y);",
                 "options": [
                     "0",
                     "2",
                     "3",
                     "4"
                 ],
-                "answer": 1,
-                "explanation": "Bitwise AND: 3&4=2 (0011 & 0100 = 0000? wait check) → correction: 0011 & 0100 = 0000 → 0.",
-                "correction": "Answer should be 0"
+                "answer": 0,
+                "explanation": "Bitwise AND: 0011 (3) & 0100 (4) = 0000 (0)."
             },
             {
                 "id": "GEN099",
@@ -1225,8 +1224,8 @@
                     "Infinite loop",
                     "Compilation error"
                 ],
-                "answer": 0,
-                "explanation": "do-while executes the loop body once before checking the condition."
+                "answer": 2,
+                "explanation": "The loop body executes once (printing 0), increments i to 1, and the condition 1 > 0 is always true thereafter."
             },
             {
                 "id": "PC103",

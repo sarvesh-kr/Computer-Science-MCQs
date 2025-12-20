@@ -47,7 +47,7 @@
                     "FROM → SELECT → WHERE"
                 ],
                 "answer": 1,
-                "explanation": "SQL logically executes FROM, then WHERE, then SELECT."
+                "explanation": "SQL logically executes in the order: FROM → JOIN → WHERE → GROUP BY → HAVING → SELECT → DISTINCT → ORDER BY → LIMIT. Knowing this is crucial because it explains why column aliases defined in the SELECT clause cannot be used in the WHERE clause."
             },
             {
                 "id": "SQLS005",
@@ -447,15 +447,15 @@
             },
             {
                 "id": "SQLD008",
-                "question": "Which clause allows deleting rows from joined tables?",
+                "question": "Which method is the standard SQL way to delete rows from one table based on values in another table?",
                 "options": [
-                    "USING",
-                    "FROM",
-                    "JOIN",
-                    "DELETE JOIN"
+                    "USING clause",
+                    "JOIN clause",
+                    "Subquery in WHERE clause",
+                    "DELETE FROM BOTH"
                 ],
-                "answer": 0,
-                "explanation": "USING clause allows delete with join (DB-specific)."
+                "answer": 2,
+                "explanation": "Standard SQL primarily uses subqueries (e.g., WHERE column IN (SELECT...)) to perform conditional deletes across related tables."
             },
             {
                 "id": "SQLD009",
@@ -639,15 +639,15 @@
             },
             {
                 "id": "SQLA004",
-                "question": "Which SQL clause is used to change the data type of a column?",
+                "question": "Which operation is used to change the data type of an existing column in a table?",
                 "options": [
-                    "CHANGE",
-                    "MODIFY",
-                    "ALTER TYPE",
-                    "UPDATE TYPE"
+                    "UPDATE COLUMN",
+                    "MODIFY / ALTER COLUMN",
+                    "CHANGE TYPE",
+                    "SET DATA"
                 ],
                 "answer": 1,
-                "explanation": "MODIFY is used in many DBMS to change data type."
+                "explanation": "While syntax varies (MODIFY in MySQL/Oracle, ALTER COLUMN in SQL Server/PostgreSQL), it is always an ALTER TABLE operation."
             },
             {
                 "id": "SQLA005",
