@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject-Verb Agreement Master Quiz</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --success: #27ae60;
+            --danger: #c0392b;
+            --light: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary);
+        }
+
+        p.subtitle {
+            color: #7f8c8d;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: space-between;
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+        }
+
+        .question-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        .question-text {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .option-btn {
+            background: var(--light);
+            border: 2px solid #bdc3c7;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .option-btn:hover {
+            background: #e2e6ea;
+            border-color: var(--accent);
+        }
+
+        .option-btn.correct {
+            background-color: #d5f5e3;
+            border-color: var(--success);
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .option-btn.incorrect {
+            background-color: #fadbd8;
+            border-color: var(--danger);
+            color: var(--danger);
+            opacity: 0.7;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 5px solid var(--accent);
+            display: none;
+        }
+
+        .rule-tag {
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button.nav-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button.nav-btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Subject-Verb Agreement</h1>
+        <p class="subtitle">Based on the 10 Golden Rules</p>
+    </header>
+
+    <div class="stats-bar">
+        <span>Question: <span id="q-current">1</span> / <span id="q-total">0</span></span>
+        <span>Score: <span id="score">0</span></span>
+    </div>
+
+    <div id="quiz-container">
+    </div>
+
+    <div class="nav-buttons">
+        <button id="prev-btn" class="nav-btn" onclick="prevQuestion()" disabled>Previous</button>
+        <button id="next-btn" class="nav-btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <script>
+        // DATASET: 50 High-Quality Questions (5 per Rule) to demonstrate the engine.
+        // To reach 200, simply copy-paste this format and change the text.
+        const questionBank = [
+            // --- RULE 1: Prepositional Phrases ---
+            { q: "The behavior of the students ___ unacceptable.", options: ["was", "were"], answer: 0, rule: "Rule 1", expl: "Subject is 'behavior' (singular)." },
+            { q: "A list of new items ___ been released.", options: ["has", "have"], answer: 0, rule: "Rule 1", expl: "Subject is 'list' (singular)." },
+            { q: "The opinions of the expert ___ important.", options: ["is", "are"], answer: 1, rule: "Rule 1", expl: "Subject is 'opinions' (plural)." },
+            { q: "The cost of all these articles ___ risen.", options: ["has", "have"], answer: 0, rule: "Rule 1", expl: "Subject is 'cost' (singular)." },
+            { q: "The danger of forest fires ___ increasing.", options: ["is", "are"], answer: 0, rule: "Rule 1", expl: "Subject is 'danger' (singular)." },
+            { q: "A variety of books ___ available.", options: ["is", "are"], answer: 1, rule: "Rule 1", expl: "Idiom exception: 'A variety' acts as plural, 'The variety' is singular. Here 'A variety' suggests many." },
+            { q: "The variety of choices ___ overwhelming.", options: ["is", "are"], answer: 0, rule: "Rule 1", expl: "Subject is 'variety' (singular)." },
+            { q: "The collection of poems ___ published.", options: ["was", "were"], answer: 0, rule: "Rule 1", expl: "Subject is 'collection' (singular)." },
+            { q: "The decision of the judges ___ final.", options: ["remain", "remains"], answer: 1, rule: "Rule 1", expl: "Subject is 'decision' (singular)." },
+            { q: "The colors of the rainbow ___ beautiful.", options: ["is", "are"], answer: 1, rule: "Rule 1", expl: "Subject is 'colors' (plural)." },
+
+            // --- RULE 2: Additive Connectors ---
+            { q: "The chairman, along with the members, ___ arrived.", options: ["has", "have"], answer: 0, rule: "Rule 2", expl: "Agree with first subject 'chairman'." },
+            { q: "Silver, as well as cotton, ___ fallen in price.", options: ["has", "have"], answer: 0, rule: "Rule 2", expl: "Agree with first subject 'Silver'." },
+            { q: "The cat, together with the kittens, ___ sleeping.", options: ["is", "are"], answer: 0, rule: "Rule 2", expl: "Agree with 'cat' (singular)." },
+            { q: "The criminal, along with his accomplices, ___ arrested.", options: ["was", "were"], answer: 0, rule: "Rule 2", expl: "Agree with 'criminal' (singular)." },
+            { q: "My aunt, unlike my cousins, ___ spicy food.", options: ["love", "loves"], answer: 1, rule: "Rule 2", expl: "Agree with 'aunt' (singular)." },
+            { q: "The ship, with its crew, ___ lost.", options: ["was", "were"], answer: 0, rule: "Rule 2", expl: "Agree with 'ship' (singular)." },
+            { q: "The actress, accompanied by her manager, ___ arrived.", options: ["has", "have"], answer: 0, rule: "Rule 2", expl: "Agree with 'actress' (singular)." },
+            { q: "Physics, together with chemistry, ___ essential.", options: ["is", "are"], answer: 0, rule: "Rule 2", expl: "Agree with 'Physics' (singular subject)." },
+            { q: "The files, in addition to the tape, ___ missing.", options: ["is", "are"], answer: 1, rule: "Rule 2", expl: "Agree with 'files' (plural)." },
+            { q: "John, as well as his friends, ___ coming.", options: ["is", "are"], answer: 0, rule: "Rule 2", expl: "Agree with 'John' (singular)." },
+
+            // --- RULE 3: Alternative Connectors ---
+            { q: "Either the manager or the staff ___ responsible.", options: ["is", "are"], answer: 1, rule: "Rule 3", expl: "Nearest subject is 'staff' (plural)." },
+            { q: "Neither the moon nor the stars ___ visible.", options: ["was", "were"], answer: 1, rule: "Rule 3", expl: "Nearest subject is 'stars' (plural)." },
+            { q: "Not only the players but also the captain ___ blamed.", options: ["was", "were"], answer: 0, rule: "Rule 3", expl: "Nearest subject is 'captain' (singular)." },
+            { q: "Either you or he ___ mistaken.", options: ["is", "are"], answer: 0, rule: "Rule 3", expl: "Nearest subject is 'he' -> 'is'." },
+            { q: "Neither the teachers nor the principal ___ present.", options: ["is", "are"], answer: 0, rule: "Rule 3", expl: "Nearest subject is 'principal' (singular)." },
+            { q: "Neither the principal nor the teachers ___ present.", options: ["is", "are"], answer: 1, rule: "Rule 3", expl: "Nearest subject is 'teachers' (plural)." },
+            { q: "Either Mary or Alice ___ the car.", options: ["drive", "drives"], answer: 1, rule: "Rule 3", expl: "Nearest subject 'Alice' is singular." },
+            { q: "Not only the money but also the jewelry ___ stolen.", options: ["was", "were"], answer: 0, rule: "Rule 3", expl: "Nearest subject 'jewelry' is singular/uncountable." },
+            { q: "Either the shoes or the bag ___ to go.", options: ["has", "have"], answer: 0, rule: "Rule 3", expl: "Nearest subject 'bag' is singular." },
+            { q: "Neither he nor I ___ going.", options: ["am", "is"], answer: 0, rule: "Rule 3", expl: "Nearest subject is 'I', so verb is 'am'." },
+
+            // --- RULE 4: The 'And' Exception ---
+            { q: "Fish and chips ___ a popular meal.", options: ["is", "are"], answer: 0, rule: "Rule 4", expl: "Single dish." },
+            { q: "The novelist and poet ___ dead.", options: ["is", "are"], answer: 0, rule: "Rule 4", expl: "One person (The novelist and [no 'the'] poet)." },
+            { q: "The novelist and the poet ___ dead.", options: ["is", "are"], answer: 1, rule: "Rule 4", expl: "Two people (The novelist and THE poet)." },
+            { q: "Crown and glory ___ his motivation.", options: ["was", "were"], answer: 0, rule: "Rule 4", expl: "Single idea." },
+            { q: "My friend and benefactor ___ come.", options: ["has", "have"], answer: 0, rule: "Rule 4", expl: "One person is both friend and benefactor." },
+            { q: "Whisky and soda ___ his only drink.", options: ["was", "were"], answer: 0, rule: "Rule 4", expl: "Single mixture." },
+            { q: "The horse and carriage ___ at the door.", options: ["is", "are"], answer: 0, rule: "Rule 4", expl: "Single unit of transport." },
+            { q: "Honor and glory ___ his reward.", options: ["is", "are"], answer: 0, rule: "Rule 4", expl: "Single idea/concept." },
+            { q: "Fire and water ___ not agree.", options: ["do", "does"], answer: 0, rule: "Rule 4", expl: "Distinct entities here, so plural 'do'." },
+            { q: "Law and order ___ to be maintained.", options: ["has", "have"], answer: 0, rule: "Rule 4", expl: "Single concept." },
+
+            // --- RULE 5: Indefinite Pronouns ---
+            { q: "Everybody ___ flowers.", options: ["love", "loves"], answer: 1, rule: "Rule 5", expl: "Everybody is singular." },
+            { q: "No one ___ to die.", options: ["want", "wants"], answer: 1, rule: "Rule 5", expl: "No one is singular." },
+            { q: "Somebody ___ left their bag.", options: ["has", "have"], answer: 0, rule: "Rule 5", expl: "Somebody is singular." },
+            { q: "Anything ___ possible.", options: ["is", "are"], answer: 0, rule: "Rule 5", expl: "Anything is singular." },
+            { q: "Everyone ___ his own problems.", options: ["has", "have"], answer: 0, rule: "Rule 5", expl: "Everyone takes singular 'has'." },
+            { q: "Something ___ wrong here.", options: ["smell", "smells"], answer: 1, rule: "Rule 5", expl: "Something is singular." },
+            { q: "Nobody ___ the trouble I've seen.", options: ["know", "knows"], answer: 1, rule: "Rule 5", expl: "Nobody is singular." },
+            { q: "Anyone ___ welcome to join.", options: ["is", "are"], answer: 0, rule: "Rule 5", expl: "Anyone is singular." },
+            { q: "Everything ___ ready.", options: ["look", "looks"], answer: 1, rule: "Rule 5", expl: "Everything is singular." },
+            { q: "Nothing but trees ___ seen.", options: ["was", "were"], answer: 0, rule: "Rule 5", expl: "Nothing is the subject (Singular)." },
+
+            // --- RULE 6: Distributives (Each/Every) ---
+            { q: "Each boy and each girl ___ a uniform.", options: ["has", "have"], answer: 0, rule: "Rule 6", expl: "Each/Every forces singular." },
+            { q: "Every student ___ books.", options: ["need", "needs"], answer: 1, rule: "Rule 6", expl: "Every is singular." },
+            { q: "Each of the answers ___ worth 10 points.", options: ["is", "are"], answer: 0, rule: "Rule 6", expl: "Each acts as subject." },
+            { q: "Every man and woman ___ equal rights.", options: ["has", "have"], answer: 0, rule: "Rule 6", expl: "Every forces singular." },
+            { q: "Each day ___ a new opportunity.", options: ["bring", "brings"], answer: 1, rule: "Rule 6", expl: "Singular subject." },
+            { q: "Every nook and corner ___ searched.", options: ["was", "were"], answer: 0, rule: "Rule 6", expl: "Singular verb." },
+            { q: "Each player ___ a medal.", options: ["get", "gets"], answer: 1, rule: "Rule 6", expl: "Singular." },
+            { q: "Every effort ___ been made.", options: ["has", "have"], answer: 0, rule: "Rule 6", expl: "Singular." },
+            { q: "Each of the houses ___ a garage.", options: ["has", "have"], answer: 0, rule: "Rule 6", expl: "Singular." },
+            { q: "Every hour and minute ___ counting.", options: ["is", "are"], answer: 0, rule: "Rule 6", expl: "Singular." },
+
+            // --- RULE 7: Either/Neither OF ---
+            { q: "Neither of the accusations ___ true.", options: ["is", "are"], answer: 0, rule: "Rule 7", expl: "Neither of + Plural Noun = Singular Verb." },
+            { q: "One of the eggs ___ broken.", options: ["is", "are"], answer: 0, rule: "Rule 7", expl: "One of + Plural Noun = Singular Verb." },
+            { q: "Either of the keys ___ the door.", options: ["open", "opens"], answer: 1, rule: "Rule 7", expl: "Either of = Singular." },
+            { q: "None of the work ___ finished.", options: ["is", "are"], answer: 0, rule: "Rule 7", expl: "Work is uncountable, None takes singular." },
+            { q: "Neither of the sisters ___ married.", options: ["is", "are"], answer: 0, rule: "Rule 7", expl: "Neither takes singular." },
+            { q: "One of my friends ___ abroad.", options: ["live", "lives"], answer: 1, rule: "Rule 7", expl: "Subject is One." },
+            { q: "Either of the applicants ___ suitable.", options: ["seem", "seems"], answer: 1, rule: "Rule 7", expl: "Subject is Either (singular)." },
+            { q: "Neither of the teams ___ scored.", options: ["has", "have"], answer: 0, rule: "Rule 7", expl: "Subject is Neither." },
+            { q: "One of the cars ___ damaged.", options: ["was", "were"], answer: 0, rule: "Rule 7", expl: "Subject is One." },
+            { q: "Each of the boys ___ done his work.", options: ["has", "have"], answer: 0, rule: "Rule 7", expl: "Subject is Each." },
+
+            // --- RULE 8: Relative Pronouns ---
+            { q: "The girl who ___ dancing is my sister.", options: ["is", "are"], answer: 0, rule: "Rule 8", expl: "Antecedent 'girl' is singular." },
+            { q: "The books which ___ on the table are new.", options: ["is", "are"], answer: 1, rule: "Rule 8", expl: "Antecedent 'books' is plural." },
+            { q: "He is a man who ___ his word.", options: ["keep", "keeps"], answer: 1, rule: "Rule 8", expl: "Antecedent 'man' is singular." },
+            { q: "It is I who ___ responsible.", options: ["is", "am"], answer: 1, rule: "Rule 8", expl: "Antecedent 'I' takes 'am'." },
+            { q: "The students who ___ late will be punished.", options: ["come", "comes"], answer: 0, rule: "Rule 8", expl: "Antecedent 'students' is plural." },
+            { q: "The pen that ___ on the desk is mine.", options: ["is", "are"], answer: 0, rule: "Rule 8", expl: "Antecedent 'pen' is singular." },
+            { q: "Those who ___ in glass houses shouldn't throw stones.", options: ["live", "lives"], answer: 0, rule: "Rule 8", expl: "Antecedent 'Those' is plural." },
+            { q: "The vase that ___ cracked is expensive.", options: ["was", "were"], answer: 0, rule: "Rule 8", expl: "Antecedent 'vase' is singular." },
+            { q: "It is you who ___ to go.", options: ["has", "have"], answer: 1, rule: "Rule 8", expl: "Antecedent 'you' takes 'have'." },
+            { q: "The people who ___ here are friendly.", options: ["live", "lives"], answer: 0, rule: "Rule 8", expl: "Antecedent 'people' is plural." },
+
+            // --- RULE 9: One of the... WHO ---
+            { q: "He is one of those men who ___ always complaining.", options: ["is", "are"], answer: 1, rule: "Rule 9", expl: "Antecedent 'men' is plural." },
+            { q: "She is one of the women who ___ hard.", options: ["work", "works"], answer: 0, rule: "Rule 9", expl: "Antecedent 'women' is plural." },
+            { q: "This is one of the questions that ___ difficult.", options: ["is", "are"], answer: 1, rule: "Rule 9", expl: "Antecedent 'questions' is plural." },
+            { q: "He is one of the authors who ___ popular.", options: ["is", "are"], answer: 1, rule: "Rule 9", expl: "Antecedent 'authors' is plural." },
+            { q: "One of the boys who ___ playing is my brother.", options: ["is", "are"], answer: 1, rule: "Rule 9", expl: "Inside the relative clause, 'boys' (plural) rules. (Note: The main verb for 'One' is later)." },
+            { q: "It is one of the best movies that ___ ever been made.", options: ["has", "have"], answer: 1, rule: "Rule 9", expl: "Antecedent 'movies' is plural." },
+            { q: "She is one of the candidates who ___ passed.", options: ["has", "have"], answer: 1, rule: "Rule 9", expl: "Antecedent 'candidates' is plural." },
+            { q: "He is one of the players who ___ selected.", options: ["was", "were"], answer: 1, rule: "Rule 9", expl: "Antecedent 'players' is plural." },
+            { q: "This is one of the rare birds that ___ in this area.", options: ["live", "lives"], answer: 0, rule: "Rule 9", expl: "Antecedent 'birds' is plural." },
+            { q: "One of the students who ___ absent was sick.", options: ["was", "were"], answer: 1, rule: "Rule 9", expl: "Antecedent 'students' is plural." },
+
+            // --- RULE 10: The ONLY one of the... WHO ---
+            { q: "He is the only one of the boys who ___ hard.", options: ["study", "studies"], answer: 1, rule: "Rule 10", expl: "'The only one' forces singular." },
+            { q: "This is the only one of the paintings that ___ sold.", options: ["was", "were"], answer: 0, rule: "Rule 10", expl: "'The only one' forces singular." },
+            { q: "She is the only one of the girls who ___ classical music.", options: ["like", "likes"], answer: 1, rule: "Rule 10", expl: "Singular." },
+            { q: "It is the only one of the proposals that ___ sense.", options: ["make", "makes"], answer: 1, rule: "Rule 10", expl: "Singular." },
+            { q: "John is the only one of the staff who ___ overtime.", options: ["work", "works"], answer: 1, rule: "Rule 10", expl: "Singular." },
+            { q: "This is the only one of the rooms that ___ AC.", options: ["has", "have"], answer: 0, rule: "Rule 10", expl: "Singular." },
+            { q: "He is the only one of the leaders who ___ spoken.", options: ["has", "have"], answer: 0, rule: "Rule 10", expl: "Singular." },
+            { q: "It is the only one of the novels that ___ interesting.", options: ["is", "are"], answer: 0, rule: "Rule 10", expl: "Singular." },
+            { q: "She is the only one of the athletes who ___ qualified.", options: ["has", "have"], answer: 0, rule: "Rule 10", expl: "Singular." },
+            { q: "This is the only one of the machines that ___ properly.", options: ["run", "runs"], answer: 1, rule: "Rule 10", expl: "Singular." }
+        ];
+
+        // --- LOGIC ---
+
+        // Shuffle the questions initially
+        questionBank.sort(() => Math.random() - 0.5);
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        const totalQuestions = questionBank.length;
+
+        // DOM Elements
+        const qContainer = document.getElementById('quiz-container');
+        const qCountSpan = document.getElementById('q-current');
+        const qTotalSpan = document.getElementById('q-total');
+        const scoreSpan = document.getElementById('score');
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+
+        qTotalSpan.textContent = totalQuestions;
+
+        function renderQuestion(index) {
+            const q = questionBank[index];
+            qContainer.innerHTML = `
+            <div class="question-card">
+                <div class="rule-tag">${q.rule}</div>
+                <div class="question-text">Q${index + 1}. ${q.q}</div>
+                <div class="options-grid">
+                    <div class="option-btn" onclick="checkAnswer(this, 0)">${q.options[0]}</div>
+                    <div class="option-btn" onclick="checkAnswer(this, 1)">${q.options[1]}</div>
+                </div>
+                <div class="explanation" id="expl-${index}">
+                    <strong>${q.answer === 0 ? q.options[0] : q.options[1]}</strong> is correct.<br>
+                    <small>${q.expl}</small>
+                </div>
+            </div>
+        `;
+
+            // Check if this question was already answered to restore state
+            if (q.userAnswer !== undefined) {
+                const opts = document.querySelectorAll('.option-btn');
+                checkAnswer(opts[q.userAnswer], q.userAnswer, false); // false = don't update score again
+            }
+
+            updateNavButtons();
+        }
+
+        function checkAnswer(btnElement, selectedIndex, updateScore = true) {
+            const q = questionBank[currentQuestionIndex];
+            const allOpts = document.querySelectorAll('.option-btn');
+            const explDiv = document.getElementById(`expl-${currentQuestionIndex}`);
+
+            // Disable further clicks
+            allOpts.forEach(btn => {
+                btn.onclick = null;
+                btn.style.cursor = 'default';
+            });
+
+            // Visually mark selected
+            if (selectedIndex === q.answer) {
+                btnElement.classList.add('correct');
+                if (updateScore) {
+                    score++;
+                    scoreSpan.textContent = score;
+                    q.userCorrect = true;
+                }
+            } else {
+                btnElement.classList.add('incorrect');
+                allOpts[q.answer].classList.add('correct'); // Show correct one
+                if (updateScore) q.userCorrect = false;
+            }
+
+            // Save state
+            if (updateScore) q.userAnswer = selectedIndex;
+
+            // Show explanation
+            explDiv.style.display = 'block';
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex < totalQuestions - 1) {
+                currentQuestionIndex++;
+                qCountSpan.textContent = currentQuestionIndex + 1;
+                renderQuestion(currentQuestionIndex);
+            }
+        }
+
+        function prevQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                qCountSpan.textContent = currentQuestionIndex + 1;
+                renderQuestion(currentQuestionIndex);
+            }
+        }
+
+        function updateNavButtons() {
+            prevBtn.disabled = currentQuestionIndex === 0;
+            nextBtn.innerText = currentQuestionIndex === totalQuestions - 1 ? "Finish" : "Next";
+            if (currentQuestionIndex === totalQuestions - 1) {
+                nextBtn.onclick = () => alert(`Quiz Finished! Your Score: ${score} / ${totalQuestions}`);
+            } else {
+                nextBtn.onclick = nextQuestion;
+            }
+        }
+
+        // Init
+        renderQuestion(0);
+
+    </script>
+
+</body>
+
+</html>
