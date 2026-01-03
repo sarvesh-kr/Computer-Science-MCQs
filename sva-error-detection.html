@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank PO Error Detection Master</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --error: #e74c3c;
+            --success: #27ae60;
+            --hover: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f7f6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .question-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .rule-tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        /* The Sentence Container */
+        .sentence-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 1.25em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #fafafa;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        /* The Clickable Parts */
+        .segment {
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px dashed #ccc;
+            position: relative;
+        }
+
+        .segment:hover {
+            background: var(--hover);
+            border-color: var(--primary);
+        }
+
+        /* Segment Labels (A, B, C...) */
+        .segment::after {
+            content: attr(data-label);
+            position: absolute;
+            top: -10px;
+            right: -5px;
+            background: #666;
+            color: white;
+            font-size: 0.6em;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        /* States */
+        .segment.correct {
+            background: #d4edda;
+            border-color: var(--success);
+            color: #155724;
+        }
+
+        /* User clicked correct error */
+        .segment.wrong {
+            background: #f8d7da;
+            border-color: var(--error);
+            color: #721c24;
+        }
+
+        /* User clicked wrong part */
+        .segment.missed {
+            border: 2px solid var(--error);
+        }
+
+        /* Show where the real error was */
+        .segment.disabled {
+            pointer-events: none;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            display: none;
+            border-radius: 4px;
+        }
+
+        .nav-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .no-error-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 15px;
+            background: white;
+            border: 2px solid #ccc;
+            font-weight: bold;
+            color: #555;
+            cursor: pointer;
+            border-radius: 6px;
+            text-align: left;
+        }
+
+        .no-error-btn:hover {
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Bank PO Error Detection</h1>
+        <p>Click the part of the sentence that contains the error.</p>
+    </div>
+
+    <div class="stats">
+        <span>Q: <span id="q-curr">1</span>/<span id="q-total">0</span></span>
+        <span>Score: <span id="score">0</span></span>
+    </div>
+
+    <div id="quiz-area"></div>
+    <button id="next-btn" class="nav-btn" onclick="nextQuestion()">Next Question</button>
+
+    <script>
+        // --- DATA GOES HERE ---
+        const questionBank = [
+            // --- RULE 1: Prepositional Phrases (The "Of" Trap) ---
+            { parts: ["The details", "of the incident", "was not", "known to us."], errorPart: 2, rule: "Rule 1", expl: "Subject 'details' is Plural. Verb must be 'were'." },
+            { parts: ["The quality", "of these mangoes", "are", "not good."], errorPart: 2, rule: "Rule 1", expl: "Subject 'quality' is Singular. Verb must be 'is'." },
+            { parts: ["The introduction", "of tea and coffee", "have", "boosted the economy."], errorPart: 2, rule: "Rule 1", expl: "Subject 'introduction' is Singular. Verb must be 'has'." },
+            { parts: ["The cost", "of all these articles", "have", "risen drastically."], errorPart: 2, rule: "Rule 1", expl: "Subject 'cost' is Singular. Verb must be 'has'." },
+            { parts: ["The behavior", "of the students", "were", "excellent."], errorPart: 2, rule: "Rule 1", expl: "Subject 'behavior' is Singular. Verb must be 'was'." },
+            { parts: ["The appeal", "of the victims", "were", "accepted."], errorPart: 2, rule: "Rule 1", expl: "Subject 'appeal' is Singular. Verb must be 'was'." },
+            { parts: ["The decision", "of the board members", "remain", "unchanged."], errorPart: 2, rule: "Rule 1", expl: "Subject 'decision' is Singular. Verb must be 'remains'." },
+            { parts: ["The smell", "of these flowers", "are", "very sweet."], errorPart: 2, rule: "Rule 1", expl: "Subject 'smell' is Singular. Verb must be 'is'." },
+            { parts: ["The success", "of our efforts", "depend", "on you."], errorPart: 2, rule: "Rule 1", expl: "Subject 'success' is Singular. Verb must be 'depends'." },
+            { parts: ["A series", "of lectures", "were", "arranged."], errorPart: 2, rule: "Rule 1", expl: "Subject 'series' (singular set) takes Singular verb 'was'." },
+
+            // --- RULE 2: Additive Connectors (First Subject Dominates) ---
+            // Keywords: As well as, Along with, Together with, Besides, In addition to
+            { parts: ["The Prime Minister", "along with his ministers", "are", "visiting the town."], errorPart: 2, rule: "Rule 2", expl: "Subject is 'Prime Minister' (Singular). Ignore 'along with'. Verb must be 'is'." },
+            { parts: ["The captain", "as well as the players", "were", "responsible."], errorPart: 2, rule: "Rule 2", expl: "Subject is 'captain' (Singular). Verb must be 'was'." },
+            { parts: ["My sister", "unlike my brothers", "wish", "to have a career."], errorPart: 2, rule: "Rule 2", expl: "Subject is 'sister' (Singular). Verb must be 'wishes'." },
+            { parts: ["The teacher", "together with the students", "have", "gone on a trip."], errorPart: 2, rule: "Rule 2", expl: "Subject is 'teacher' (Singular). Verb must be 'has'." },
+            { parts: ["Ravi", "accompanied by his friends", "were", "arrested."], errorPart: 2, rule: "Rule 2", expl: "Subject is 'Ravi' (Singular). Verb must be 'was'." },
+            { parts: ["The ship", "with all its passengers", "were", "drowned."], errorPart: 2, rule: "Rule 2", expl: "Subject is 'ship' (Singular). Verb must be 'was'." },
+            { parts: ["He", "and not his friends", "are", "guilty."], errorPart: 2, rule: "Rule 2", expl: "Subject is 'He'. The phrase 'and not...' is parenthetical. Verb must be 'is'." },
+            { parts: ["Iron", "as well as coal", "are found", "here."], errorPart: 2, rule: "Rule 2", expl: "Subject is 'Iron' (Singular). Verb must be 'is'." },
+            { parts: ["My mother", "besides my aunts", "are", "present."], errorPart: 2, rule: "Rule 2", expl: "Subject is 'mother' (Singular). Verb must be 'is'." },
+            { parts: ["The criminal", "along with his associates", "was", "arrested."], errorPart: 4, rule: "Rule 2", expl: "No Error. Subject 'criminal' is singular, 'was' is correct." },
+
+            // --- RULE 3: Alternative Connectors (Nearest Subject Dominates) ---
+            // Keywords: Either..or, Neither..nor, Not only..but also
+            { parts: ["Either the father", "or his sons", "was", "punished."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject is 'sons' (Plural). Verb must be 'were'." },
+            { parts: ["Neither the girl", "nor her parents", "was", "present."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject is 'parents' (Plural). Verb must be 'were'." },
+            { parts: ["Not only the students", "but also the teacher", "are", "responsible."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject is 'teacher' (Singular). Verb must be 'is'." },
+            { parts: ["Neither the principal", "nor the lecturers", "was", "present at the meeting."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject is 'lecturers' (Plural). Verb must be 'were'." },
+            { parts: ["Either the manager", "or the employees", "has", "to pay the fine."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject is 'employees' (Plural). Verb must be 'have'." },
+            { parts: ["Either you", "or he", "are", "mistaken."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject is 'he' (Singular). Verb must be 'is'." },
+            { parts: ["Neither he", "nor I", "are", "going."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject is 'I'. Verb must be 'am'." },
+            { parts: ["Either the engineer", "or his mechanics", "has", "failed."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject is 'mechanics' (Plural). Verb must be 'have'." },
+            { parts: ["Neither the size", "nor the color of the gloves", "were", "right."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject is 'color' (Singular). Verb must be 'was'." },
+            { parts: ["Has", "you or he", "done", "this work?"], errorPart: 0, rule: "Rule 3", expl: "In questions, verb agrees with nearest subject. 'You' is nearest. Should be 'Have'." },
+
+            // --- RULE 4: The 'And' Exception (Single Unit vs Two Entities) ---
+            { parts: ["Bread and butter", "are", "my favorite", "breakfast."], errorPart: 1, rule: "Rule 4", expl: "Bread and butter is a single dish. Verb must be 'is'." },
+            { parts: ["Rice and curry", "are", "a popular dish", "in India."], errorPart: 1, rule: "Rule 4", expl: "Rice and curry is a single dish. Verb must be 'is'." },
+            { parts: ["Slow and steady", "win", "the", "race."], errorPart: 1, rule: "Rule 4", expl: "Proverbial single concept. Verb must be 'wins'." },
+            { parts: ["The Collector", "and District Magistrate", "are", "on leave."], errorPart: 2, rule: "Rule 4", expl: "One 'The' = One person holding two titles. Verb must be 'is'." },
+            { parts: ["The Collector", "and the District Magistrate", "is", "on leave."], errorPart: 2, rule: "Rule 4", expl: "Two 'The's = Two separate people. Verb must be 'are'." },
+            { parts: ["My friend", "and benefactor", "have", "come."], errorPart: 2, rule: "Rule 4", expl: "One person (My friend AND benefactor). Verb must be 'has'." },
+            { parts: ["The sum and substance", "of the poem", "are", "as follows."], errorPart: 2, rule: "Rule 4", expl: "Sum and substance (Summary) is a single idea. Verb must be 'is'." },
+            { parts: ["Whisky and soda", "were", "his only", "drink."], errorPart: 1, rule: "Rule 4", expl: "Single drink mixture. Verb must be 'was'." },
+            { parts: ["Early to bed", "and early to rise", "make", "a man healthy."], errorPart: 2, rule: "Rule 4", expl: "Single maxim. Verb must be 'makes'." },
+            { parts: ["Fire and water", "does not", "agree", "with each other."], errorPart: 1, rule: "Rule 4", expl: "Distinct/Opposite entities. Verb must be 'do not'." },
+
+            // --- RULE 5: Indefinite Pronouns (Always Singular) ---
+            // Keywords: Everyone, Someone, Nobody, Nothing, Each, One
+            { parts: ["Everyone", "in the class", "want", "to succeed."], errorPart: 2, rule: "Rule 5", expl: "Everyone is singular. Verb must be 'wants'." },
+            { parts: ["Each and every one", "of the participants", "were", "given a certificate."], errorPart: 2, rule: "Rule 5", expl: "'Each and every one' is singular. Verb must be 'was'." },
+            { parts: ["Nobody", "know", "the", "trouble I've seen."], errorPart: 1, rule: "Rule 5", expl: "Nobody is singular. Verb must be 'knows'." },
+            { parts: ["Nothing", "but books", "were", "available."], errorPart: 2, rule: "Rule 5", expl: "Subject is 'Nothing'. Verb must be 'was'." },
+            { parts: ["Someone", "have", "stolen", "my pen."], errorPart: 1, rule: "Rule 5", expl: "Someone is singular. Verb must be 'has'." },
+            { parts: ["Neither", "of the boys", "know", "the answer."], errorPart: 2, rule: "Rule 5", expl: "Neither (pronoun) is singular. Verb must be 'knows'." },
+            { parts: ["One", "should keep", "his", "promise."], errorPart: 2, rule: "Rule 5", expl: "Pronoun error. Subject 'One' requires possessive 'One's'." },
+            { parts: ["Everything", "look", "beautiful", "in spring."], errorPart: 1, rule: "Rule 5", expl: "Everything is singular. Verb must be 'looks'." },
+            { parts: ["Anyone", "who have", "objections", "should speak up."], errorPart: 1, rule: "Rule 5", expl: "Anyone is singular. Verb must be 'has'." },
+            { parts: ["Each", "of the girls", "have", "done her work."], errorPart: 2, rule: "Rule 5", expl: "Each is singular. Verb must be 'has'." },
+
+            // --- RULE 6: Distributives (Every / Each) ---
+            { parts: ["Every man", "and every woman", "have", "a vote."], errorPart: 2, rule: "Rule 6", expl: "'Every' forces singular verb. Must be 'has'." },
+            { parts: ["Each minute", "and each second", "are", "precious."], errorPart: 2, rule: "Rule 6", expl: "'Each' forces singular verb. Must be 'is'." },
+            { parts: ["Every boy", "and every girl", "were", "given a packet."], errorPart: 2, rule: "Rule 6", expl: "Must be 'was'." },
+            { parts: ["Every", "teacher and student", "are", "in the class."], errorPart: 2, rule: "Rule 6", expl: "Must be 'is'." },
+            { parts: ["Each", "day and night", "bring", "new hope."], errorPart: 2, rule: "Rule 6", expl: "Must be 'brings'." },
+            { parts: ["Every", "leaf and flower", "proclaim", "God's glory."], errorPart: 2, rule: "Rule 6", expl: "Must be 'proclaims'." },
+            { parts: ["Each", "girl and boy", "have", "to attend."], errorPart: 2, rule: "Rule 6", expl: "Must be 'has'." },
+            { parts: ["Every", "officer and clerk", "were", "at their desk."], errorPart: 2, rule: "Rule 6", expl: "Must be 'was'." },
+            { parts: ["Each", "of these boys", "play", "cricket."], errorPart: 2, rule: "Rule 6", expl: "Subject is 'Each'. Must be 'plays'." },
+            { parts: ["Every", "soldier", "were", "in his place."], errorPart: 2, rule: "Rule 6", expl: "Must be 'was'." },
+
+            // --- RULE 7: Selection (One of / Neither of) + Plural Noun + Singular Verb ---
+            { parts: ["One of", "the boys", "are", "absent."], errorPart: 2, rule: "Rule 7", expl: "Subject is 'One'. Verb must be 'is'." },
+            { parts: ["Neither of", "the two candidates", "were", "suitable."], errorPart: 2, rule: "Rule 7", expl: "Subject is 'Neither'. Verb must be 'was'." },
+            { parts: ["Either of", "the roads", "lead", "to the station."], errorPart: 2, rule: "Rule 7", expl: "Subject is 'Either'. Verb must be 'leads'." },
+            { parts: ["None of", "the information", "are", "correct."], errorPart: 2, rule: "Rule 7", expl: "Information is uncountable. None takes singular 'is'." },
+            { parts: ["One of", "my friends", "live", "in London."], errorPart: 2, rule: "Rule 7", expl: "Subject is 'One'. Verb must be 'lives'." },
+            { parts: ["Each of", "the employees", "were", "given a bonus."], errorPart: 2, rule: "Rule 7", expl: "Subject is 'Each'. Verb must be 'was'." },
+            { parts: ["One of", "the most widely", "spread habits", "is smoking."], errorPart: 4, rule: "Rule 7", expl: "No Error. Subject 'One' agrees with 'is'." },
+            { parts: ["Neither of", "the accusations", "are", "true."], errorPart: 2, rule: "Rule 7", expl: "Subject is 'Neither'. Verb must be 'is'." },
+            { parts: ["One of", "the teachers", "have", "resigned."], errorPart: 2, rule: "Rule 7", expl: "Subject is 'One'. Verb must be 'has'." },
+            { parts: ["Any of", "the five members", "are", "eligible."], errorPart: 2, rule: "Rule 7", expl: "Subject 'Any' (from group) is singular. Verb must be 'is'." },
+
+            // --- RULE 8: Relative Pronouns (Who/Which/That) ---
+            { parts: ["It is", "I who", "is", "to blame."], errorPart: 2, rule: "Rule 8", expl: "Antecedent is 'I'. Verb must match 'I'. Should be 'am'." },
+            { parts: ["The student", "who", "work hard", "succeeds."], errorPart: 2, rule: "Rule 8", expl: "Antecedent 'student' is singular. Verb must be 'works'." },
+            { parts: ["The books", "which", "is", "on the table are mine."], errorPart: 2, rule: "Rule 8", expl: "Antecedent 'books' is plural. Verb must be 'are'." },
+            { parts: ["He is", "the man who", "help", "everyone."], errorPart: 2, rule: "Rule 8", expl: "Antecedent 'man' is singular. Verb must be 'helps'." },
+            { parts: ["It is", "you who", "has", "ruined my career."], errorPart: 2, rule: "Rule 8", expl: "Antecedent is 'you'. Verb must be 'have'." },
+            { parts: ["Those", "who", "lives", "in glass houses shouldn't throw stones."], errorPart: 2, rule: "Rule 8", expl: "Antecedent is 'Those' (Plural). Verb must be 'live'." },
+            { parts: ["The dog", "that", "bark", "loudly is mine."], errorPart: 2, rule: "Rule 8", expl: "Antecedent 'dog' is singular. Verb must be 'barks'." },
+            { parts: ["This is", "the woman who", "have", "lost her bag."], errorPart: 2, rule: "Rule 8", expl: "Antecedent 'woman' is singular. Verb must be 'has'." },
+            { parts: ["The players", "who", "was", "selected are happy."], errorPart: 2, rule: "Rule 8", expl: "Antecedent 'players' is plural. Verb must be 'were'." },
+            { parts: ["The boy", "who", "sit", "here is my brother."], errorPart: 2, rule: "Rule 8", expl: "Antecedent 'boy' is singular. Verb must be 'sits'." },
+
+            // --- RULE 9: One of the... [Plural Noun] + WHO + [Plural Verb] ---
+            { parts: ["He is", "one of the boys", "who", "is always late."], errorPart: 3, rule: "Rule 9", expl: "Antecedent 'boys' is plural. Verb must be 'are'." },
+            { parts: ["This is", "one of the books", "that", "is worth reading."], errorPart: 3, rule: "Rule 9", expl: "Antecedent 'books' is plural. Verb must be 'are'." },
+            { parts: ["She is", "one of the women", "who", "has climbed Everest."], errorPart: 3, rule: "Rule 9", expl: "Antecedent 'women' is plural. Verb must be 'have'." },
+            { parts: ["He is", "one of the leaders", "who", "serves the nation."], errorPart: 3, rule: "Rule 9", expl: "Antecedent 'leaders' is plural. Verb must be 'serve'." },
+            { parts: ["It is", "one of the best", "movies that", "has ever been made."], errorPart: 3, rule: "Rule 9", expl: "Antecedent 'movies' is plural. Verb must be 'have'." },
+            { parts: ["Ravi is", "one of those", "students who", "never studies."], errorPart: 3, rule: "Rule 9", expl: "Antecedent 'students' is plural. Verb must be 'study'." },
+            { parts: ["One of", "the birds that", "lives", "here is rare."], errorPart: 2, rule: "Rule 9", expl: "Antecedent 'birds' is plural. Verb must be 'live'." },
+            { parts: ["He is", "one of the few", "men who", "is honest."], errorPart: 3, rule: "Rule 9", expl: "Antecedent 'men' is plural. Verb must be 'are'." },
+            { parts: ["This is", "one of the", "questions that", "confuses me."], errorPart: 3, rule: "Rule 9", expl: "Antecedent 'questions' is plural. Verb must be 'confuse'." },
+            { parts: ["She is", "one of the", "candidates who", "was rejected."], errorPart: 3, rule: "Rule 9", expl: "Antecedent 'candidates' is plural. Verb must be 'were'." },
+
+            // --- RULE 10: The ONLY One of the... WHO (Singular Exception) ---
+            { parts: ["He is", "the only one", "of the boys who", "are late."], errorPart: 3, rule: "Rule 10", expl: "'The only one' triggers Singular. Verb must be 'is'." },
+            { parts: ["This is", "the only one", "of his novels", "that are interesting."], errorPart: 3, rule: "Rule 10", expl: "'The only one' triggers Singular. Verb must be 'is'." },
+            { parts: ["She is", "the only one", "of the girls who", "dance well."], errorPart: 3, rule: "Rule 10", expl: "Verb must be 'dances'." },
+            { parts: ["That is", "the only one", "of the machines", "that work."], errorPart: 3, rule: "Rule 10", expl: "Verb must be 'works'." },
+            { parts: ["It is", "the only one", "of the answers", "that make sense."], errorPart: 3, rule: "Rule 10", expl: "Verb must be 'makes'." },
+
+            // --- RULE 11: Uncountable Nouns (Always Singular) ---
+            { parts: ["The scenery", "of Kashmir", "are", "charming."], errorPart: 2, rule: "Rule 11", expl: "Scenery is uncountable. Verb must be 'is'." },
+            { parts: ["My", "luggage", "were", "lost."], errorPart: 2, rule: "Rule 11", expl: "Luggage is uncountable. Verb must be 'was'." },
+            { parts: ["The", "furniture", "have", "been sold."], errorPart: 2, rule: "Rule 11", expl: "Furniture is uncountable. Verb must be 'has'." },
+            { parts: ["He gave", "me", "an advice", "about my career."], errorPart: 2, rule: "Rule 11", expl: "Advice is uncountable. Cannot use 'an'. Say 'a piece of advice'." },
+            { parts: ["The information", "you gave", "are", "wrong."], errorPart: 2, rule: "Rule 11", expl: "Information is uncountable. Verb must be 'is'." },
+            { parts: ["Her", "hair", "are", "black."], errorPart: 2, rule: "Rule 11", expl: "Hair (as a mass noun on head) is Singular. Verb must be 'is'." },
+            { parts: ["The stationery", "have", "arrived", "late."], errorPart: 1, rule: "Rule 11", expl: "Stationery is uncountable. Verb must be 'has'." },
+            { parts: ["All the", "evidences", "were", "against him."], errorPart: 1, rule: "Rule 11", expl: "Evidence is uncountable. Should be 'All the evidence was'." },
+            { parts: ["I like", "the poetries", "of", "Keats."], errorPart: 1, rule: "Rule 11", expl: "Poetry is uncountable. Use 'poems' or 'poetry'." },
+            { parts: ["The machinery", "are", "new", "and efficient."], errorPart: 1, rule: "Rule 11", expl: "Machinery is uncountable. Verb must be 'is'." },
+
+            // --- RULE 12: Plural Form, Singular Meaning ---
+            { parts: ["Mathematics", "are", "a difficult", "subject."], errorPart: 1, rule: "Rule 12", expl: "Mathematics is singular. Verb must be 'is'." },
+            { parts: ["Physics", "are", "taught", "by Mr. Smith."], errorPart: 1, rule: "Rule 12", expl: "Physics is singular. Verb must be 'is'." },
+            { parts: ["The news", "are", "good", "today."], errorPart: 1, rule: "Rule 12", expl: "News is singular. Verb must be 'is'." },
+            { parts: ["Measles", "have", "broken out", "in the city."], errorPart: 1, rule: "Rule 12", expl: "Measles is singular. Verb must be 'has'." },
+            { parts: ["Politics", "are", "a dirty", "game."], errorPart: 1, rule: "Rule 12", expl: "Politics (the field) is singular. Verb must be 'is'." },
+            { parts: ["Billiards", "are", "played", "by men."], errorPart: 1, rule: "Rule 12", expl: "Billiards is singular. Verb must be 'is'." },
+            { parts: ["Economics", "are", "my favorite", "subject."], errorPart: 1, rule: "Rule 12", expl: "Economics is singular. Verb must be 'is'." },
+            { parts: ["Rickets", "are", "caused", "by deficiency."], errorPart: 1, rule: "Rule 12", expl: "Rickets is singular. Verb must be 'is'." },
+            { parts: ["Linguistics", "are", "a study", "of language."], errorPart: 1, rule: "Rule 12", expl: "Linguistics is singular. Verb must be 'is'." },
+            { parts: ["Mumps", "are", "painful", "."], errorPart: 1, rule: "Rule 12", expl: "Mumps is singular. Verb must be 'is'." },
+            // ==========================================
+            // RULE 13: Singular Form, Plural Meaning (Collective Nouns)
+            // Keywords: Cattle, Police, Gentry, Peasantry, Infantry, Children, Vermin
+            // ==========================================
+            { parts: ["The cattle", "is", "grazing", "in the field."], errorPart: 1, rule: "Rule 13", expl: "'Cattle' is grammatically plural. Should be 'are'." },
+            { parts: ["The police", "has", "arrested", "the thieves."], errorPart: 1, rule: "Rule 13", expl: "'Police' is plural. Should be 'have'." },
+            { parts: ["The gentry", "of the town", "was", "invited."], errorPart: 2, rule: "Rule 13", expl: "'Gentry' (upper class) is plural. Should be 'were'." },
+            { parts: ["The peasantry", "is", "suffering", "due to drought."], errorPart: 1, rule: "Rule 13", expl: "'Peasantry' is plural. Should be 'are'." },
+            { parts: ["Vermin", "destroys", "the", "crops."], errorPart: 1, rule: "Rule 13", expl: "'Vermin' is plural. Should be 'destroy'." },
+            { parts: ["The clergy", "was", "unanimous", "in their vote."], errorPart: 1, rule: "Rule 13", expl: "'Clergy' is plural. Should be 'were'." },
+            { parts: ["The infantry", "has", "marched", "forward."], errorPart: 1, rule: "Rule 13", expl: "'Infantry' is plural. Should be 'have'." },
+            { parts: ["People", "says", "that", "honesty is best."], errorPart: 1, rule: "Rule 13", expl: "'People' is plural. Should be 'say'." },
+            { parts: ["Poultry", "is", "kept", "in the farm."], errorPart: 1, rule: "Rule 13", expl: "'Poultry' is plural. Should be 'are'." },
+            { parts: ["Children", "is", "playing", "in the park."], errorPart: 1, rule: "Rule 13", expl: "'Children' is plural. Should be 'are'." },
+
+            // ==========================================
+            // RULE 14: Fixed Pairs (Plural) vs "A Pair of" (Singular)
+            // Keywords: Scissors, Trousers, Spectacles, Binoculars, Jeans
+            // ==========================================
+            { parts: ["My scissors", "is", "not", "sharp."], errorPart: 1, rule: "Rule 14", expl: "'Scissors' is plural. Should be 'are'." },
+            { parts: ["His trousers", "is", "torn", "."], errorPart: 1, rule: "Rule 14", expl: "'Trousers' is plural. Should be 'are'." },
+            { parts: ["Your spectacles", "has", "been", "broken."], errorPart: 1, rule: "Rule 14", expl: "'Spectacles' is plural. Should be 'have'." },
+            { parts: ["The binoculars", "is", "very", "expensive."], errorPart: 1, rule: "Rule 14", expl: "'Binoculars' is plural. Should be 'are'." },
+            { parts: ["The tongs", "is", "near", "the fire."], errorPart: 1, rule: "Rule 14", expl: "'Tongs' is plural. Should be 'are'." },
+            { parts: ["My jeans", "is", "blue", "."], errorPart: 1, rule: "Rule 14", expl: "'Jeans' is plural. Should be 'are'." },
+            { parts: ["Your pants", "is", "too", "short."], errorPart: 1, rule: "Rule 14", expl: "'Pants' is plural. Should be 'are'." },
+            { parts: ["A pair of", "shoes", "were", "bought."], errorPart: 2, rule: "Rule 14", expl: "Subject is 'A pair' (Singular). Should be 'was'." },
+            { parts: ["A pair of", "spectacles", "have", "been ordered."], errorPart: 2, rule: "Rule 14", expl: "Subject is 'A pair' (Singular). Should be 'has'." },
+            { parts: ["This pair", "of gloves", "belong", "to me."], errorPart: 2, rule: "Rule 14", expl: "Subject is 'This pair' (Singular). Should be 'belongs'." },
+
+            // ==========================================
+            // RULE 15: "A number of" (Plural) vs "The number of" (Singular)
+            // ==========================================
+            { parts: ["A number of", "students", "is", "absent."], errorPart: 2, rule: "Rule 15", expl: "'A number of' = Many (Plural). Should be 'are'." },
+            { parts: ["The number of", "students", "are", "fifty."], errorPart: 2, rule: "Rule 15", expl: "'The number' = The count (Singular). Should be 'is'." },
+            { parts: ["A number of", "books", "has", "been stolen."], errorPart: 2, rule: "Rule 15", expl: "'A number of' is plural. Should be 'have'." },
+            { parts: ["The number of", "accidents", "have", "increased."], errorPart: 2, rule: "Rule 15", expl: "'The number' is singular. Should be 'has'." },
+            { parts: ["A large number", "of people", "was", "present."], errorPart: 2, rule: "Rule 15", expl: "'A large number' is plural. Should be 'were'." },
+            { parts: ["The number of", "candidates", "appear", "large."], errorPart: 2, rule: "Rule 15", expl: "'The number' is singular. Should be 'appears'." },
+            { parts: ["A number of", "questions", "was", "asked."], errorPart: 2, rule: "Rule 15", expl: "'A number of' is plural. Should be 'were'." },
+            { parts: ["The exact number", "of refugees", "are", "unknown."], errorPart: 2, rule: "Rule 15", expl: "'The number' is singular. Should be 'is'." },
+            { parts: ["A small number", "of boys", "is", "playing."], errorPart: 2, rule: "Rule 15", expl: "'A small number' is plural. Should be 'are'." },
+            { parts: ["The number of", "tickets sold", "were", "less than expected."], errorPart: 2, rule: "Rule 15", expl: "'The number' is singular. Should be 'was'." },
+
+            // ==========================================
+            // RULE 16: Units of Measurement (Distance, Money, Time = Singular Unit)
+            // ==========================================
+            { parts: ["Ten miles", "are", "a long", "distance."], errorPart: 1, rule: "Rule 16", expl: "Distance as a specific quantity is singular. Should be 'is'." },
+            { parts: ["Fifty thousand rupees", "are", "a large", "amount."], errorPart: 1, rule: "Rule 16", expl: "Money as a sum is singular. Should be 'is'." },
+            { parts: ["Ten kilograms", "of sugar", "are", "needed."], errorPart: 2, rule: "Rule 16", expl: "Weight as a quantity is singular. Should be 'is'." },
+            { parts: ["Two hours", "are", "too long", "to wait."], errorPart: 1, rule: "Rule 16", expl: "Time as a period is singular. Should be 'is'." },
+            { parts: ["Five years", "are", "a long", "period."], errorPart: 1, rule: "Rule 16", expl: "Time period is singular. Should be 'is'." },
+            { parts: ["Three tons", "of coal", "were", "delivered."], errorPart: 2, rule: "Rule 16", expl: "Weight as a quantity is singular. Should be 'was'." },
+            { parts: ["Twenty dollars", "cost", "too", "much."], errorPart: 1, rule: "Rule 16", expl: "Money as a sum is singular. Should be 'costs'." },
+            { parts: ["Six months", "have", "passed", "quickly."], errorPart: 1, rule: "Rule 16", expl: "Time duration is singular. Should be 'has'." },
+            { parts: ["Five liters", "of milk", "are", "in the jug."], errorPart: 2, rule: "Rule 16", expl: "Quantity is singular. Should be 'is'." },
+            { parts: ["One hundred meters", "are", "not a", "long race."], errorPart: 1, rule: "Rule 16", expl: "Distance is singular. Should be 'is'." },
+
+            // ==========================================
+            // RULE 17: Fractions / Percentages (Subject depends on 'OF' Noun)
+            // ==========================================
+            { parts: ["Half of", "the apple", "are", "rotten."], errorPart: 2, rule: "Rule 17", expl: "Noun 'apple' is singular. Should be 'is'." },
+            { parts: ["Half of", "the apples", "is", "rotten."], errorPart: 2, rule: "Rule 17", expl: "Noun 'apples' is plural. Should be 'are'." },
+            { parts: ["Two-thirds", "of the city", "were", "destroyed."], errorPart: 2, rule: "Rule 17", expl: "Noun 'city' is singular. Should be 'was'." },
+            { parts: ["Two-thirds", "of the students", "is", "absent."], errorPart: 2, rule: "Rule 17", expl: "Noun 'students' is plural. Should be 'are'." },
+            { parts: ["Most of", "the work", "are", "done."], errorPart: 2, rule: "Rule 17", expl: "Noun 'work' is uncountable. Should be 'is'." },
+            { parts: ["Most of", "the people", "is", "happy."], errorPart: 2, rule: "Rule 17", expl: "Noun 'people' is plural. Should be 'are'." },
+            { parts: ["A lot of", "money", "were", "wasted."], errorPart: 2, rule: "Rule 17", expl: "Noun 'money' is singular. Should be 'was'." },
+            { parts: ["Some of", "the books", "is", "missing."], errorPart: 2, rule: "Rule 17", expl: "Noun 'books' is plural. Should be 'are'." },
+            { parts: ["All of", "the milk", "were", "spilled."], errorPart: 2, rule: "Rule 17", expl: "Noun 'milk' is singular. Should be 'was'." },
+            { parts: ["Twenty percent", "of the profit", "are", "mine."], errorPart: 2, rule: "Rule 17", expl: "Noun 'profit' is singular. Should be 'is'." },
+
+            // ==========================================
+            // RULE 18: "More than one" + Singular Noun + Singular Verb
+            // ==========================================
+            { parts: ["More than one", "student", "have", "passed."], errorPart: 2, rule: "Rule 18", expl: "'More than one' is followed by singular verb. Should be 'has'." },
+            { parts: ["More than one", "man", "were", "killed."], errorPart: 2, rule: "Rule 18", expl: "'More than one' is followed by singular verb. Should be 'was'." },
+            { parts: ["More than one", "book", "are", "missing."], errorPart: 2, rule: "Rule 18", expl: "Should be 'is'." },
+            { parts: ["More than one", "attempt", "were", "made."], errorPart: 2, rule: "Rule 18", expl: "Should be 'was'." },
+            { parts: ["More than one", "idea", "have", "been proposed."], errorPart: 2, rule: "Rule 18", expl: "Should be 'has'." },
+            { parts: ["More than one", "person", "are", "involved."], errorPart: 2, rule: "Rule 18", expl: "Should be 'is'." },
+            { parts: ["More than one", "answer", "are", "correct."], errorPart: 2, rule: "Rule 18", expl: "Should be 'is'." },
+            { parts: ["More than one", "city", "were", "ruined."], errorPart: 2, rule: "Rule 18", expl: "Should be 'was'." },
+            { parts: ["More than one", "reason", "were", "given."], errorPart: 2, rule: "Rule 18", expl: "Should be 'was'." },
+            { parts: ["More than one", "car", "have", "been stolen."], errorPart: 2, rule: "Rule 18", expl: "Should be 'has'." },
+
+            // ==========================================
+            // RULE 19: "More" + Plural Noun + "than one" + Plural Verb
+            // ==========================================
+            { parts: ["More men", "than one", "was", "present."], errorPart: 2, rule: "Rule 19", expl: "'More + Plural + than one' takes Plural Verb. Should be 'were'." },
+            { parts: ["More students", "than one", "has", "passed."], errorPart: 2, rule: "Rule 19", expl: "Should be 'have'." },
+            { parts: ["More books", "than one", "was", "bought."], errorPart: 2, rule: "Rule 19", expl: "Should be 'were'." },
+            { parts: ["More cities", "than one", "has", "been destroyed."], errorPart: 2, rule: "Rule 19", expl: "Should be 'have'." },
+            { parts: ["More plans", "than one", "was", "rejected."], errorPart: 2, rule: "Rule 19", expl: "Should be 'were'." },
+
+            // ==========================================
+            // RULE 20: Imaginary/Subjunctive (Were)
+            // ==========================================
+            { parts: ["I wish", "I", "was", "a bird."], errorPart: 2, rule: "Rule 20", expl: "Imaginary wish uses 'were' for all persons. Should be 'were'." },
+            { parts: ["If he", "was", "here, he would", "help us."], errorPart: 1, rule: "Rule 20", expl: "Hypothetical condition uses 'were'. Should be 'were'." },
+            { parts: ["He talks", "as if", "he", "was my boss."], errorPart: 3, rule: "Rule 20", expl: "'As if' triggers subjunctive 'were'. Should be 'were'." },
+            { parts: ["If I", "was", "you, I would", "go there."], errorPart: 1, rule: "Rule 20", expl: "Hypothetical 'If I were you'. Should be 'were'." },
+            { parts: ["I wish", "he", "was", "alive today."], errorPart: 2, rule: "Rule 20", expl: "Wish uses 'were'. Should be 'were'." },
+
+            // ==========================================
+            // RULE 21: "Nothing But" + Noun + Singular Verb
+            // ==========================================
+            { parts: ["Nothing but", "trees", "were", "seen."], errorPart: 2, rule: "Rule 21", expl: "Subject is 'Nothing' (Singular). Should be 'was'." },
+            { parts: ["Nothing but", "sand", "are", "visible."], errorPart: 2, rule: "Rule 21", expl: "Subject is 'Nothing'. Should be 'is'." },
+            { parts: ["Nothing but", "books", "interest", "him."], errorPart: 2, rule: "Rule 21", expl: "Subject is 'Nothing'. Should be 'interests'." },
+            { parts: ["Nothing but", "animals", "live", "here."], errorPart: 2, rule: "Rule 21", expl: "Subject is 'Nothing'. Should be 'lives'." },
+            { parts: ["Nothing but", "lies", "were", "told."], errorPart: 2, rule: "Rule 21", expl: "Subject is 'Nothing'. Should be 'was'." },
+
+            // ==========================================
+            // RULE 22: Adjective as Noun (The + Adj) = Plural
+            // ==========================================
+            { parts: ["The rich", "is", "not always", "happy."], errorPart: 1, rule: "Rule 22", expl: "'The rich' refers to rich people (Plural). Should be 'are'." },
+            { parts: ["The poor", "is", "always", "with us."], errorPart: 1, rule: "Rule 22", expl: "'The poor' is plural. Should be 'are'." },
+            { parts: ["The injured", "was", "taken to", "hospital."], errorPart: 1, rule: "Rule 22", expl: "'The injured' is plural. Should be 'were'." },
+            { parts: ["The brave", "deserves", "the", "fair."], errorPart: 1, rule: "Rule 22", expl: "'The brave' is plural. Should be 'deserve'." },
+            { parts: ["The young", "needs", "guidance", "."], errorPart: 1, rule: "Rule 22", expl: "'The young' is plural. Should be 'need'." },
+
+            // ==========================================
+            // FINAL MIXED REVIEW (Complex Bank PO Logic)
+            // ==========================================
+            { parts: ["The details", "of the resignation", "is", "yet to be revealed."], errorPart: 2, rule: "Rule 1", expl: "Subject 'details' is Plural. Should be 'are'." },
+            { parts: ["Neither of", "the two brothers", "have", "paid the fees."], errorPart: 2, rule: "Rule 7", expl: "Neither takes singular. Should be 'has'." },
+            { parts: ["One of", "the boys", "who", "was late is my brother."], errorPart: 3, rule: "Rule 9", expl: "Relative clause 'who' refers to plural 'boys'. Should be 'were'." },
+            { parts: ["A number of", "problems", "has", "arisen."], errorPart: 2, rule: "Rule 15", expl: "'A number of' is Plural. Should be 'have'." },
+            { parts: ["The number of", "problems", "have", "decreased."], errorPart: 2, rule: "Rule 15", expl: "'The number' is Singular. Should be 'has'." },
+            { parts: ["Mathematics", "require", "practice", "."], errorPart: 1, rule: "Rule 12", expl: "Mathematics is singular. Should be 'requires'." },
+            { parts: ["The cattle", "was", "grazing", "near the river."], errorPart: 1, rule: "Rule 13", expl: "Cattle is plural. Should be 'were'." },
+            { parts: ["He", "as well as", "his friends", "are coming."], errorPart: 3, rule: "Rule 2", expl: "First subject 'He' dominates. Should be 'is'." },
+            { parts: ["Not only", "the students", "but also the teacher", "were absent."], errorPart: 3, rule: "Rule 3", expl: "Nearest subject 'teacher' dominates. Should be 'was'." },
+            { parts: ["Bread and butter", "are", "difficult to", "earn these days."], errorPart: 1, rule: "Rule 4", expl: "Single concept (livelihood). Should be 'is'." },
+            { parts: ["Ten kilometers", "are", "not a long", "distance."], errorPart: 1, rule: "Rule 16", expl: "Distance as a unit. Should be 'is'." },
+            { parts: ["Many a", "man", "have", "done this."], errorPart: 2, rule: "Rule 18 (Variant)", expl: "'Many a' is followed by Singular Noun/Verb. Should be 'has'." },
+            { parts: ["It is", "I who", "is", "responsible."], errorPart: 2, rule: "Rule 8", expl: "Antecedent 'I'. Should be 'am'." },
+            { parts: ["The police", "is", "chasing", "the robbers."], errorPart: 1, rule: "Rule 13", expl: "Police is plural. Should be 'are'." },
+            { parts: ["My spectacles", "has", "been", "broken."], errorPart: 1, rule: "Rule 14", expl: "Spectacles is plural. Should be 'have'." },
+            { parts: ["Two-thirds", "of the land", "are", "cultivated."], errorPart: 2, rule: "Rule 17", expl: "Land is singular. Should be 'is'." },
+            { parts: ["The crew", "was", "rescued", "from the ship."], errorPart: 4, rule: "Rule 13", expl: "No Error. Crew acting as a unit takes singular." },
+            { parts: ["The jury", "was", "divided", "in their opinions."], errorPart: 1, rule: "Rule 13", expl: "Divided implies individuals (Plural). Should be 'were'." },
+            { parts: ["Neither praise", "nor blame", "affect", "him."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject 'blame' is singular. Should be 'affects'." },
+            { parts: ["Three parts", "of the lesson", "is", "yet to be finished."], errorPart: 4, rule: "Rule 17", expl: "No Error. 'Lesson' is singular, so singular verb 'is' is correct." },
+            { parts: ["The strain", "of all the difficulties", "were", "too much."], errorPart: 2, rule: "Rule 1", expl: "Subject 'strain' is singular. Should be 'was'." },
+            { parts: ["The introduction", "of reforms", "have", "failed."], errorPart: 2, rule: "Rule 1", expl: "Subject 'introduction' is singular. Should be 'has'." },
+            { parts: ["Knowledge", "of physics", "are", "essential."], errorPart: 2, rule: "Rule 1", expl: "Subject 'Knowledge' is singular. Should be 'is'." },
+            { parts: ["The behavior", "of the boys", "were", "rude."], errorPart: 2, rule: "Rule 1", expl: "Subject 'behavior' is singular. Should be 'was'." },
+            { parts: ["The quality", "of apples", "were", "good."], errorPart: 2, rule: "Rule 1", expl: "Subject 'quality' is singular. Should be 'was'." },
+            { parts: ["A pair of", "shoes", "were", "standing there."], errorPart: 2, rule: "Rule 14", expl: "Subject 'A pair' is singular. Should be 'was'." },
+            { parts: ["The results", "of the experiment", "is", "pending."], errorPart: 2, rule: "Rule 1", expl: "Subject 'results' is plural. Should be 'are'." },
+            { parts: ["A large number", "of people", "was", "waiting."], errorPart: 2, rule: "Rule 15", expl: "'A large number' is plural. Should be 'were'." },
+            { parts: ["The percentage", "of marks", "were", "low."], errorPart: 2, rule: "Rule 11", expl: "Percentage is singular. Should be 'was'." },
+            { parts: ["He", "as well as", "I", "am going."], errorPart: 3, rule: "Rule 2", expl: "First subject 'He' dominates. Should be 'is'." },
+            { parts: ["Not only he", "but also I", "is", "going."], errorPart: 2, rule: "Rule 3", expl: "Nearest subject 'I' dominates. Should be 'am'." },
+            { parts: ["Neither", "of the pens", "write", "well."], errorPart: 2, rule: "Rule 7", expl: "Neither is singular. Should be 'writes'." },
+            { parts: ["Each", "of the girls", "were", "awarded."], errorPart: 2, rule: "Rule 6", expl: "Each is singular. Should be 'was'." },
+            { parts: ["Everybody", "know", "the", "answer."], errorPart: 1, rule: "Rule 5", expl: "Everybody is singular. Should be 'knows'." },
+            { parts: ["Measles", "are", "dangerous", "."], errorPart: 1, rule: "Rule 12", expl: "Measles is singular. Should be 'is'." },
+            { parts: ["Fifty miles", "are", "a long", "distance."], errorPart: 1, rule: "Rule 16", expl: "Distance unit. Should be 'is'." },
+            { parts: ["Three-fourths", "of the work", "are", "finished."], errorPart: 2, rule: "Rule 17", expl: "Work is uncountable. Should be 'is'." },
+            { parts: ["If I", "was", "rich", "I would travel."], errorPart: 1, rule: "Rule 20", expl: "Hypothetical condition. Should be 'were'." },
+            { parts: ["Nothing", "but water", "were", "found."], errorPart: 2, rule: "Rule 21", expl: "Subject 'Nothing'. Should be 'was'." },
+            { parts: ["The wise", "does", "not", "quarrel."], errorPart: 1, rule: "Rule 22", expl: "'The wise' is plural. Should be 'do'." },
+            { parts: ["There", "is", "many", "mistakes."], errorPart: 1, rule: "Rule 1 (Inversion)", expl: "Subject 'mistakes' is plural. Should be 'are'." },
+            { parts: ["The scissors", "is", "on the", "table."], errorPart: 1, rule: "Rule 14", expl: "Scissors is plural. Should be 'are'." },
+            { parts: ["Your premises", "looks", "very", "clean."], errorPart: 1, rule: "Rule 12 (Noun)", expl: "Premises (property) is plural. Should be 'look'." },
+            { parts: ["Alms", "was", "given to", "the beggar."], errorPart: 1, rule: "Rule 12 (Noun)", expl: "Alms is plural. Should be 'were'." },
+            { parts: ["The blind", "is", "helpless", "."], errorPart: 1, rule: "Rule 22", expl: "'The blind' is plural. Should be 'are'." },
+            { parts: ["More than one", "thief", "have", "been caught."], errorPart: 2, rule: "Rule 18", expl: "Subject 'thief' is singular. Should be 'has'." },
+            { parts: ["More thieves", "than one", "has", "been caught."], errorPart: 2, rule: "Rule 19", expl: "Subject 'thieves' is plural. Should be 'have'." },
+            { parts: ["The wages", "of the workers", "is", "low."], errorPart: 2, rule: "Rule 1 (Noun)", expl: "Wages (salary) is plural. Should be 'are'." },
+            { parts: ["My means", "are", "limited", "."], errorPart: 4, rule: "Rule 1 (Noun)", expl: "No Error. Means (financial resources) is plural." },
+            { parts: ["This means", "of travel", "are", "not safe."], errorPart: 2, rule: "Rule 1 (Noun)", expl: "Means (method) is singular here. Should be 'is'." },
+            { parts: ["The Headquarters", "of the UN", "are", "in NY."], errorPart: 2, rule: "Rule 1 (Noun)", expl: "Headquarters (organization center) takes singular. Should be 'is'." },
+            { parts: ["A series", "of matches", "are", "being played."], errorPart: 2, rule: "Rule 1 (Noun)", expl: "Series (singular set). Should be 'is'." },
+            { parts: ["Species", "of this plant", "is", "rare."], errorPart: 4, rule: "Rule 1 (Noun)", expl: "No Error. Species can be singular." },
+            { parts: ["The deer", "was", "running", "fast."], errorPart: 4, rule: "Rule 13", expl: "No Error. Deer is singular." },
+            { parts: ["The deer", "were", "running", "fast."], errorPart: 4, rule: "Rule 13", expl: "No Error. Deer is also plural." }
+
+
+        ];
+
+        // --- ENGINE ---
+        let currentIdx = 0;
+        let score = 0;
+        const quizArea = document.getElementById('quiz-area');
+        const nextBtn = document.getElementById('next-btn');
+
+        // Shuffle
+        // questionBank.sort(() => Math.random() - 0.5); 
+        document.getElementById('q-total').innerText = questionBank.length;
+
+        function renderQuestion() {
+            const q = questionBank[currentIdx];
+            const parts = q.parts; // Array of 4 strings
+
+            let html = `
+            <div class="question-card">
+                <span class="rule-tag">${q.rule}</span>
+                <div class="sentence-container">
+                    ${parts.map((text, i) => `
+                        <div class="segment" 
+                             onclick="checkAnswer(${i})" 
+                             data-label="${String.fromCharCode(65 + i)}"
+                             id="seg-${i}">
+                             ${text}
+                        </div>
+                    `).join('')}
+                </div>
+                <button class="no-error-btn" id="seg-4" onclick="checkAnswer(4)">
+                    (E) No Error
+                </button>
+                <div class="explanation" id="expl-box">
+                    <strong>Explanation:</strong> ${q.expl}
+                </div>
+            </div>
+        `;
+            quizArea.innerHTML = html;
+            nextBtn.style.display = 'none';
+        }
+
+        function checkAnswer(userChoice) {
+            const q = questionBank[currentIdx];
+            const correctIndex = q.errorPart; // 0=A, 1=B, 2=C, 3=D, 4=No Error
+
+            // Disable all clicks
+            for (let i = 0; i <= 4; i++) {
+                const el = document.getElementById(`seg-${i}`);
+                if (el) el.classList.add('disabled');
+            }
+
+            const userEl = document.getElementById(`seg-${userChoice}`);
+            const correctEl = document.getElementById(`seg-${correctIndex}`);
+
+            if (userChoice === correctIndex) {
+                score++;
+                document.getElementById('score').innerText = score;
+                if (userEl) userEl.classList.add('correct'); // Green
+            } else {
+                if (userEl) userEl.classList.add('wrong'); // Red
+                if (correctEl) correctEl.classList.add('missed'); // Outline
+            }
+
+            document.getElementById('expl-box').style.display = 'block';
+            nextBtn.style.display = 'inline-block';
+        }
+
+        function nextQuestion() {
+            if (currentIdx < questionBank.length - 1) {
+                currentIdx++;
+                document.getElementById('q-curr').innerText = currentIdx + 1;
+                renderQuestion();
+            } else {
+                alert("Quiz Completed! Score: " + score);
+            }
+        }
+
+        // Start
+        if (questionBank.length > 0) renderQuestion();
+        else quizArea.innerHTML = "<p style='text-align:center'>Paste the data parts into the script!</p>";
+
+    </script>
+</body>
+
+</html>
